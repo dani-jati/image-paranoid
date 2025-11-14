@@ -1,0 +1,264 @@
+import sys, os, math
+import cv2
+import numpy as np
+
+from PySide6.QtWidgets import (
+    QApplication, QMainWindow, QWidget, QVBoxLayout, QHBoxLayout,
+    QLabel, QTextEdit, QSizePolicy
+)
+from PySide6.QtGui import QPixmap, QImage
+from PySide6.QtCore import Qt, QPoint
+
+# === OUTPUT FOLDERS ===
+output_folder_high = "42_or_plus"
+output_folder_low = "41_or_minus"
+os.makedirs(output_folder_high, exist_ok=True)
+os.makedirs(output_folder_low, exist_ok=True)
+
+# === HELPERS ===
+def calculate_tilt(p1, p2):
+    dx = p2.x() - p1.x()
+    dy = p2.y() - p1.y()
+    angle_rad = math.atan2(dy, dx)
+    angle_deg = abs(math.degrees(angle_rad))
+    acute_angle = abs(90 - angle_deg)
+    return 90 - acute_angle
+
+def cvimg_to_qpix(img):
+    rgb = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+    h, w, ch = rgb.shape
+    bytes_per_line = ch * w
+    qimg = QImage(rgb.data, w, h, bytes_per_line, QImage.Format_RGB888)
+    return QPixmap.fromImage(qimg)
+
+class ClickableLabel(QLabel):
+    """Custom QLabel that records mouse clicks"""
+    def __init__(self, parent=None):
+        super().__init__(parent)
+        self.points = []
+        self.parent_dash = None
+
+    def mousePressEvent(self, event):
+        if event.button() == Qt.LeftButton:
+            if self.parent_dash and self.parent_dash.processed:
+                return  # block extra clicks after result is shown
+            if len(self.points) < 2:
+                self.points.append(event.pos())
+                if self.parent_dash:
+                    self.parent_dash.add_log(f"Point clicked: {event.pos().x()}, {event.pos().y()}")
+                if len(self.points) == 2 and self.parent_dash:
+                    self.parent_dash.process_points(self.points)
+
+class Dashboard(QMainWindow):
+    def __init__(self):
+        super().__init__()
+        self.setWindowTitle("Shoulder Tilt Dashboard")
+        self.resize(1200, 800)
+        self.show()
+
+        # Central widget
+        central = QWidget()
+        self.setCentralWidget(central)
+        layout = QVBoxLayout(central)
+
+        # Top split: processing + result
+        top = QHBoxLayout()
+        self.proc_label = ClickableLabel()
+        self.proc_label.setAlignment(Qt.AlignCenter)
+        self.proc_label.setSizePolicy(QSizePolicy.Expanding, QSizePolicy.Expanding)
+        self.proc_label.parent_dash = self
+
+        self.result_label = QLabel("Result")
+        self.result_label.setAlignment(Qt.AlignCenter)
+        self.result_label.setSizePolicy(QSizePolicy.Expanding, QSizePolicy.Expanding)
+
+        top.addWidget(self.proc_label, 1)
+        top.addWidget(self.result_label, 1)
+
+        # Bottom log
+        self.log = QTextEdit()
+        self.log.setReadOnly(True)
+        self.log.setFixedHeight(200)
+
+        layout.addLayout(top)
+        layout.addWidget(self.log)
+
+        # State
+        self.current_img = None
+        self.filename = None
+        self.files = [f for f in sorted(os.listdir(".")) if f.lower().endswith(('.jpg','.jpeg','.png'))]
+        self.index = 0
+        self.processed = False
+
+        # 🔑 Resume from progress file if it exists
+        if os.path.exists("progress.txt"):
+            with open("progress.txt") as f:
+                try:
+                    last_index = int(f.read().strip())
+                    self.index = min(last_index + 1, len(self.files) - 1)
+                    self.add_log(f"Resuming from image {self.index+1} of {len(self.files)}")
+                except ValueError:
+                    self.index = 0
+
+        if self.files:
+            self.load_image(self.files[self.index])
+        else:
+            self.add_log("No images found in current folder.")
+
+
+    def load_image(self, filename):
+        self.filename = filename
+        img = cv2.imread(filename)
+        if img is None:
+            self.add_log(f"❌ Failed to load {filename}")
+            return
+        self.current_img = img
+        self.proc_label.points = []
+        self.processed = False  # reset processed state
+
+        # Show input image
+        self.proc_label.setPixmap(cvimg_to_qpix(img).scaled(
+            self.proc_label.width() or 1,
+            self.proc_label.height() or 1,
+            Qt.KeepAspectRatio,
+            Qt.SmoothTransformation
+        ))
+
+        # Show placeholder in result pane
+        blank = np.zeros_like(img)
+        self.result_label.setPixmap(cvimg_to_qpix(blank).scaled(
+            self.result_label.width() or 1,
+            self.result_label.height() or 1,
+            Qt.KeepAspectRatio,
+            Qt.SmoothTransformation
+        ))
+
+        self.add_log(f"🖼️ Processing: {os.path.basename(filename)}")
+
+    def process_points(self, points):
+        if len(points) != 2 or self.current_img is None:
+            return
+        img_copy = self.current_img.copy()
+        h, w = img_copy.shape[:2]
+
+        # Scale widget coords to image coords, accounting for margins
+        pixmap = self.proc_label.pixmap()
+        if pixmap is None:
+            return
+        disp_w, disp_h = pixmap.width(), pixmap.height()
+        label_w, label_h = self.proc_label.width(), self.proc_label.height()
+
+        # Calculate offsets (letterboxing margins)
+        x_offset = (label_w - disp_w) // 2
+        y_offset = (label_h - disp_h) // 2
+
+        # Adjust click positions relative to displayed image
+        adj_x1 = points[0].x() - x_offset
+        adj_y1 = points[0].y() - y_offset
+        adj_x2 = points[1].x() - x_offset
+        adj_y2 = points[1].y() - y_offset
+
+        # Scale to original image coordinates
+        scale_x, scale_y = w / disp_w, h / disp_h
+        p1 = QPoint(int(adj_x1 * scale_x), int(adj_y1 * scale_y))
+        p2 = QPoint(int(adj_x2 * scale_x), int(adj_y2 * scale_y))
+
+        # === Draw overlays ===
+        # Red line: shoulder contour between clicked points
+        cv2.line(img_copy, (p1.x(), p1.y()), (p2.x(), p2.y()), (0, 0, 255), 2)
+
+        # Optional: extend that line across the whole image
+        dx, dy = p2.x() - p1.x(), p2.y() - p1.y()
+        if dx != 0:
+            slope = dy / dx
+            intercept = p1.y() - slope * p1.x()
+            x0, x1 = 0, w
+            y0 = int(slope * x0 + intercept)
+            y1 = int(slope * x1 + intercept)
+            cv2.line(img_copy, (x0, y0), (x1, y1), (0, 0, 255), 1)
+
+        # Blue vertical reference line (center of body)
+        neck_x = w // 2
+        cv2.line(img_copy, (neck_x, 0), (neck_x, h), (255, 0, 0), 2)
+
+        # Calculate tilt
+        tilt = calculate_tilt(p1, p2)
+        cv2.putText(img_copy, f"Tilt: {tilt:.2f} deg", (30, 30),
+                cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 0), 2)
+
+        # Always guard against zero size
+        w_label = max(1, self.result_label.width())
+        h_label = max(1, self.result_label.height())
+
+        self.result_label.setPixmap(
+            cvimg_to_qpix(img_copy).scaled(
+                w_label, h_label,
+                Qt.KeepAspectRatio,
+                Qt.SmoothTransformation
+            )
+        )
+        self.result_label.update()
+
+        # Save result
+        if tilt >= 42:
+            out_path = os.path.join(output_folder_high, os.path.basename(self.filename))
+        elif tilt < 41:
+            out_path = os.path.join(output_folder_low, os.path.basename(self.filename))
+        else:
+            self.add_log(f"⚠️ Tilt {tilt:.2f} not in save range. Skipped.")
+            self.processed = True
+            return
+        cv2.imwrite(out_path, img_copy)
+        self.add_log(f"✅ {os.path.basename(self.filename)} → Tilt: {tilt:.2f}° → Saved to {out_path}")
+
+        # Save current index to progress file
+        with open("progress.txt", "w") as f:
+            f.write(str(self.index))
+
+        # Mark as processed, but do NOT auto-advance
+        self.processed = True
+
+
+    def next_image(self):
+        if not self.files:
+            return
+        self.index = (self.index + 1) % len(self.files)
+        self.load_image(self.files[self.index])
+
+    def keyPressEvent(self, event):
+        if event.key() in (Qt.Key_Space, Qt.Key_Return, Qt.Key_Enter):
+            self.next_image()
+        elif event.key() in (Qt.Key_Backspace, Qt.Key_Left):
+            self.index = (self.index - 1) % len(self.files)
+            self.load_image(self.files[self.index])
+        else:
+            super().keyPressEvent(event)
+
+    def add_log(self, text):
+        self.log.append(text)  # still shows in the GUI
+        if hasattr(self, "log_file") and self.log_file:
+            self.log_file.write(text + "\n")
+            self.log_file.flush()
+
+    def closeEvent(self, event):
+        if hasattr(self, "log_file") and self.log_file:
+            self.log_file.close()
+        super().closeEvent(event)
+
+    def resizeEvent(self, event):
+        # Force equal pane sizes above the log
+        # total_w = self.centralWidget().width()
+        # total_h = self.centralWidget().height() - self.log.height()
+        # half_w = total_w // 2
+        # self.proc_label.setFixedSize(half_w, total_h)
+        # self.result_label.setFixedSize(half_w, total_h)
+
+        super().resizeEvent(event)
+
+# === MAIN ===
+if __name__ == "__main__":
+    app = QApplication(sys.argv)
+    dash = Dashboard()
+    dash.show()
+    sys.exit(app.exec())
+

@@ -1,0 +1,154 @@
+✅ Found 57 images in /home/dragonicbull/image_paranoid/tools/../images/input_images/shoulder_tilt
+__________
+🖼️ Processing: head and shoulder shot photo_0.jpeg
+📂 Using default folder: /home/dragonicbull/image_paranoid/tools/../images/input_images/shoulder_tilt
+__________
+🖼️ Processing: head and shoulder shot photo_0.jpeg
+Point clicked: 391, 394
+Point clicked: 467, 460
+🧭 Auto-perspective : Diagonal, 👁️ Please compare with your own visual judgment!
+📐 Tilt: 40.97°
+✅ head and shoulder shot photo_0.jpeg → Tilt: 40.97° → Saved to /home/dragonicbull/image_paranoid/tools/../images/output_images/shoulder_tilt/16_or_above/Diagonal_view/head and shoulder shot photo_0.jpeg
+__________
+🖼️ Processing: head and shoulder shot photo_1.jpeg
+✅ Found 57 images in /home/dragonicbull/image_paranoid/tools/../images/input_images/shoulder_tilt
+__________
+🖼️ Processing: head and shoulder shot photo_0.jpeg
+📂 Using default folder: /home/dragonicbull/image_paranoid/tools/../images/input_images/shoulder_tilt
+Resuming after head and shoulder shot photo_0.jpeg → starting at image 2 of 57
+__________
+🖼️ Processing: head and shoulder shot photo_1.jpeg
+✅ Found 57 images in /home/dragonicbull/image_paranoid/tools/../images/input_images/shoulder_tilt
+__________
+🖼️ Processing: head and shoulder shot photo_0.jpeg
+📂 Using default folder: /home/dragonicbull/image_paranoid/tools/../images/input_images/shoulder_tilt
+Resuming after head and shoulder shot photo_0.jpeg → starting at image 2 of 57
+__________
+🖼️ Processing: head and shoulder shot photo_1.jpeg
+Point clicked: 104, 385
+Point clicked: 64, 445
+🧭 Auto-perspective : Diagonal, 👁️ Please compare with your own visual judgment!
+📐 Tilt: 56.31°
+✅ head and shoulder shot photo_1.jpeg → Tilt: 56.31° → Saved to /home/dragonicbull/image_paranoid/tools/../images/output_images/shoulder_tilt/16_or_above/Diagonal_view/head and shoulder shot photo_1.jpeg
+__________
+🖼️ Processing: head and shoulder shot photo_10.jpeg
+✅ Found 57 images in /home/dragonicbull/image_paranoid/tools/../images/input_images/shoulder_tilt
+__________
+🖼️ Processing: head and shoulder shot photo_0.jpeg
+📂 Using default folder: /home/dragonicbull/image_paranoid/tools/../images/input_images/shoulder_tilt
+Resuming after head and shoulder shot photo_1.jpeg → starting at image 3 of 57
+__________
+🖼️ Processing: head and shoulder shot photo_10.jpeg
+Point clicked: 370, 360
+Point clicked: 475, 403
+🧭 Auto-perspective : Diagonal, 👁️ Please compare with your own visual judgment!
+📐 Tilt: 22.27°
+✅ head and shoulder shot photo_10.jpeg → Tilt: 22.27° → Saved to /home/dragonicbull/image_paranoid/tools/../images/output_images/shoulder_tilt/16_or_above/Diagonal_view/head and shoulder shot photo_10.jpeg
+__________
+🖼️ Processing: head and shoulder shot photo_11.jpeg
+✅ Found 57 images in /home/dragonicbull/image_paranoid/tools/../images/input_images/shoulder_tilt
+__________
+🖼️ Processing: head and shoulder shot photo_0.jpeg
+📂 Using default folder: /home/dragonicbull/image_paranoid/tools/../images/input_images/shoulder_tilt
+Resuming after head and shoulder shot photo_10.jpeg → starting at image 4 of 57
+__________
+🖼️ Processing: head and shoulder shot photo_11.jpeg
+Point clicked: 452, 381
+Point clicked: 503, 394
+🧭 Auto-perspective : Front, 👁️ Please compare with your own visual judgment!
+📐 Tilt: 14.30°
+✅ head and shoulder shot photo_11.jpeg → Tilt: 14.30° → Saved to /home/dragonicbull/image_paranoid/tools/../images/output_images/shoulder_tilt/12.1_to_15.9/Front_view/head and shoulder shot photo_11.jpeg
+🧭 Perspective: Diagonal
+⚠️ Saved file not found on disk.
+__________
+🖼️ Processing: head and shoulder shot photo_12.jpeg
+Point clicked: 380, 371
+Point clicked: 496, 421
+🧭 Auto-perspective : Diagonal, 👁️ Please compare with your own visual judgment!
+📐 Tilt: 23.32°
+✅ head and shoulder shot photo_12.jpeg → Tilt: 23.32° → Saved to /home/dragonicbull/image_paranoid/tools/../images/output_images/shoulder_tilt/16_or_above/Diagonal_view/head and shoulder shot photo_12.jpeg
+🧭 Perspective: Front
+✅ File moved to /home/dragonicbull/image_paranoid/tools/../images/output_images/shoulder_tilt/16_or_above/Front_view/head and shoulder shot photo_12.jpeg
+__________
+🖼️ Processing: head and shoulder shot photo_13.jpeg
+✅ Found 57 images in /home/dragonicbull/image_paranoid/tools/../images/input_images/shoulder_tilt
+__________
+🖼️ Processing: head and shoulder shot photo_0.jpeg
+📂 Using default folder: /home/dragonicbull/image_paranoid/tools/../images/input_images/shoulder_tilt
+Resuming after head and shoulder shot photo_12.jpeg → starting at image 6 of 57
+__________
+🖼️ Processing: head and shoulder shot photo_13.jpeg
+✅ Found 57 images in /home/dragonicbull/image_paranoid/tools/../images/input_images/shoulder_tilt
+🖼️ Processing: head and shoulder shot photo_0.jpeg, 1-th of 57 files 
+📂 Using default folder: /home/dragonicbull/image_paranoid/tools/../images/input_images/shoulder_tilt
+Resuming after head and shoulder shot photo_12.jpeg → starting at image 6 of 57
+🖼️ Processing: head and shoulder shot photo_13.jpeg, 6-th of 57 files 
+Point clicked: 380, 452
+Point clicked: 459, 480
+🧭 Auto-perspective : Front, 👁️ Please compare with your own visual judgment!
+📐 Tilt: 19.52°
+✅ head and shoulder shot photo_13.jpeg → Tilt: 19.52° → Saved to /home/dragonicbull/image_paranoid/tools/../images/output_images/shoulder_tilt/16_or_above/Front_view/head and shoulder shot photo_13.jpeg
+🖼️ Processing: head and shoulder shot photo_14.jpeg, 7-th of 57 files 
+Point clicked: 328, 364
+Point clicked: 462, 424
+🧭 Auto-perspective : Diagonal, 👁️ Please compare with your own visual judgment!
+📐 Tilt: 24.12°
+✅ head and shoulder shot photo_14.jpeg → Tilt: 24.12° → Saved to /home/dragonicbull/image_paranoid/tools/../images/output_images/shoulder_tilt/16_or_above/Diagonal_view/head and shoulder shot photo_14.jpeg
+🧭 Perspective: Front
+✅ File moved to /home/dragonicbull/image_paranoid/tools/../images/output_images/shoulder_tilt/16_or_above/Front_view/head and shoulder shot photo_14.jpeg
+🖼️ Processing: head and shoulder shot photo_16.jpeg, 8-th of 57 files 
+Point clicked: 237, 316
+Point clicked: 151, 342
+🧭 Auto-perspective : Front, 👁️ Please compare with your own visual judgment!
+📐 Tilt: 16.82°
+✅ head and shoulder shot photo_16.jpeg → Tilt: 16.82° → Saved to /home/dragonicbull/image_paranoid/tools/../images/output_images/shoulder_tilt/16_or_above/Front_view/head and shoulder shot photo_16.jpeg
+🖼️ Processing: head and shoulder shot photo_19.jpeg, 9-th of 57 files 
+Point clicked: 316, 308
+Point clicked: 451, 374
+🧭 Auto-perspective : Diagonal, 👁️ Please compare with your own visual judgment!
+📐 Tilt: 26.05°
+✅ head and shoulder shot photo_19.jpeg → Tilt: 26.05° → Saved to /home/dragonicbull/image_paranoid/tools/../images/output_images/shoulder_tilt/16_or_above/Diagonal_view/head and shoulder shot photo_19.jpeg
+🖼️ Processing: head and shoulder shot photo_2.jpeg, 10-th of 57 files 
+✅ Found 58 images in /home/dragonicbull/image_paranoid/tools/../images/input_images/shoulder_tilt
+🖼️ Processing: 1762591407217.jpg, 1-th of 58 files 
+📂 Using default folder: /home/dragonicbull/image_paranoid/tools/../images/input_images/shoulder_tilt
+Resuming after head and shoulder shot photo_19.jpeg → starting at image 11 of 58
+🖼️ Processing: head and shoulder shot photo_2.jpeg, 11-th of 58 files 
+🖼️ Processing: head and shoulder shot photo_22.jpeg, 12-th of 58 files 
+Point clicked: 137, 360
+Point clicked: 50, 389
+🧭 Auto-perspective : Front, 👁️ Please compare with your own visual judgment!
+📐 Tilt: 18.43°
+✅ head and shoulder shot photo_22.jpeg → Tilt: 18.43° → Saved to /home/dragonicbull/image_paranoid/tools/../images/output_images/shoulder_tilt/16_or_above/Front_view/head and shoulder shot photo_22.jpeg
+🖼️ Processing: head and shoulder shot photo_26.jpeg, 13-th of 58 files 
+Point clicked: 349, 348
+Point clicked: 464, 413
+🧭 Auto-perspective : Diagonal, 👁️ Please compare with your own visual judgment!
+📐 Tilt: 29.48°
+✅ head and shoulder shot photo_26.jpeg → Tilt: 29.48° → Saved to /home/dragonicbull/image_paranoid/tools/../images/output_images/shoulder_tilt/16_or_above/Diagonal_view/head and shoulder shot photo_26.jpeg
+🖼️ Processing: head and shoulder shot photo_27.jpeg, 14-th of 58 files 
+🖼️ Processing: head and shoulder shot photo_28.jpeg, 15-th of 58 files 
+Point clicked: 296, 372
+Point clicked: 174, 446
+🧭 Auto-perspective : Diagonal, 👁️ Please compare with your own visual judgment!
+📐 Tilt: 31.24°
+✅ head and shoulder shot photo_28.jpeg → Tilt: 31.24° → Saved to /home/dragonicbull/image_paranoid/tools/../images/output_images/shoulder_tilt/16_or_above/Diagonal_view/head and shoulder shot photo_28.jpeg
+🖼️ Processing: head and shoulder shot photo_29.jpeg, 16-th of 58 files 
+Point clicked: 346, 336
+Point clicked: 474, 398
+🧭 Auto-perspective : Diagonal, 👁️ Please compare with your own visual judgment!
+📐 Tilt: 25.84°
+✅ head and shoulder shot photo_29.jpeg → Tilt: 25.84° → Saved to /home/dragonicbull/image_paranoid/tools/../images/output_images/shoulder_tilt/16_or_above/Diagonal_view/head and shoulder shot photo_29.jpeg
+🖼️ Processing: head and shoulder shot photo_3.jpeg, 17-th of 58 files 
+Point clicked: 345, 253
+Point clicked: 459, 300
+🧭 Auto-perspective : Diagonal, 👁️ Please compare with your own visual judgment!
+📐 Tilt: 22.41°
+✅ head and shoulder shot photo_3.jpeg → Tilt: 22.41° → Saved to /home/dragonicbull/image_paranoid/tools/../images/output_images/shoulder_tilt/16_or_above/Diagonal_view/head and shoulder shot photo_3.jpeg
+🖼️ Processing: head and shoulder shot photo_30.jpeg, 18-th of 58 files 
+Point clicked: 418, 310
+Point clicked: 506, 332
+🧭 Auto-perspective : Front, 👁️ Please compare with your own visual judgment!
+📐 Tilt: 14.04°
+✅ head and shoulder shot photo_30.jpeg → Tilt: 14.04° → Saved to /home/dragonicbull/image_paranoid/tools/../images/output_images/shoulder_tilt/12.1_to_15.9/Front_view/head and shoulder shot photo_30.jpeg
+🖼️ Processing: head and shoulder shot photo_31.jpeg, 19-th of 58 files 

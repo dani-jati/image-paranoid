@@ -1,0 +1,68 @@
+import os
+import cv2
+import mediapipe as mp
+from tqdm import tqdm
+
+#=== CONFIG ===
+PATH = "Ridwan Kamil"
+TARGET_SIZE = (512, 512)  # Output size (width, height)
+INPUT_FOLDER = "images/" + PATH + "/frontal"
+OUTPUT_FOLDER = "cropped_imgs/" + PATH + "/frontal"
+PADDING_COLOR = (255, 255, 255)  # White padding (BACKGROUND)
+
+def crop_head_shoulders(img, w, h, bbox):
+    x = int(bbox.xmin * w)
+    y = int(bbox.ymin * h)
+    bw = int(bbox.width * w)
+    bh = int(bbox.height * h)
+    top = max(y - int(0.5 * bh), 0)
+    bottom = min(y + int(1.7 * bh), h)
+    left = max(x - int(0.2 * bw), 0)
+    right = min(x + int(1.2 * bw), w)
+    return img[top:bottom, left:right]
+
+def resize_with_padding(image, target_size, padding_color=(255, 255, 255)):
+    target_w, target_h = target_size
+    h, w = image.shape[:2]
+    scale = min(target_w / w, target_h / h)
+    new_w, new_h = int(w * scale), int(h * scale)
+    resized = cv2.resize(image, (new_w, new_h), interpolation=cv2.INTER_AREA)
+    padded = cv2.copyMakeBorder(
+        resized,
+        top=(target_h - new_h) // 2,
+        bottom=(target_h - new_h + 1) // 2,
+        left=(target_w - new_w) // 2,
+        right=(target_w - new_w + 1) // 2,
+        borderType=cv2.BORDER_CONSTANT,
+        value=padding_color
+    )
+    return padded
+
+def process_folder(input_folder, output_folder, target_size=(512, 512)):
+    os.makedirs(output_folder, exist_ok=True)
+    mp_face = mp.solutions.face_detection
+    face_detection = mp_face.FaceDetection(model_selection=1, min_detection_confidence=0.6)
+    image_files = [f for f in os.listdir(input_folder) if f.lower().endswith(('.jpg', '.jpeg', '.png'))]
+    for filename in tqdm(image_files, desc="Processing images"):
+        input_path = os.path.join(input_folder, filename)
+        output_path = os.path.join(output_folder, filename)
+        img = cv2.imread(input_path)
+        if img is None:
+            continue
+        h, w, _ = img.shape
+        img_rgb = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+        results = face_detection.process(img_rgb)
+        if results.detections:
+            detection = results.detections[0]
+            bbox = detection.location_data.relative_bounding_box
+            cropped = crop_head_shoulders(img, w, h, bbox)
+            final_img = resize_with_padding(cropped, target_size, PADDING_COLOR)
+            cv2.imwrite(output_path, final_img)
+        else:
+            print(f"No face detected in {filename}. Skipping.")
+
+def main():
+    process_folder(INPUT_FOLDER, OUTPUT_FOLDER, TARGET_SIZE)
+
+if __name__ == "__main__":
+    main()

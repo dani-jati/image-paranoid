@@ -1,0 +1,40 @@
+✅ Found 2 images in /home/dragonicbull/image-paranoid/input_images
+__________
+🖼️ Processing: 1759362087748.jpg
+__________
+🖼️ Processing: 1759362087748.jpg
+✅ Found 110 images in /home/dragonicbull/image-paranoid/input_images
+__________
+🖼️ Processing: 1759362087748.jpg
+__________
+🖼️ Processing: 1759362087748.jpg
+Point clicked: 367, 439
+Point clicked: 413, 450
+🧭 Auto-perspective : Front, 👁️ Please compare with your own visual judgment!
+📐 Tilt: 13.44°
+🗑️ Removed wrong result: 12.1_to_15.9_Front_view/1759362087748.jpg
+__________
+🖼️ Processing: 1759362087748.jpg
+↩️ Reset current image. Please click again.
+Point clicked: 412, 446
+Point clicked: 377, 446
+🧭 Auto-perspective : Front, 👁️ Please compare with your own visual judgment!
+📐 Tilt: 0.00°
+🗑️ Removed wrong result: 0_to_12_Front_view/1759362087748.jpg
+__________
+🖼️ Processing: 1759362087748.jpg
+↩️ Reset current image. Please click again.
+Point clicked: 333, 443
+Point clicked: 392, 451
+🧭 Auto-perspective : Front, 👁️ Please compare with your own visual judgment!
+📐 Tilt: 7.70°
+🗑️ Removed wrong result: 0_to_12_Front_view/1759362087748.jpg
+__________
+🖼️ Processing: 1759362087748.jpg
+↩️ Reset current image. Please click again.
+✅ Found 110 images in /home/dragonicbull/image-paranoid/input_images
+__________
+🖼️ Processing: 1759362087748.jpg
+Resuming after 1759362087748.jpg → starting at image 2 of 110
+__________
+🖼️ Processing: 887737a5-a587-4537-82d4-c1b88275dadd.jpg

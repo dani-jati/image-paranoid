@@ -1,0 +1,60 @@
+🖼️ Processing: 1762591407217.jpg, 1-th of 58 files 
+Point clicked: 233, 213
+Point clicked: 297, 212
+Point clicked: 188, 212
+Point clicked: 345, 200
+🧭 Auto-perspective : Front, 👁️ Please compare with your own visual judgment!
+📏 L1: 64.01, L2: 157.46, Ratio: 1.22
+✅ Saved to /home/dragonicbull/image_paranoid/tools/../images/output_images/bicanthalplane_width/0_to_1.35/1762591407217.jpg
+🗑️ Removed wrong result: /home/dragonicbull/image_paranoid/tools/../images/output_images/bicanthalplane_width/0_to_1.35/1762591407217.jpg
+🖼️ Processing: 1762591407217.jpg, 1-th of 58 files 
+↩️ Reset current image. Please click again.
+Point clicked: 236, 213
+Point clicked: 297, 211
+Point clicked: 181, 214
+Point clicked: 345, 204
+🧭 Auto-perspective : Front, 👁️ Please compare with your own visual judgment!
+📏 L1: 61.03, L2: 164.30, Ratio: 1.11
+✅ Saved to /home/dragonicbull/image_paranoid/tools/../images/output_images/bicanthalplane_width/0_to_1.35/1762591407217.jpg
+🗑️ Removed wrong result: /home/dragonicbull/image_paranoid/tools/../images/output_images/bicanthalplane_width/0_to_1.35/1762591407217.jpg
+🖼️ Processing: 1762591407217.jpg, 1-th of 58 files 
+↩️ Reset current image. Please click again.
+Point clicked: 225, 212
+Point clicked: 303, 204
+Point clicked: 183, 212
+Point clicked: 347, 199
+🧭 Auto-perspective : Front, 👁️ Please compare with your own visual judgment!
+📏 L1: 78.41, L2: 164.51, Ratio: 1.43
+✅ Saved to /home/dragonicbull/image_paranoid/tools/../images/output_images/bicanthalplane_width/1.35_to_1.65/1762591407217.jpg
+🖼️ Processing: head and shoulder shot photo_0.jpeg, 2-th of 58 files 
+Point clicked: 235, 182
+Point clicked: 277, 190
+Point clicked: 202, 185
+Point clicked: 317, 196
+🧭 Auto-perspective : Front, 👁️ Please compare with your own visual judgment!
+📏 L1: 42.76, L2: 115.52, Ratio: 1.11
+✅ Saved to /home/dragonicbull/image_paranoid/tools/../images/output_images/bicanthalplane_width/0_to_1.35/head and shoulder shot photo_0.jpeg
+🖼️ Processing: head and shoulder shot photo_1.jpeg, 3-th of 58 files 
+🖼️ Processing: head and shoulder shot photo_1.jpeg, 3-th of 58 files 
+🖼️ Processing: head and shoulder shot photo_10.jpeg, 4-th of 58 files 
+Point clicked: 180, 232
+Point clicked: 330, 236
+🖼️ Processing: head and shoulder shot photo_10.jpeg, 4-th of 58 files 
+↩️ Reset current image. Please click again.
+Point clicked: 235, 202
+Point clicked: 275, 203
+Point clicked: 203, 205
+Point clicked: 301, 206
+🧭 Auto-perspective : Front, 👁️ Please compare with your own visual judgment!
+📏 L1: 40.01, L2: 98.01, Ratio: 1.22
+✅ Saved to /home/dragonicbull/image_paranoid/tools/../images/output_images/bicanthalplane_width/0_to_1.35/head and shoulder shot photo_10.jpeg
+🖼️ Processing: head and shoulder shot photo_11.jpeg, 5-th of 58 files 
+🖼️ Processing: head and shoulder shot photo_11.jpeg, 5-th of 58 files 
+🖼️ Processing: head and shoulder shot photo_12.jpeg, 6-th of 58 files 
+Point clicked: 235, 199
+Point clicked: 277, 197
+Point clicked: 199, 201
+Point clicked: 308, 197
+🧭 Auto-perspective : Front, 👁️ Please compare with your own visual judgment!
+📏 L1: 42.05, L2: 109.07, Ratio: 1.16
+✅ Saved to /home/dragonicbull/image_paranoid/tools/../images/output_images/bicanthalplane_width/0_to_1.35/head and shoulder shot photo_12.jpeg
