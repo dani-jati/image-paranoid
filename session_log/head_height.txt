@@ -1,0 +1,8 @@
+🖼️ Processing: 1762591407217.jpg, 1-th of 58 files 
+Point clicked: 149, 255
+Point clicked: 380, 257
+Point clicked: 263, 91
+Point clicked: 256, 411
+🧭 Auto-perspective : Front, 👁️ Please compare with your own visual judgment!
+📏 L1: 241.02, L2: 334.07, Ratio: 1.39
+✅ Saved to /home/dragonicbull/image_paranoid/tools/../images/output_images/head_height/1.3_to_1.59/1762591407217.jpg

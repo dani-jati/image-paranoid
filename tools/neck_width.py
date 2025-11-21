@@ -194,7 +194,8 @@ class Dashboard(QMainWindow):
             self.add_log("✅ Left line of neck contour recorded.")
             self.add_log("2️⃣: Click right line of neck contour!")
 
-
+        if self.raw_img is None:
+            return
 
         # copy image and draw grid
         img_copy = draw_black_grid(self.raw_img.copy(), spacing_px=40)
@@ -208,7 +209,6 @@ class Dashboard(QMainWindow):
         coords = []
         for i, (x, y) in enumerate(self.clicks):
             cx, cy = int(x * scale_x), int(y * scale_y)
-            print(f"Click {i}: ({cx}, {cy})")
             coords.append((cx, cy))
 
             if i == 0:
@@ -221,10 +221,7 @@ class Dashboard(QMainWindow):
                 cv2.circle(img_copy, (cx, cy), 5, (255, 0, 0), -1)
 
             cv2.putText(img_copy, f"{i+1}", (cx, cy+13),
-                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (90,255,255), 1)
-
-            # color = (0, 255, 0) if i == 0 else (255, 0, 0)
-            # cv2.circle(img_copy, (cx, cy), 5, color, -1)  # small dot
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (90,255,255), 2)
 
         if step >= 2:
             self.add_log("draw line from p1 to p2")
@@ -271,7 +268,6 @@ class Dashboard(QMainWindow):
             )
          )
 
-
         if len(self.clicks) == 4:
             self.process_clicks()
 
@@ -304,7 +300,9 @@ class Dashboard(QMainWindow):
 
         # labelling first line
         cv2.putText(img, "Neck line", (p1[0], p1[1]-10),
-                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,255), 1)
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 3)
+        cv2.putText(img, "Neck line", (p1[0], p1[1]-10),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (90,255,255), 2)
 
         # Second line
         cv2.line(img, p3, p4, (255, 0, 0), 2)
@@ -315,9 +313,23 @@ class Dashboard(QMainWindow):
         # Draw small circles at second-line end
         cv2.circle(img, p4, 5, (255, 0, 0), -1)
 
-        # labelling first line
+        # labelling second line
         cv2.putText(img, "Shoulder line", (p3[0], p3[1]-10),
-                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,255), 1)
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 3)
+        cv2.putText(img, "Shoulder line", (p3[0], p3[1]-10),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,255,255), 2)
+
+        # Draw vertical separator lines
+
+        line_length = 20
+
+        """
+        # Draw vertical separator lines at line start
+        cv2.line(img, (p3[0], p3[1] - line_length), (p3[0], p3[1]), (255, 255, 255), 1)
+
+        # Draw vertical separator lines at line end
+        cv2.line(img, (p4[0], p4[1] - line_length), (p4[0], p4[1]), (255, 255, 255), 1)
+        """
 
         # Divide second line into 3 parts
         dx = ( p4[0] - p3[0] ) / 3.0
@@ -370,6 +382,7 @@ class Dashboard(QMainWindow):
             classification = "Narrow ( 0 - 0.90 )"
         else:
             self.add_log("⚠️ Ratio out of range. Skipped.")
+            classification = "Out of range"
             return
 
         # Timestamp
@@ -447,22 +460,6 @@ class Dashboard(QMainWindow):
             self.load_image(self.files[self.index])
         else:
             super().keyPressEvent(event)
-
-        """
-        if event.key() == Qt.Key_Escape:
-            if self.last_saved_path and os.path.exists(self.last_saved_path):
-                os.remove(self.last_saved_path)
-                self.add_log(f"🗑️ Removed: {self.last_saved_path}")
-            self.load_image(self.filename)
-        elif event.key() in (Qt.Key_Space, Qt.Key_Right):
-            self.index = min(self.index + 1, len(self.files) - 1)
-            self.load_image(self.files[self.index])
-        elif event.key() in (Qt.Key_Backspace, Qt.Key_Left):
-            self.index = max(self.index - 1, 0)
-            self.load_image(self.files[self.index])
-        else:
-            super().keyPressEvent(event)
-        """
 
     def closeEvent(self, event):
         self.log_file.close()

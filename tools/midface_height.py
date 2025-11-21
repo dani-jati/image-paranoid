@@ -1,4 +1,4 @@
-import sys, os, cv2
+import sys, os, cv2, datetime
 from PySide6.QtWidgets import (
     QApplication, QMainWindow, QWidget, QVBoxLayout, QHBoxLayout,
     QLabel, QTextEdit, QComboBox
@@ -81,7 +81,7 @@ def classify_perspective(p1, p2):
 class Dashboard(QMainWindow):
     def __init__(self):
         super().__init__()
-        self.setWindowTitle("Face Width Dashboard")
+        self.setWindowTitle("Midface Height Dashboard")
         self.resize(1200, 800)
 
         # Log
@@ -183,6 +183,7 @@ class Dashboard(QMainWindow):
 
     def on_click(self, event):
         pos = event.position().toPoint()
+
         # store plain coordinates
         self.clicks.append((pos.x(), pos.y()))
         self.add_log(f"Point clicked: {pos.x()}, {pos.y()}")
@@ -195,30 +196,84 @@ class Dashboard(QMainWindow):
         disp_w, disp_h = self.proc_label.width(), self.proc_label.height()
         scale_x, scale_y = w / disp_w, h / disp_h
 
-        """
-        # draw all points so far
-        for i, (x, y) in enumerate(self.clicks):
-            cx, cy = int(x * scale_x), int(y * scale_y)
-            color = (0, 255, 0) if i == 0 else (255, 0, 0)
-            cv2.circle(img_copy, (cx, cy), 5, color, -1)  # small dot
-        """
+        def numbering_click(cx, cy, i):
+            cv2.putText(img_copy, f"{i+1}", (cx+3, cy-10),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 3)
+            cv2.putText(img_copy, f"{i+1}", (cx+3, cy-10),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (90,255,255), 2)
+
 
         # draw all points so far
         for i, (x, y) in enumerate(self.clicks):
             cx, cy = int(x * scale_x), int(y * scale_y)
             if i == 0:
-                color = (0, 255, 0)      # Green
+                cx1, cy1 = cx, cy
+                cv2.line(img_copy, (cx, cy-500), (cx, cy+500), (190,190,190), 1)
+                numbering_click(cx, cy, i)
+
+                # dot on clicked point
+                color = (0,0,255) # red
+                cv2.circle(img_copy, (cx, cy), 5, color, -1)
+
+                # click order
+                cv2.putText(img_copy, f"{i+1}", (cx, cy+13),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 3)
+                cv2.putText(img_copy, f"{i+1}", (cx, cy+13),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (90,255,255), 2)
+
+                # labelling second line
+                cv2.putText(img_copy, "Glabella line", (cx, cy-10),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 3)
+                cv2.putText(img_copy, "Glabella line", (cx, cy-10),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,255,255), 2)
+
             elif i == 1:
-                color = (255, 0, 0)      # Blue
+                cx2, cy2 = cx, cy
+                cv2.line(img_copy, (cx1, cy1), (cx, cy), (0,255,0), 2)
+                cv2.circle(img_copy, (cx1, cy1), 4, (0,255,0), -1)
+                cv2.circle(img_copy, (cx, cy), 4, (0,255,0), -1)
+                numbering_click(cx, cy, i)
+
+                # dot on clicked point
+                color = (0,255,0) # green
+                cv2.circle(img_copy, (cx, cy), 5, color, -1)
+
+                # click order
+                cv2.putText(img_copy, f"{i+1}", (cx, cy+13),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 3)
+                cv2.putText(img_copy, f"{i+1}", (cx, cy+13),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (90,255,255), 2)
+
+                # labelling second line
+                cv2.putText(img_copy, "Nasal-base line", (cx, cy-10),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 3)
+                cv2.putText(img_copy, "Nasal-base line", (cx, cy-10),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,255,255), 2)
+
             elif i == 2:
-                color = (0, 0, 255)      # Red
+
+                cv2.circle(img_copy,(cx2,cy2),4,(255,0,0), -1)                
+                cv2.line(img_copy, (cx2, cy2), (cx, cy), (255,0,0), 2)
+                numbering_click(cx, cy, i)
+                color = (255,0,0)
+                cv2.circle(img_copy, (cx, cy), 5, color, -1)
+
+                # click order
+                cv2.putText(img_copy, f"{i+1}", (cx, cy+13),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 3)
+                cv2.putText(img_copy, f"{i+1}", (cx, cy+13),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (90,255,255), 2)
+
+                # labelling third line
+                cv2.putText(img_copy, "Chin line", (cx, cy-10),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 3)
+                cv2.putText(img_copy, "Chin line", (cx, cy-10),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,255,255), 2)
             else:
                 color = (255, 255, 255)  # White or fallback
-            cv2.circle(img_copy, (cx, cy), 5, color, -1)
 
-
-
-
+            # cv2.circle(img_copy, (cx, cy), 5, color, -1)
+            cv2.line(img_copy, (cx-400, cy), (cx+400, cy), (color), 2)
 
         # update preview
         self.proc_label.setPixmap(
@@ -247,6 +302,81 @@ class Dashboard(QMainWindow):
         cv2.line(img, p1, p2, (0, 255, 0), 2)
         cv2.line(img, p3, p4, (255, 0, 0), 2)
 
+        # draw all points so far
+        for i, (x, y) in enumerate(self.clicks):
+            cx, cy = int(x * scale_x), int(y * scale_y)
+            print( i )
+            if i == 0:
+                cx1, cy1 = cx, cy
+                cv2.line(img, (cx, cy-500), (cx, cy+500), (190,190,190), 1)
+
+                # dot on clicked point
+                color = (0,0,255) # red
+                cv2.circle(img, (cx, cy), 5, color, -1)
+                cv2.line(img, (cx-400, cy), (cx+400, cy), (color), 2)
+
+                # click order
+                cv2.putText(img, f"{i+1}", (cx, cy+13),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 3)
+                cv2.putText(img, f"{i+1}", (cx, cy+13),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (90,255,255), 2)
+
+                # labelling second line
+                cv2.putText(img, "Glabella line", (cx, cy-10),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 3)
+                cv2.putText(img, "Glabella line", (cx, cy-10),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,255,255), 2)
+
+            elif i == 1:
+                cx2, cy2 = cx, cy
+                cv2.line(img, (cx1, cy1), (cx, cy), (0,255,0), 2)
+                cv2.circle(img, (cx1, cy1), 4, (0,255,0), -1)
+                cv2.circle(img, (cx, cy), 4, (0,255,0), -1)
+
+                # dot on clicked point
+                color = (0,255,0) # green
+                cv2.circle(img, (cx, cy), 5, color, -1)
+                cv2.line(img, (cx-400, cy), (cx+400, cy), (color), 2)
+
+                # click order
+                cv2.putText(img, f"{i+1}", (cx, cy+13),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 3)
+                cv2.putText(img, f"{i+1}", (cx, cy+13),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (90,255,255), 2)
+
+                # labelling second line
+                cv2.putText(img, "Nasal-base line", (cx, cy-10),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 3)
+                cv2.putText(img, "Nasal-base line", (cx, cy-10),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,255,255), 2)
+            elif i == 2:
+                color = (255,0,0)                
+            elif i == 3:
+
+                cv2.circle(img,(cx2,cy2),4,(255,0,0), -1)                
+                cv2.line(img, (cx2, cy2), (cx, cy), (255,0,0), 2)
+                color = (255,0,0)
+                cv2.circle(img, (cx, cy), 5, color, -1)
+                cv2.line(img, (cx-400, cy), (cx+400, cy), (color), 2)
+
+                # click order
+                cv2.putText(img, f"{i}", (cx+10, cy+13),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 3)
+                cv2.putText(img, f"{i}", (cx+10, cy+13),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (90,255,255), 2)
+
+                # labelling third line
+                cv2.putText(img, "Chin line", (cx, cy-10),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 3)
+                cv2.putText(img, "Chin line", (cx, cy-10),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,255,255), 2)
+            else:
+                color = (255, 255, 255)  # White or fallback
+
+            # cv2.circle(img_copy, (cx, cy), 5, color, -1)
+            
+
+
         L1 = euclidean(p1, p2)
         L2 = euclidean(p3, p4)
         ratio = L1 / L2 if L1 else 0
@@ -259,20 +389,57 @@ class Dashboard(QMainWindow):
         self.view_selector.setCurrentIndex(index_map[perspective])
         self.add_log(f"🧭 Auto-perspective : {perspective}, 👁️ Please compare with your own visual judgment!")
 
-
         cv2.putText(img, f"Ratio: {ratio:.2f}", (30, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 0), 2)
         self.add_log(f"📏 L1: {L1:.2f}, L2: {L2:.2f}, Ratio: {ratio:.2f}")
 
+        # classification
         if ratio > 1.15:
             folder = output_folders["high"]
+            classification = "Hight ( > 1.15 )"
         elif 0.95 <= ratio <= 1.15:
             folder = output_folders["mid"]
+            classification = "Mid ( 0.95 - 1.15 )"
         elif 0 <= ratio < 0.95:
             folder = output_folders["low"]
+            classification = "Low ( 0 - 0.95 )"
         else:
             self.add_log("⚠️ Ratio out of range. Skipped.")
+            classification = "Out of range"
             return
 
+        # Timestamp
+        timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+
+        # Legend box
+        legend_x, legend_y = 0, 0
+        cv2.rectangle(img, (legend_x-10, legend_y-20),
+                      (legend_x+240, legend_y+130), (0,0,0), -1)
+        cv2.rectangle(img, (legend_x-10, legend_y-20),
+                      (legend_x+240, legend_y+130), (255,255,255), 1)
+
+        cv2.putText(img, "Legend:", (legend_x, legend_y-5),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255,255,255), 2)
+        cv2.putText(img, "Red = Glabella line", (legend_x, legend_y+15),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,255), 2)
+        cv2.putText(img, "Green = Base-nose line", (legend_x, legend_y+35),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,255,0), 2)
+        cv2.putText(img, "Blue = Chin line", (legend_x, legend_y+55),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255,0,0), 2)
+
+        """
+        cv2.putText(img, "Red = Mouth line", (legend_x, legend_y+75),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,255), 1)
+        """
+
+        # Classification + ratio + timestamp
+        cv2.putText(img, f"Result: {classification}", (legend_x, legend_y+75),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255,255,255), 2)
+        cv2.putText(img, f"Ratio: {ratio:.2f}", (legend_x, legend_y+95),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255,255,255), 2)
+        cv2.putText(img, f"Time: {timestamp}", (legend_x, legend_y+115),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (200,200,200), 2)
+
+        # save result
         out_path = os.path.join(folder, os.path.basename(self.filename))
         cv2.imwrite(out_path, img)
         self.last_saved_path = out_path

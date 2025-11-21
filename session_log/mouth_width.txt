@@ -1,40 +1,38 @@
 🖼️ Processing: 1762591407217.jpg, 1-th of 58 files
 Step 1️⃣: Click center of LEFT pupil.
-Point clicked: 210, 206
+Point clicked: 210, 208
 ✅ Left pupil center recorded. Step 2️⃣: Click center of RIGHT pupil.
-Point clicked: 324, 204
+Point clicked: 321, 204
 ✅ Right pupil recorded. Step 3️⃣: Click NASOLABIAL angle.
 draw line from p1 to p2
-Point clicked: 268, 288
+Point clicked: 268, 289
 draw line from p1 to p2
 ✅ Nasolabial angle recorded. Step 4️⃣: Click LEFT mouth corner.
-Point clicked: 216, 340
+Point clicked: 216, 338
 draw line from p1 to p2
 ✅ Left mouth corner recorded. Step 5️⃣: Click RIGHT mouth corner.
-Point clicked: 314, 340
+Point clicked: 310, 338
 draw line from p1 to p2
 ✅ Right mouth corner recorded. Step 6️⃣: Confirming all points…
-📏 Nose length: 87.01, Mouth width: 102.00, Ratio: 1.17
+📏 Nose length: 87.05, Mouth width: 98.00, Ratio: 1.13
 ✅ Saved to /home/dragonicbull/image_paranoid/tools/../images/output_images/mouth_width/1.1_or_more/1762591407217.jpg
-🖼️ Processing: head and shoulder shot photo_0.jpeg, 2-th of 58 files
+🗑️ Removed wrong result: /home/dragonicbull/image_paranoid/tools/../images/output_images/mouth_width/1.1_or_more/1762591407217.jpg
+🖼️ Processing: 1762591407217.jpg, 1-th of 58 files
 Step 1️⃣: Click center of LEFT pupil.
-🖼️ Processing: head and shoulder shot photo_1.jpeg, 3-th of 58 files
-Step 1️⃣: Click center of LEFT pupil.
-🖼️ Processing: head and shoulder shot photo_10.jpeg, 4-th of 58 files
-Step 1️⃣: Click center of LEFT pupil.
-Point clicked: 224, 199
+↩️ Reset current image. Please click again.
+Point clicked: 210, 208
 ✅ Left pupil center recorded. Step 2️⃣: Click center of RIGHT pupil.
-Point clicked: 287, 201
+Point clicked: 321, 204
 ✅ Right pupil recorded. Step 3️⃣: Click NASOLABIAL angle.
 draw line from p1 to p2
-Point clicked: 251, 244
+Point clicked: 267, 291
 draw line from p1 to p2
 ✅ Nasolabial angle recorded. Step 4️⃣: Click LEFT mouth corner.
-Point clicked: 219, 268
+Point clicked: 218, 339
 draw line from p1 to p2
 ✅ Left mouth corner recorded. Step 5️⃣: Click RIGHT mouth corner.
-Point clicked: 288, 268
+Point clicked: 310, 340
 draw line from p1 to p2
 ✅ Right mouth corner recorded. Step 6️⃣: Confirming all points…
-📏 Nose length: 44.18, Mouth width: 69.00, Ratio: 1.56
-✅ Saved to /home/dragonicbull/image_paranoid/tools/../images/output_images/mouth_width/1.1_or_more/head and shoulder shot photo_10.jpeg
+📏 Nose length: 89.02, Mouth width: 96.01, Ratio: 1.08
+✅ Saved to /home/dragonicbull/image_paranoid/tools/../images/output_images/mouth_width/0.9_to_1.1/1762591407217.jpg

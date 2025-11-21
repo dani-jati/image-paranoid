@@ -1,0 +1,7 @@
+🖼️ Processing: 1762591407217.jpg, 1-th of 58 files 
+Point clicked: 266, 169
+Point clicked: 270, 289
+Point clicked: 268, 411
+🧭 Auto-perspective : Side, 👁️ Please compare with your own visual judgment!
+📏 L1: 125.06, L2: 127.02, Ratio: 0.98
+✅ Saved to /home/dragonicbull/image_paranoid/tools/../images/output_images/midface_height/1_to_1.2/1762591407217.jpg

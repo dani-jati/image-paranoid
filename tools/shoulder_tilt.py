@@ -1,16 +1,17 @@
-import sys, os, cv2
+import sys, os, cv2, datetime
 from PySide6.QtWidgets import (
     QApplication, QMainWindow, QWidget, QVBoxLayout, QHBoxLayout,
     QLabel, QTextEdit, QSizePolicy, QComboBox, QFileDialog
 )
 from PySide6.QtCore import Qt, QPoint
 from PySide6.QtGui import QPixmap, QImage, QTextCursor, QPainter, QColor, QFont, QAction
-from PySide6.QtCore import QSettings
+from PySide6.QtCore import QSettings, Qt    
 
 # === Folders ===
 script_dir = os.path.dirname(os.path.abspath(__file__))
 input_folder = os.path.join(script_dir, "../images/input_images/shoulder_tilt")
 
+"""
 output_folder_high = os.path.join(script_dir, "../images/output_images/shoulder_tilt/16_or_above")
 output_folder_mid  = os.path.join(script_dir, "../images/output_images/shoulder_tilt/12.1_to_15.9")
 output_folder_low  = os.path.join(script_dir, "../images/output_images/shoulder_tilt/0_to_12")
@@ -19,6 +20,15 @@ os.makedirs(input_folder, exist_ok=True)
 os.makedirs(output_folder_high, exist_ok=True)
 os.makedirs(output_folder_mid, exist_ok=True)
 os.makedirs(output_folder_low, exist_ok=True)
+"""
+
+output_folders = {
+    "high": os.path.join(script_dir, "../images/output_images/shoulder_tilt/16_or_more"),
+    "mid": os.path.join(script_dir, "../images/output_images/shoulder_tilt/12_to_16"),
+    "low": os.path.join(script_dir, "../images/output_images/shoulder_tilt/12_or_less"),
+}
+for folder in output_folders.values():
+    os.makedirs(folder, exist_ok=True)
 
 # Ensure symlink from cropper output to shoulder-tilt input
 cropper_output = os.path.join(script_dir, "../images/output_images/cropper")
@@ -80,7 +90,7 @@ def classify_perspective(p1, p2):
 class ClickableLabel(QLabel):
     def mousePressEvent(self, event):
         if event.button() == Qt.LeftButton and hasattr(self, "parent_dash"):
-            self.parent_dash.register_click(event.pos())
+            self.parent_dash.on_click(event)
 
 # === Dashboard ===
 class Dashboard(QMainWindow):
@@ -175,7 +185,8 @@ class Dashboard(QMainWindow):
         layout.addWidget(self.log)
 
         # State
-        self.current_img = None
+        self.clicks = []
+        self.raw_img = None
         self.filename = None
         # self.files = self.load_images_from_folder(self.source_folder)
         # self.load_images_from_folder(self.source_folder)
@@ -288,14 +299,14 @@ class Dashboard(QMainWindow):
 
     def load_image(self, filename):
         self.filename = filename
-        self.current_img = cv2.imread(filename)
+        self.raw_img = cv2.imread(filename)
 
-        if self.current_img is None:
+        if self.raw_img is None:
             self.add_log(f"⚠️ Could not load {filename}")
             return
 
         self.proc_label.setPixmap(
-            cvimg_to_qpix(self.current_img).scaled(
+            cvimg_to_qpix(self.raw_img).scaled(
                 self.proc_label.width(), self.proc_label.height(),
                 Qt.KeepAspectRatio, Qt.SmoothTransformation
             )
@@ -310,11 +321,20 @@ class Dashboard(QMainWindow):
         self.view_selector.setCurrentIndex(0)
         self.view_selector.hide()
 
-    def register_click(self, pos):
+    def on_click(self, event):
+        pos = event.position().toPoint()
+
+        # store plain coordinates
         self.clicks.append(pos)
         self.add_log(f"Point clicked: {pos.x()}, {pos.y()}")
 
-        if self.current_img is None:
+        step = len(self.clicks)
+
+        if step == 1:
+            self.add_log("✅ first point of shoulder contour recorded.")
+            self.add_log("2️⃣: Click last point of shoulder contour!")
+
+        if self.raw_img is None:
             return
 
         # Get display pixmap and widget size
@@ -337,20 +357,45 @@ class Dashboard(QMainWindow):
             self.add_log("⚠️ Click outside image area")
             return
 
+        # copy image
+        img_copy = self.raw_img.copy()
+
         # Scale to original image coordinates
-        h, w = self.current_img.shape[:2]
+        h, w = self.raw_img.shape[:2]
         scale_x, scale_y = w / disp_w, h / disp_h
         cx, cy = int(px * scale_x), int(py * scale_y)
 
-        # Draw dots for all clicks so far
-        img_copy = self.current_img.copy()
+        # Draw all clicked points so far
+        coords = []
         for i, p in enumerate(self.clicks):
             # Recalculate each click with offset correction
             px = p.x() - offset_x
             py = p.y() - offset_y
             cx, cy = int(px * scale_x), int(py * scale_y)
-            color = (0, 255, 0) if i == 0 else (255, 0, 0)
-            cv2.circle(img_copy, (cx, cy), 6, color, -1)
+            coords.append((cx, cy))
+            cv2.circle(img_copy, (cx, cy), 5, (0, 255, 0), -2)
+
+            cv2.putText(img_copy, f"{i+1}", (cx-5, cy+20), 
+                cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 0), 3)
+            cv2.putText(img_copy, f"{i+1}", (cx-5, cy+20), 
+                cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 255), 2)
+
+        if step >=2:
+            self.add_log("draw line from p1 to p2")
+            p1,p2 = coords[0], coords[1]
+            cv2.line(img_copy, p1, p2, (0,255,0), 2)
+            cv2.putText(img_copy, "Shoulder line", (p1[0]-30, p1[1]+35),
+                    cv2. FONT_HERSHEY_SIMPLEX, 0.5, (90,255,255), 2)
+
+            # Infer nose anchor (midpoint above shoulders)
+            nose_x = (p1[0] + p2[0]) // 2
+            nose_y = min(p1[1], p2[1]) - 60
+            neck_p1 = (nose_x, nose_y)
+            neck_p2 = (nose_x, max(p1[1], p2[1]))
+
+            # Draw upright line (blue)
+            cv2.line(img_copy, neck_p1, neck_p2, (255, 0, 0), 2)
+
 
         # Update preview
         self.proc_label.setPixmap(
@@ -368,9 +413,9 @@ class Dashboard(QMainWindow):
 
 
     def process_points(self, points):
-        if len(points) != 2 or self.current_img is None:
+        if len(points) != 2 or self.raw_img is None:
             return
-        img_copy = self.current_img.copy()
+        img_copy = self.raw_img.copy()
         h, w = img_copy.shape[:2]
 
         pixmap = self.proc_label.pixmap()
@@ -392,6 +437,24 @@ class Dashboard(QMainWindow):
 
         # Draw shoulder line (red)
         cv2.line(img_copy, p1, p2, (0, 0, 255), 2)
+        cv2.putText(img_copy, "Shoulder line", (p1[0]-30, p1[1]+35),
+                    cv2. FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 3)
+        cv2.putText(img_copy, "Shoulder line", (p1[0]-30, p1[1]+35),
+                    cv2. FONT_HERSHEY_SIMPLEX, 0.5, (90,225,225), 2)
+
+        # Draw circles at shoulder line
+        cv2.circle(img_copy, p1, 6, (0, 0, 255), -1)
+        cv2.circle(img_copy, p2, 6, (0, 0, 255), -1)
+
+        cv2.putText(img_copy, "1", (p1[0]-5, p1[1]+20), 
+                cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 0), 3)
+        cv2.putText(img_copy, "1", (p1[0]-5, p1[1]+20), 
+                cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 255), 2)
+
+        cv2.putText(img_copy, "2", (p2[0]-5, p2[1]+20), 
+                cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 0), 3)
+        cv2.putText(img_copy, "2", (p2[0]-5, p2[1]+20), 
+                cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 255), 2)
 
         # Infer nose anchor (midpoint above shoulders)
         nose_x = (p1[0] + p2[0]) // 2
@@ -404,6 +467,7 @@ class Dashboard(QMainWindow):
 
         # Calculate tilt using true method
         tilt = calculate_true_tilt(p1, p2)
+        ratio = tilt
 
         # --- Perspective classification ---
         perspective = classify_perspective(p1, p2)
@@ -412,10 +476,55 @@ class Dashboard(QMainWindow):
         index_map = {"Unlabeled": 0, "Front": 1, "Diagonal": 2, "Side": 3}
         self.view_selector.setCurrentIndex(index_map[perspective])
         self.add_log(f"🧭 Auto-perspective : {perspective}, 👁️ Please compare with your own visual judgment!")
-
+        """
         # Annotate image
         cv2.putText(img_copy, f"Tilt: {tilt:.2f} deg", (30, 30),
                 cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 50), 2)
+        """
+
+        # Classification
+        if ratio >= 16:
+            folder = output_folders["high"]
+            classification = "High ( >= 16 )"
+        elif 12 < ratio < 16:
+            folder = output_folders["mid"]
+            classification = "Mid (12 < ratio < 16 )"
+        elif ratio <= 12:
+            folder = output_folders["low"]
+            classification = "Narrow ( < 12 )"
+        else:
+            self.add_log("⚠️ Ratio out of range. Skipped.")
+            return
+
+        # Legend box
+        legend_x, legend_y = 0,0
+        cv2.rectangle(img_copy, (legend_x-10, legend_y-20),
+                      (legend_x+240, legend_y+110), (0,0,0), -1)
+        cv2.rectangle(img_copy, (legend_x-10, legend_y-20),
+                      (legend_x+240, legend_y+110), (255,255,255), 1)
+
+        cv2.putText(img_copy, "Legend:", (legend_x, legend_y-5),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255,255,255), 1)
+        cv2.putText(img_copy, "Red = Shoulder line", (legend_x, legend_y+15),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,255), 1)
+        cv2.putText(img_copy, "Blue = Nose line", (legend_x, legend_y+35),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255,0,0), 1)
+
+
+
+        # Classification
+        cv2.putText(img_copy, f"Result: {classification}", (legend_x, legend_y+55),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255,255,255), 1)
+
+        cv2.putText(img_copy, f"Degree: {ratio:.2f}", (legend_x, legend_y+75),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255,255,255), 1)
+
+        # Timestamp
+        timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+
+        cv2.putText(img_copy, f"Time: {timestamp}", (legend_x, legend_y+95),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (200,200,200), 1)
+
 
         self.result_label.setPixmap(
             cvimg_to_qpix(img_copy).scaled(
@@ -424,21 +533,26 @@ class Dashboard(QMainWindow):
             )
         )
 
+        # save image result
+        """
         if tilt >= 16:
-            out_path = os.path.join(output_folder_high + "/" + perspective + "_view", os.path.basename(self.filename))
+            out_path = os.path.join(folder + "/" + perspective + "_view", os.path.basename(self.filename))
             self.add_log(f"📐 Tilt: {tilt:.2f}°")
         elif tilt >12 and tilt < 16:
-            out_path = os.path.join(output_folder_mid + "/" + perspective + "_view", os.path.basename(self.filename))
+            out_path = os.path.join(folder + "/" + perspective + "_view", os.path.basename(self.filename))
             self.add_log(f"📐 Tilt: {tilt:.2f}°")
         elif tilt >=0 and tilt <= 12:
-            out_path = os.path.join(output_folder_low + "/" + perspective + "_view" , os.path.basename(self.filename))
+            out_path = os.path.join(folder + "/" + perspective + "_view" , os.path.basename(self.filename))
             self.add_log(f"📐 Tilt: {tilt:.2f}°")
         else:
             self.add_log(f"⚠️ Tilt {tilt:.2f} not in save range. Skipped.")
             self.processed = True
             return
+        """
 
-        os.makedirs( os.path.join(output_folder_high + "/" + perspective + "_view") , exist_ok=True)
+        out_path = os.path.join(folder + "/" + perspective + "_view", os.path.basename(self.filename))
+
+        os.makedirs( os.path.join(folder + "/" + perspective + "_view") , exist_ok=True)
 
         cv2.imwrite(out_path, img_copy)
         self.last_saved_path = out_path
@@ -496,7 +610,7 @@ class Dashboard(QMainWindow):
             self.add_log("ℹ️ File already in correct folder.")
 
         # Instead of saving Qt pixmap, save annotated OpenCV image
-        # cv2.imwrite(out_path, self.current_img)
+        # cv2.imwrite(out_path, self.raw_img)
 
         # self.add_log(f"✅ Saved to {out_path}")
 

@@ -1,4 +1,4 @@
-import sys, os, cv2
+import sys, os, cv2, datetime
 from PySide6.QtWidgets import (
     QApplication, QMainWindow, QWidget, QVBoxLayout, QHBoxLayout,
     QLabel, QTextEdit, QComboBox
@@ -183,11 +183,19 @@ class Dashboard(QMainWindow):
 
     def on_click(self, event):
         pos = event.position().toPoint()
+
         # store plain coordinates
         self.clicks.append((pos.x(), pos.y()))
         self.add_log(f"Point clicked: {pos.x()}, {pos.y()}")
 
+        step = len(self.clicks)
 
+        if step == 1:
+            self.add_log("✅ The leftist point of face contour recorded.")
+            self.add_log("2️⃣: Click the rightest point of face contour!")
+
+        if self.raw_img is None:
+            return
 
         # copy image and draw grid
         img_copy = draw_black_grid(self.raw_img.copy(), spacing_px=40)
@@ -198,10 +206,69 @@ class Dashboard(QMainWindow):
         scale_x, scale_y = w / disp_w, h / disp_h
 
         # draw all points so far
+        coords = []
         for i, (x, y) in enumerate(self.clicks):
             cx, cy = int(x * scale_x), int(y * scale_y)
-            color = (0, 255, 0) if i == 0 else (255, 0, 0)
-            cv2.circle(img_copy, (cx, cy), 5, color, -1)  # small dot
+            coords.append((cx, cy))
+
+            if i == 0:
+                cv2.circle(img_copy, (cx, cy), 5, (0, 255, 0), -1)
+            if i == 1:
+                cv2.circle(img_copy, (cx, cy), 5, (0, 255, 0), -1)
+            if i == 2:
+                cv2.circle(img_copy, (cx, cy), 5, (255, 0, 0), -1)
+            if i == 3:
+                cv2.circle(img_copy, (cx, cy), 5, (255, 0, 0), -1)
+
+            cv2.putText(img_copy, f"{i+1}", (cx-5, cy+20),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 3)
+            cv2.putText(img_copy, f"{i+1}", (cx-5, cy+20),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (90,255,255), 2)
+
+        if step >= 2:
+            self.add_log("draw line from p1 to p2")
+            p1,p2 = coords[0], coords[1]
+            cv2.line(img_copy, p1, p2, (0,255,0), 1)
+            cv2.putText(img_copy, "Head line", (p1[0], p1[1]-10),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 3)
+            cv2.putText(img_copy, "Head line", (p1[0], p1[1]-10),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,255,0), 2)
+
+        if step >= 4:
+            self.add_log("draw line from p3 to p4")
+            p3,p4 = coords[2], coords[3]
+            cv2.line(img_copy, p3, p4, (255,0,0), 1)
+            cv2.putText(img_copy, "Shoulder line", (p3[0], p4[1]+20),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 3)
+            cv2.putText(img_copy, "Shoulder line", (p3[0], p4[1]+20),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,255,0), 2)
+
+            # Divide second line into 3 parts
+            dx = ( p4[0] - p3[0] ) / 3.0
+            dy = ( p4[1] - p3[1] ) / 3.0
+
+            div1 = (int(p3[0] + dx), int(p3[1] + dy))
+            div2 = (int(p3[0] + 2*dx), int(p3[1] + 2*dy))
+
+            # Draw vertical separator lines
+            line_length = 400
+            cv2.line(img_copy, (div1[0], div1[1] - line_length), (div1[0], div1[1]), (0, 255, 255), 2)
+            cv2.line(img_copy, (div2[0], div2[1] - line_length), (div2[0], div2[1]), (0, 255, 255), 2)
+
+            # Draw small circles at division points
+            cv2.circle(img_copy, div1, 5, (0, 255, 255), -1)
+            cv2.circle(img_copy, div2, 5, (0, 255, 255), -1)
+
+            # Add labels below the division points
+            cv2.putText(img_copy, "1/3", (div1[0] - 10, div1[1] + 20),
+                cv2.FONT_HERSHEY_SIMPLEX, 0.4, (0, 0, 0), 3)
+            cv2.putText(img_copy, "1/3", (div1[0] - 10, div1[1] + 20),
+                cv2.FONT_HERSHEY_SIMPLEX, 0.4, (0, 255, 255), 2)
+
+            cv2.putText(img_copy, "2/3", (div2[0] - 10, div2[1] + 20),
+                cv2.FONT_HERSHEY_SIMPLEX, 0.4, (0, 0, 0), 3)
+            cv2.putText(img_copy, "2/3", (div2[0] - 10, div2[1] + 20),
+                cv2.FONT_HERSHEY_SIMPLEX, 0.4, (0, 255, 255), 2)
 
         # update preview
         self.proc_label.setPixmap(
@@ -226,11 +293,37 @@ class Dashboard(QMainWindow):
 
         p1, p2, p3, p4 = [to_coords(p) for p in self.clicks]
 
+        for i, (x, y) in enumerate(self.clicks):
+            cx, cy = int(x * scale_x), int(y * scale_y)
+
+            cv2.putText(img, f"{i+1}", (cx-5, cy+20),   
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 3)
+            cv2.putText(img, f"{i+1}", (cx-5, cy+20),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (90,255,255), 2)
+
+
         # First line
         cv2.line(img, p1, p2, (0, 255, 0), 2)
+        cv2.circle(img, p1, 5, (0, 255, 0), -1)
+        cv2.circle(img, p2, 5, (0, 255, 0), -1)
+
+        # labelling first line
+        cv2.putText(img, "Head line", (p1[0], p1[1]-10),
+                cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 3)
+        cv2.putText(img, "Head line", (p1[0], p1[1]-10),
+                cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,255,0), 2)
+
 
         # Second line
         cv2.line(img, p3, p4, (255, 0, 0), 2)
+        cv2.circle(img, p3, 5, (255, 0, 0), -1)
+        cv2.circle(img, p4, 5, (255, 0, 0), -1)
+
+        # labelling second line
+        cv2.putText(img, "Shoulder line", (p3[0]+20, p4[1]+20),
+                cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 3)
+        cv2.putText(img, "Shoulder line", (p3[0]+20, p4[1]+20),
+                cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,255,0), 2)
 
         # Divide second line into 3 parts
         dx = ( p4[0] - p3[0] ) / 3.0
@@ -242,34 +335,16 @@ class Dashboard(QMainWindow):
             div = (int(p3[0] + i * dx), int(p3[1] + i * dy))
 
             # Draw vertical separator lines
-            cv2.line(img, (div[0], div[1] - line_length), (div[0], div[1]), (255, 255, 255), 1)
+            cv2.line(img, (div[0], div[1] - line_length), (div[0], div[1]), (0, 255, 255), 1)
 
             # Draw small circles at division points
             cv2.circle(img, div, 5, (0, 255, 255), -1)
 
             # Add labels below the division points
-            cv2.putText(img, f"{i}", (div[0] - 20, div[1] + 20),
-                cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0, 255, 255), 1)
-
-        """
-        div1 = (int(p3[0] + dx), int(p3[1] + dy))
-        div2 = (int(p3[0] + 2*dx), int(p3[1] + 2*dy))
-
-        # Draw vertical separator lines
-        
-        cv2.line(img, (div1[0], div1[1] - line_length), (div1[0], div1[1]), (0, 255, 255), 2)
-        cv2.line(img, (div2[0], div2[1] - line_length), (div2[0], div2[1]), (0, 255, 255), 2)
-
-        # Draw small circles at division points
-        cv2.circle(img, div1, 5, (0, 255, 255), -1)
-        cv2.circle(img, div2, 5, (0, 255, 255), -1)
-
-        # Add labels below the division points
-        cv2.putText(img, "1/3", (div1[0] - 40, div1[1] + 20),
-            cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0, 255, 255), 2)
-        cv2.putText(img, "2/3", (div2[0] - 40, div2[1] + 20),
-            cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0, 255, 255), 2)
-        """
+            cv2.putText(img, f"{i}/3", (div[0] - 10, div[1] + 20),
+                cv2.FONT_HERSHEY_SIMPLEX, 0.4, (0, 0, 0), 3)
+            cv2.putText(img, f"{i}/3", (div[0] - 10, div[1] + 20),
+                cv2.FONT_HERSHEY_SIMPLEX, 0.4, (0, 255, 255), 2)
 
         L1 = euclidean(p1, p2)
         L2 = euclidean(p3, p4)
@@ -283,20 +358,60 @@ class Dashboard(QMainWindow):
         self.view_selector.setCurrentIndex(index_map[perspective])
         self.add_log(f"🧭 Auto-perspective : {perspective}, 👁️ Please compare with your own visual judgment!")
 
-
+        """
         cv2.putText(img, f"Ratio: {ratio:.2f}", (30, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 0), 2)
         self.add_log(f"📏 L1: {L1:.2f}, L2: {L2:.2f}, Ratio: {ratio:.2f}")
+        """
+
+
 
         if ratio > 1.65:
             folder = output_folders["wide"]
+            classification = "Wide ( > 1.65 )"
         elif 1.35 <= ratio <= 1.65:
             folder = output_folders["mid"]
+            classification = "Mid ( 1.35 - 1.65 )"
         elif 0 <= ratio < 1.35:
             folder = output_folders["narrow"]
+            classification = "Narrow ( 0 - 1.35 )"
         else:
             self.add_log("⚠️ Ratio out of range. Skipped.")
+            classification = "Out of range"
             return
 
+        # Timestamp
+        timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+
+        # Legend box
+        legend_x, legend_y = 0, 0
+        cv2.rectangle(img, (legend_x-10, legend_y-20),
+                      (legend_x+240, legend_y+130), (0,0,0), -1)
+        cv2.rectangle(img, (legend_x-10, legend_y-20),
+                      (legend_x+240, legend_y+130), (255,255,255), 1)
+
+        cv2.putText(img, "Legend:", (legend_x, legend_y-5),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255,255,255), 2)
+        cv2.putText(img, "Green = Head line", (legend_x, legend_y+15),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,255,0), 2)
+        cv2.putText(img, "Yellow = Thirds", (legend_x, legend_y+35),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,255,255), 2)
+        cv2.putText(img, "Blue = Shoulder line", (legend_x, legend_y+55),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255,0,0), 2)
+
+        """
+        cv2.putText(img, "Red = Mouth line", (legend_x, legend_y+75),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,255), 1)
+        """
+
+        # Classification + ratio + timestamp
+        cv2.putText(img, f"Result: {classification}", (legend_x, legend_y+75),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255,255,255), 2)
+        cv2.putText(img, f"Ratio: {ratio:.2f}", (legend_x, legend_y+95),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255,255,255), 2)
+        cv2.putText(img, f"Time: {timestamp}", (legend_x, legend_y+115),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (200,200,200), 2)
+
+        # save result
         out_path = os.path.join(folder, os.path.basename(self.filename))
         cv2.imwrite(out_path, img)
         self.last_saved_path = out_path

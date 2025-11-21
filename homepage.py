@@ -14,7 +14,7 @@ from tools.midface_height import Dashboard as MidFaceHeightTool
 from tools.forehead_height import Dashboard as ForeheadHeightTool
 from tools.neck_width import Dashboard as NeckWidthTool
 from tools.head_size import Dashboard as HeadSizeTool
-from tools.bicanthalplane_width import Dashboard as BicanthalplaneWidthTool
+from tools.interocular_width import Dashboard as interocularWidthTool
 from tools.mouth_width import Dashboard as MouthWidthTool
 from tools.cropper import Dashboard as CropperTool
 
@@ -47,7 +47,7 @@ class HomePage(QMainWindow):
             ("icons/forehead-height.png", "Forehead Height", self.open_forehead_height),
             ("icons/neck-width.png", "Neck Width", self.open_neck_width),
             ("icons/head-size.png", "Head Size", self.open_head_size),
-            ("icons/bicanthalplane-width.png", "Bicanthalplane Width", self.open_bicanthalplane_width),
+            ("icons/interocular-width.png", "interocular Width", self.open_interocular_width),
             ("icons/mouth-width.png", "Mouth Width", self.open_mouth_width),
         ]
 
@@ -109,8 +109,8 @@ class HomePage(QMainWindow):
         self.tool = HeadSizeTool()
         self.tool.show()
 
-    def open_bicanthalplane_width(self):
-        self.tool = BicanthalplaneWidthTool()
+    def open_interocular_width(self):
+        self.tool = interocularWidthTool()
         self.tool.show()
 
     def open_mouth_width(self):

@@ -1,4 +1,4 @@
-import sys, os, cv2
+import sys, os, cv2, datetime
 from PySide6.QtWidgets import (
     QApplication, QMainWindow, QWidget, QVBoxLayout, QHBoxLayout,
     QLabel, QTextEdit, QComboBox
@@ -26,9 +26,9 @@ else:
 print("Symlink points to:", os.readlink(forehead_height_input))
 
 output_folders = {
-    "high": os.path.join(script_dir, "../images/output_images/forehead_height/0.75_or_more"),
-    "mid": os.path.join(script_dir, "../images/output_images/forehead_height/0.5_to_0.75"),
-    "low": os.path.join(script_dir, "../images/output_images/forehead_height/0_to_0.5"),
+    "high": os.path.join(script_dir, "../images/output_images/forehead_height/0.37_or_more"),
+    "mid": os.path.join(script_dir, "../images/output_images/forehead_height/0.26_to_0.36"),
+    "short": os.path.join(script_dir, "../images/output_images/forehead_height/0_to_0.25"),
 }
 for folder in output_folders.values():
     os.makedirs(folder, exist_ok=True)
@@ -183,9 +183,19 @@ class Dashboard(QMainWindow):
 
     def on_click(self, event):
         pos = event.position().toPoint()
+
         # store plain coordinates
         self.clicks.append((pos.x(), pos.y()))
         self.add_log(f"Point clicked: {pos.x()}, {pos.y()}")
+
+        step = len(self.clicks)
+
+        if step == 1:
+            self.add_log("✅ Glabella recorded.")
+            self.add_log("2️⃣: Click most medial contour of hair border!")
+
+        if self.raw_img is None:
+            return
 
         # copy image and draw grid
         img_copy = draw_black_grid(self.raw_img.copy(), spacing_px=40)
@@ -195,30 +205,66 @@ class Dashboard(QMainWindow):
         disp_w, disp_h = self.proc_label.width(), self.proc_label.height()
         scale_x, scale_y = w / disp_w, h / disp_h
 
-        """
         # draw all points so far
+        coords = []
         for i, (x, y) in enumerate(self.clicks):
             cx, cy = int(x * scale_x), int(y * scale_y)
-            color = (0, 255, 0) if i == 0 else (255, 0, 0)
-            cv2.circle(img_copy, (cx, cy), 5, color, -1)  # small dot
-        """
+            coords.append((cx, cy))
 
-        # draw all points so far
-        for i, (x, y) in enumerate(self.clicks):
-            cx, cy = int(x * scale_x), int(y * scale_y)
             if i == 0:
-                color = (0, 255, 0)      # Green
+                cv2.circle(img_copy, (cx, cy), 5, (0,255,0), -1)  # small dot
+                cv2.putText(img_copy, f"{i+1}", (cx+3, cy+5),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 3)
+                cv2.putText(img_copy, f"{i+1}", (cx+3, cy+5),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (90,255,255), 2)
+                cv2.line(img_copy, (cx, cy-400), (cx, cy+400), (200, 200, 200), 2)
+
+                cx1, cy1 = cx, cy
             elif i == 1:
-                color = (255, 0, 0)      # Blue
+                cv2.circle(img_copy, (cx, cy), 5, (0,255,0), -1)  # small dot
+                cv2.putText(img_copy, f"{i+1}", (cx+3, cy+5),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 3)
+                cv2.putText(img_copy, f"{i+1}", (cx+3, cy+5),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (90,255,255), 2)
+
+                cv2.line(img_copy, (cx1, cy1), (cx, cy), (0, 255, 0), 2)
+
+                cv2.putText(img_copy, "Forehead height", (cx1+5, cy1+25),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 3)
+                cv2.putText(img_copy, "Forehead height", (cx1+5, cy1+25),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,255,0), 2)
+
+                cv2.circle(img_copy, (cx-20, cy1), 5, (255,0,0), -1)  # small dot
+                cv2.putText(img_copy, f"{i+2}", (cx-40, cy1+3),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 3)
+                cv2.putText(img_copy, f"{i+2}", (cx-40, cy1+3),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (90,255,255), 2)
+
+                cx3,cy3 = cx-20,cy1
+
+                cv2.line(img_copy, (cx3, cy3-400), (cx3, cy3+400), (200, 200, 200), 2)
+
+                if len(self.clicks) < 4:
+                   self.clicks.append((cx-20, cy1))
+
             elif i == 2:
                 color = (0, 0, 255)      # Red
-            else:
-                color = (255, 255, 255)  # White or fallback
-            cv2.circle(img_copy, (cx, cy), 5, color, -1)
+            elif i == 3:
+                color = (0, 0, 255)      # Red
+                #cv2.circle(img_copy, (cx, cy), 5, (0,255,0), -1)  # small dot
 
+                cv2.circle(img_copy, (cx, cy), 5, (255,0,0), -1)  # small dot
+                cv2.putText(img_copy, f"{i+1}", (cx-20, cy+0),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 3)
+                cv2.putText(img_copy, f"{i+1}", (cx-20, cy+0),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (90,255,255), 2)
 
+                cv2.line(img_copy, (cx3, cy3), (cx, cy), (255, 0, 0), 2)
 
-
+                cv2.putText(img_copy, "Face height", (cx3-100, cy3+85),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 3)
+                cv2.putText(img_copy, "Face height", (cx3-100, cy3+85),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,255,0), 2)
 
         # update preview
         self.proc_label.setPixmap(
@@ -227,10 +273,11 @@ class Dashboard(QMainWindow):
                 Qt.KeepAspectRatio, Qt.SmoothTransformation
             )
          )
-
-        if len(self.clicks) == 3:
+        print( len(self.clicks) )
+        print( self.clicks )
+        if len(self.clicks) == 4:
             # Automatically duplicate point 2 as point 3
-            self.clicks.insert(2, self.clicks[1])
+            # self.clicks.insert(2, self.clicks[1])
             self.process_clicks()
 
     def process_clicks(self):
@@ -242,11 +289,63 @@ class Dashboard(QMainWindow):
         def to_coords(p):  # p is a tuple (x, y)
             return int(p[0] * scale_x), int(p[1] * scale_y)
 
+        # numbering click order
+        for i, (x, y) in enumerate(self.clicks):
+            cx, cy = int(x * scale_x), int(y * scale_y)
+            if i==0:
+                cv2.putText(img, f"{i+1}", (cx+5, cy+10),
+                        cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 3)
+                cv2.putText(img, f"{i+1}", (cx+5, cy+10),
+                        cv2.FONT_HERSHEY_SIMPLEX, 0.5, (90,255,255), 2)
+            if i==1:
+                cv2.putText(img, f"{i+1}", (cx+5, cy+10),
+                        cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 3)
+                cv2.putText(img, f"{i+1}", (cx+5, cy+10),
+                        cv2.FONT_HERSHEY_SIMPLEX, 0.5, (90,255,255), 2)
+            if i==2:
+                cv2.putText(img, f"{i+1}", (cx-20, cy+15),
+                        cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 3)
+                cv2.putText(img, f"{i+1}", (cx-20, cy+15),
+                        cv2.FONT_HERSHEY_SIMPLEX, 0.5, (90,255,255), 2)
+            if i==3:
+                cv2.putText(img, f"{i+1}", (cx-20, cy+15),
+                        cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 3)
+                cv2.putText(img, f"{i+1}", (cx-20, cy+15),
+                        cv2.FONT_HERSHEY_SIMPLEX, 0.5, (90,255,255), 2)
+
         p1, p2, p3, p4 = [to_coords(p) for p in self.clicks]
 
+        # First line
         cv2.line(img, p1, p2, (0, 255, 0), 2)
+
+        # Draw small circles at first-line start
+        cv2.circle(img, p1, 5, (0, 255, 0), -1)
+
+        # Draw small circles at first-line end
+        cv2.circle(img, p2, 5, (0, 255, 0), -1)
+
+        # Labelling first line
+        cv2.putText(img, "Forehead height", (p1[0]+10, p1[1]+30),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 3)
+        cv2.putText(img, "Forehead height", (p1[0]+10, p1[1]+30),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,255,0), 2)
+
+        # Second line
         cv2.line(img, p3, p4, (255, 0, 0), 2)
 
+        # Draw small circles at start points
+        cv2.circle(img, p3, 5, (255, 0, 0), -1)
+
+        # Draw small circles at end points
+        cv2.circle(img, p4, 5, (255, 0, 0), -1)
+
+        # Labelling second line
+        cv2.putText(img, "Face height", (p3[0]-90, p3[1]+120),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 3)
+        cv2.putText(img, "Face height", (p3[0]-90, p3[1]+120),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,255,0), 2)
+
+        # calculate distance
         L1 = euclidean(p1, p2)
         L2 = euclidean(p3, p4)
         ratio = L1 / L2 if L1 else 0
@@ -263,16 +362,51 @@ class Dashboard(QMainWindow):
         cv2.putText(img, f"Ratio: {ratio:.2f}", (30, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 0), 2)
         self.add_log(f"📏 L1: {L1:.2f}, L2: {L2:.2f}, Ratio: {ratio:.2f}")
 
-        if ratio > 0.75:
+        # classification
+        if ratio > 0.38:
             folder = output_folders["high"]
-        elif 0.5 <= ratio <= 0.75:
+            classification = "Hight ( >= 0.37 )"
+        elif 0.26 <= ratio <= 0.37:
             folder = output_folders["mid"]
-        elif 0 <= ratio < 0.5:
-            folder = output_folders["low"]
+            classification = "Mid ( 0.26 - 0.37 )"
+        elif 0 <= ratio <= 0.25:
+            folder = output_folders["short"]
+            classification = "Short ( <= 0.25 )"
         else:
             self.add_log("⚠️ Ratio out of range. Skipped.")
+            classificaton = "Out of range"
             return
 
+        # Timestamp
+        timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+
+        # Legend box
+        legend_x, legend_y = 0, 0
+        cv2.rectangle(img, (legend_x-10, legend_y-20),
+                      (legend_x+240, legend_y+110), (0,0,0), -1)
+        cv2.rectangle(img, (legend_x-10, legend_y-20),
+                      (legend_x+240, legend_y+110), (255,255,255), 1)
+
+        
+        cv2.putText(img, "Legend:", (legend_x, legend_y-5),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255,255,255), 2)
+        cv2.putText(img, "Green = Forehead height", (legend_x, legend_y+15),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,255,0), 2)
+        # cv2.putText(img, "Yellow = Thirds", (legend_x, legend_y+35),
+        #             cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,255,255), 2)
+        cv2.putText(img, "Blue = Shoulder line", (legend_x, legend_y+35),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255,0,0), 2)        
+
+        # Classification + ratio + timestamp
+        cv2.putText(img, f"Result: {classification}", (legend_x, legend_y+55),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255,255,255), 2)
+        cv2.putText(img, f"Ratio: {ratio:.2f}", (legend_x, legend_y+75),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255,255,255), 2)
+        cv2.putText(img, f"Time: {timestamp}", (legend_x, legend_y+95),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (200,200,200), 2)
+        
+
+        # save result
         out_path = os.path.join(folder, os.path.basename(self.filename))
         cv2.imwrite(out_path, img)
         self.last_saved_path = out_path
