@@ -104,3 +104,50 @@ Point clicked: 245, 333
 📏 L1: 49.00, L2: 203.00, Ratio: 0.24
 ✅ Saved to /home/dragonicbull/image_paranoid/tools/../images/output_images/forehead_height/0_to_0.25/head and shoulder shot photo_16.jpeg
 🖼️ Processing: head and shoulder shot photo_19.jpeg, 10-th of 58 files 
+🖼️ Processing: head and shoulder shot photo_19.jpeg, 10-th of 58 files 
+Point clicked: 228, 100
+✅ Glabella recorded.
+2️⃣: Click most medial contour of hair border!
+Point clicked: 231, 174
+Point clicked: 212, 342
+🧭 Auto-perspective : Side, 👁️ Please compare with your own visual judgment!
+📏 L1: 74.06, L2: 242.00, Ratio: 0.31
+✅ Saved to /home/dragonicbull/image_paranoid/tools/../images/output_images/forehead_height/0.26_to_0.36/head and shoulder shot photo_19.jpeg
+🗑️ Removed wrong result: /home/dragonicbull/image_paranoid/tools/../images/output_images/forehead_height/0.26_to_0.36/head and shoulder shot photo_19.jpeg
+🖼️ Processing: head and shoulder shot photo_19.jpeg, 10-th of 58 files 
+↩️ Reset current image. Please click again.
+Point clicked: 237, 100
+✅ Glabella recorded.
+2️⃣: Click most medial contour of hair border!
+Point clicked: 225, 172
+🖼️ Processing: head and shoulder shot photo_19.jpeg, 10-th of 58 files 
+↩️ Reset current image. Please click again.
+Point clicked: 226, 102
+✅ Glabella recorded.
+2️⃣: Click most medial contour of hair border!
+Point clicked: 227, 177
+Point clicked: 208, 343
+🧭 Auto-perspective : Side, 👁️ Please compare with your own visual judgment!
+📏 L1: 75.01, L2: 241.00, Ratio: 0.31
+✅ Saved to /home/dragonicbull/image_paranoid/tools/../images/output_images/forehead_height/0.26_to_0.36/head and shoulder shot photo_19.jpeg
+🗑️ Removed wrong result: /home/dragonicbull/image_paranoid/tools/../images/output_images/forehead_height/0.26_to_0.36/head and shoulder shot photo_19.jpeg
+🖼️ Processing: head and shoulder shot photo_19.jpeg, 10-th of 58 files 
+↩️ Reset current image. Please click again.
+Point clicked: 228, 100
+✅ Glabella recorded.
+2️⃣: Click most medial contour of hair border!
+Point clicked: 228, 206
+🖼️ Processing: head and shoulder shot photo_19.jpeg, 10-th of 58 files 
+↩️ Reset current image. Please click again.
+Point clicked: 232, 97
+✅ Glabella recorded.
+2️⃣: Click most medial contour of hair border!
+Point clicked: 233, 204
+🖼️ Processing: head and shoulder shot photo_19.jpeg, 10-th of 58 files 
+↩️ Reset current image. Please click again.
+Point clicked: 233, 98
+✅ Glabella recorded.
+2️⃣: Click most medial contour of hair border!
+Point clicked: 236, 200
+🖼️ Processing: head and shoulder shot photo_19.jpeg, 10-th of 58 files 
+↩️ Reset current image. Please click again.

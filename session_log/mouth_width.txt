@@ -36,3 +36,51 @@ draw line from p1 to p2
 ✅ Right mouth corner recorded. Step 6️⃣: Confirming all points…
 📏 Nose length: 89.02, Mouth width: 96.01, Ratio: 1.08
 ✅ Saved to /home/dragonicbull/image_paranoid/tools/../images/output_images/mouth_width/0.9_to_1.1/1762591407217.jpg
+🖼️ Processing: head and shoulder shot photo_0.jpeg, 2-th of 58 files
+Step 1️⃣: Click center of LEFT pupil.
+Point clicked: 240, 187
+✅ Left pupil center recorded. Step 2️⃣: Click center of RIGHT pupil.
+Point clicked: 279, 189
+✅ Right pupil recorded. Step 3️⃣: Click NASOLABIAL angle.
+draw line from p1 to p2
+Point clicked: 246, 246
+draw line from p1 to p2
+✅ Nasolabial angle recorded. Step 4️⃣: Click LEFT mouth corner.
+🖼️ Processing: head and shoulder shot photo_0.jpeg, 2-th of 58 files
+Step 1️⃣: Click center of LEFT pupil.
+↩️ Reset current image. Please click again.
+Point clicked: 231, 188
+✅ Left pupil center recorded. Step 2️⃣: Click center of RIGHT pupil.
+Point clicked: 279, 185
+✅ Right pupil recorded. Step 3️⃣: Click NASOLABIAL angle.
+draw line from p1 to p2
+Point clicked: 246, 245
+draw line from p1 to p2
+✅ Nasolabial angle recorded. Step 4️⃣: Click LEFT mouth corner.
+🖼️ Processing: head and shoulder shot photo_0.jpeg, 2-th of 58 files
+Step 1️⃣: Click center of LEFT pupil.
+↩️ Reset current image. Please click again.
+Point clicked: 234, 186
+✅ Left pupil center recorded. Step 2️⃣: Click center of RIGHT pupil.
+Point clicked: 281, 191
+✅ Right pupil recorded. Step 3️⃣: Click NASOLABIAL angle.
+draw line from p1 to p2
+Point clicked: 242, 352
+draw line from p1 to p2
+✅ Nasolabial angle recorded. Step 4️⃣: Click LEFT mouth corner.
+🖼️ Processing: head and shoulder shot photo_0.jpeg, 2-th of 58 files
+Step 1️⃣: Click center of LEFT pupil.
+Point clicked: 238, 175
+✅ Left pupil center recorded. Step 2️⃣: Click center of RIGHT pupil.
+Point clicked: 266, 174
+✅ Right pupil recorded. Step 3️⃣: Click NASOLABIAL angle.
+draw line from p1 to p2
+🖼️ Processing: head and shoulder shot photo_0.jpeg, 2-th of 58 files
+Step 1️⃣: Click center of LEFT pupil.
+↩️ Reset current image. Please click again.
+🖼️ Processing: head and shoulder shot photo_0.jpeg, 2-th of 58 files
+Step 1️⃣: Click center of LEFT pupil.
+🖼️ Processing: head and shoulder shot photo_0.jpeg, 2-th of 58 files
+Step 1️⃣: Click center of LEFT pupil.
+🖼️ Processing: head and shoulder shot photo_0.jpeg, 2-th of 58 files
+Step 1️⃣: Click center of LEFT pupil.

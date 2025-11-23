@@ -16,6 +16,7 @@ from tools.neck_width import Dashboard as NeckWidthTool
 from tools.head_size import Dashboard as HeadSizeTool
 from tools.interocular_width import Dashboard as interocularWidthTool
 from tools.mouth_width import Dashboard as MouthWidthTool
+from tools.eye_altitude import Dashboard as EyeAltitudeTool
 from tools.cropper import Dashboard as CropperTool
 
 class HomePage(QMainWindow):
@@ -49,6 +50,8 @@ class HomePage(QMainWindow):
             ("icons/head-size.png", "Head Size", self.open_head_size),
             ("icons/interocular-width.png", "interocular Width", self.open_interocular_width),
             ("icons/mouth-width.png", "Mouth Width", self.open_mouth_width),
+            ("icons/eye-altitude.png", "Eye Altitude", self.open_eye_altitude),
+
         ]
 
         for i, (icon_path, name, callback) in enumerate(apps):
@@ -115,6 +118,10 @@ class HomePage(QMainWindow):
 
     def open_mouth_width(self):
         self.tool = MouthWidthTool()
+        self.tool.show()
+
+    def open_eye_altitude(self):
+        self.tool = EyeAltitudeTool()
         self.tool.show()
 
     def run_cropper_script(self):
