@@ -1,0 +1,432 @@
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_053.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_053.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_180.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_180.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_168.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_168.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_113.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_113.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_100.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_100.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_118.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_118.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_133.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_133.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_165.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_131.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_131.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_129.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_162.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_162.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_056.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_023.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_023.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_091.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_093.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_093.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_116.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_116.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_096.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_096.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_126.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_126.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_155.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_155.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_18.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_066.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_066.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_172.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_172.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_002.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_002.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_167.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_167.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_151.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_151.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_115.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_115.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_064.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_064.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_035.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_181.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_181.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_086.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_086.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_014.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_014.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_099.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_099.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_029.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_029.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_005a.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_005a.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_071.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_071.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_050.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_050.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_057.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_057.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_070.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_070.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_161.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_161.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_111.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_148.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_148.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_009.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_009.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_166.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_166.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_017.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_017.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_187.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_187.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_153.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_153.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_036.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_036.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/Untitled5.png
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/Untitled5.png
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_174.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_174.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/Untitled2.png
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/Untitled2.png
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/Untitled6.png
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/Untitled6.png
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_106.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_106.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_132.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_132.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_088.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_088.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_185.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_185.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_039.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_039.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_114.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_114.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_034.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_034.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_016.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_105.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_105.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_058.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_058.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_147.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_147.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_040.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_040.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_028.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_028.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_182.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_182.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_033.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_033.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_080.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_080.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_173.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_173.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_164.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_163.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_163.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_94.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_031.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_031.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_117.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_117.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_079.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_079.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_083.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_083.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_077.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_077.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_108.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_108.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_048.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_048.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_072.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_072.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/Untitled4.png
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_140.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_140.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_019.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_019.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_074.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_074.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_120.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_120.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_005.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_005.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_176.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_176.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_177.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_177.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_063.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_125.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_125.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_119.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_119.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_089.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_089.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_081.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_081.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_003.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_003.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_123.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_123.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_011.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_011.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_183.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_152.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_149.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_149.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_128.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_128.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_110.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_110.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_020.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_020.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_051.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_051.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_170.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_170.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_112.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_112.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_141.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_141.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_052.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_052.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/Untitled1.png
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/Untitled1.png
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_027.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_027.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_022.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_022.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_073.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_073.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_171.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_171.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_157.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_157.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_087.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_087.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_041.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_150.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_150.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_146.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_146.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_042.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_042.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_025.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_025.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_134.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_134.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_015.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_015.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_032.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_032.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_012.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_012.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_047.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_047.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_065.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_065.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_175.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_175.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_179.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_179.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_018.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_018.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_156.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_156.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_186.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_186.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_024.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_024.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_055.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_055.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_007.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_007.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_130.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_130.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_160.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_160.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_046.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_046.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_154.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_154.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_121.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_121.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_102.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_102.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_178.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_178.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_107.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_107.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_038.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_038.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_109.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_109.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_059.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_059.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_188.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_188.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_142.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_142.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_158.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_159.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_159.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_169.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_008.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/output_images/cropper/images_008.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_139.jpeg

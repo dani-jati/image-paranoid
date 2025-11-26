@@ -7,17 +7,19 @@ from PySide6.QtGui import QIcon
 from PySide6.QtCore import QSize, Qt
 
 # Import your tools
-from tools.shoulder_tilt import Dashboard as ShoulderTiltTool
-from tools.head_height import Dashboard as HeadHeightTool
+from tools.cropper import Dashboard as CropperTool
+
+from tools.eye_altitude import Dashboard as EyeAltitudeTool
+from tools.eye_inclination import Dashboard as EyeInclinationTool
 from tools.face_width import Dashboard as FaceWidthTool
-from tools.midface_height import Dashboard as MidFaceHeightTool
 from tools.forehead_height import Dashboard as ForeheadHeightTool
-from tools.neck_width import Dashboard as NeckWidthTool
+from tools.head_height import Dashboard as HeadHeightTool
 from tools.head_size import Dashboard as HeadSizeTool
 from tools.interocular_width import Dashboard as interocularWidthTool
+from tools.midface_height import Dashboard as MidFaceHeightTool
 from tools.mouth_width import Dashboard as MouthWidthTool
-from tools.eye_altitude import Dashboard as EyeAltitudeTool
-from tools.cropper import Dashboard as CropperTool
+from tools.neck_width import Dashboard as NeckWidthTool
+from tools.shoulder_tilt import Dashboard as ShoulderTiltTool
 
 class HomePage(QMainWindow):
     def __init__(self):
@@ -41,17 +43,17 @@ class HomePage(QMainWindow):
         # Define apps: (icon_path, label, callback)
         apps = [
             ("icons/cropper.png", "Cropper", self.run_cropper_script),
-            ("icons/shoulder-tilt.png", "Shoulder Tilt", self.open_shoulder_tilt),
-            ("icons/head-height.png", "Head Height", self.open_head_height),
+            ("icons/eye-altitude.png", "Eye Altitude", self.open_eye_altitude),
+            ("icons/eye-inclination.png", "Eye Inclination", self.open_eye_inclination),
             ("icons/face-width.png", "Face Width", self.open_face_width),
-            ("icons/midface-height.png", "Mid-Face Height", self.open_midface_height),
             ("icons/forehead-height.png", "Forehead Height", self.open_forehead_height),
-            ("icons/neck-width.png", "Neck Width", self.open_neck_width),
+            ("icons/head-height.png", "Head Height", self.open_head_height),
             ("icons/head-size.png", "Head Size", self.open_head_size),
             ("icons/interocular-width.png", "interocular Width", self.open_interocular_width),
+            ("icons/midface-height.png", "Mid-Face Height", self.open_midface_height),
             ("icons/mouth-width.png", "Mouth Width", self.open_mouth_width),
-            ("icons/eye-altitude.png", "Eye Altitude", self.open_eye_altitude),
-
+            ("icons/neck-width.png", "Neck Width", self.open_neck_width),
+            ("icons/shoulder-tilt.png", "Shoulder Tilt", self.open_shoulder_tilt),
         ]
 
         for i, (icon_path, name, callback) in enumerate(apps):
@@ -79,7 +81,7 @@ class HomePage(QMainWindow):
             vbox_widget = QWidget()
             vbox_widget.setLayout(vbox)
             vbox_widget.setSizePolicy(QSizePolicy.Fixed, QSizePolicy.Fixed)
-            grid.addWidget(vbox_widget, i // 2, i % 2, alignment=Qt.AlignCenter)
+            grid.addWidget(vbox_widget, i // 3, i % 3, alignment=Qt.AlignCenter)
 
             # Place in grid (2 columns)
             # grid.addLayout(vbox, i // 2, i % 2)
@@ -122,6 +124,10 @@ class HomePage(QMainWindow):
 
     def open_eye_altitude(self):
         self.tool = EyeAltitudeTool()
+        self.tool.show()
+
+    def open_eye_inclination(self):
+        self.tool = EyeInclinationTool()
         self.tool.show()
 
     def run_cropper_script(self):

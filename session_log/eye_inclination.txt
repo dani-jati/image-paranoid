@@ -1,0 +1,120 @@
+🖼️ Processing: 0_mata-saja.jpg, 1-th of 192 files 
+Point clicked: 43, 262
+✅ The leftist point of face contour recorded.
+2️⃣: Click the rightest point of face contour!
+Point clicked: 160, 267
+draw line from p1 to p2
+🖼️ Processing: 0_mata-saja.jpg, 1-th of 192 files 
+↩️ Reset current image. Please click again.
+🖼️ Processing: 0_mata-saja.jpg, 1-th of 192 files 
+Point clicked: 37, 263
+✅ The leftist point of face contour recorded.
+2️⃣: Click the rightest point of face contour!
+Point clicked: 161, 265
+draw line from p1 to p2
+🖼️ Processing: 0_mata-saja.jpg, 1-th of 192 files 
+↩️ Reset current image. Please click again.
+🖼️ Processing: 0_mata-saja.jpg, 1-th of 192 files 
+Point clicked: 40, 261
+✅ The leftist point of face contour recorded.
+2️⃣: Click the rightest point of face contour!
+Point clicked: 161, 266
+draw line from p1 to p2
+Point clicked: 362, 265
+draw line from p1 to p2
+draw line from p2 to p3
+Point clicked: 476, 263
+draw line from p1 to p2
+draw line from p2 to p3
+draw line from p3 to p4
+✅ Saved to straight/0_mata-saja.jpg
+🖼️ Processing: 0_mata-saja.jpg, 1-th of 192 files 
+↩️ Reset current image. Please click again.
+🖼️ Processing: 0_mata-saja.jpg, 1-th of 192 files 
+Point clicked: 39, 261
+✅ The leftist point of face contour recorded.
+2️⃣: Click the rightest point of face contour!
+Point clicked: 159, 266
+draw line from p1 to p2
+🖼️ Processing: 0_mata-saja.jpg, 1-th of 192 files 
+↩️ Reset current image. Please click again.
+🖼️ Processing: 0_mata-saja.jpg, 1-th of 192 files 
+Point clicked: 35, 261
+✅ The leftist point of face contour recorded.
+2️⃣: Click the rightest point of face contour!
+Point clicked: 161, 265
+draw line from p1 to p2
+Point clicked: 360, 268
+draw line from p1 to p2
+draw line from p2 to p3
+🖼️ Processing: 0_mata-saja.jpg, 1-th of 192 files 
+↩️ Reset current image. Please click again.
+🖼️ Processing: 0_mata-saja.jpg, 1-th of 192 files 
+Point clicked: 31, 263
+✅ The leftist point of face contour recorded.
+2️⃣: Click the rightest point of face contour!
+🖼️ Processing: 0_mata-saja.jpg, 1-th of 192 files 
+↩️ Reset current image. Please click again.
+🖼️ Processing: 0_mata-saja.jpg, 1-th of 192 files 
+Point clicked: 39, 263
+✅ The leftist point of face contour recorded.
+2️⃣: Click the rightest point of face contour!
+Point clicked: 159, 264
+draw line from p1 to p2
+Point clicked: 362, 264
+draw line from p1 to p2
+draw line from p2 to p3
+Point clicked: 471, 264
+draw line from p1 to p2
+draw line from p2 to p3
+draw line from p3 to p4
+✅ Saved to straight/0_mata-saja.jpg
+🖼️ Processing: 0_mata-saja.jpg, 1-th of 192 files 
+↩️ Reset current image. Please click again.
+🖼️ Processing: 0_mata-saja.jpg, 1-th of 192 files 
+Point clicked: 39, 263
+✅ The leftist point of face contour recorded.
+2️⃣: Click the rightest point of face contour!
+Point clicked: 162, 266
+draw line from p1 to p2
+🖼️ Processing: 0_mata-saja.jpg, 1-th of 192 files 
+↩️ Reset current image. Please click again.
+🖼️ Processing: 0_mata-saja.jpg, 1-th of 192 files 
+Point clicked: 39, 264
+✅ The leftist point of face contour recorded.
+2️⃣: Click the rightest point of face contour!
+Point clicked: 162, 266
+draw line from p1 to p2
+Point clicked: 362, 264
+draw line from p1 to p2
+draw line from p2 to p3
+🖼️ Processing: 0_mata-saja.jpg, 1-th of 192 files 
+↩️ Reset current image. Please click again.
+🖼️ Processing: 0_mata-saja.jpg, 1-th of 192 files 
+Point clicked: 38, 263
+✅ The leftist point of face contour recorded.
+2️⃣: Click the rightest point of face contour!
+Point clicked: 160, 265
+draw line from p1 to p2
+Point clicked: 361, 265
+draw line from p1 to p2
+draw line from p2 to p3
+Point clicked: 472, 264
+draw line from p1 to p2
+draw line from p2 to p3
+draw line from p3 to p4
+✅ Saved to straight/0_mata-saja.jpg
+🖼️ Processing: 0_slanted-eyes-oval-eyebrow-skin-260nw-2418211719.jpg, 2-th of 192 files 
+Point clicked: 40, 246
+✅ The leftist point of face contour recorded.
+2️⃣: Click the rightest point of face contour!
+Point clicked: 159, 262
+draw line from p1 to p2
+Point clicked: 340, 268
+draw line from p1 to p2
+draw line from p2 to p3
+Point clicked: 464, 256
+draw line from p1 to p2
+draw line from p2 to p3
+draw line from p3 to p4
+✅ Saved to slant up/0_slanted-eyes-oval-eyebrow-skin-260nw-2418211719.jpg

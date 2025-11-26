@@ -12,3 +12,19 @@ draw line from p3 to p4
 🧭 Auto-perspective : Front, 👁️ Please compare with your own visual judgment!
 📏 L1: 181.02, L2: 521.00, Ratio: 1.04
 ✅ Saved to /home/dragonicbull/image_paranoid/tools/../images/output_images/neck_width/0.9_to_1.10/1762591407217.jpg
+🖼️ Processing: head and shoulder shot photo_0.jpeg, 3-th of 59 files 
+🖼️ Processing: head and shoulder shot photo_1.jpeg, 4-th of 59 files 
+🖼️ Processing: head and shoulder shot photo_10.jpeg, 5-th of 59 files 
+Point clicked: 200, 345
+✅ Left line of neck contour recorded.
+2️⃣: Click right line of neck contour!
+Point clicked: 321, 334
+draw line from p1 to p2
+Point clicked: 63, 428
+draw line from p1 to p2
+Point clicked: 495, 411
+draw line from p1 to p2
+draw line from p3 to p4
+🧭 Auto-perspective : Front, 👁️ Please compare with your own visual judgment!
+📏 L1: 121.50, L2: 432.33, Ratio: 0.84
+✅ Saved to /home/dragonicbull/image_paranoid/tools/../images/output_images/neck_width/0_to_0.9/head and shoulder shot photo_10.jpeg
