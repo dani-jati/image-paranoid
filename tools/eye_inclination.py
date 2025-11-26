@@ -20,8 +20,10 @@ else:
 script_dir = os.path.dirname(os.path.abspath(__file__))
 
 cropper_output = os.path.join(script_dir, "../images/output_images/cropper")
-eye_inclination_input = os.path.join(script_dir, "../images/input_images/eye_inclination")
+# eye_inclination_input = os.path.join(script_dir, "../images/input_images/eye_inclination")
+eye_inclination_input = os.path.join(script_dir, "../images/input_images/eye_zoom")
 
+"""
 if os.path.isdir(cropper_output) and not os.path.exists(eye_inclination_input):
     os.symlink(cropper_output, eye_inclination_input)
     print(f"🔗 Symlink created: {eye_inclination_input} → {cropper_output}")
@@ -31,9 +33,9 @@ elif os.path.isdir(eye_inclination_input):
     print(f"⚠️ Destination exists as a real folder: {eye_inclination_input} — not creating symlink.")
 else:
     print(f"⚠️ Cropper output folder missing: {cropper_output}")
+"""
 
-
-print("Symlink points to:", os.readlink(eye_inclination_input))
+# print("Symlink points to:", os.readlink(eye_inclination_input))
 
 output_folders = {
     "slantup": os.path.join(script_dir, "../images/output_images/eye_inclination/upward"),

@@ -11,6 +11,7 @@ from tools.cropper import Dashboard as CropperTool
 
 from tools.eye_altitude import Dashboard as EyeAltitudeTool
 from tools.eye_inclination import Dashboard as EyeInclinationTool
+from tools.eye_zoom import Dashboard as EyeZoomTool
 from tools.face_width import Dashboard as FaceWidthTool
 from tools.forehead_height import Dashboard as ForeheadHeightTool
 from tools.head_height import Dashboard as HeadHeightTool
@@ -45,6 +46,7 @@ class HomePage(QMainWindow):
             ("icons/cropper.png", "Cropper", self.run_cropper_script),
             ("icons/eye-altitude.png", "Eye Altitude", self.open_eye_altitude),
             ("icons/eye-inclination.png", "Eye Inclination", self.open_eye_inclination),
+            ("icons/eye-zoom.png", "Eye Zoom", self.run_eye_zoom),
             ("icons/face-width.png", "Face Width", self.open_face_width),
             ("icons/forehead-height.png", "Forehead Height", self.open_forehead_height),
             ("icons/head-height.png", "Head Height", self.open_head_height),
@@ -129,6 +131,10 @@ class HomePage(QMainWindow):
     def open_eye_inclination(self):
         self.tool = EyeInclinationTool()
         self.tool.show()
+
+    def run_eye_zoom(self):
+        self.tool = EyeZoomTool()
+        self.tool.process()
 
     def run_cropper_script(self):
         self.tool = CropperTool()
