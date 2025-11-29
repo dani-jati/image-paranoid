@@ -1,15 +1,32 @@
-from line import Line
+import numpy as np
+import matplotlib.pyplot as plt
 
-A = (57, 63)
-B = (157, 60)
-C = (156, 60)
-D = (314, 63)
+# New coordinates
+x = np.array([59, 118, 175, 233, 257, 293, 350, 408, 465])
+y = np.array([219, 231, 239, 251, 257, 263, 274, 282, 294])
 
-angle_tolerance_deg=2.0
-max_y_deviation=20
+# Step 1: Fit a quadratic curve to the data
+coefficients = np.polyfit(x, y, 2)  # Fit a second-degree polynomial (quadratic)
+a, b, c = coefficients  # Extract the coefficients
 
-line = Line()
+# Step 2: Create the fitted quadratic curve
+fitted_y = np.polyval(coefficients, x)
 
-result = line.is_straight( A, B, C, D )
-print(result)
+# Step 3: Plot the original data and the quadratic fit
+plt.plot(x, y, 'o', label="Original Data")
+plt.plot(x, fitted_y, '-', label=f"Fitted Quadratic: $f(x) = {a:.2f}x^2 + {b:.2f}x + {c:.2f}$")
+plt.title("Quadratic Fit to Data")
+plt.xlabel("X")
+plt.ylabel("Y")
+plt.legend()
+plt.grid(True)
+plt.show()
+
+# Step 4: Analyze the sign of 'a' to determine concavity
+if a > 0:
+    print("The curve is V-shaped (concave up).")
+elif a < 0:
+    print("The curve is n-shaped (concave down).")
+else:
+    print("The curve is linear (no concavity).")
 
