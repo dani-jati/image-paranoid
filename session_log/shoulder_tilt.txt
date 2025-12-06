@@ -1,0 +1,38 @@
+✅ Found 58 images in /home/dragonicbull/image_paranoid/tools/../images/input_images/shoulder_tilt
+🖼️ Processing: 1762591407217.jpg, 1-th of 58 files 
+📂 Using default folder: /home/dragonicbull/image_paranoid/tools/../images/input_images/shoulder_tilt
+🖼️ Processing: 1762591407217.jpg, 1-th of 58 files 
+Point clicked: 112, 391
+✅ first point of shoulder contour recorded.
+2️⃣: Click last point of shoulder contour!
+Point clicked: 18, 414
+draw line from p1 to p2
+🧭 Auto-perspective : Front, 👁️ Please compare with your own visual judgment!
+✅ 1762591407217.jpg → Tilt: 13.76° → Saved to /home/dragonicbull/image_paranoid/tools/../images/output_images/shoulder_tilt/12_to_16/Front_view/1762591407217.jpg
+✅ Found 192 images in c:\Users\nagab\OneDrive\Documents\image_paranoid\images\input_images\shoulder_tilt
+🖼️ Processing: 0_mata-saja.jpg, 1-th of 192 files 
+📂 Using default folder: c:\Users\nagab\OneDrive\Documents\image_paranoid\images\input_images\shoulder_tilt
+Resuming after 1762591407217.jpg → starting at image 4 of 192
+🖼️ Processing: Untitled1.png, 4-th of 192 files 
+Point clicked: 334, 327
+✅ first point of shoulder contour recorded.
+2️⃣: Click last point of shoulder contour!
+Point clicked: 481, 389
+draw line from p1 to p2
+🧭 Auto-perspective : Diagonal, 👁️ Please compare with your own visual judgment!
+✅ Untitled1.png → Tilt: 22.87° → Saved to c:\Users\nagab\OneDrive\Documents\image_paranoid\tools\../images/output_images/shoulder_tilt/16_or_more/Diagonal_view\Untitled1.png
+🖼️ Processing: Untitled2.png, 5-th of 192 files 
+✅ Found 192 images in c:\Users\nagab\OneDrive\Documents\image_paranoid\images\input_images\shoulder_tilt
+🖼️ Processing: 0_mata-saja.jpg, 1-th of 192 files 
+📂 Using default folder: c:\Users\nagab\OneDrive\Documents\image_paranoid\images\input_images\shoulder_tilt
+Resuming after Untitled1.png → starting at image 5 of 192
+🖼️ Processing: Untitled2.png, 5-th of 192 files 
+🖼️ Processing: Untitled5.png, 6-th of 192 files 
+Point clicked: 150, 388
+✅ first point of shoulder contour recorded.
+2️⃣: Click last point of shoulder contour!
+Point clicked: 38, 419
+draw line from p1 to p2
+🧭 Auto-perspective : Front, 👁️ Please compare with your own visual judgment!
+✅ Untitled5.png → Tilt: 15.47° → Saved to c:\Users\nagab\OneDrive\Documents\image_paranoid\tools\../images/output_images/shoulder_tilt/12_to_16/Front_view\Untitled5.png
+🖼️ Processing: Untitled6.png, 7-th of 192 files 

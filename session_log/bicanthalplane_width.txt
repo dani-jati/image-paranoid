@@ -1,0 +1,283 @@
+🖼️ Processing: 1762591407217.jpg, 1-th of 58 files 
+Point clicked: 240, 215
+✅ The most medial contour of left eye recorded.
+2️⃣: Click the most medial contour of right eye!
+Point clicked: 291, 216
+✅ The most medial contour of right eye recorded.
+draw line from p1 to p2
+3️⃣: Click the most lateral side of left eye angle!
+Point clicked: 182, 211
+✅ The most medial contour of right eye recorded.
+draw line from p1 to p2
+3️⃣: Click the most lateral side of left eye angle!
+✅ The most lateral side of right eye angle recorded.
+4️⃣: Click the most lateral side of right eye angle!
+Point clicked: 352, 207
+✅ The most medial contour of right eye recorded.
+draw line from p1 to p2
+3️⃣: Click the most lateral side of left eye angle!
+✅ The most lateral side of right eye angle recorded.
+4️⃣: Click the most lateral side of right eye angle!
+✅ The most lateral side of right eye angle recorded.
+draw line from p3 to p4
+🧭 Auto-perspective : Front, 👁️ Please compare with your own visual judgment!
+📏 L1: 53.01, L2: 178.07, Ratio: 0.30
+✅ Saved to /home/dragonicbull/image_paranoid/tools/../images/output_images/bicanthalplane_width/30_or_less/1762591407217.jpg
+🗑️ Removed wrong result: /home/dragonicbull/image_paranoid/tools/../images/output_images/bicanthalplane_width/30_or_less/1762591407217.jpg
+🖼️ Processing: 1762591407217.jpg, 1-th of 58 files 
+↩️ Reset current image. Please click again.
+Point clicked: 238, 215
+✅ The most medial contour of left eye recorded.
+2️⃣: Click the most medial contour of right eye!
+Point clicked: 293, 211
+✅ The most medial contour of right eye recorded.
+draw line from p1 to p2
+3️⃣: Click the most lateral side of left eye angle!
+Point clicked: 181, 210
+✅ The most medial contour of right eye recorded.
+draw line from p1 to p2
+3️⃣: Click the most lateral side of left eye angle!
+✅ The most lateral side of right eye angle recorded.
+4️⃣: Click the most lateral side of right eye angle!
+Point clicked: 347, 209
+✅ The most medial contour of right eye recorded.
+draw line from p1 to p2
+3️⃣: Click the most lateral side of left eye angle!
+✅ The most lateral side of right eye angle recorded.
+4️⃣: Click the most lateral side of right eye angle!
+✅ The most lateral side of right eye angle recorded.
+draw line from p3 to p4
+🧭 Auto-perspective : Front, 👁️ Please compare with your own visual judgment!
+📏 L1: 57.14, L2: 173.01, Ratio: 0.33
+✅ Saved to /home/dragonicbull/image_paranoid/tools/../images/output_images/bicanthalplane_width/31_to_36/1762591407217.jpg
+🖼️ Processing: head and shoulder shot photo_0.jpeg, 2-th of 58 files 
+Point clicked: 239, 185
+✅ The most medial contour of left eye recorded.
+2️⃣: Click the most medial contour of right eye!
+Point clicked: 278, 190
+✅ The most medial contour of right eye recorded.
+draw line from p1 to p2
+3️⃣: Click the most lateral side of left eye angle!
+Point clicked: 203, 189
+✅ The most medial contour of right eye recorded.
+draw line from p1 to p2
+3️⃣: Click the most lateral side of left eye angle!
+✅ The most lateral side of right eye angle recorded.
+4️⃣: Click the most lateral side of right eye angle!
+Point clicked: 318, 196
+✅ The most medial contour of right eye recorded.
+draw line from p1 to p2
+3️⃣: Click the most lateral side of left eye angle!
+✅ The most lateral side of right eye angle recorded.
+4️⃣: Click the most lateral side of right eye angle!
+✅ The most lateral side of right eye angle recorded.
+draw line from p3 to p4
+🧭 Auto-perspective : Front, 👁️ Please compare with your own visual judgment!
+📏 L1: 39.32, L2: 115.21, Ratio: 0.34
+✅ Saved to /home/dragonicbull/image_paranoid/tools/../images/output_images/bicanthalplane_width/31_to_36/head and shoulder shot photo_0.jpeg
+🖼️ Processing: head and shoulder shot photo_1.jpeg, 3-th of 58 files 
+🖼️ Processing: head and shoulder shot photo_10.jpeg, 4-th of 58 files 
+Point clicked: 239, 199
+✅ The most medial contour of left eye recorded.
+2️⃣: Click the most medial contour of right eye!
+Point clicked: 271, 200
+✅ The most medial contour of right eye recorded.
+draw line from p1 to p2
+3️⃣: Click the most lateral side of left eye angle!
+Point clicked: 204, 201
+✅ The most medial contour of right eye recorded.
+draw line from p1 to p2
+3️⃣: Click the most lateral side of left eye angle!
+✅ The most lateral side of right eye angle recorded.
+4️⃣: Click the most lateral side of right eye angle!
+Point clicked: 304, 201
+✅ The most medial contour of right eye recorded.
+draw line from p1 to p2
+3️⃣: Click the most lateral side of left eye angle!
+✅ The most lateral side of right eye angle recorded.
+4️⃣: Click the most lateral side of right eye angle!
+✅ The most lateral side of right eye angle recorded.
+draw line from p3 to p4
+🧭 Auto-perspective : Front, 👁️ Please compare with your own visual judgment!
+📏 L1: 32.02, L2: 100.00, Ratio: 0.32
+✅ Saved to /home/dragonicbull/image_paranoid/tools/../images/output_images/bicanthalplane_width/31_to_36/head and shoulder shot photo_10.jpeg
+🖼️ Processing: head and shoulder shot photo_11.jpeg, 5-th of 58 files 
+🖼️ Processing: head and shoulder shot photo_12.jpeg, 6-th of 58 files 
+Point clicked: 239, 200
+✅ The most medial contour of left eye recorded.
+2️⃣: Click the most medial contour of right eye!
+Point clicked: 273, 198
+✅ The most medial contour of right eye recorded.
+draw line from p1 to p2
+3️⃣: Click the most lateral side of left eye angle!
+Point clicked: 200, 200
+✅ The most medial contour of right eye recorded.
+draw line from p1 to p2
+3️⃣: Click the most lateral side of left eye angle!
+✅ The most lateral side of right eye angle recorded.
+4️⃣: Click the most lateral side of right eye angle!
+Point clicked: 308, 196
+✅ The most medial contour of right eye recorded.
+draw line from p1 to p2
+3️⃣: Click the most lateral side of left eye angle!
+✅ The most lateral side of right eye angle recorded.
+4️⃣: Click the most lateral side of right eye angle!
+✅ The most lateral side of right eye angle recorded.
+draw line from p3 to p4
+🧭 Auto-perspective : Front, 👁️ Please compare with your own visual judgment!
+📏 L1: 34.06, L2: 108.07, Ratio: 0.32
+✅ Saved to /home/dragonicbull/image_paranoid/tools/../images/output_images/bicanthalplane_width/31_to_36/head and shoulder shot photo_12.jpeg
+🖼️ Processing: head and shoulder shot photo_13.jpeg, 7-th of 58 files 
+🖼️ Processing: head and shoulder shot photo_14.jpeg, 8-th of 58 files 
+Point clicked: 239, 207
+✅ The most medial contour of left eye recorded.
+2️⃣: Click the most medial contour of right eye!
+Point clicked: 285, 207
+✅ The most medial contour of right eye recorded.
+draw line from p1 to p2
+3️⃣: Click the most lateral side of left eye angle!
+Point clicked: 189, 194
+✅ The most medial contour of right eye recorded.
+draw line from p1 to p2
+3️⃣: Click the most lateral side of left eye angle!
+✅ The most lateral side of right eye angle recorded.
+4️⃣: Click the most lateral side of right eye angle!
+Point clicked: 338, 198
+✅ The most medial contour of right eye recorded.
+draw line from p1 to p2
+3️⃣: Click the most lateral side of left eye angle!
+✅ The most lateral side of right eye angle recorded.
+4️⃣: Click the most lateral side of right eye angle!
+✅ The most lateral side of right eye angle recorded.
+draw line from p3 to p4
+🧭 Auto-perspective : Front, 👁️ Please compare with your own visual judgment!
+📏 L1: 46.00, L2: 149.05, Ratio: 0.31
+✅ Saved to /home/dragonicbull/image_paranoid/tools/../images/output_images/bicanthalplane_width/31_to_36/head and shoulder shot photo_14.jpeg
+🖼️ Processing: head and shoulder shot photo_16.jpeg, 9-th of 58 files 
+🖼️ Processing: head and shoulder shot photo_19.jpeg, 10-th of 58 files 
+Point clicked: 203, 201
+✅ The most medial contour of left eye recorded.
+2️⃣: Click the most medial contour of right eye!
+Point clicked: 244, 207
+✅ The most medial contour of right eye recorded.
+draw line from p1 to p2
+3️⃣: Click the most lateral side of left eye angle!
+Point clicked: 163, 196
+✅ The most medial contour of right eye recorded.
+draw line from p1 to p2
+3️⃣: Click the most lateral side of left eye angle!
+✅ The most lateral side of right eye angle recorded.
+4️⃣: Click the most lateral side of right eye angle!
+Point clicked: 282, 204
+✅ The most medial contour of right eye recorded.
+draw line from p1 to p2
+3️⃣: Click the most lateral side of left eye angle!
+✅ The most lateral side of right eye angle recorded.
+4️⃣: Click the most lateral side of right eye angle!
+✅ The most lateral side of right eye angle recorded.
+draw line from p3 to p4
+🧭 Auto-perspective : Front, 👁️ Please compare with your own visual judgment!
+📏 L1: 41.44, L2: 119.27, Ratio: 0.35
+✅ Saved to /home/dragonicbull/image_paranoid/tools/../images/output_images/bicanthalplane_width/31_to_36/head and shoulder shot photo_19.jpeg
+🖼️ Processing: head and shoulder shot photo_2.jpeg, 11-th of 58 files 
+🖼️ Processing: head and shoulder shot photo_22.jpeg, 12-th of 58 files 
+Point clicked: 233, 198
+✅ The most medial contour of left eye recorded.
+2️⃣: Click the most medial contour of right eye!
+Point clicked: 277, 207
+✅ The most medial contour of right eye recorded.
+draw line from p1 to p2
+3️⃣: Click the most lateral side of left eye angle!
+Point clicked: 199, 191
+✅ The most medial contour of right eye recorded.
+draw line from p1 to p2
+3️⃣: Click the most lateral side of left eye angle!
+✅ The most lateral side of right eye angle recorded.
+4️⃣: Click the most lateral side of right eye angle!
+Point clicked: 308, 213
+✅ The most medial contour of right eye recorded.
+draw line from p1 to p2
+3️⃣: Click the most lateral side of left eye angle!
+✅ The most lateral side of right eye angle recorded.
+4️⃣: Click the most lateral side of right eye angle!
+✅ The most lateral side of right eye angle recorded.
+draw line from p3 to p4
+🧭 Auto-perspective : Front, 👁️ Please compare with your own visual judgment!
+📏 L1: 44.91, L2: 111.20, Ratio: 0.40
+✅ Saved to /home/dragonicbull/image_paranoid/tools/../images/output_images/bicanthalplane_width/37_or_more/head and shoulder shot photo_22.jpeg
+🖼️ Processing: head and shoulder shot photo_26.jpeg, 13-th of 58 files 
+Point clicked: 239, 211
+✅ The most medial contour of left eye recorded.
+2️⃣: Click the most medial contour of right eye!
+Point clicked: 267, 212
+✅ The most medial contour of right eye recorded.
+draw line from p1 to p2
+3️⃣: Click the most lateral side of left eye angle!
+Point clicked: 201, 210
+✅ The most medial contour of right eye recorded.
+draw line from p1 to p2
+3️⃣: Click the most lateral side of left eye angle!
+✅ The most lateral side of right eye angle recorded.
+4️⃣: Click the most lateral side of right eye angle!
+Point clicked: 304, 212
+✅ The most medial contour of right eye recorded.
+draw line from p1 to p2
+3️⃣: Click the most lateral side of left eye angle!
+✅ The most lateral side of right eye angle recorded.
+4️⃣: Click the most lateral side of right eye angle!
+✅ The most lateral side of right eye angle recorded.
+draw line from p3 to p4
+🧭 Auto-perspective : Side, 👁️ Please compare with your own visual judgment!
+📏 L1: 28.02, L2: 103.02, Ratio: 0.27
+✅ Saved to /home/dragonicbull/image_paranoid/tools/../images/output_images/bicanthalplane_width/30_or_less/head and shoulder shot photo_26.jpeg
+🖼️ Processing: head and shoulder shot photo_27.jpeg, 14-th of 58 files 
+Point clicked: 157, 203
+✅ The most medial contour of left eye recorded.
+2️⃣: Click the most medial contour of right eye!
+Point clicked: 199, 200
+✅ The most medial contour of right eye recorded.
+draw line from p1 to p2
+3️⃣: Click the most lateral side of left eye angle!
+Point clicked: 111, 202
+✅ The most medial contour of right eye recorded.
+draw line from p1 to p2
+3️⃣: Click the most lateral side of left eye angle!
+✅ The most lateral side of right eye angle recorded.
+4️⃣: Click the most lateral side of right eye angle!
+Point clicked: 250, 179
+✅ The most medial contour of right eye recorded.
+draw line from p1 to p2
+3️⃣: Click the most lateral side of left eye angle!
+✅ The most lateral side of right eye angle recorded.
+4️⃣: Click the most lateral side of right eye angle!
+✅ The most lateral side of right eye angle recorded.
+draw line from p3 to p4
+🧭 Auto-perspective : Front, 👁️ Please compare with your own visual judgment!
+📏 L1: 42.11, L2: 140.89, Ratio: 0.30
+✅ Saved to /home/dragonicbull/image_paranoid/tools/../images/output_images/bicanthalplane_width/30_or_less/head and shoulder shot photo_27.jpeg
+🖼️ Processing: head and shoulder shot photo_28.jpeg, 15-th of 58 files 
+🖼️ Processing: head and shoulder shot photo_29.jpeg, 16-th of 58 files 
+Point clicked: 237, 208
+✅ The most medial contour of left eye recorded.
+2️⃣: Click the most medial contour of right eye!
+Point clicked: 272, 207
+✅ The most medial contour of right eye recorded.
+draw line from p1 to p2
+3️⃣: Click the most lateral side of left eye angle!
+Point clicked: 200, 208
+✅ The most medial contour of right eye recorded.
+draw line from p1 to p2
+3️⃣: Click the most lateral side of left eye angle!
+✅ The most lateral side of right eye angle recorded.
+4️⃣: Click the most lateral side of right eye angle!
+Point clicked: 309, 203
+✅ The most medial contour of right eye recorded.
+draw line from p1 to p2
+3️⃣: Click the most lateral side of left eye angle!
+✅ The most lateral side of right eye angle recorded.
+4️⃣: Click the most lateral side of right eye angle!
+✅ The most lateral side of right eye angle recorded.
+draw line from p3 to p4
+🧭 Auto-perspective : Front, 👁️ Please compare with your own visual judgment!
+📏 L1: 35.01, L2: 109.11, Ratio: 0.32
+✅ Saved to /home/dragonicbull/image_paranoid/tools/../images/output_images/bicanthalplane_width/31_to_36/head and shoulder shot photo_29.jpeg

@@ -1,0 +1,27 @@
+🖼️ Processing: 1762591407217.jpg, 1-th of 58 files 
+Point clicked: 150, 254
+✅ The leftist point of face contour recorded.
+2️⃣: Click the rightest point of face contour!
+Point clicked: 379, 252
+draw line from p1 to p2
+Point clicked: 11, 418
+draw line from p1 to p2
+Point clicked: 508, 419
+draw line from p1 to p2
+draw line from p3 to p4
+🧭 Auto-perspective : Front, 👁️ Please compare with your own visual judgment!
+✅ Saved to /home/dragonicbull/image_paranoid/tools/../images/output_images/head_size/1.35_to_1.65/1762591407217.jpg
+🖼️ Processing: Untitled1.png, 4-th of 192 files 
+Point clicked: 175, 222
+✅ The leftist point of face contour recorded.
+2️⃣: Click the rightest point of face contour!
+Point clicked: 340, 232
+draw line from p1 to p2
+Point clicked: 84, 370
+draw line from p1 to p2
+Point clicked: 485, 391
+draw line from p1 to p2
+draw line from p3 to p4
+🧭 Auto-perspective : Front, 👁️ Please compare with your own visual judgment!
+✅ Saved to c:\Users\nagab\OneDrive\Documents\image_paranoid\tools\../images/output_images/head_size/0_to_1.35\Untitled1.png
+🖼️ Processing: Untitled2.png, 5-th of 192 files 

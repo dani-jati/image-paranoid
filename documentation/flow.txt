@@ -1,0 +1,2 @@
+1. Put raw images into folder "raw".
+2. Normalize the images and then save the results to path: images/output_images/cropper.

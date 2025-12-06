@@ -1,0 +1,188 @@
+🖼️ Processing: 1762591407217.png, 1-th of 2 files 
+Point clicked: 62, 256
+✅ The leftist point of face contour recorded.
+2️⃣: Click the rightest point of mouth junction!
+🖼️ Processing: 1762591407217.png, 1-th of 2 files 
+Point clicked: 66, 257
+✅ The leftist point of face contour recorded.
+2️⃣: Click the rightest point of mouth junction!
+Point clicked: 452, 244
+draw line from p1 to p2
+🖼️ Processing: 1762591407217.png, 1-th of 2 files 
+Point clicked: 61, 253
+✅ The leftist point of face contour recorded.
+2️⃣: Click the rightest point of mouth junction!
+Point clicked: 452, 241
+draw line from p1 to p2
+🖼️ Processing: 1762591407217.png, 1-th of 2 files 
+Point clicked: 64, 252
+✅ The leftist point of face contour recorded.
+2️⃣: Click the rightest point of mouth junction!
+Point clicked: 453, 238
+draw line from p1 to p2
+🖼️ Processing: 1762591407217.png, 1-th of 2 files 
+Point clicked: 62, 255
+✅ The leftist point of face contour recorded.
+2️⃣: Click the rightest point of mouth junction!
+Point clicked: 452, 244
+draw line from p1 to p2
+🖼️ Processing: 1762591407217.png, 1-th of 2 files 
+Point clicked: 65, 256
+✅ The leftist point of face contour recorded.
+2️⃣: Click the rightest point of mouth junction!
+Point clicked: 449, 245
+draw line from p1 to p2
+🖼️ Processing: 1762591407217.png, 1-th of 2 files 
+Point clicked: 66, 254
+✅ The leftist point of face contour recorded.
+2️⃣: Click the rightest point of mouth junction!
+Point clicked: 445, 246
+draw line from p1 to p2
+🖼️ Processing: 1762591407217.png, 1-th of 2 files 
+Point clicked: 65, 254
+✅ The leftist point of face contour recorded.
+2️⃣: Click the rightest point of mouth junction!
+Point clicked: 446, 243
+draw line from p1 to p2
+🖼️ Processing: 1762591407217.png, 1-th of 2 files 
+Point clicked: 64, 252
+✅ The leftist point of face contour recorded.
+2️⃣: Click the rightest point of mouth junction!
+Point clicked: 450, 241
+draw line from p1 to p2
+🖼️ Processing: 1762591407217.png, 1-th of 2 files 
+Point clicked: 61, 254
+✅ The leftist point of face contour recorded.
+2️⃣: Click the rightest point of mouth junction!
+Point clicked: 448, 244
+draw line from p1 to p2
+🖼️ Processing: 1762591407217.png, 1-th of 2 files 
+Point clicked: 65, 256
+✅ The leftist point of face contour recorded.
+2️⃣: Click the rightest point of mouth junction!
+Point clicked: 449, 244
+draw line from p1 to p2
+🖼️ Processing: 1762591407217.png, 1-th of 2 files 
+Point clicked: 65, 257
+✅ The leftist point of face contour recorded.
+2️⃣: Click the rightest point of mouth junction!
+Point clicked: 451, 244
+draw line from p1 to p2
+🖼️ Processing: 1762591407217.png, 1-th of 2 files 
+Point clicked: 65, 248
+✅ The leftist point of face contour recorded.
+2️⃣: Click the rightest point of mouth junction!
+Point clicked: 449, 241
+draw line from p1 to p2
+Point clicked: 257, 286
+draw line from p1 to p2
+🖼️ Processing: 1762591407217.png, 1-th of 2 files 
+↩️ Reset current image. Please click again.
+🖼️ Processing: 1762591407217.png, 1-th of 2 files 
+Point clicked: 66, 255
+✅ The leftist point of face contour recorded.
+2️⃣: Click the rightest point of mouth junction!
+Point clicked: 448, 240
+draw line from p1 to p2
+Point clicked: 258, 236
+draw line from p1 to p2
+🖼️ Processing: 1762591407217.png, 1-th of 2 files 
+Point clicked: 61, 254
+✅ The leftist point of face contour recorded.
+2️⃣: Click the rightest point of mouth junction!
+Point clicked: 450, 241
+draw line from p1 to p2
+Point clicked: 255, 236
+draw line from p1 to p2
+🖼️ Processing: 1762591407217.png, 1-th of 2 files 
+Point clicked: 64, 254
+✅ The leftist point of face contour recorded.
+2️⃣: Click the rightest point of mouth junction!
+Point clicked: 449, 241
+draw line from p1 to p2
+Point clicked: 256, 235
+draw line from p1 to p2
+🖼️ Processing: 1762591407217.png, 1-th of 2 files 
+Point clicked: 65, 256
+✅ The leftist point of face contour recorded.
+2️⃣: Click the rightest point of mouth junction!
+Point clicked: 450, 245
+draw line from p1 to p2
+Point clicked: 258, 235
+draw line from p1 to p2
+Point clicked: 120, 252
+draw line from p1 to p2
+🖼️ Processing: 1762591407217.png, 1-th of 2 files 
+Point clicked: 61, 253
+✅ The leftist point of face contour recorded.
+2️⃣: Click the rightest point of mouth junction!
+Point clicked: 448, 243
+draw line from p1 to p2
+Point clicked: 256, 236
+draw line from p1 to p2
+Point clicked: 118, 253
+draw line from p1 to p2
+Point clicked: 173, 243
+draw line from p1 to p2
+🖼️ Processing: 1762591407217.png, 1-th of 2 files 
+Point clicked: 62, 255
+✅ The leftist point of face contour recorded.
+2️⃣: Click the rightest point of mouth junction!
+Point clicked: 450, 244
+draw line from p1 to p2
+Point clicked: 258, 236
+draw line from p1 to p2
+Point clicked: 118, 254
+draw line from p1 to p2
+Point clicked: 175, 243
+draw line from p1 to p2
+Point clicked: 227, 239
+draw line from p1 to p2
+🖼️ Processing: 1762591407217.png, 1-th of 2 files 
+Point clicked: 66, 255
+✅ The leftist point of face contour recorded.
+2️⃣: Click the rightest point of mouth junction!
+Point clicked: 447, 244
+draw line from p1 to p2
+Point clicked: 257, 236
+draw line from p1 to p2
+Point clicked: 121, 256
+draw line from p1 to p2
+Point clicked: 175, 243
+draw line from p1 to p2
+Point clicked: 230, 240
+draw line from p1 to p2
+Point clicked: 283, 238
+draw line from p1 to p2
+Point clicked: 339, 236
+draw line from p1 to p2
+Point clicked: 394, 246
+draw line from p1 to p2
+✅ Saved to /home/dragonicbull/image_paranoid/tools/../images/output_images/mouthjunction_path/linier/1762591407217.png
+🖼️ Processing: Melior-oral-commissure.png, 2-th of 2 files 
+Point clicked: 59, 218
+✅ The leftist point of face contour recorded.
+2️⃣: Click the rightest point of mouth junction!
+Point clicked: 464, 218
+draw line from p1 to p2
+Point clicked: 262, 256
+draw line from p1 to p2
+Point clicked: 116, 231
+draw line from p1 to p2
+Point clicked: 175, 242
+draw line from p1 to p2
+Point clicked: 232, 252
+draw line from p1 to p2
+Point clicked: 289, 251
+draw line from p1 to p2
+Point clicked: 348, 245
+draw line from p1 to p2
+Point clicked: 407, 234
+draw line from p1 to p2
+✅ Saved to /home/dragonicbull/image_paranoid/tools/../images/output_images/mouthjunction_path/concave/Melior-oral-commissure.png
+🖼️ Processing: Melior-oral-commissure.png, 2-th of 2 files 
+Point clicked: 54, 419
+✅ The leftist point of face contour recorded.
+2️⃣: Click the rightest point of mouth junction!
+🖼️ Processing: Melior-oral-commissure.png, 2-th of 2 files 
+🖼️ Processing: Melior-oral-commissure.png, 2-th of 2 files 

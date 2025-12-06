@@ -1,0 +1,1739 @@
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_053.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_053.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_053.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_180.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_168.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_168.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_2.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_87.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/head and shoulder shot photo_87.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_50.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_113.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_100.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_100.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_118.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_133.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_133.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_165.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_81.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/head and shoulder shot photo_81.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_88.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_131.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_131.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_129.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_162.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_162.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_056.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_023.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_023.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_26.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_091.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_093.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_093.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_116.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_096.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_096.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_126.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_126.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_13.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_155.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_155.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_18.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_066.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_172.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_172.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_35.jpeg
+Skipping image head and shoulder shot photo_35.jpeg: Invalid eye crop.
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_002.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_002.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_167.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_167.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_29.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_30.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/head and shoulder shot photo_30.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_75.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/head and shoulder shot photo_75.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_151.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_115.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_115.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_064.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_035.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_181.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_181.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_51.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/head and shoulder shot photo_51.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_086.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_014.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_014.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_099.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_029.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_6.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/head and shoulder shot photo_6.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_005a.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_071.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_071.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_050.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_057.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_070.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_070.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_161.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_111.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_64.jpeg
+Skipping image head and shoulder shot photo_64.jpeg: Invalid eye crop.
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_148.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_009.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_009.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_166.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_166.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_78.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_017.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_017.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_187.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_153.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_153.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_036.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/Untitled5.png
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/Untitled5.png
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_174.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_96.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/head and shoulder shot photo_96.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/Untitled2.png
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_11.jpeg
+Skipping image head and shoulder shot photo_11.jpeg: Invalid eye crop.
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/Untitled6.png
+Skipping image Untitled6.png: Invalid eye crop.
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_106.jpeg
+Skipping image images_106.jpeg: Invalid eye crop.
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_53.jpeg
+Skipping image head and shoulder shot photo_53.jpeg: Invalid eye crop.
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_132.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_088.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_088.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_19.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/head and shoulder shot photo_19.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_185.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_27.jpeg
+Skipping image head and shoulder shot photo_27.jpeg: Invalid eye crop.
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_16.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_039.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_039.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_72.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_114.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_114.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_034.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_14.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/head and shoulder shot photo_14.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_016.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_105.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_105.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_058.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_147.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_147.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_31.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_040.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_040.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_028.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_182.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_182.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_033.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_033.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_93.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/head and shoulder shot photo_93.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_080.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_080.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_173.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_173.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_12.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/head and shoulder shot photo_12.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_164.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_163.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_94.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_031.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_031.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_57.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/head and shoulder shot photo_57.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_1.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_117.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_079.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_079.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_083.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_077.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_108.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_108.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_41.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/head and shoulder shot photo_41.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_048.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_048.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_072.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_072.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/Untitled4.png
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_140.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_140.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_019.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_019.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_074.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_120.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_120.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_005.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_176.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_176.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_177.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_063.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_125.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_125.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_119.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_119.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_4.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_089.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_089.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_73.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/head and shoulder shot photo_73.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_081.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_081.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_28.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_71.jpeg
+Skipping image head and shoulder shot photo_71.jpeg: Invalid eye crop.
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_003.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/0_slanted-eyes-oval-eyebrow-skin-260nw-2418211719.jpg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_123.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_123.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_011.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_183.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_9.jpeg
+Skipping image head and shoulder shot photo_9.jpeg: Invalid eye crop.
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_152.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_149.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_149.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_128.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_110.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_110.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_020.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_051.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_051.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_170.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_170.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_5.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/head and shoulder shot photo_5.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_112.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_141.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_141.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_052.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/Untitled1.png
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/Untitled1.png
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_027.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_022.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_022.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_073.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_171.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_171.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_157.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_157.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_70.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/head and shoulder shot photo_70.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_087.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_087.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_041.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_150.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_150.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_146.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_042.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_042.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_7.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/head and shoulder shot photo_7.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_39.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/head and shoulder shot photo_39.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_85.jpeg
+Skipping image head and shoulder shot photo_85.jpeg: Invalid eye crop.
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_025.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_134.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_134.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_52.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_0.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/head and shoulder shot photo_0.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_015.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_032.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_032.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_012.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_012.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_55.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_84.jpeg
+Skipping image head and shoulder shot photo_84.jpeg: Invalid eye crop.
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_047.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_89.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/head and shoulder shot photo_89.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_065.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_175.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_175.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_179.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_179.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_018.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_018.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_156.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_156.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_186.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_37.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/head and shoulder shot photo_37.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_67.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_024.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_024.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_83.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/head and shoulder shot photo_83.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_055.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_055.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_45.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_007.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_007.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_130.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_160.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_160.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_046.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_69.jpeg
+Skipping image head and shoulder shot photo_69.jpeg: Invalid eye crop.
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_154.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_154.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_121.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_121.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_102.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_178.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_178.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_107.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_038.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_56.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/head and shoulder shot photo_56.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_109.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_109.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_059.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_059.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_8.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_188.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_188.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_3.jpeg
+Skipping image head and shoulder shot photo_3.jpeg: Invalid eye crop.
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_142.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_158.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_95.jpeg
+Skipping image head and shoulder shot photo_95.jpeg: Invalid eye crop.
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_10.jpeg
+Skipping image head and shoulder shot photo_10.jpeg: Invalid eye crop.
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_159.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_169.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_008.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_008.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_139.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_65.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_180.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_180.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_2.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_50.jpeg
+Skipping image head and shoulder shot photo_50.jpeg: Invalid eye crop.
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_113.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_118.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_118.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_165.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_88.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/head and shoulder shot photo_88.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_129.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_056.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_26.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/head and shoulder shot photo_26.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_091.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_116.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_13.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/head and shoulder shot photo_13.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_18.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_066.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_35.jpeg
+Skipping image head and shoulder shot photo_35.jpeg: Invalid eye crop.
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_29.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_151.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_151.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_064.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_035.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_086.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_086.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_099.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_029.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_005a.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_005a.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_050.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_050.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_057.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_161.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_161.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_111.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_64.jpeg
+Skipping image head and shoulder shot photo_64.jpeg: Invalid eye crop.
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_148.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_78.jpeg
+Skipping image head and shoulder shot photo_78.jpeg: Invalid eye crop.
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_187.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_187.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_036.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_174.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_174.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/Untitled2.png
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_11.jpeg
+Skipping image head and shoulder shot photo_11.jpeg: Invalid eye crop.
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/Untitled6.png
+Skipping image Untitled6.png: Invalid eye crop.
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_106.jpeg
+Skipping image images_106.jpeg: Invalid eye crop.
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_53.jpeg
+Skipping image head and shoulder shot photo_53.jpeg: Invalid eye crop.
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_132.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_185.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_185.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_27.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_16.jpeg
+Skipping image head and shoulder shot photo_16.jpeg: Invalid eye crop.
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_72.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_034.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_034.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_016.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_058.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_058.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_31.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_028.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_028.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_164.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_163.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_94.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_1.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/head and shoulder shot photo_1.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_117.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_083.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_083.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_077.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/Untitled4.png
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_074.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_074.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_005.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_177.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_063.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_4.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/head and shoulder shot photo_4.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_28.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_71.jpeg
+Skipping image head and shoulder shot photo_71.jpeg: Invalid eye crop.
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_003.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/0_slanted-eyes-oval-eyebrow-skin-260nw-2418211719.jpg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_011.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_011.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_183.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_9.jpeg
+Skipping image head and shoulder shot photo_9.jpeg: Invalid eye crop.
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_152.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_128.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_128.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_020.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_112.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_112.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_052.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_052.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_027.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_073.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_073.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_041.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_146.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_146.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_85.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_025.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_025.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_52.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_015.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_55.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/head and shoulder shot photo_55.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_84.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_047.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_065.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_065.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_186.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_67.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/head and shoulder shot photo_67.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_45.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/head and shoulder shot photo_45.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_130.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_046.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_046.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_69.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_102.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_102.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_107.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_107.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_038.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_8.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/head and shoulder shot photo_8.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_3.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/head and shoulder shot photo_3.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_142.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_158.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_95.jpeg
+Skipping image head and shoulder shot photo_95.jpeg: Invalid eye crop.
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_10.jpeg
+Skipping image head and shoulder shot photo_10.jpeg: Invalid eye crop.
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_159.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_169.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_139.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_65.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_053.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_053.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_180.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_168.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_168.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_2.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_87.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/head and shoulder shot photo_87.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_50.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_113.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_100.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_100.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_118.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_133.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_133.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_165.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_81.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/head and shoulder shot photo_81.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_88.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_131.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_131.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_129.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_162.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_162.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_056.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_023.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_023.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_26.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_091.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_093.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_093.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_116.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_096.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_096.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_126.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_126.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_13.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_155.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_155.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_18.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_066.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_172.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_172.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_35.jpeg
+Skipping image head and shoulder shot photo_35.jpeg: Invalid eye crop.
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_002.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_002.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_167.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_167.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_29.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_30.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/head and shoulder shot photo_30.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_75.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/head and shoulder shot photo_75.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_151.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_115.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_115.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_064.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_035.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_181.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_181.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_51.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/head and shoulder shot photo_51.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_086.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_014.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_014.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_099.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_029.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_6.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/head and shoulder shot photo_6.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_005a.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_071.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_071.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_050.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_057.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_070.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_070.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_161.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_111.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_64.jpeg
+Skipping image head and shoulder shot photo_64.jpeg: Invalid eye crop.
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_148.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_009.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_009.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_166.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_166.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_78.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_017.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_017.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_187.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_153.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_153.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_036.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/Untitled5.png
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/Untitled5.png
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_174.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_96.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/head and shoulder shot photo_96.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/Untitled2.png
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_11.jpeg
+Skipping image head and shoulder shot photo_11.jpeg: Invalid eye crop.
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/Untitled6.png
+Skipping image Untitled6.png: Invalid eye crop.
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_106.jpeg
+Skipping image images_106.jpeg: Invalid eye crop.
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_53.jpeg
+Skipping image head and shoulder shot photo_53.jpeg: Invalid eye crop.
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_132.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_088.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_088.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_19.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/head and shoulder shot photo_19.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_185.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_27.jpeg
+Skipping image head and shoulder shot photo_27.jpeg: Invalid eye crop.
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_16.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_039.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_039.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_72.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_114.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_114.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_034.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_14.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/head and shoulder shot photo_14.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_016.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_105.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_105.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_058.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_147.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_147.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_31.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_040.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_040.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_028.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_182.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_182.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_033.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_033.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_93.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/head and shoulder shot photo_93.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_080.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_080.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_173.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_173.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_12.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/head and shoulder shot photo_12.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_164.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_163.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_94.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_031.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_031.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_57.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/head and shoulder shot photo_57.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_1.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_117.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_079.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_079.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_083.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_077.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_108.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_108.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_41.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/head and shoulder shot photo_41.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_048.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_048.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_072.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_072.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/Untitled4.png
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_140.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_140.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_019.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_019.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_074.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_120.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_120.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_005.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_176.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_176.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_177.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_063.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_125.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_125.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_119.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_119.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_4.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_089.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_089.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_73.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/head and shoulder shot photo_73.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_081.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_081.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_28.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_71.jpeg
+Skipping image head and shoulder shot photo_71.jpeg: Invalid eye crop.
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_003.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/0_slanted-eyes-oval-eyebrow-skin-260nw-2418211719.jpg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_123.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_123.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_011.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_183.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_9.jpeg
+Skipping image head and shoulder shot photo_9.jpeg: Invalid eye crop.
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_152.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_149.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_149.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_128.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_110.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_110.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_020.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_051.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_051.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_170.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_170.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_5.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/head and shoulder shot photo_5.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_112.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_141.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_141.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_052.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/Untitled1.png
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/Untitled1.png
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_027.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_022.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_022.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_073.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_171.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_171.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_157.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_157.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_70.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/head and shoulder shot photo_70.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_087.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_087.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_041.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_150.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_150.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_146.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_042.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_042.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_7.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/head and shoulder shot photo_7.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_39.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/head and shoulder shot photo_39.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_85.jpeg
+Skipping image head and shoulder shot photo_85.jpeg: Invalid eye crop.
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_025.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_134.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_134.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_52.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_0.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/head and shoulder shot photo_0.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_015.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_032.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_032.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_012.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_012.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_55.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_84.jpeg
+Skipping image head and shoulder shot photo_84.jpeg: Invalid eye crop.
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_047.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_89.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/head and shoulder shot photo_89.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_065.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_175.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_175.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_179.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_179.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_018.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_018.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_156.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_156.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_186.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_37.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/head and shoulder shot photo_37.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_67.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_024.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_024.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_83.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/head and shoulder shot photo_83.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_055.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_055.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_45.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_007.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_007.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_130.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_160.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_160.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_046.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_69.jpeg
+Skipping image head and shoulder shot photo_69.jpeg: Invalid eye crop.
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_154.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_154.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_121.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_121.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_102.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_178.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_178.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_107.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_038.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_56.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/head and shoulder shot photo_56.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_109.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_109.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_059.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_059.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_8.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_188.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_188.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_3.jpeg
+Skipping image head and shoulder shot photo_3.jpeg: Invalid eye crop.
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_142.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_158.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_95.jpeg
+Skipping image head and shoulder shot photo_95.jpeg: Invalid eye crop.
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_10.jpeg
+Skipping image head and shoulder shot photo_10.jpeg: Invalid eye crop.
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_159.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_169.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_008.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom.py/images_008.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_139.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_65.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_180.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom/images_180.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_2.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_50.jpeg
+Skipping image head and shoulder shot photo_50.jpeg: Invalid eye crop.
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_113.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_118.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom/images_118.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_165.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_88.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom/head and shoulder shot photo_88.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_129.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_056.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_26.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom/head and shoulder shot photo_26.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_091.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_116.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_13.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom/head and shoulder shot photo_13.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_18.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_066.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_35.jpeg
+Skipping image head and shoulder shot photo_35.jpeg: Invalid eye crop.
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_29.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_151.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom/images_151.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_064.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_035.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_086.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom/images_086.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_099.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_029.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_005a.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom/images_005a.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_050.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom/images_050.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_057.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_161.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom/images_161.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_111.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_64.jpeg
+Skipping image head and shoulder shot photo_64.jpeg: Invalid eye crop.
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_148.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_78.jpeg
+Skipping image head and shoulder shot photo_78.jpeg: Invalid eye crop.
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_187.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom/images_187.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_036.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_174.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom/images_174.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/Untitled2.png
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_11.jpeg
+Skipping image head and shoulder shot photo_11.jpeg: Invalid eye crop.
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/Untitled6.png
+Skipping image Untitled6.png: Invalid eye crop.
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_106.jpeg
+Skipping image images_106.jpeg: Invalid eye crop.
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_53.jpeg
+Skipping image head and shoulder shot photo_53.jpeg: Invalid eye crop.
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_132.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_185.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom/images_185.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_27.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_16.jpeg
+Skipping image head and shoulder shot photo_16.jpeg: Invalid eye crop.
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_72.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_034.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom/images_034.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_016.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_058.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom/images_058.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_31.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_028.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom/images_028.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_164.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_163.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_94.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_1.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom/head and shoulder shot photo_1.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_117.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_083.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom/images_083.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_077.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/Untitled4.png
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_074.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom/images_074.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_005.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_177.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_063.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_4.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom/head and shoulder shot photo_4.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_28.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_71.jpeg
+Skipping image head and shoulder shot photo_71.jpeg: Invalid eye crop.
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_003.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/0_slanted-eyes-oval-eyebrow-skin-260nw-2418211719.jpg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_011.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom/images_011.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_183.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_9.jpeg
+Skipping image head and shoulder shot photo_9.jpeg: Invalid eye crop.
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_152.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_128.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom/images_128.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_020.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_112.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom/images_112.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_052.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom/images_052.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_027.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_073.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom/images_073.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_041.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_146.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom/images_146.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_85.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_025.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom/images_025.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_52.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_015.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_55.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom/head and shoulder shot photo_55.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_84.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_047.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_065.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom/images_065.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_186.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_67.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom/head and shoulder shot photo_67.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_45.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom/head and shoulder shot photo_45.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_130.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_046.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom/images_046.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_69.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_102.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom/images_102.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_107.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom/images_107.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_038.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_8.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom/head and shoulder shot photo_8.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_3.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom/head and shoulder shot photo_3.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_142.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_158.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_95.jpeg
+Skipping image head and shoulder shot photo_95.jpeg: Invalid eye crop.
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_10.jpeg
+Skipping image head and shoulder shot photo_10.jpeg: Invalid eye crop.
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_159.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_169.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_139.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_65.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_2.jpeg
+Skipping image head and shoulder shot photo_2.jpeg: Invalid eye crop.
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_50.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_113.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_165.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_129.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_056.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_091.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_116.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_18.jpeg
+Skipping image head and shoulder shot photo_18.jpeg: Invalid eye crop.
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_066.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_35.jpeg
+Skipping image head and shoulder shot photo_35.jpeg: Invalid eye crop.
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_29.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_064.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom/images_064.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_035.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_099.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom/images_099.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_029.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_057.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_111.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_64.jpeg
+Skipping image head and shoulder shot photo_64.jpeg: Invalid eye crop.
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_148.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_78.jpeg
+Skipping image head and shoulder shot photo_78.jpeg: Invalid eye crop.
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_036.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/Untitled2.png
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_11.jpeg
+Skipping image head and shoulder shot photo_11.jpeg: Invalid eye crop.
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/Untitled6.png
+Skipping image Untitled6.png: Invalid eye crop.
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_106.jpeg
+Skipping image images_106.jpeg: Invalid eye crop.
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_53.jpeg
+Skipping image head and shoulder shot photo_53.jpeg: Invalid eye crop.
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_132.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_27.jpeg
+Skipping image head and shoulder shot photo_27.jpeg: Invalid eye crop.
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_16.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_72.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom/head and shoulder shot photo_72.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_016.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_31.jpeg
+Skipping image head and shoulder shot photo_31.jpeg: Invalid eye crop.
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_164.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_163.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_94.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_117.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_077.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/Untitled4.png
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_005.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom/images_005.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_177.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_063.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_28.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_71.jpeg
+Skipping image head and shoulder shot photo_71.jpeg: Invalid eye crop.
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_003.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/0_slanted-eyes-oval-eyebrow-skin-260nw-2418211719.jpg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_183.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_9.jpeg
+Skipping image head and shoulder shot photo_9.jpeg: Invalid eye crop.
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_152.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_020.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom/images_020.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_027.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_041.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_85.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom/head and shoulder shot photo_85.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_52.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_015.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_84.jpeg
+Skipping image head and shoulder shot photo_84.jpeg: Invalid eye crop.
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_047.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_186.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom/images_186.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_130.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_69.jpeg
+Skipping image head and shoulder shot photo_69.jpeg: Invalid eye crop.
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_038.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_142.jpeg
+🖼️ Image result: /home/dragonicbull/image_paranoid/tools/../images/input_images/eye_zoom/images_142.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_158.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_95.jpeg
+Skipping image head and shoulder shot photo_95.jpeg: Invalid eye crop.
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_10.jpeg
+Skipping image head and shoulder shot photo_10.jpeg: Invalid eye crop.
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_159.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_169.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/images_139.jpeg
+__________
+🧾 Raw image: /home/dragonicbull/image_paranoid/tools/../images/raw_images/head and shoulder shot photo_65.jpeg

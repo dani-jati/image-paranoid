@@ -1,0 +1,90 @@
+import cv2
+import os
+import math
+
+# === CONFIGURATION ===
+input_folder = 'input_images'
+output_folder_high = '42_or_plus'
+output_folder_low = '41_or_minus'
+os.makedirs(output_folder_high, exist_ok=True)
+os.makedirs(output_folder_low, exist_ok=True)
+
+# === ANGLE CALCULATION ===
+def calculate_tilt(p1, p2):
+    dx = p2[0] - p1[0]
+    dy = p2[1] - p1[1]
+    angle_rad = math.atan2(dy, dx)
+    angle_deg = abs(math.degrees(angle_rad))
+    acute_angle = abs(90 - angle_deg)
+    return 90 - acute_angle
+
+# === PROCESS IMAGES ===
+image_files = [f for f in sorted(os.listdir(input_folder)) if f.lower().endswith(('.jpg', '.jpeg', '.png'))]
+
+for filename in image_files:
+    image_path = os.path.join(input_folder, filename)
+    image = cv2.imread(image_path)
+    if image is None:
+        print(f"❌ Failed to load {filename}")
+        continue
+
+    clone = image.copy()
+    points = []
+
+    # === Resize image if larger than screen ===
+    screen_width = 1280  # You can adjust this to match your monitor
+    screen_height = 720
+    h, w = clone.shape[:2]
+    scale = min(screen_width / w, screen_height / h, 1.0)
+    if scale < 1.0:
+        clone = cv2.resize(clone, (int(w * scale), int(h * scale)))
+
+
+    def click_event(event, x, y, flags, param):
+        if event == cv2.EVENT_LBUTTONDOWN and len(points) < 2:
+            points.append((x, y))
+            cv2.circle(clone, (x, y), 5, (0, 255, 0), -1)
+            cv2.imshow("Click Shoulder Points", clone)
+
+    print(f"\n🖼️ Processing: {filename}")
+    cv2.namedWindow("Click Shoulder Points")
+    cv2.setMouseCallback("Click Shoulder Points", click_event)
+    cv2.imshow("Click Shoulder Points", clone)
+
+    # Wait until two points are clicked
+    while len(points) < 2:
+        if cv2.waitKey(1) == 27:  # Esc to skip
+            break
+
+    if len(points) == 2:
+        # Draw shoulder line
+        cv2.line(clone, points[0], points[1], (0, 0, 255), 2)
+
+        # Draw upright neck line
+        neck_x = clone.shape[1] // 2
+        neck_p1 = (neck_x, 100)
+        neck_p2 = (neck_x, 400)
+        cv2.line(clone, neck_p1, neck_p2, (255, 0, 0), 2)
+
+        # Calculate tilt
+        tilt = calculate_tilt(points[0], points[1])
+        cv2.putText(clone, f"Tilt: {tilt:.2f} deg", (30, 30),
+                    cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 0), 2)
+
+        # Show result and wait for key
+        cv2.imshow("Result", clone)
+        cv2.waitKey(0)
+        cv2.destroyAllWindows()  # ← Add this line to close all windows
+
+        # Save to appropriate folder
+        if tilt >= 42:
+            out_path = os.path.join(output_folder_high, filename)
+        elif tilt < 41:
+            out_path = os.path.join(output_folder_low, filename)
+        else:
+            print(f"⚠️ Tilt {tilt:.2f} not in save range. Skipped.")
+            continue
+
+        cv2.imwrite(out_path, clone)
+        print(f"✅ {filename} → Tilt: {tilt:.2f}° → Saved to {out_path}")
+
