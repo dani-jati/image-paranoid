@@ -1,7 +1,6 @@
 # this script is to measure eye inclination.
 # eye inclination is the angle at which the eyes are tilted or slanted relative to the horizontal or vertical axis of the face, including upward slants, downward slants, or horizontal alignment.
 
-
 import sys, os, cv2, datetime
 from PySide6.QtWidgets import (
     QApplication, QMainWindow, QWidget, QVBoxLayout, QHBoxLayout,
@@ -9,7 +8,6 @@ from PySide6.QtWidgets import (
 )
 from PySide6.QtGui import QPixmap, QImage, QTextCursor, QAction
 from PySide6.QtCore import Qt
-
 
 if __name__ == "__main__":
     from line import Line
@@ -19,9 +17,19 @@ else:
 # === Folders ===
 script_dir = os.path.dirname(os.path.abspath(__file__))
 
-cropper_output = os.path.join(script_dir, "../images/output_images/cropper")
-# eye_inclination_input = os.path.join(script_dir, "../images/input_images/eye_inclination")
-eye_inclination_input = os.path.join(script_dir, "../images/input_images/eye_zoom")
+output_folders = {
+    "slantup": os.path.join(script_dir, "../images/output_images/eye_inclination/upward"),
+    "straight": os.path.join(script_dir, "../images/output_images/eye_inclination/straight"),
+    "slantdown": os.path.join(script_dir, "../images/output_images/eye_inclination/downward"),
+}
+
+for folder in output_folders.values():
+    os.makedirs(folder, exist_ok=True)
+
+# Ensure symlink from cropper output to shoulder-tilt input
+cropper_output = os.path.normpath(os.path.join(script_dir, "..", "images", "output_images", "cropper"))
+eye_zoom_input = os.path.normpath(os.path.join(script_dir, "..", "images", "input_images", "eye_zoom"))
+path = eye_inclination_input = eye_zoom_input
 
 """
 if os.path.isdir(cropper_output) and not os.path.exists(eye_inclination_input):
@@ -37,13 +45,7 @@ else:
 
 # print("Symlink points to:", os.readlink(eye_inclination_input))
 
-output_folders = {
-    "slantup": os.path.join(script_dir, "../images/output_images/eye_inclination/upward"),
-    "straight": os.path.join(script_dir, "../images/output_images/eye_inclination/straight"),
-    "slantdown": os.path.join(script_dir, "../images/output_images/eye_inclination/downward"),
-}
-for folder in output_folders.values():
-    os.makedirs(folder, exist_ok=True)
+
 
 progress_file = os.path.join(script_dir, "../progress/eye_inclination.txt")
 os.makedirs(os.path.dirname(progress_file), exist_ok=True)

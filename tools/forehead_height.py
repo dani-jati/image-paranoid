@@ -13,29 +13,46 @@ from PySide6.QtCore import Qt
 # === Folders ===
 script_dir = os.path.dirname(os.path.abspath(__file__))
 
-cropper_output = os.path.join(script_dir, "../images/output_images/cropper")
-forehead_height_input = os.path.join(script_dir, "../images/input_images/forehead_height")
+output_folders = {
+    "high": os.path.join(script_dir, "../images/output_images/forehead_height/0.37_or_more"),
+    "mid": os.path.join(script_dir, "../images/output_images/forehead_height/0.26_to_0.36"),
+    "short": os.path.join(script_dir, "../images/output_images/forehead_height/0_to_0.25"),
+}
+
+for folder in output_folders.values():
+    os.makedirs(folder, exist_ok=True)
+
+# Ensure symlink from cropper output to shoulder-tilt input
+cropper_output = os.path.normpath(os.path.join(script_dir, "..", "images", "output_images", "cropper"))
+forehead_height_input = os.path.normpath(os.path.join(script_dir, "..", "images", "input_images", "forehead_height"))
+path = forehead_height_input
 
 if os.path.isdir(cropper_output) and not os.path.exists(forehead_height_input):
-    os.symlink(cropper_output, forehead_height_input)
+
+    if os.name == 'posix': #linux or mac
+        os.symlink(cropper_output, forehead_height_input) #linux
+    elif os.name == 'nt': #windows
+        os.symlink(cropper_output, forehead_height_input, target_is_directory=True) #windows
+
     print(f"🔗 Symlink created: {forehead_height_input} → {cropper_output}")
 elif os.path.islink(forehead_height_input):
     print(f"✅ Symlink already exists: {forehead_height_input} → {os.readlink(forehead_height_input)}")
 elif os.path.isdir(forehead_height_input):
     print(f"⚠️ Destination exists as a real folder: {forehead_height_input} — not creating symlink.")
 else:
-    print(f"⚠️ Cropper output folder missing: {cropper_output}")
 
+    if not os.path.islink(path):
+        print(f"{path} is not a symbolic link.")
+        os.remove(path)
+
+        if os.name == 'posix': #linux or mac
+            os.symlink(cropper_output, forehead_height_input) #linux
+        elif os.name == 'nt': #windows
+            os.symlink(cropper_output, forehead_height_input, target_is_directory=True) #windows
+
+        print(f"🔗 Symlink created: {forehead_height_input} → {cropper_output}")
 
 print("Symlink points to:", os.readlink(forehead_height_input))
-
-output_folders = {
-    "high": os.path.join(script_dir, "../images/output_images/forehead_height/0.37_or_more"),
-    "mid": os.path.join(script_dir, "../images/output_images/forehead_height/0.26_to_0.36"),
-    "short": os.path.join(script_dir, "../images/output_images/forehead_height/0_to_0.25"),
-}
-for folder in output_folders.values():
-    os.makedirs(folder, exist_ok=True)
 
 progress_file = os.path.join(script_dir, "../progress/forehead_height.txt")
 os.makedirs(os.path.dirname(progress_file), exist_ok=True)

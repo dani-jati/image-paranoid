@@ -54,7 +54,6 @@ else:
 
 print("Symlink points to:", os.readlink(shoulder_tilt_input))
 
-
 # === Helpers ===
 def cvimg_to_qpix(img):
     h, w, ch = img.shape

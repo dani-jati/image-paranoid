@@ -1,0 +1,14 @@
+2025-12-07 01:08:35  WM_QUERYENDSESSION (lParam: 0 - ordinary system shutdown/restart) =====================================
+2025-12-07 01:08:35  WM_ENDSESSION (wParam: TRUE, lParam: 0 - ordinary system shutdown/restart)
+2025-12-07 01:08:35  WM_ENDSESSION (wParam: TRUE, lParam: 0 - ordinary system shutdown/restart)
+2025-12-07 01:08:35  C:\Users\nagab\Downloads\npp.8.8.7.portable.x64\config.xml is opened.
+2025-12-07 01:08:35  C:\Users\nagab\Downloads\npp.8.8.7.portable.x64\config.xml  9027/9027 bytes are written.
+2025-12-07 01:08:35  C:\Users\nagab\Downloads\npp.8.8.7.portable.x64\config.xml is opened.
+2025-12-07 01:08:35  C:\Users\nagab\Downloads\npp.8.8.7.portable.x64\config.xml is closed.
+2025-12-07 01:08:35  C:\Users\nagab\Downloads\npp.8.8.7.portable.x64\config.xml  8724/8724 bytes are written.
+2025-12-07 01:08:35  C:\Users\nagab\Downloads\npp.8.8.7.portable.x64\config.xml is closed.
+2025-12-07 01:08:35  C:\Users\nagab\Downloads\npp.8.8.7.portable.x64\session.xml is opened.
+2025-12-07 01:08:35  C:\Users\nagab\Downloads\npp.8.8.7.portable.x64\session.xml  840/840 bytes are written.
+2025-12-07 01:08:35  WM_DESTROY (isEndSessionStarted == true)
+2025-12-07 01:08:35  C:\Users\nagab\Downloads\npp.8.8.7.portable.x64\session.xml is closed.
+2025-12-07 01:08:35  WM_DESTROY (isEndSessionStarted == true)

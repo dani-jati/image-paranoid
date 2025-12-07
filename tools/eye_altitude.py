@@ -1,3 +1,7 @@
+# This script is to measure eye altitude relative to face height.
+# Eye altitude: distance from chin to nasion-radix border.
+# which is usually in the same altitude with orbital bone
+
 import sys, os, cv2, datetime
 from PySide6.QtWidgets import (
     QApplication, QMainWindow, QWidget, QVBoxLayout, QHBoxLayout,
@@ -9,24 +13,6 @@ from PySide6.QtCore import Qt
 # === Folders ===
 script_dir = os.path.dirname(os.path.abspath(__file__))
 
-cropper_output = os.path.join(script_dir, "../images/output_images/cropper")
-eye_altitude_input = os.path.join(script_dir, "../images/input_images/eye_altitude")
-
-if os.path.isdir(cropper_output) and not os.path.exists(eye_altitude_input):
-    os.symlink(cropper_output, eye_altitude_input)
-    print(f"🔗 Symlink created: {eye_altitude_input} → {cropper_output}")
-elif os.path.islink(eye_altitude_input):
-    print(f"✅ Symlink already exists: {eye_altitude_input} → {os.readlink(eye_altitude_input)}")
-elif os.path.isdir(eye_altitude_input):
-    print(f"⚠️ Destination exists as a real folder: {eye_altitude_input} — not creating symlink.")
-else:
-    print(f"⚠️ Cropper output folder missing: {cropper_output}")
-
-
-print("Symlink points to:", os.readlink(eye_altitude_input))
-
-eye_altitude_input = os.path.join(script_dir, "../images/input_images/eye_altitude")
-
 output_folders = {
     "top": os.path.join(script_dir, "../images/output_images/eye_altitude/77_or_more"),
     "high": os.path.join(script_dir, "../images/output_images/eye_altitude/73_to_77"),
@@ -35,8 +21,44 @@ output_folders = {
     "low": os.path.join(script_dir, "../images/output_images/eye_altitude/50_or_63"),
     "bottom": os.path.join(script_dir, "../images/output_images/eye_altitude/50_or_less"),
 }
+
 for folder in output_folders.values():
     os.makedirs(folder, exist_ok=True)
+
+# Ensure symlink from cropper output to shoulder-tilt input
+cropper_output = os.path.normpath(os.path.join(script_dir, "..", "images", "output_images", "cropper"))
+eye_altitude_input = os.path.normpath(os.path.join(script_dir, "..", "images", "input_images", "eye_altitude"))
+path = eye_altitude_input
+
+if os.path.isdir(cropper_output) and not os.path.exists(eye_altitude_input):
+
+    if os.name == 'posix': #linux or mac
+        os.symlink(cropper_output, eye_altitude_input) #linux
+    elif os.name == 'nt': #windows
+        os.symlink(cropper_output, eye_altitude_input, target_is_directory=True) #windows
+
+    print(f"🔗 Symlink created: {eye_altitude_input} → {cropper_output}")
+elif os.path.islink(eye_altitude_input):
+    print(f"✅ Symlink already exists: {eye_altitude_input} → {os.readlink(eye_altitude_input)}")
+elif os.path.isdir(eye_altitude_input):
+    print(f"⚠️ Destination exists as a real folder: {eye_altitude_input} — not creating symlink.")
+else:
+
+    if not os.path.islink(path):
+        print(f"{path} is not a symbolic link.")
+        os.remove(path)
+
+        if os.name == 'posix': #linux or mac
+            os.symlink(cropper_output, eye_altitude_input) #linux
+        elif os.name == 'nt': #windows
+            os.symlink(cropper_output, eye_altitude_input, target_is_directory=True) #windows
+
+        print(f"🔗 Symlink created: {eye_altitude_input} → {cropper_output}")
+
+
+print("Symlink points to:", os.readlink(eye_altitude_input))
+
+eye_altitude_input = os.path.join(script_dir, "../images/input_images/eye_altitude")
 
 progress_file = os.path.join(script_dir, "../progress/eye_altitude.txt")
 os.makedirs(os.path.dirname(progress_file), exist_ok=True)

@@ -545,3 +545,290 @@ draw line from p3 to p4
 🖼️ Processing: 1762591407217.png, 1-th of 1 files 
 ↩️ Reset current image. Please click again.
 🖼️ Processing: 1762591407217.png, 1-th of 1 files 
+🖼️ Processing: Untitled1.png, 1-th of 145 files 
+Point clicked: 47, 262
+✅ The leftist point of face contour recorded.
+2️⃣: Click the rightest point of face contour!
+Point clicked: 170, 257
+draw line from p1 to p2
+Point clicked: 360, 260
+draw line from p1 to p2
+draw line from p2 to p3
+Point clicked: 467, 274
+draw line from p1 to p2
+draw line from p2 to p3
+draw line from p3 to p4
+✅ Saved to straight\Untitled1.png
+Point clicked: 467, 274
+draw line from p1 to p2
+draw line from p2 to p3
+draw line from p3 to p4
+🖼️ Processing: Untitled5.png, 2-th of 145 files 
+Point clicked: 41, 250
+✅ The leftist point of face contour recorded.
+2️⃣: Click the rightest point of face contour!
+Point clicked: 162, 264
+draw line from p1 to p2
+Point clicked: 344, 274
+draw line from p1 to p2
+draw line from p2 to p3
+Point clicked: 464, 269
+draw line from p1 to p2
+draw line from p2 to p3
+draw line from p3 to p4
+✅ Saved to slant up\Untitled5.png
+🖼️ Processing: head and shoulder shot photo_0.jpeg, 3-th of 145 files 
+Point clicked: 32, 245
+✅ The leftist point of face contour recorded.
+2️⃣: Click the rightest point of face contour!
+Point clicked: 137, 246
+draw line from p1 to p2
+Point clicked: 364, 257
+draw line from p1 to p2
+draw line from p2 to p3
+Point clicked: 473, 273
+draw line from p1 to p2
+draw line from p2 to p3
+draw line from p3 to p4
+✅ Saved to straight\head and shoulder shot photo_0.jpeg
+🖼️ Processing: head and shoulder shot photo_1.jpeg, 4-th of 145 files 
+🖼️ Processing: head and shoulder shot photo_12.jpeg, 5-th of 145 files 
+🖼️ Processing: head and shoulder shot photo_13.jpeg, 6-th of 145 files 
+🖼️ Processing: head and shoulder shot photo_14.jpeg, 7-th of 145 files 
+Point clicked: 21, 253
+✅ The leftist point of face contour recorded.
+2️⃣: Click the rightest point of face contour!
+Point clicked: 154, 264
+draw line from p1 to p2
+Point clicked: 355, 267
+draw line from p1 to p2
+draw line from p2 to p3
+Point clicked: 486, 259
+draw line from p1 to p2
+draw line from p2 to p3
+draw line from p3 to p4
+✅ Saved to slant up\head and shoulder shot photo_14.jpeg
+🖼️ Processing: head and shoulder shot photo_19.jpeg, 8-th of 145 files 
+🖼️ Processing: head and shoulder shot photo_26.jpeg, 9-th of 145 files 
+Point clicked: 52, 263
+✅ The leftist point of face contour recorded.
+2️⃣: Click the rightest point of face contour!
+Point clicked: 180, 264
+draw line from p1 to p2
+Point clicked: 342, 258
+draw line from p1 to p2
+draw line from p2 to p3
+Point clicked: 458, 257
+draw line from p1 to p2
+draw line from p2 to p3
+draw line from p3 to p4
+✅ Saved to straight\head and shoulder shot photo_26.jpeg
+🖼️ Processing: head and shoulder shot photo_3.jpeg, 10-th of 145 files 
+🖼️ Processing: head and shoulder shot photo_30.jpeg, 11-th of 145 files 
+🖼️ Processing: head and shoulder shot photo_37.jpeg, 12-th of 145 files 
+🖼️ Processing: head and shoulder shot photo_39.jpeg, 13-th of 145 files 
+🖼️ Processing: head and shoulder shot photo_4.jpeg, 14-th of 145 files 
+Point clicked: 35, 254
+✅ The leftist point of face contour recorded.
+2️⃣: Click the rightest point of face contour!
+Point clicked: 167, 262
+draw line from p1 to p2
+Point clicked: 358, 261
+draw line from p1 to p2
+draw line from p2 to p3
+Point clicked: 481, 265
+draw line from p1 to p2
+draw line from p2 to p3
+draw line from p3 to p4
+✅ Saved to straight\head and shoulder shot photo_4.jpeg
+🖼️ Processing: head and shoulder shot photo_41.jpeg, 15-th of 145 files 
+Point clicked: 56, 252
+✅ The leftist point of face contour recorded.
+2️⃣: Click the rightest point of face contour!
+Point clicked: 158, 252
+draw line from p1 to p2
+Point clicked: 358, 252
+draw line from p1 to p2
+draw line from p2 to p3
+Point clicked: 455, 250
+draw line from p1 to p2
+draw line from p2 to p3
+draw line from p3 to p4
+✅ Saved to straight\head and shoulder shot photo_41.jpeg
+🖼️ Processing: head and shoulder shot photo_45.jpeg, 16-th of 145 files 
+🖼️ Processing: head and shoulder shot photo_5.jpeg, 17-th of 145 files 
+🖼️ Processing: head and shoulder shot photo_51.jpeg, 18-th of 145 files 
+🖼️ Processing: head and shoulder shot photo_55.jpeg, 19-th of 145 files 
+🖼️ Processing: head and shoulder shot photo_56.jpeg, 20-th of 145 files 
+🖼️ Processing: head and shoulder shot photo_57.jpeg, 21-th of 145 files 
+🖼️ Processing: head and shoulder shot photo_6.jpeg, 22-th of 145 files 
+🖼️ Processing: head and shoulder shot photo_67.jpeg, 23-th of 145 files 
+Point clicked: 38, 252
+✅ The leftist point of face contour recorded.
+2️⃣: Click the rightest point of face contour!
+Point clicked: 162, 268
+draw line from p1 to p2
+Point clicked: 360, 284
+draw line from p1 to p2
+draw line from p2 to p3
+Point clicked: 478, 290
+draw line from p1 to p2
+draw line from p2 to p3
+draw line from p3 to p4
+✅ Saved to straight\head and shoulder shot photo_67.jpeg
+🖼️ Processing: head and shoulder shot photo_7.jpeg, 24-th of 145 files 
+🖼️ Processing: head and shoulder shot photo_70.jpeg, 25-th of 145 files 
+🖼️ Processing: head and shoulder shot photo_72.jpeg, 26-th of 145 files 
+🖼️ Processing: head and shoulder shot photo_73.jpeg, 27-th of 145 files 
+🖼️ Processing: head and shoulder shot photo_75.jpeg, 28-th of 145 files 
+🖼️ Processing: head and shoulder shot photo_8.jpeg, 29-th of 145 files 
+🖼️ Processing: head and shoulder shot photo_81.jpeg, 30-th of 145 files 
+Point clicked: 28, 257
+✅ The leftist point of face contour recorded.
+2️⃣: Click the rightest point of face contour!
+Point clicked: 154, 258
+draw line from p1 to p2
+Point clicked: 368, 255
+draw line from p1 to p2
+draw line from p2 to p3
+Point clicked: 484, 256
+draw line from p1 to p2
+draw line from p2 to p3
+draw line from p3 to p4
+✅ Saved to straight\head and shoulder shot photo_81.jpeg
+🖼️ Processing: head and shoulder shot photo_83.jpeg, 31-th of 145 files 
+Point clicked: 119, 266
+✅ The leftist point of face contour recorded.
+2️⃣: Click the rightest point of face contour!
+Point clicked: 203, 263
+draw line from p1 to p2
+Point clicked: 365, 261
+draw line from p1 to p2
+draw line from p2 to p3
+Point clicked: 452, 262
+draw line from p1 to p2
+draw line from p2 to p3
+draw line from p3 to p4
+✅ Saved to straight\head and shoulder shot photo_83.jpeg
+🖼️ Processing: head and shoulder shot photo_85.jpeg, 32-th of 145 files 
+Point clicked: 30, 240
+✅ The leftist point of face contour recorded.
+2️⃣: Click the rightest point of face contour!
+Point clicked: 159, 261
+draw line from p1 to p2
+Point clicked: 361, 276
+draw line from p1 to p2
+draw line from p2 to p3
+Point clicked: 492, 274
+draw line from p1 to p2
+draw line from p2 to p3
+draw line from p3 to p4
+✅ Saved to slant up\head and shoulder shot photo_85.jpeg
+🖼️ Processing: head and shoulder shot photo_87.jpeg, 33-th of 145 files 
+Point clicked: 33, 257
+✅ The leftist point of face contour recorded.
+2️⃣: Click the rightest point of face contour!
+Point clicked: 148, 264
+draw line from p1 to p2
+Point clicked: 371, 262
+draw line from p1 to p2
+draw line from p2 to p3
+Point clicked: 486, 255
+draw line from p1 to p2
+draw line from p2 to p3
+draw line from p3 to p4
+✅ Saved to straight\head and shoulder shot photo_87.jpeg
+🖼️ Processing: head and shoulder shot photo_88.jpeg, 34-th of 145 files 
+🖼️ Processing: head and shoulder shot photo_89.jpeg, 35-th of 145 files 
+🖼️ Processing: head and shoulder shot photo_93.jpeg, 36-th of 145 files 
+🖼️ Processing: head and shoulder shot photo_96.jpeg, 37-th of 145 files 
+🖼️ Processing: images_002.jpeg, 38-th of 145 files 
+🖼️ Processing: images_005.jpeg, 39-th of 145 files 
+🖼️ Processing: images_005a.jpeg, 40-th of 145 files 
+🖼️ Processing: images_007.jpeg, 41-th of 145 files 
+🖼️ Processing: images_008.jpeg, 42-th of 145 files 
+Point clicked: 85, 266
+✅ The leftist point of face contour recorded.
+2️⃣: Click the rightest point of face contour!
+Point clicked: 188, 272
+draw line from p1 to p2
+Point clicked: 348, 262
+draw line from p1 to p2
+draw line from p2 to p3
+Point clicked: 447, 250
+draw line from p1 to p2
+draw line from p2 to p3
+draw line from p3 to p4
+✅ Saved to slant up\images_008.jpeg
+🖼️ Processing: images_009.jpeg, 43-th of 145 files 
+🖼️ Processing: images_011.jpeg, 44-th of 145 files 
+🖼️ Processing: images_012.jpeg, 45-th of 145 files 
+🖼️ Processing: images_014.jpeg, 46-th of 145 files 
+🖼️ Processing: images_017.jpeg, 47-th of 145 files 
+🖼️ Processing: images_018.jpeg, 48-th of 145 files 
+🖼️ Processing: images_019.jpeg, 49-th of 145 files 
+🖼️ Processing: images_020.jpeg, 50-th of 145 files 
+🖼️ Processing: images_022.jpeg, 51-th of 145 files 
+🖼️ Processing: images_023.jpeg, 52-th of 145 files 
+🖼️ Processing: images_024.jpeg, 53-th of 145 files 
+Point clicked: 78, 259
+✅ The leftist point of face contour recorded.
+2️⃣: Click the rightest point of face contour!
+Point clicked: 164, 267
+draw line from p1 to p2
+Point clicked: 346, 272
+draw line from p1 to p2
+draw line from p2 to p3
+Point clicked: 431, 266
+draw line from p1 to p2
+draw line from p2 to p3
+draw line from p3 to p4
+✅ Saved to slant up\images_024.jpeg
+🖼️ Processing: images_025.jpeg, 54-th of 145 files 
+🖼️ Processing: images_028.jpeg, 55-th of 145 files 
+🖼️ Processing: images_031.jpeg, 56-th of 145 files 
+🖼️ Processing: images_032.jpeg, 57-th of 145 files 
+Point clicked: 80, 246
+✅ The leftist point of face contour recorded.
+2️⃣: Click the rightest point of face contour!
+Point clicked: 172, 254
+draw line from p1 to p2
+Point clicked: 357, 270
+draw line from p1 to p2
+draw line from p2 to p3
+Point clicked: 450, 272
+draw line from p1 to p2
+draw line from p2 to p3
+draw line from p3 to p4
+✅ Saved to straight\images_032.jpeg
+🖼️ Processing: images_033.jpeg, 58-th of 145 files 
+🖼️ Processing: images_034.jpeg, 59-th of 145 files 
+🖼️ Processing: images_039.jpeg, 60-th of 145 files 
+Point clicked: 86, 257
+✅ The leftist point of face contour recorded.
+2️⃣: Click the rightest point of face contour!
+Point clicked: 182, 271
+draw line from p1 to p2
+Point clicked: 356, 274
+draw line from p1 to p2
+draw line from p2 to p3
+Point clicked: 444, 259
+draw line from p1 to p2
+draw line from p2 to p3
+draw line from p3 to p4
+✅ Saved to slant up\images_039.jpeg
+🖼️ Processing: images_040.jpeg, 61-th of 145 files 
+🖼️ Processing: images_042.jpeg, 62-th of 145 files 
+Point clicked: 108, 275
+✅ The leftist point of face contour recorded.
+2️⃣: Click the rightest point of face contour!
+Point clicked: 198, 270
+draw line from p1 to p2
+Point clicked: 340, 261
+draw line from p1 to p2
+draw line from p2 to p3
+Point clicked: 419, 265
+draw line from p1 to p2
+draw line from p2 to p3
+draw line from p3 to p4
+✅ Saved to straight\images_042.jpeg

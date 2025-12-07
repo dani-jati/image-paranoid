@@ -151,3 +151,40 @@ Point clicked: 233, 98
 Point clicked: 236, 200
 🖼️ Processing: head and shoulder shot photo_19.jpeg, 10-th of 58 files 
 ↩️ Reset current image. Please click again.
+🖼️ Processing: head and shoulder shot photo_2.jpeg, 17-th of 192 files 
+🖼️ Processing: head and shoulder shot photo_22.jpeg, 18-th of 192 files 
+Point clicked: 262, 166
+✅ Glabella recorded.
+2️⃣: Click most medial contour of hair border!
+Point clicked: 279, 116
+Point clicked: 240, 332
+🧭 Auto-perspective : Side, 👁️ Please compare with your own visual judgment!
+📏 L1: 52.81, L2: 167.08, Ratio: 0.32
+✅ Saved to c:\Users\nagab\OneDrive\Documents\image_paranoid\tools\../images/output_images/forehead_height/0.26_to_0.36\head and shoulder shot photo_22.jpeg
+🗑️ Removed wrong result: c:\Users\nagab\OneDrive\Documents\image_paranoid\tools\../images/output_images/forehead_height/0.26_to_0.36\head and shoulder shot photo_22.jpeg
+🖼️ Processing: head and shoulder shot photo_22.jpeg, 18-th of 192 files 
+↩️ Reset current image. Please click again.
+Point clicked: 262, 163
+✅ Glabella recorded.
+2️⃣: Click most medial contour of hair border!
+Point clicked: 269, 111
+Point clicked: 241, 328
+🧭 Auto-perspective : Side, 👁️ Please compare with your own visual judgment!
+📏 L1: 52.47, L2: 165.19, Ratio: 0.32
+✅ Saved to c:\Users\nagab\OneDrive\Documents\image_paranoid\tools\../images/output_images/forehead_height/0.26_to_0.36\head and shoulder shot photo_22.jpeg
+🖼️ Processing: head and shoulder shot photo_26.jpeg, 19-th of 192 files 
+Point clicked: 258, 183
+✅ Glabella recorded.
+2️⃣: Click most medial contour of hair border!
+🗑️ Removed wrong result: c:\Users\nagab\OneDrive\Documents\image_paranoid\tools\../images/output_images/forehead_height/0.26_to_0.36\head and shoulder shot photo_22.jpeg
+🖼️ Processing: head and shoulder shot photo_26.jpeg, 19-th of 192 files 
+↩️ Reset current image. Please click again.
+Point clicked: 253, 123
+✅ Glabella recorded.
+2️⃣: Click most medial contour of hair border!
+Point clicked: 253, 184
+Point clicked: 232, 330
+🧭 Auto-perspective : Side, 👁️ Please compare with your own visual judgment!
+📏 L1: 61.00, L2: 207.00, Ratio: 0.29
+✅ Saved to c:\Users\nagab\OneDrive\Documents\image_paranoid\tools\../images/output_images/forehead_height/0.26_to_0.36\head and shoulder shot photo_26.jpeg
+🖼️ Processing: head and shoulder shot photo_27.jpeg, 20-th of 192 files 

@@ -87,7 +87,7 @@ class Line:
         y_deviation = math.sqrt((angle_B - ((angle_B + angle_C)/2))**2 + (angle_C - ((angle_B + angle_C)/2))**2)
 
         # inclination
-        if ( average_degree >= 0) and ( average_degree < 5 ):
+        if ( average_degree >= 0) and ( average_degree < 3.5 ):
             inclination = "straight"
         else:
             if ( ( A[1] - B[1] ) < 0 ) and ( ( D[1] - C[1] ) < 0 ) :

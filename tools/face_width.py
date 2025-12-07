@@ -1,3 +1,7 @@
+# This script is to measure face width relative to face height.
+# Face width: distance from the most lateral left and right mid-face contour.
+# Face height: distance from chin to mid border hair at forehead top border.
+
 import sys, os, cv2, datetime
 from PySide6.QtWidgets import (
     QApplication, QMainWindow, QWidget, QVBoxLayout, QHBoxLayout,
@@ -9,22 +13,6 @@ from PySide6.QtCore import Qt
 # === Folders ===
 script_dir = os.path.dirname(os.path.abspath(__file__))
 
-cropper_output = os.path.join(script_dir, "../images/output_images/cropper")
-face_width_input = os.path.join(script_dir, "../images/input_images/face_width")
-
-if os.path.isdir(cropper_output) and not os.path.exists(face_width_input):
-    os.symlink(cropper_output, face_width_input)
-    print(f"🔗 Symlink created: {face_width_input} → {cropper_output}")
-elif os.path.islink(face_width_input):
-    print(f"✅ Symlink already exists: {face_width_input} → {os.readlink(face_width_input)}")
-elif os.path.isdir(face_width_input):
-    print(f"⚠️ Destination exists as a real folder: {face_width_input} — not creating symlink.")
-else:
-    print(f"⚠️ Cropper output folder missing: {cropper_output}")
-
-
-print("Symlink points to:", os.readlink(face_width_input))
-
 output_folders = {
     "high": os.path.join(script_dir, "../images/output_images/face_width/0.76_or_more"),
     "mid": os.path.join(script_dir, "../images/output_images/face_width/0.68_to_0.75"),
@@ -32,6 +20,38 @@ output_folders = {
 }
 for folder in output_folders.values():
     os.makedirs(folder, exist_ok=True)
+
+# Ensure symlink from cropper output to shoulder-tilt input
+cropper_output = os.path.normpath(os.path.join(script_dir, "..", "images", "output_images", "cropper"))
+face_width_input = os.path.normpath(os.path.join(script_dir, "..", "images", "input_images", "face_width"))
+path = face_width_input
+
+if os.path.isdir(cropper_output) and not os.path.exists(face_width_input):
+
+    if os.name == 'posix': #linux or mac
+        os.symlink(cropper_output, face_width_input) #linux
+    elif os.name == 'nt': #windows
+        os.symlink(cropper_output, face_width_input, target_is_directory=True) #windows
+    
+    print(f"🔗 Symlink created: {face_width_input} → {cropper_output}")
+elif os.path.islink(face_width_input):
+    print(f"✅ Symlink already exists: {face_width_input} → {os.readlink(face_width_input)}")
+elif os.path.isdir(face_width_input):
+    print(f"⚠️ Destination exists as a real folder: {face_width_input} — not creating symlink.")
+else:
+
+    if not os.path.islink(path):
+        print(f"{path} is not a symbolic link.")
+        os.remove(path)
+
+        if os.name == 'posix': #linux or mac
+            os.symlink(cropper_output, face_width_input) #linux
+        elif os.name == 'nt': #windows
+            os.symlink(cropper_output, face_width_input, target_is_directory=True) #windows
+
+        print(f"🔗 Symlink created: {face_width_input} → {cropper_output}")
+
+print("Symlink points to:", os.readlink(face_width_input))
 
 progress_file = os.path.join(script_dir, "../progress/face_width.txt")
 os.makedirs(os.path.dirname(progress_file), exist_ok=True)
@@ -191,8 +211,8 @@ class Dashboard(QMainWindow):
         step = len(self.clicks)
 
         if step == 1:
-            self.add_log("✅ Leftist lateral neck contour recorded.")
-            self.add_log("2️⃣: Click rightist lateral neck contour!")
+            self.add_log("✅ Leftist lateral midface contour recorded.")
+            self.add_log("2️⃣: Click rightist lateral midface contour!")
 
         if self.raw_img is None:
             return
