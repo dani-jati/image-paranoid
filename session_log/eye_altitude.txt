@@ -1809,3 +1809,65 @@ Point clicked: 226, 96
 draw line from p1 to p2
 ✅ Mid hair border recorded. Step 5️⃣: Click RIGHT eye corner.
 ✅ Saved to c:\Users\nagab\OneDrive\Documents\image_paranoid\tools\../images/output_images/eye_altitude/50_or_63\head and shoulder shot photo_19.jpeg
+🖼️ Processing: head and shoulder shot photo_2.jpeg, 17-th of 192 files
+Step 1️⃣: Click left end of nasion-radix border line.
+🖼️ Processing: head and shoulder shot photo_2.jpeg, 17-th of 192 files
+Step 1️⃣: Click left end of nasion-radix border line.
+🖼️ Processing: head and shoulder shot photo_2.jpeg, 17-th of 192 files
+Step 1️⃣: Click left end of nasion-radix border line.
+🖼️ Processing: head and shoulder shot photo_2.jpeg, 17-th of 192 files
+Step 1️⃣: Click left end of nasion-radix border line.
+🖼️ Processing: head and shoulder shot photo_2.jpeg, 17-th of 192 files
+Step 1️⃣: Click left end of nasion-radix border line.
+🖼️ Processing: head and shoulder shot photo_2.jpeg, 17-th of 192 files
+Step 1️⃣: Click left end of nasion-radix border line.
+🖼️ Processing: head and shoulder shot photo_2.jpeg, 17-th of 192 files
+Step 1️⃣: Click left end of nasion-radix border line.
+🖼️ Processing: head and shoulder shot photo_22.jpeg, 18-th of 192 files
+Step 1️⃣: Click left end of nasion-radix border line.
+Point clicked: 242, 189
+✅ Left nasion-radix border line recorded.
+Step 2️⃣: Click right end of nasion-radix border line.
+Point clicked: 273, 190
+✅ Right pupil recorded. Step 3️⃣: Click NASOLABIAL angle.
+draw line from p1 to p2
+Point clicked: 239, 328
+draw line from p1 to p2
+✅ Chin recorded. Step 4️⃣: Click the most medial mid hair border.
+Point clicked: 240, 107
+draw line from p1 to p2
+✅ Mid hair border recorded. Step 5️⃣: Click RIGHT eye corner.
+✅ Saved to c:\Users\nagab\OneDrive\Documents\image_paranoid\tools\../images/output_images/eye_altitude/63_or_69\head and shoulder shot photo_22.jpeg
+🗑️ Removed wrong result: c:\Users\nagab\OneDrive\Documents\image_paranoid\tools\../images/output_images/eye_altitude/63_or_69\head and shoulder shot photo_22.jpeg
+🖼️ Processing: head and shoulder shot photo_22.jpeg, 18-th of 192 files
+Step 1️⃣: Click left end of nasion-radix border line.
+↩️ Reset current image. Please click again.
+Point clicked: 264, 194
+✅ Left nasion-radix border line recorded.
+Step 2️⃣: Click right end of nasion-radix border line.
+Point clicked: 243, 330
+✅ Right pupil recorded. Step 3️⃣: Click NASOLABIAL angle.
+draw line from p1 to p2
+Point clicked: 253, 106
+draw line from p1 to p2
+✅ Chin recorded. Step 4️⃣: Click the most medial mid hair border.
+🖼️ Processing: head and shoulder shot photo_22.jpeg, 18-th of 192 files
+Step 1️⃣: Click left end of nasion-radix border line.
+↩️ Reset current image. Please click again.
+Point clicked: 244, 188
+✅ Left nasion-radix border line recorded.
+Step 2️⃣: Click right end of nasion-radix border line.
+Point clicked: 276, 192
+✅ Right pupil recorded. Step 3️⃣: Click NASOLABIAL angle.
+draw line from p1 to p2
+Point clicked: 244, 330
+draw line from p1 to p2
+✅ Chin recorded. Step 4️⃣: Click the most medial mid hair border.
+Point clicked: 262, 108
+draw line from p1 to p2
+✅ Mid hair border recorded. Step 5️⃣: Click RIGHT eye corner.
+✅ Saved to c:\Users\nagab\OneDrive\Documents\image_paranoid\tools\../images/output_images/eye_altitude/63_or_69\head and shoulder shot photo_22.jpeg
+🖼️ Processing: head and shoulder shot photo_26.jpeg, 19-th of 192 files
+Step 1️⃣: Click left end of nasion-radix border line.
+🖼️ Processing: head and shoulder shot photo_26.jpeg, 19-th of 192 files
+Step 1️⃣: Click left end of nasion-radix border line.

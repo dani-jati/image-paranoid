@@ -1,6 +1,8 @@
 # This script is to measure eye altitude relative to face height.
-# Eye altitude: distance from chin to nasion-radix border.
-# which is usually in the same altitude with orbital bone
+# Forenose altitude: distance from chin to nasion-radix border. 
+# I coined term "forenose" because I did not find accurate term for "pangkal irung,
+# ie, a visible borderline where nasion and radix mmeet in Kawi Bull ethnic's face".
+# Probably, englishmen do not have that visible line, so they do not have term for it.
 
 import sys, os, cv2, datetime
 from PySide6.QtWidgets import (
@@ -166,13 +168,23 @@ class Dashboard(QMainWindow):
             self.add_log(f"⚠️ Could not load {filename}")
             return
 
+        # instruction
+        legend_x, legend_y = 0,0
+        preview = img.copy()
+        cv2.putText(preview, "Click the leftmost point of radix-nasion border!", (legend_x+10, legend_y+30),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 3)
+        cv2.putText(preview, "Click the leftmost point of radix-nasion border!", (legend_x+10, legend_y+30),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,255,255), 2)        
+
+        self.proc_label.setPixmap(cvimg_to_qpix(preview).scaled(self.proc_label.width(), self.proc_label.height(), Qt.KeepAspectRatio))
+        """
         self.proc_label.setPixmap(
             cvimg_to_qpix(self.raw_img).scaled(
                 self.proc_label.width(), self.proc_label.height(),
                 Qt.KeepAspectRatio, Qt.SmoothTransformation
             )
         )
-
+        """
         self.add_log(f"🖼️ Processing: {os.path.basename(filename)}, {self.index+1}-th of {len(self.files)} files")
         self.clicks = []
         self.add_log("Step 1️⃣: Click left end of nasion-radix border line.")

@@ -186,3 +186,25 @@ Point clicked: 54, 419
 2️⃣: Click the rightest point of mouth junction!
 🖼️ Processing: Melior-oral-commissure.png, 2-th of 2 files 
 🖼️ Processing: Melior-oral-commissure.png, 2-th of 2 files 
+🖼️ Processing: Melior-oral-commissure.png, 2-th of 2 files 
+Point clicked: 60, 217
+✅ The leftist point of face contour recorded.
+2️⃣: Click the rightest point of mouth junction!
+Point clicked: 466, 215
+draw line from p1 to p2
+Point clicked: 263, 254
+draw line from p1 to p2
+Point clicked: 118, 232
+draw line from p1 to p2
+Point clicked: 176, 240
+draw line from p1 to p2
+Point clicked: 231, 250
+draw line from p1 to p2
+Point clicked: 294, 250
+draw line from p1 to p2
+Point clicked: 352, 244
+draw line from p1 to p2
+Point clicked: 408, 232
+draw line from p1 to p2
+✅ Saved to c:\Users\nagab\OneDrive\Documents\image_paranoid\tools\../images/output_images/mouthjunction_path/concave\Melior-oral-commissure.png
+🖼️ Processing: Melior-oral-commissure.png, 2-th of 2 files 
