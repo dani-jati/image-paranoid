@@ -183,19 +183,29 @@ class Dashboard(QMainWindow):
             self.add_log(f"⚠️ Could not load {filename}")
             return
 
+        self.add_log(
+            f"🖼️ Processing: {os.path.basename(filename)}, {self.index+1}-th of {len(self.files)} files "
+        )
+        """
         self.proc_label.setPixmap(
             cvimg_to_qpix(self.raw_img).scaled(
                 self.proc_label.width(), self.proc_label.height(),
                 Qt.KeepAspectRatio, Qt.SmoothTransformation
             )
         )
+        """
+                
+        # instruction
+        legend_x, legend_y = 0,0
+        preview = img.copy()
+        cv2.putText(preview, "Click medial mid-hair border!", (legend_x+10, legend_y+30),
+                    cv2.FONT_HERSHEY_PLAIN, 1.2, (0,0,0), 3)
+        cv2.putText(preview, "Click medial mid-hair border!", (legend_x+10, legend_y+30),
+                    cv2.FONT_HERSHEY_PLAIN, 1.2, (0,255, 0), 2)
+      
+        self.add_log("Click glabella, above nasion!")
 
-        self.add_log(
-            f"🖼️ Processing: {os.path.basename(filename)}, {self.index+1}-th of {len(self.files)} files "
-        )
-
-        preview = draw_grid(img.copy())
-        self.proc_label.setPixmap(cvimg_to_qpix(preview).scaled(self.proc_label.width(), self.proc_label.height(), Qt.KeepAspectRatio))
+        self.proc_label.setPixmap(cvimg_to_qpix(preview).scaled(self.proc_label.width(), self.proc_label.height(), Qt.KeepAspectRatio))        
 
         self.view_selector.setCurrentIndex(0)
         self.view_selector.hide()
@@ -211,15 +221,12 @@ class Dashboard(QMainWindow):
 
         step = len(self.clicks)
 
-        if step == 1:
-            self.add_log("✅ Glabella recorded.")
-            self.add_log("2️⃣: Click most medial contour of hair border!")
-
         if self.raw_img is None:
             return
 
         # copy image and draw grid
-        img_copy = draw_black_grid(self.raw_img.copy(), spacing_px=40)
+        # img_copy = draw_black_grid(self.raw_img.copy(), spacing_px=40)
+        img_copy = self.raw_img.copy()
 
         # scale factors
         h, w = self.raw_img.shape[:2]
@@ -286,6 +293,32 @@ class Dashboard(QMainWindow):
                     cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 3)
                 cv2.putText(img_copy, "Face height", (cx3-100, cy3+85),
                     cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,255,0), 2)
+
+        if step == 1:
+            
+            self.add_log("✅ Glabella recorded.")
+            
+            # instruction
+            legend_x, legend_y = 0,0
+            preview = img_copy
+            cv2.putText(preview, "Click glabella, above nasion!", (legend_x+10, legend_y+30),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 3)
+            cv2.putText(preview, "Click glabella, above nasion!", (legend_x+10, legend_y+30),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,255,0), 2)
+            
+            self.add_log("2️⃣: Click glabella, above nasion!")
+
+        if step == 2:
+            
+            # instruction
+            legend_x, legend_y = 0,0
+            preview = img_copy
+            cv2.putText(preview, "Click chin menton!", (legend_x+10, legend_y+30),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 3)
+            cv2.putText(preview, "Click chin menton!", (legend_x+10, legend_y+30),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,255,0), 2)
+            
+            self.add_log("2️⃣: Click chin menton!")
 
         # update preview
         self.proc_label.setPixmap(

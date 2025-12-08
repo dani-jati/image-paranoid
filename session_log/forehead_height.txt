@@ -188,3 +188,181 @@ Point clicked: 232, 330
 📏 L1: 61.00, L2: 207.00, Ratio: 0.29
 ✅ Saved to c:\Users\nagab\OneDrive\Documents\image_paranoid\tools\../images/output_images/forehead_height/0.26_to_0.36\head and shoulder shot photo_26.jpeg
 🖼️ Processing: head and shoulder shot photo_27.jpeg, 20-th of 192 files 
+🖼️ Processing: head and shoulder shot photo_27.jpeg, 20-th of 192 files 
+Click glabella, a mid-point between eyebrow bone apices!
+🖼️ Processing: head and shoulder shot photo_27.jpeg, 20-th of 192 files 
+Click glabella, a mid-point between eyebrow bone apices!
+Point clicked: 62, 218
+✅ Glabella recorded.
+2️⃣: Click most medial contour of hair border!
+🖼️ Processing: head and shoulder shot photo_27.jpeg, 20-th of 192 files 
+Click glabella, a mid-point between eyebrow bone apices!
+🖼️ Processing: head and shoulder shot photo_27.jpeg, 20-th of 192 files 
+Click glabella, a mid-point between eyebrow bone apices!
+🖼️ Processing: head and shoulder shot photo_27.jpeg, 20-th of 192 files 
+Click glabella, a mid-point between eyebrow bone apices!
+🖼️ Processing: head and shoulder shot photo_27.jpeg, 20-th of 192 files 
+Click glabella, a mid-point between eyebrow bone apices!
+🖼️ Processing: head and shoulder shot photo_27.jpeg, 20-th of 192 files 
+Click glabella, a mid-point between eyebrow bone apices!
+🖼️ Processing: head and shoulder shot photo_27.jpeg, 20-th of 192 files 
+Click glabella, a mid-point between eyebrow bone apices!
+🖼️ Processing: head and shoulder shot photo_27.jpeg, 20-th of 192 files 
+Click glabella, a mid-point between eyebrow bone apices!
+🖼️ Processing: head and shoulder shot photo_27.jpeg, 20-th of 192 files 
+Click glabella, a mid-point between eyebrow bone apices!
+🖼️ Processing: head and shoulder shot photo_27.jpeg, 20-th of 192 files 
+Click glabella, a mid-point between eyebrow bone apices!
+🖼️ Processing: head and shoulder shot photo_27.jpeg, 20-th of 192 files 
+Click glabella, a mid-point between eyebrow bone apices!
+🖼️ Processing: head and shoulder shot photo_27.jpeg, 20-th of 192 files 
+Click glabella, a mid-point between eyebrow bone apices!
+🖼️ Processing: head and shoulder shot photo_27.jpeg, 20-th of 192 files 
+Click glabella, a mid-point between eyebrow bone apices!
+🖼️ Processing: head and shoulder shot photo_27.jpeg, 20-th of 192 files 
+Click glabella, a mid-point between eyebrow bone apices!
+🖼️ Processing: head and shoulder shot photo_27.jpeg, 20-th of 192 files 
+Click glabella, above nasion!
+🖼️ Processing: head and shoulder shot photo_27.jpeg, 20-th of 192 files 
+Click glabella, above nasion!
+Point clicked: 165, 166
+✅ Glabella recorded.
+2️⃣: Click medial mid-hair border!
+Point clicked: 158, 81
+🖼️ Processing: head and shoulder shot photo_27.jpeg, 20-th of 192 files 
+Click glabella, above nasion!
+↩️ Reset current image. Please click again.
+Point clicked: 156, 74
+✅ Glabella recorded.
+2️⃣: Click medial mid-hair border!
+Point clicked: 172, 163
+🖼️ Processing: head and shoulder shot photo_27.jpeg, 20-th of 192 files 
+Click glabella, above nasion!
+↩️ Reset current image. Please click again.
+Point clicked: 155, 76
+✅ Glabella recorded.
+2️⃣: Click medial mid-hair border!
+Point clicked: 168, 170
+Point clicked: 200, 350
+🧭 Auto-perspective : Side, 👁️ Please compare with your own visual judgment!
+📏 L1: 94.89, L2: 278.89, Ratio: 0.34
+✅ Saved to c:\Users\nagab\OneDrive\Documents\image_paranoid\tools\../images/output_images/forehead_height/0.26_to_0.36\head and shoulder shot photo_27.jpeg
+🖼️ Processing: head and shoulder shot photo_28.jpeg, 21-th of 192 files 
+Click glabella, above nasion!
+🖼️ Processing: head and shoulder shot photo_29.jpeg, 22-th of 192 files 
+Click glabella, above nasion!
+Point clicked: 254, 140
+✅ Glabella recorded.
+2️⃣: Click glabella, above nasion!
+Point clicked: 254, 186
+🖼️ Processing: head and shoulder shot photo_29.jpeg, 22-th of 192 files 
+Click glabella, above nasion!
+↩️ Reset current image. Please click again.
+Point clicked: 260, 137
+✅ Glabella recorded.
+2️⃣: Click glabella, above nasion!
+Point clicked: 258, 188
+Point clicked: 237, 329
+🧭 Auto-perspective : Side, 👁️ Please compare with your own visual judgment!
+📏 L1: 51.04, L2: 192.00, Ratio: 0.27
+✅ Saved to c:\Users\nagab\OneDrive\Documents\image_paranoid\tools\../images/output_images/forehead_height/0.26_to_0.36\head and shoulder shot photo_29.jpeg
+🗑️ Removed wrong result: c:\Users\nagab\OneDrive\Documents\image_paranoid\tools\../images/output_images/forehead_height/0.26_to_0.36\head and shoulder shot photo_29.jpeg
+🖼️ Processing: head and shoulder shot photo_29.jpeg, 22-th of 192 files 
+Click glabella, above nasion!
+↩️ Reset current image. Please click again.
+Point clicked: 257, 125
+✅ Glabella recorded.
+2️⃣: Click glabella, above nasion!
+Point clicked: 257, 190
+🖼️ Processing: head and shoulder shot photo_29.jpeg, 22-th of 192 files 
+Click glabella, above nasion!
+↩️ Reset current image. Please click again.
+Point clicked: 249, 130
+✅ Glabella recorded.
+2️⃣: Click glabella, above nasion!
+Point clicked: 250, 187
+🖼️ Processing: head and shoulder shot photo_29.jpeg, 22-th of 192 files 
+Click glabella, above nasion!
+↩️ Reset current image. Please click again.
+🖼️ Processing: head and shoulder shot photo_3.jpeg, 23-th of 192 files 
+Click glabella, above nasion!
+Point clicked: 248, 118
+✅ Glabella recorded.
+2️⃣: Click glabella, above nasion!
+Point clicked: 264, 182
+🖼️ Processing: head and shoulder shot photo_3.jpeg, 23-th of 192 files 
+Click glabella, above nasion!
+↩️ Reset current image. Please click again.
+Point clicked: 251, 118
+✅ Glabella recorded.
+2️⃣: Click glabella, above nasion!
+🖼️ Processing: head and shoulder shot photo_3.jpeg, 23-th of 192 files 
+Click glabella, above nasion!
+Point clicked: 250, 120
+✅ Glabella recorded.
+2️⃣: Click glabella, above nasion!
+Point clicked: 260, 182
+Point clicked: 289, 320
+🧭 Auto-perspective : Side, 👁️ Please compare with your own visual judgment!
+📏 L1: 62.80, L2: 205.92, Ratio: 0.30
+✅ Saved to c:\Users\nagab\OneDrive\Documents\image_paranoid\tools\../images/output_images/forehead_height/0.26_to_0.36\head and shoulder shot photo_3.jpeg
+🗑️ Removed wrong result: c:\Users\nagab\OneDrive\Documents\image_paranoid\tools\../images/output_images/forehead_height/0.26_to_0.36\head and shoulder shot photo_3.jpeg
+🖼️ Processing: head and shoulder shot photo_3.jpeg, 23-th of 192 files 
+Click glabella, above nasion!
+↩️ Reset current image. Please click again.
+Point clicked: 253, 119
+✅ Glabella recorded.
+2️⃣: Click glabella, above nasion!
+Point clicked: 264, 189
+🖼️ Processing: head and shoulder shot photo_30.jpeg, 24-th of 192 files 
+Click glabella, above nasion!
+🖼️ Processing: head and shoulder shot photo_30.jpeg, 24-th of 192 files 
+Click glabella, above nasion!
+🖼️ Processing: head and shoulder shot photo_31.jpeg, 25-th of 192 files 
+Click glabella, above nasion!
+Point clicked: 251, 127
+✅ Glabella recorded.
+2️⃣: Click glabella, above nasion!
+Point clicked: 251, 199
+2️⃣: Click chin menton!
+Point clicked: 232, 338
+🧭 Auto-perspective : Side, 👁️ Please compare with your own visual judgment!
+📏 L1: 72.00, L2: 211.00, Ratio: 0.34
+✅ Saved to c:\Users\nagab\OneDrive\Documents\image_paranoid\tools\../images/output_images/forehead_height/0.26_to_0.36\head and shoulder shot photo_31.jpeg
+🗑️ Removed wrong result: c:\Users\nagab\OneDrive\Documents\image_paranoid\tools\../images/output_images/forehead_height/0.26_to_0.36\head and shoulder shot photo_31.jpeg
+🖼️ Processing: head and shoulder shot photo_31.jpeg, 25-th of 192 files 
+Click glabella, above nasion!
+↩️ Reset current image. Please click again.
+Point clicked: 255, 124
+✅ Glabella recorded.
+2️⃣: Click glabella, above nasion!
+Point clicked: 255, 198
+2️⃣: Click chin menton!
+Point clicked: 256, 340
+🧭 Auto-perspective : Side, 👁️ Please compare with your own visual judgment!
+📏 L1: 74.00, L2: 217.02, Ratio: 0.34
+✅ Saved to c:\Users\nagab\OneDrive\Documents\image_paranoid\tools\../images/output_images/forehead_height/0.26_to_0.36\head and shoulder shot photo_31.jpeg
+🗑️ Removed wrong result: c:\Users\nagab\OneDrive\Documents\image_paranoid\tools\../images/output_images/forehead_height/0.26_to_0.36\head and shoulder shot photo_31.jpeg
+🖼️ Processing: head and shoulder shot photo_31.jpeg, 25-th of 192 files 
+Click glabella, above nasion!
+↩️ Reset current image. Please click again.
+Point clicked: 264, 129
+✅ Glabella recorded.
+2️⃣: Click glabella, above nasion!
+Point clicked: 264, 197
+2️⃣: Click chin menton!
+Point clicked: 244, 340
+🧭 Auto-perspective : Side, 👁️ Please compare with your own visual judgment!
+📏 L1: 68.00, L2: 211.00, Ratio: 0.32
+✅ Saved to c:\Users\nagab\OneDrive\Documents\image_paranoid\tools\../images/output_images/forehead_height/0.26_to_0.36\head and shoulder shot photo_31.jpeg
+🖼️ Processing: head and shoulder shot photo_35.jpeg, 26-th of 192 files 
+Click glabella, above nasion!
+Point clicked: 211, 72
+✅ Glabella recorded.
+2️⃣: Click glabella, above nasion!
+Point clicked: 244, 158
+2️⃣: Click chin menton!
+Point clicked: 329, 348
+🧭 Auto-perspective : Diagonal, 👁️ Please compare with your own visual judgment!
+📏 L1: 92.11, L2: 295.30, Ratio: 0.31
+✅ Saved to c:\Users\nagab\OneDrive\Documents\image_paranoid\tools\../images/output_images/forehead_height/0.26_to_0.36\head and shoulder shot photo_35.jpeg

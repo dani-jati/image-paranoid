@@ -32,7 +32,9 @@ cropper_output = os.path.normpath(os.path.join(script_dir, "..", "images", "outp
 eye_zoom_input = os.path.normpath(os.path.join(script_dir, "..", "images", "input_images", "eye_zoom"))
 path = eye_inclination_input = eye_zoom_input
 
+# Check for folder input
 if not os.path.exists(eye_inclination_input):
+
     # run eye_zoom.py first to create the input folder.
     subprocess.run(["python", os.path.join(script_dir, "eye_zoom.py")])
 
@@ -164,20 +166,12 @@ class Dashboard(QMainWindow):
         if self.raw_img is None:
             self.add_log(f"⚠️ Could not load {filename}")
             return
-        """
-        self.proc_label.setPixmap(
-            cvimg_to_qpix(self.raw_img).scaled(
-                self.proc_label.width(), self.proc_label.height(),
-                Qt.KeepAspectRatio, Qt.SmoothTransformation
-            )
-        )
-        """
         
         self.add_log(
             f"🖼️ Processing: {os.path.basename(filename)}, {self.index+1}-th of {len(self.files)} files "
         )
         
-          # instruction
+        # instruction
         legend_x, legend_y = 0,0
         preview = img.copy()
         cv2.putText(preview, "Click lateral angle of left eye!", (legend_x+10, legend_y+30),
@@ -252,6 +246,7 @@ class Dashboard(QMainWindow):
         if step >= 2:
 
             self.add_log("Draw line from lateral to medial angle of left eye")
+
             p1,p2 = coords[0], coords[1]
 
             cv2.line(img_copy, p1, p2, (0,255,0), 2)
