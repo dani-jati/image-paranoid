@@ -101,7 +101,7 @@ class Line:
             else:
                 print( A[1] - B[1] )
                 print( D[1] - C[1] )
-                inclination = "slant half"
+                inclination = "slant mix"
         return {
             "angle 1": angle_B,
             "angle 2": angle_C,

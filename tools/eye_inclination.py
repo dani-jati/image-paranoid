@@ -1,7 +1,7 @@
 # this script is to measure eye inclination.
 # eye inclination is the angle at which the eyes are tilted or slanted relative to the horizontal or vertical axis of the face, including upward slants, downward slants, or horizontal alignment.
 
-import sys, os, cv2, datetime
+import sys, os, cv2, datetime, subprocess
 from PySide6.QtWidgets import (
     QApplication, QMainWindow, QWidget, QVBoxLayout, QHBoxLayout,
     QLabel, QTextEdit, QComboBox
@@ -18,9 +18,10 @@ else:
 script_dir = os.path.dirname(os.path.abspath(__file__))
 
 output_folders = {
-    "slantup": os.path.join(script_dir, "../images/output_images/eye_inclination/upward"),
+    "slant up": os.path.join(script_dir, "../images/output_images/eye_inclination/slant_up"),
     "straight": os.path.join(script_dir, "../images/output_images/eye_inclination/straight"),
-    "slantdown": os.path.join(script_dir, "../images/output_images/eye_inclination/downward"),
+    "slant down": os.path.join(script_dir, "../images/output_images/eye_inclination/slant_down"),
+    "slant mix": os.path.join(script_dir, "../images/output_images/eye_inclination/slant_mix"),    
 }
 
 for folder in output_folders.values():
@@ -31,21 +32,9 @@ cropper_output = os.path.normpath(os.path.join(script_dir, "..", "images", "outp
 eye_zoom_input = os.path.normpath(os.path.join(script_dir, "..", "images", "input_images", "eye_zoom"))
 path = eye_inclination_input = eye_zoom_input
 
-"""
-if os.path.isdir(cropper_output) and not os.path.exists(eye_inclination_input):
-    os.symlink(cropper_output, eye_inclination_input)
-    print(f"🔗 Symlink created: {eye_inclination_input} → {cropper_output}")
-elif os.path.islink(eye_inclination_input):
-    print(f"✅ Symlink already exists: {eye_inclination_input} → {os.readlink(eye_inclination_input)}")
-elif os.path.isdir(eye_inclination_input):
-    print(f"⚠️ Destination exists as a real folder: {eye_inclination_input} — not creating symlink.")
-else:
-    print(f"⚠️ Cropper output folder missing: {cropper_output}")
-"""
-
-# print("Symlink points to:", os.readlink(eye_inclination_input))
-
-
+if not os.path.exists(eye_inclination_input):
+    # run eye_zoom.py first to create the input folder.
+    subprocess.run(["python", os.path.join(script_dir, "eye_zoom.py")])
 
 progress_file = os.path.join(script_dir, "../progress/eye_inclination.txt")
 os.makedirs(os.path.dirname(progress_file), exist_ok=True)
@@ -175,20 +164,29 @@ class Dashboard(QMainWindow):
         if self.raw_img is None:
             self.add_log(f"⚠️ Could not load {filename}")
             return
-
+        """
         self.proc_label.setPixmap(
             cvimg_to_qpix(self.raw_img).scaled(
                 self.proc_label.width(), self.proc_label.height(),
                 Qt.KeepAspectRatio, Qt.SmoothTransformation
             )
         )
-
+        """
+        
         self.add_log(
             f"🖼️ Processing: {os.path.basename(filename)}, {self.index+1}-th of {len(self.files)} files "
         )
-
-        # preview = draw_grid(img.copy())
+        
+          # instruction
+        legend_x, legend_y = 0,0
         preview = img.copy()
+        cv2.putText(preview, "Click lateral angle of left eye!", (legend_x+10, legend_y+30),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 3)
+        cv2.putText(preview, "Click lateral angle of left eye!", (legend_x+10, legend_y+30),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,255,255), 2)
+      
+        self.add_log("Click lateral angle of left eye!")
+
         self.proc_label.setPixmap(cvimg_to_qpix(preview).scaled(self.proc_label.width(), self.proc_label.height(), Qt.KeepAspectRatio))
 
         self.view_selector.setCurrentIndex(0)
@@ -204,10 +202,6 @@ class Dashboard(QMainWindow):
         self.add_log(f"Point clicked: {pos.x()}, {pos.y()}")
 
         step = len(self.clicks)
-
-        if step == 1:
-            self.add_log("✅ The leftist point of face contour recorded.")
-            self.add_log("2️⃣: Click the rightest point of face contour!")
 
         if self.raw_img is None:
             return
@@ -241,20 +235,58 @@ class Dashboard(QMainWindow):
             cv2.putText(img_copy, f"{i+1}", (cx-5, cy+20),
                     cv2.FONT_HERSHEY_SIMPLEX, 0.5, (90,255,255), 2)
 
+        if step == 1:
+
+            self.add_log("✅ Lateral angle of left eye recorded.")
+
+            # instruction
+            legend_x, legend_y = 0,0
+            preview = img_copy
+            cv2.putText(preview, "Click medial angle of left eye!", (legend_x+10, legend_y+30),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 3)
+            cv2.putText(preview, "Click medial angle of left eye!", (legend_x+10, legend_y+30),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,255,255), 2)
+
+            self.add_log("2️⃣: Click medial angle of left eye!")
+
         if step >= 2:
-            self.add_log("draw line from p1 to p2")
+
+            self.add_log("Draw line from lateral to medial angle of left eye")
             p1,p2 = coords[0], coords[1]
 
             cv2.line(img_copy, p1, p2, (0,255,0), 2)
+            
+            if step == 2:
+                # instruction
+                legend_x, legend_y = 0,0
+                preview = img_copy
+                cv2.putText(preview, "Click medial angle of right eye!", (legend_x+10, legend_y+30),
+                        cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 3)
+                cv2.putText(preview, "Click medial angle of right eye!", (legend_x+10, legend_y+30),
+                        cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,255,255), 2)               
+
+            self.add_log("Click medial angle of right eye!")
 
         if step >= 3:
-            self.add_log("draw line from p2 to p3")
+            self.add_log("Medial angle of right eye recorded.")
+            self.add_log("Draw line from left to right media angle of both eyes.")
             p2,p3 = coords[1], coords[2]
 
             cv2.line(img_copy, p2, p3, (0,255,0), 2)
 
+            if step == 3:
+                # instruction
+                legend_x, legend_y = 0,0
+                preview = img_copy
+                cv2.putText(preview, "Click lateral angle of right eye!", (legend_x+10, legend_y+30),
+                        cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 3)
+                cv2.putText(preview, "Click lateral angle of right eye!", (legend_x+10, legend_y+30),
+                        cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,255,255), 2)               
+
+                self.add_log("Click lateral angle of right eye")
+
         if step >= 4:
-            self.add_log("draw line from p3 to p4")
+            self.add_log("Draw line from lateral to medial angles of right eye!")
             p3,p4 = coords[2], coords[3]
             cv2.line(img_copy, p3, p4, (0,255,0), 2)
 
@@ -264,7 +296,7 @@ class Dashboard(QMainWindow):
                 self.proc_label.width(), self.proc_label.height(),
                 Qt.KeepAspectRatio, Qt.SmoothTransformation
             )
-         )
+        )
 
         if len(self.clicks) == 4:
             self.process_clicks()
@@ -356,7 +388,7 @@ class Dashboard(QMainWindow):
         self.result_label.setPixmap(cvimg_to_qpix(img).scaled(self.result_label.width(), self.result_label.height(), Qt.KeepAspectRatio))
 
         # save result
-        folder = inclination
+        folder =  output_folders[inclination]
         out_path = os.path.join(folder, os.path.basename(self.filename))
         cv2.imwrite(out_path, img)
         self.last_saved_path = out_path
