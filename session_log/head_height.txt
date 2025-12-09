@@ -503,3 +503,42 @@ draw line from p3 to p4
 📏 L1: 180.00, L2: 314.00, Ratio: 1.74
 ✅ Saved to c:\Users\nagab\OneDrive\Documents\image_paranoid\tools\../images/output_images/head_height/0.76_or_more\head and shoulder shot photo_81.jpeg
 🖼️ Processing: head and shoulder shot photo_83.jpeg, 55-th of 192 files 
+🖼️ Processing: head and shoulder shot photo_83.jpeg, 55-th of 192 files 
+🖼️ Processing: head and shoulder shot photo_83.jpeg, 55-th of 192 files 
+Click leftmost of mid-face contour!
+🖼️ Processing: head and shoulder shot photo_83.jpeg, 55-th of 192 files 
+🖼️ Processing: head and shoulder shot photo_83.jpeg, 55-th of 192 files 
+Click leftmost of mid-face contour!
+🖼️ Processing: head and shoulder shot photo_84.jpeg, 56-th of 192 files 
+🖼️ Processing: head and shoulder shot photo_84.jpeg, 56-th of 192 files 
+Click leftmost of mid-face contour!
+🖼️ Processing: head and shoulder shot photo_85.jpeg, 57-th of 192 files 
+🖼️ Processing: head and shoulder shot photo_85.jpeg, 57-th of 192 files 
+Click leftmost of mid-face contour!
+Point clicked: 149, 212
+✅ Leftmost point of midface contour recorded.
+2️⃣: Click rightmost point of midface contour!
+Point clicked: 344, 231
+draw line from leftmost to rightmost point of midface contour
+Assuming mid-face width = head width (Kawi Bull trait)
+If head behind ear is wider than mid-face lateral contour, use wider contour.
+Head contour behind ear wider than mid face contour indicates foreign genetic mixture.
+Click mid hair borderline!
+Point clicked: 247, 30
+draw line from leftmost to rightmost point of midface contour
+Assuming mid-face width = head width (Kawi Bull trait)
+If head behind ear is wider than mid-face lateral contour, use wider contour.
+Head contour behind ear wider than mid face contour indicates foreign genetic mixture.
+Click mid hair borderline!
+Mid hair borderline recorded.
+Click lowest line/point of chin
+Point clicked: 249, 353
+draw line from leftmost to rightmost point of midface contour
+Assuming mid-face width = head width (Kawi Bull trait)
+If head behind ear is wider than mid-face lateral contour, use wider contour.
+Head contour behind ear wider than mid face contour indicates foreign genetic mixture.
+Click mid hair borderline!
+draw line from p3 to p4
+🧭 Auto-perspective : Front, 👁️ Please compare with your own visual judgment!
+📏 L1: 195.92, L2: 323.01, Ratio: 1.65
+✅ Saved to c:\Users\nagab\OneDrive\Documents\image_paranoid\tools\../images/output_images/head_height/0.76_or_more\head and shoulder shot photo_85.jpeg

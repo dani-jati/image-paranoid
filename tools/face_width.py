@@ -182,14 +182,6 @@ class Dashboard(QMainWindow):
         if self.raw_img is None:
             self.add_log(f"⚠️ Could not load {filename}")
             return
-        """
-        self.proc_label.setPixmap(
-            cvimg_to_qpix(self.raw_img).scaled(
-                self.proc_label.width(), self.proc_label.height(),
-                Qt.KeepAspectRatio, Qt.SmoothTransformation
-            )
-        )
-        """
         
         self.add_log(
             f"🖼️ Processing: {os.path.basename(filename)}, {self.index+1}-th of {len(self.files)} files "
@@ -257,7 +249,7 @@ class Dashboard(QMainWindow):
 
             self.add_log("✅ Leftmost point of midface contour recorded.")
 
-            # guidance
+            # guide line
             cv2.line(img_copy,(cx-400, cy), (cx+400, cy), (150,150,150), 1)
 
             # instruction

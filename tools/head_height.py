@@ -1,5 +1,6 @@
-# This script is to measure head height relative to midface width,
-# which is measured from the leftmost to the rightmost midface contour.
+# This script is to measure head height relative to midface width.
+# head height is measured from the topmost head contour to menton (chin lowest part).
+# midface height is measured from the leftmost to the rightmost midface contour.
 
 import sys, os, cv2, datetime
 from PySide6.QtWidgets import (
@@ -183,18 +184,33 @@ class Dashboard(QMainWindow):
             self.add_log(f"⚠️ Could not load {filename}")
             return
 
+        self.add_log(
+            f"🖼️ Processing: {os.path.basename(filename)}, {self.index+1}-th of {len(self.files)} files "
+        )
+        """
         self.proc_label.setPixmap(
             cvimg_to_qpix(self.raw_img).scaled(
                 self.proc_label.width(), self.proc_label.height(),
                 Qt.KeepAspectRatio, Qt.SmoothTransformation
             )
         )
-
+        """
         self.add_log(
             f"🖼️ Processing: {os.path.basename(filename)}, {self.index+1}-th of {len(self.files)} files "
         )
 
-        preview = draw_grid(img.copy())
+        # preview = draw_grid(img.copy())
+        # self.proc_label.setPixmap(cvimg_to_qpix(preview).scaled(self.proc_label.width(), self.proc_label.height(), Qt.KeepAspectRatio))
+
+        legend_x, legend_y = 0,0
+        preview = img.copy()
+        cv2.putText(preview, "Click leftmost point of midface contour!", (legend_x+10, legend_y+30),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 3)
+        cv2.putText(preview, "Click leftmost point of midface contour!", (legend_x+10, legend_y+30),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,255,0), 2)
+      
+        self.add_log("Click leftmost of mid-face contour!")
+
         self.proc_label.setPixmap(cvimg_to_qpix(preview).scaled(self.proc_label.width(), self.proc_label.height(), Qt.KeepAspectRatio))
 
         self.view_selector.setCurrentIndex(0)
@@ -211,15 +227,12 @@ class Dashboard(QMainWindow):
 
         step = len(self.clicks)
 
-        if step == 1:
-            self.add_log("✅ Leftist lateral midface contour recorded.")
-            self.add_log("2️⃣: Click rightist lateral midface contour!")
-
         if self.raw_img is None:
             return
 
         # copy image and draw grid
-        img_copy = draw_black_grid(self.raw_img.copy(), spacing_px=40)
+        #img_copy = draw_black_grid(self.raw_img.copy(), spacing_px=40)
+        img_copy = self.raw_img.copy()
 
         # scale factors
         h, w = self.raw_img.shape[:2]
@@ -247,19 +260,65 @@ class Dashboard(QMainWindow):
                     cv2.FONT_HERSHEY_SIMPLEX, 0.5, (90,255,255), 2)
 
         if step == 1:
+
+            self.add_log("✅ Leftmost point of midface contour recorded.")
+
+            # guide line
             cv2.line(img_copy,(cx-400, cy), (cx+400, cy), (150,150,150), 1)
 
+            # instruction
+            legend_x, legend_y = 0,0
+            preview = img_copy
+            cv2.putText(preview, "Click rightmost point of midface contour!", (legend_x+10, legend_y+30),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 3)
+            cv2.putText(preview, "Click rightmost point of midface contour!", (legend_x+10, legend_y+30),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,255,255), 2)
+
+            self.add_log("2️⃣: Click rightmost point of midface contour!")
+
         if step >= 2:
-            self.add_log("draw line from p1 to p2")
+            self.add_log("draw line from leftmost to rightmost point of midface contour")
+
             p1,p2 = coords[0], coords[1]
+
             cv2.line(img_copy, p1, p2, (0,255,0), 2)
+
             cv2.putText(img_copy, "Head width", (p1[0], p1[1]-10),
                     cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 3)
             cv2.putText(img_copy, "Head width", (p1[0], p1[1]-10),
                     cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,255,0), 2)
 
+            self.add_log ( "Assuming mid-face width = head width (Kawi Bull trait)" )
+            self.add_log ( "If head behind ear is wider than mid-face lateral contour, use wider contour." )
+            self.add_log ( "Head contour behind ear wider than mid face contour indicates foreign genetic mixture." )
+
+            if step == 2:
+                # instruction
+                legend_x, legend_y = 0,0
+                preview = img_copy
+                cv2.putText(preview, "Click mid hair borderline!", (legend_x+10, legend_y+30),
+                        cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 3)
+                cv2.putText(preview, "Click mid hair borderline!", (legend_x+10, legend_y+30),
+                        cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,255,255), 2)               
+
+            self.add_log("Click mid hair borderline!")
+
         if step == 3:
+
+            self.add_log("Mid hair borderline recorded.")
+
+            # guide line
             cv2.line(img_copy,(cx, cy-400), (cx, cy+400), (150,150,150), 1)
+
+            # instruction
+            legend_x, legend_y = 0,0
+            preview = img_copy
+            cv2.putText(preview, "Click lowest line/point of chin!", (legend_x+10, legend_y+30),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 3)
+            cv2.putText(preview, "Click lowest line/point of chin!", (legend_x+10, legend_y+30),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,255,255), 2)               
+
+            self.add_log("Click lowest line/point of chin")
 
         if step >= 4:
             self.add_log("draw line from p3 to p4")
@@ -269,6 +328,8 @@ class Dashboard(QMainWindow):
                     cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 3)
             cv2.putText(img_copy, "Head height", (p3[0], p4[1]-15),
                     cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,255,0), 2)
+
+
 
         # update preview
         self.proc_label.setPixmap(
