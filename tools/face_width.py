@@ -193,7 +193,7 @@ class Dashboard(QMainWindow):
         cv2.putText(preview, "Click leftmost point of midface contour!", (legend_x+10, legend_y+30),
                     cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 3)
         cv2.putText(preview, "Click leftmost point of midface contour!", (legend_x+10, legend_y+30),
-                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,255,255), 2)
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,255,0), 2)
       
         self.add_log("Click lateral angle of left eye!")
 

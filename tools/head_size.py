@@ -1,5 +1,30 @@
-# This script is to measure head size relative to bishoulder width.
-# Bishoulder width is distance in-between left and right shoulder ends
+# Script Purpose:
+# Measure head size relative to bishoulder width.
+
+# Definition of Bishoulder Width:
+# Bishoulder width is measured between the outermost lateral points of the left and right shoulders.
+# In this system, the reference landmark is the acromiohumeral notch (shoulder joint depression / "ujung pundak").
+
+# Instructions to Identify Shoulder Ends:
+# • Extend both arms straight out to the sides (left arm to the left, right arm to the right).
+# • At the top of each shoulder, palpate for a small depression where the upper arm bone (humerus) meets the shoulder bone (scapula/clavicle).
+# • This depression (acromiohumeral notch) marks the most lateral point of each shoulder.
+# • Use these points as the reference ends for measuring bishoulder width.
+
+# Clothing Adjustment Rule:
+# If the subject is wearing clothing and the notch is not visible,
+# estimate the shoulder end position by tracing the contour line of the shoulder.
+# The lateral end is located where the contour begins to turn downward toward the arm.
+
+# IF palpation_allowed:
+#    LEFT_END = left_acromiohumeral_notch
+#    RIGHT_END = right_acromiohumeral_notch
+# ELSE:
+#     LEFT_END = left_contour_turn_down
+#     RIGHT_END = right_contour_turn_down
+
+# BISHOULDER_WIDTH = distance(LEFT_END, RIGHT_END)
+
 
 import sys, os, cv2, datetime
 from PySide6.QtWidgets import (
@@ -181,18 +206,29 @@ class Dashboard(QMainWindow):
             self.add_log(f"⚠️ Could not load {filename}")
             return
 
+        """
         self.proc_label.setPixmap(
             cvimg_to_qpix(self.raw_img).scaled(
                 self.proc_label.width(), self.proc_label.height(),
                 Qt.KeepAspectRatio, Qt.SmoothTransformation
             )
         )
+        """
 
         self.add_log(
             f"🖼️ Processing: {os.path.basename(filename)}, {self.index+1}-th of {len(self.files)} files "
         )
 
-        preview = draw_grid(img.copy())
+        # instruction
+        legend_x, legend_y = 0,0
+        preview = img.copy()
+        cv2.putText(preview, "Click leftmost point of midface contour!", (legend_x+10, legend_y+30),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 3)
+        cv2.putText(preview, "Click leftmost point of midface contour!", (legend_x+10, legend_y+30),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,255,0), 2)
+      
+        self.add_log("Click lateral angle of left eye!")
+
         self.proc_label.setPixmap(cvimg_to_qpix(preview).scaled(self.proc_label.width(), self.proc_label.height(), Qt.KeepAspectRatio))
 
         self.view_selector.setCurrentIndex(0)
@@ -209,15 +245,15 @@ class Dashboard(QMainWindow):
 
         step = len(self.clicks)
 
-        if step == 1:
-            self.add_log("✅ The leftist point of face contour recorded.")
-            self.add_log("2️⃣: Click the rightest point of face contour!")
-
         if self.raw_img is None:
             return
 
+
+
+
         # copy image and draw grid
-        img_copy = draw_black_grid(self.raw_img.copy(), spacing_px=40)
+        # img_copy = draw_black_grid(self.raw_img.copy(), spacing_px=40)
+        img_copy = self.raw_img.copy()
 
         # scale factors
         h, w = self.raw_img.shape[:2]
@@ -244,22 +280,69 @@ class Dashboard(QMainWindow):
             cv2.putText(img_copy, f"{i+1}", (cx-5, cy+20),
                     cv2.FONT_HERSHEY_SIMPLEX, 0.5, (90,255,255), 2)
 
-        if step >= 2:
-            self.add_log("draw line from p1 to p2")
-            p1,p2 = coords[0], coords[1]
-            cv2.line(img_copy, p1, p2, (0,255,0), 1)
-            cv2.putText(img_copy, "Head line", (p1[0], p1[1]-10),
+        if step == 1:
+            self.add_log("✅ Leftmost point of midface contour recorded.")
+
+            # guide line
+            cv2.line(img_copy,(cx-400, cy), (cx+400, cy), (150,150,150), 1)
+
+            # instruction
+            legend_x, legend_y = 0,0
+            preview = img_copy
+            cv2.putText(preview, "Click rightmost point of midface contour!", (legend_x+10, legend_y+30),
                     cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 3)
-            cv2.putText(img_copy, "Head line", (p1[0], p1[1]-10),
+            cv2.putText(preview, "Click rightmost point of midface contour!", (legend_x+10, legend_y+30),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,255,255), 2)
+
+            self.add_log("2️⃣: Click rightmost point of midface contour!")
+
+        if step >= 2:
+            self.add_log("draw line from leftmost to rightmost mid-face contour")
+
+            p1,p2 = coords[0], coords[1]
+
+            cv2.line(img_copy, p1, p2, (0,255,0), 1)
+
+            cv2.putText(img_copy, "Head width", (p1[0], p1[1]-10),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 3)
+            cv2.putText(img_copy, "Head width", (p1[0], p1[1]-10),
                     cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,255,0), 2)
 
+            if step == 2:
+                # instruction
+                legend_x, legend_y = 0,0
+                preview = img_copy
+                cv2.putText(preview, "Click left acromiohumeral notch (left shoulder end)!", (legend_x+10, legend_y+30),
+                        cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 3)
+                cv2.putText(preview, "Click left acromiohumeral notch (left shoulder end)!", (legend_x+10, legend_y+30),
+                        cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,255,255), 2)               
+
+            self.add_log("Click left acromiohumeral notch (left shoulder end)!")
+
+        if step >= 3:
+
+            self.add_log("Left acromiohumeral notch (left shoulder end) recorded.")
+            
+            if step == 3:
+                cv2.line(img_copy,(cx, cy-400), (cx, cy+400), (150,150,150), 1)
+
+                # instruction
+                legend_x, legend_y = 0,0
+                preview = img_copy
+                cv2.putText(preview, "Click right acromiohumeral notch (right shoulder end)!", (legend_x+10, legend_y+30),
+                        cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 3)
+                cv2.putText(preview, "Click right acromiohumeral notch (right shoulder end)!", (legend_x+10, legend_y+30),
+                        cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,255,255), 2)               
+
+                self.add_log("Click right acromiohumeral notch (right shoulder end)!")
+
         if step >= 4:
-            self.add_log("draw line from p3 to p4")
+            self.add_log("draw bishoulder line")
             p3,p4 = coords[2], coords[3]
             cv2.line(img_copy, p3, p4, (255,0,0), 1)
-            cv2.putText(img_copy, "Shoulder line", (p3[0], p4[1]+20),
+            cv2.putText(img_copy, "Bishoulder line", (p3[0], p4[1]+20),
                     cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 3)
-            cv2.putText(img_copy, "Shoulder line", (p3[0], p4[1]+20),
+            cv2.putText(img_copy, "Bishoulder line", (p3[0], p4[1]+20),
                     cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,255,0), 2)
 
             # Divide second line into 3 parts
@@ -503,3 +586,12 @@ if __name__ == "__main__":
     sys.exit(app.exec())
 
 
+# Bishoulder Width Landmark Definitions
+# 1. Palpation Method (Anatomical Landmark)
+# • 	Landmark: Acromiohumeral notch (shoulder joint depression / ujung pundak).
+# • 	Procedure: Extend both arms sideways. Palpate the small depression where the humerus meets the scapula/clavicle.
+# • 	Use: Mark these points as the lateral ends of the shoulders.
+# 2. Visual Estimation Method (Contour Landmark)
+# • 	Landmark: Contour turn‑down point (outer shoulder curve).
+# • 	Procedure: Observe the shoulder outline. Identify the point where the horizontal contour of the shoulder begins to slope downward toward the arm.
+# • 	Use: Mark these points as the lateral ends of the shoulders when palpation is not possible (e.g., cultural respect, clothing).

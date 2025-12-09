@@ -25,3 +25,47 @@ draw line from p3 to p4
 🧭 Auto-perspective : Front, 👁️ Please compare with your own visual judgment!
 ✅ Saved to c:\Users\nagab\OneDrive\Documents\image_paranoid\tools\../images/output_images/head_size/0_to_1.35\Untitled1.png
 🖼️ Processing: Untitled2.png, 5-th of 192 files 
+🖼️ Processing: Untitled2.png, 5-th of 192 files 
+🖼️ Processing: Untitled5.png, 6-th of 192 files 
+🖼️ Processing: Untitled2.png, 5-th of 192 files 
+Click lateral angle of left eye!
+🖼️ Processing: Untitled5.png, 6-th of 192 files 
+Click lateral angle of left eye!
+Point clicked: 163, 248
+✅ Leftmost point of midface contour recorded.
+2️⃣: Click rightmost point of midface contour!
+Point clicked: 345, 246
+draw line from leftmost to rightmost mid-face contour
+Click left acromiohumeral notch (left shoulder end)!
+Point clicked: 54, 416
+draw line from leftmost to rightmost mid-face contour
+Click left acromiohumeral notch (left shoulder end)!
+Left acromiohumeral notch (left shoulder end) recorded.
+Click right acromiohumeral notch (right shoulder end)!
+Point clicked: 444, 449
+draw line from leftmost to rightmost mid-face contour
+Click left acromiohumeral notch (left shoulder end)!
+Left acromiohumeral notch (left shoulder end) recorded.
+draw bishoulder line
+🧭 Auto-perspective : Front, 👁️ Please compare with your own visual judgment!
+✅ Saved to c:\Users\nagab\OneDrive\Documents\image_paranoid\tools\../images/output_images/head_size/1.35_to_1.65\Untitled5.png
+🖼️ Processing: Untitled6.png, 7-th of 192 files 
+Click lateral angle of left eye!
+Point clicked: 189, 268
+✅ Leftmost point of midface contour recorded.
+2️⃣: Click rightmost point of midface contour!
+Point clicked: 349, 210
+draw line from leftmost to rightmost mid-face contour
+Click left acromiohumeral notch (left shoulder end)!
+Point clicked: 91, 447
+draw line from leftmost to rightmost mid-face contour
+Click left acromiohumeral notch (left shoulder end)!
+Left acromiohumeral notch (left shoulder end) recorded.
+Click right acromiohumeral notch (right shoulder end)!
+Point clicked: 478, 370
+draw line from leftmost to rightmost mid-face contour
+Click left acromiohumeral notch (left shoulder end)!
+Left acromiohumeral notch (left shoulder end) recorded.
+draw bishoulder line
+🧭 Auto-perspective : Front, 👁️ Please compare with your own visual judgment!
+✅ Saved to c:\Users\nagab\OneDrive\Documents\image_paranoid\tools\../images/output_images/head_size/0_to_1.35\Untitled6.png
