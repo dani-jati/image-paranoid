@@ -29,14 +29,15 @@ for folder in output_folders.values():
 
 # Ensure symlink from cropper output to shoulder-tilt input
 cropper_output = os.path.normpath(os.path.join(script_dir, "..", "images", "output_images", "cropper"))
-eye_zoom_input = os.path.normpath(os.path.join(script_dir, "..", "images", "input_images", "eye_zoom"))
-path = eye_inclination_input = eye_zoom_input
+eye_zoom = os.path.normpath(os.path.join(script_dir, "..", "images", "input_images", "eye_zoom"))
 
 # Check for folder input
-if not os.path.exists(eye_inclination_input):
+if not os.path.exists(eye_zoom):
 
     # run eye_zoom.py first to create the input folder.
     subprocess.run(["python", os.path.join(script_dir, "eye_zoom.py")])
+
+path = eye_inclination_input = eye_zoom
 
 progress_file = os.path.join(script_dir, "../progress/eye_inclination.txt")
 os.makedirs(os.path.dirname(progress_file), exist_ok=True)

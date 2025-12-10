@@ -1,7 +1,8 @@
-# This script is to measure interocular width relative to outer side of both lateral eye angles
+# This script is to measure interocular width 
+# relative to width between outer side of both lateral eye angles
 # interocular width is distance in-between the most medial eye angle lines.
 
-import sys, os, cv2, datetime, math
+import sys, os, cv2, datetime, subprocess
 from PySide6.QtWidgets import (
     QApplication, QMainWindow, QWidget, QVBoxLayout, QHBoxLayout,
     QLabel, QTextEdit, QComboBox
@@ -23,38 +24,15 @@ for folder in output_folders.values():
 
 # Ensure symlink from cropper output to shoulder-tilt input
 cropper_output = os.path.normpath(os.path.join(script_dir, "..", "images", "output_images", "cropper"))
-interocular_width_input = os.path.normpath(os.path.join(script_dir, "..", "images", "input_images", "interocular_width"))
-path = interocular_width_input
+# interocular_width_input = os.path.normpath(os.path.join(script_dir, "..", "images", "input_images", "interocular_width"))
+eye_zoom = os.path.normpath(os.path.join(script_dir, "..", "images", "input_images", "eye_zoom"))
 
-if os.path.isdir(cropper_output) and not os.path.exists(interocular_width_input):
+if not os.path.exists (eye_zoom):
 
-    if os.name == 'posix': #linux or mac
-        os.symlink(cropper_output, interocular_width_input) #linux
-    elif os.name == 'nt': #windows
-        os.symlink(cropper_output, interocular_width_input, target_is_directory=True) #windows
+    # run eye_zoom.py first to create the folder
+    subprocess.run(["python", os.path.join(script_dir, "eye_zoom.py")])
 
-    os.symlink(cropper_output, interocular_width_input)
-    
-    print(f"🔗 Symlink created: {interocular_width_input} → {cropper_output}")
-elif os.path.islink(interocular_width_input):
-    print(f"✅ Symlink already exists: {interocular_width_input} → {os.readlink(interocular_width_input)}")
-elif os.path.isdir(interocular_width_input):
-    print(f"⚠️ Destination exists as a real folder: {interocular_width_input} — not creating symlink.")
-else:
-
-    if not os.path.islink(path):
-        print(f"{path} is not a symbolic link.")
-        os.remove(path)
-
-        if os.name == 'posix': #linux or mac
-            os.symlink(cropper_output, interocular_width_input) #linux
-        elif os.name == 'nt': #windows
-            os.symlink(cropper_output, interocular_width_input, target_is_directory=True) #windows
-
-        print(f"🔗 Symlink created: {interocular_width_input} → {cropper_output}")
-
-
-print("Symlink points to:", os.readlink(interocular_width_input))
+path = interocular_width_input = eye_zoom
 
 progress_file = os.path.join(script_dir, "../progress/interocular_width.txt")
 os.makedirs(os.path.dirname(progress_file), exist_ok=True)
@@ -166,6 +144,7 @@ class Dashboard(QMainWindow):
                 self.index = min(base_names.index(last) + 1, len(self.files) - 1)
 
         if self.files:
+            print(self.files[self.index])
             self.load_image(self.files[self.index])
         else:
             self.add_log("⚠️ No images found in input folder.")
@@ -185,18 +164,24 @@ class Dashboard(QMainWindow):
             self.add_log(f"⚠️ Could not load {filename}")
             return
 
-        self.proc_label.setPixmap(
-            cvimg_to_qpix(self.raw_img).scaled(
-                self.proc_label.width(), self.proc_label.height(),
-                Qt.KeepAspectRatio, Qt.SmoothTransformation
-            )
-        )
-
         self.add_log(
             f"🖼️ Processing: {os.path.basename(filename)}, {self.index+1}-th of {len(self.files)} files "
         )
 
-        preview = draw_grid(img.copy())
+        # preview = draw_grid(img.copy())
+        #self.proc_label.setPixmap(cvimg_to_qpix(preview).scaled(self.proc_label.width(), self.proc_label.height(), Qt.KeepAspectRatio))
+
+        # instruction
+        legend_x, legend_y = 0,0
+        preview = img.copy()
+        clue = "Click outer edge of medial corner of left eye!"
+        cv2.putText(preview, clue, (legend_x+10, legend_y+30),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 3)
+        cv2.putText(preview, clue, (legend_x+10, legend_y+30),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,255,0), 2)
+      
+        self.add_log(clue)
+
         self.proc_label.setPixmap(cvimg_to_qpix(preview).scaled(self.proc_label.width(), self.proc_label.height(), Qt.KeepAspectRatio))
 
         self.view_selector.setCurrentIndex(0)
@@ -213,15 +198,12 @@ class Dashboard(QMainWindow):
 
         step = len(self.clicks)
 
-        if step == 1:
-            self.add_log("✅ The most medial contour of left eye recorded.")
-            self.add_log("2️⃣: Click the most medial contour of right eye!")
-
         if self.raw_img is None:
             return
 
         # copy image and draw grid
-        img_copy = draw_black_grid(self.raw_img.copy(), spacing_px=40)
+        # img_copy = draw_black_grid(self.raw_img.copy(), spacing_px=40)
+        img_copy = self.raw_img.copy()
 
         # scale factors
         h, w = self.raw_img.shape[:2]
@@ -275,32 +257,83 @@ class Dashboard(QMainWindow):
                 cv2.line(img_copy, (p4_shifted[0], p4_shifted[1] - line_length),     
                     (p4_shifted[0], p4_shifted[1]), (255, 255, 255), 1)
 
-        if step >= 2:
-            self.add_log("✅ The most medial contour of right eye recorded.")
-            self.add_log("draw line from p1 to p2")
-            p1,p2 = coords[0], coords[1]
-            cv2.line(img_copy, p1, p2, (0,255,0), 2)
-            cv2.putText(img_copy, "Inter-eye line", (p1[0]-80, p1[1]-20),
+        if step == 1:
+
+            self.add_log("✅ Outer edge of medial corner of left eye recorded.")
+
+            # guide line
+            cv2.line(img_copy,(cx-400, cy), (cx+400, cy), (150,150,150), 1)
+
+            # instruction
+            legend_x, legend_y = 0,0
+            preview = img_copy
+            clue = "Click outer edge of medial corner of right eye"
+            cv2.putText(preview, clue, (legend_x+10, legend_y+30),
                     cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 3)
-            cv2.putText(img_copy, "Inter-eye line", (p1[0]-80, p1[1]-20),
+            cv2.putText(preview, clue, (legend_x+10, legend_y+30),
                     cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,255,0), 2)
-            self.add_log("3️⃣: Click the most lateral side of left eye angle!")
+
+            self.add_log(f"2️⃣: {clue}")
+
+        if step >= 2:
+
+            self.add_log("✅ Outer edge of medial corner of right eye recorded.")
+
+            self.add_log("Draw interocular line between both medial eye corners")
+
+            p1,p2 = coords[0], coords[1]
+
+            cv2.line(img_copy, p1, p2, (0,255,0), 2)
+
+            lbl = "Interocular line"
+            cv2.putText(img_copy, lbl, (p1[0]-80, p1[1]-20),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 3)
+            cv2.putText(img_copy, lbl, (p1[0]-80, p1[1]-20),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,255,0), 2)
+
+            if step == 2:
+                # instruction
+                legend_x, legend_y = 0,0
+                preview = img_copy
+
+                clue = "Click outer edge of lateral corner of left eye!"
+                cv2.putText(preview, clue, (legend_x+10, legend_y+30),
+                        cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 3)
+                cv2.putText(preview, clue, (legend_x+10, legend_y+30),
+                        cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,255,255), 2)               
+
+
+            self.add_log("3️⃣: {clue}")
 
 
         if step >= 3:
-            self.add_log("✅ The most lateral side of right eye angle recorded.")
-            self.add_log("4️⃣: Click the most lateral side of right eye angle!")
+            self.add_log("✅ Outer edge of lateral corner of left eye recorded.")
+
+            if step == 3:
+
+                # instruction
+                legend_x, legend_y = 0,0
+                preview = img_copy
+
+                clue = "Click outer edge of lateral corner of right eye!"
+                cv2.putText(preview, clue, (legend_x+10, legend_y+30),
+                        cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 3)
+                cv2.putText(preview, clue, (legend_x+10, legend_y+30),
+                        cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,255,255), 2)               
+
+                self.add_log(f"4️⃣: {clue}")
 
         line_length = 100
 
         if step >= 4:
-            self.add_log("✅ The most lateral side of right eye angle recorded.")
-            self.add_log("draw line from p3 to p4")
+            self.add_log("✅ Outer edge of lateral corner of right eye recorded.")
+            self.add_log("Draw line between both lateral eye corners")
             p3,p4 = coords[2], coords[3]
             cv2.line(img_copy, (p3[0], p3[1]+40), (p4[0], p4[1]+40), (255,0,0), 2)
-            cv2.putText(img_copy, "Inter-eyetail line", (p3[0], p3[1]+60),
+            lbl = "Extraocular line"
+            cv2.putText(img_copy, lbl, (p3[0], p3[1]+60),
                     cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 3)
-            cv2.putText(img_copy, "Inter-eyetail line", (p3[0], p3[1]+60),
+            cv2.putText(img_copy, lbl, (p3[0], p3[1]+60),
                     cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,255,0), 2)
 
             # Divide second line into 3 parts
@@ -372,9 +405,9 @@ class Dashboard(QMainWindow):
         cv2.circle(img, p2, 5, (0, 255, 0), -1)
 
         # Labelling first line
-        cv2.putText(img, "Inter-eye line", (p1[0]-80, p1[1]-30),
+        cv2.putText(img, "Interocular line", (p1[0]-80, p1[1]-30),
                     cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 3)
-        cv2.putText(img, "Inter-eye line", (p1[0]-80, p1[1]-30),
+        cv2.putText(img, "Interocular line", (p1[0]-80, p1[1]-30),
                     cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,255,0), 2)
 
         # Shift second line 20 pixels downward
@@ -452,11 +485,6 @@ class Dashboard(QMainWindow):
         lower_bound = one_third * (1 - 0.10)  # 10% below 1/3
         upper_bound = one_third * (1 + 0.10)  # 10% above 1/3
 
-        # print(f"inter-eye line: {shorter}")
-        # print(f"Min is: {lower_bound}")
-        # print(f"Max is: {upper_bound}")
-
-
         classification = "N/A" 
         # Check if shorter line is within the tolerance range around 1/3
         # if lower_bound <= shorter <= upper_bound or math.isclose(shorter, one_third, rel_tol=0.01):
@@ -504,17 +532,12 @@ class Dashboard(QMainWindow):
 
         cv2.putText(img, "Legend:", (legend_x, legend_y-5),
                     cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255,255,255), 2)
-        cv2.putText(img, "Green = Inter-eye line", (legend_x, legend_y+15),
+        cv2.putText(img, "Green = Bimedial line", (legend_x, legend_y+15),
                     cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,255,0), 2)
         # cv2.putText(img, "Yellow = Thirds", (legend_x, legend_y+35),
         #             cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,255,255), 2)
-        cv2.putText(img, "Blue = Inter-eyetail line", (legend_x, legend_y+35),
+        cv2.putText(img, "Bilateral line", (legend_x, legend_y+35),
                     cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255,0,0), 2)
-
-        """
-        cv2.putText(img, "Red = Mouth line", (legend_x, legend_y+75),
-                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,255), 1)
-        """
 
         # Classification + ratio + timestamp
         cv2.putText(img, f"Result: {classification}", (legend_x, legend_y+55),
@@ -523,21 +546,6 @@ class Dashboard(QMainWindow):
                     cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255,255,255), 2)
         cv2.putText(img, f"Time: {timestamp}", (legend_x, legend_y+95),
                     cv2.FONT_HERSHEY_SIMPLEX, 0.5, (200,200,200), 2)
-
-
-
-        """
-        if ratio > 1.65:
-            folder = output_folders["wide"]
-        elif 1.35 <= ratio <= 1.65:
-            folder = output_folders["mid"]
-        elif 0 <= ratio < 1.35:
-            folder = output_folders["narrow"]
-        else:
-            self.add_log("⚠️ Ratio out of range. Skipped.")
-            return
-        """
-
 
         # Save result
         out_path = os.path.join(folder, os.path.basename(self.filename))
@@ -583,22 +591,6 @@ class Dashboard(QMainWindow):
         else:
             super().keyPressEvent(event)
 
-        """
-        if event.key() == Qt.Key_Escape:
-            if self.last_saved_path and os.path.exists(self.last_saved_path):
-                os.remove(self.last_saved_path)
-                self.add_log(f"🗑️ Removed: {self.last_saved_path}")
-            self.load_image(self.filename)
-        elif event.key() in (Qt.Key_Space, Qt.Key_Right):
-            self.index = min(self.index + 1, len(self.files) - 1)
-            self.load_image(self.files[self.index])
-        elif event.key() in (Qt.Key_Backspace, Qt.Key_Left):
-            self.index = max(self.index - 1, 0)
-            self.load_image(self.files[self.index])
-        else:
-            super().keyPressEvent(event)
-        """
-
     def closeEvent(self, event):
         self.log_file.close()
         super().closeEvent(event)
@@ -610,5 +602,3 @@ if __name__ == "__main__":
     dash = Dashboard()
     dash.show()
     sys.exit(app.exec())
-
-

@@ -255,12 +255,13 @@ class Dashboard(QMainWindow):
             # instruction
             legend_x, legend_y = 0,0
             preview = img_copy
-            cv2.putText(preview, "Click rightmost point of midface contour!", (legend_x+10, legend_y+30),
+            clue = "Click rightmost point of midface contour!"
+            cv2.putText(preview, clue, (legend_x+10, legend_y+30),
                     cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 3)
-            cv2.putText(preview, "Click rightmost point of midface contour!", (legend_x+10, legend_y+30),
+            cv2.putText(preview, clue, (legend_x+10, legend_y+30),
                     cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,255,255), 2)
 
-            self.add_log("2️⃣: Click rightmost point of midface contour!")
+            self.add_log(f"2️⃣: {clue}")
 
         if step >= 2:
             self.add_log("draw line from leftmost to rightmost mid-face contour")
@@ -269,21 +270,23 @@ class Dashboard(QMainWindow):
  
             cv2.line(img_copy, p1, p2, (0,255,0), 2)
 
-            cv2.putText(img_copy, "Face width", (p1[0], p1[1]-10),
+            lbl = "Face width"
+            cv2.putText(img_copy, lbl, (p1[0], p1[1]-10),
                     cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 3)
-            cv2.putText(img_copy, "Face width", (p1[0], p1[1]-10),
+            cv2.putText(img_copy, lbl, (p1[0], p1[1]-10),
                     cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,255,0), 2)
 
             if step == 2:
                 # instruction
                 legend_x, legend_y = 0,0
                 preview = img_copy
-                cv2.putText(preview, "Click mid hair borderline!", (legend_x+10, legend_y+30),
+                clue = "Click mid hair borderline!"
+                cv2.putText(preview, clue, (legend_x+10, legend_y+30),
                         cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 3)
-                cv2.putText(preview, "Click mid hair borderline!", (legend_x+10, legend_y+30),
+                cv2.putText(preview, clue, (legend_x+10, legend_y+30),
                         cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,255,255), 2)               
 
-            self.add_log("Click mid hair borderline!")
+            self.add_log(clue)
 
         if step >= 3:
 

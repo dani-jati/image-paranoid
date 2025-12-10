@@ -1,104 +1,289 @@
-🖼️ Processing: 1762591407217.jpg, 1-th of 58 files 
-Point clicked: 238, 215
-✅ The most medial contour of left eye recorded.
-2️⃣: Click the most medial contour of right eye!
-Point clicked: 295, 215
-✅ The most medial contour of right eye recorded.
-draw line from p1 to p2
-3️⃣: Click the most lateral side of left eye angle!
-Point clicked: 183, 214
-✅ The most medial contour of right eye recorded.
-draw line from p1 to p2
-3️⃣: Click the most lateral side of left eye angle!
-✅ The most lateral side of right eye angle recorded.
-4️⃣: Click the most lateral side of right eye angle!
-Point clicked: 350, 209
-✅ The most medial contour of right eye recorded.
-draw line from p1 to p2
-3️⃣: Click the most lateral side of left eye angle!
-✅ The most lateral side of right eye angle recorded.
-4️⃣: Click the most lateral side of right eye angle!
-✅ The most lateral side of right eye angle recorded.
-draw line from p3 to p4
+🖼️ Processing: 0_mata-saja.jpg, 1-th of 114 files 
+Click outer edge of medial corner of left eye!
+Point clicked: 180, 271
+✅ Outer edge of medial corner of left eye recorded.
+2️⃣: Click outer edge of medial corner of right eye
+Point clicked: 337, 272
+✅ Outer edge of medial corner of right eye recorded.
+Draw interocular line between both medial eye corners
+3️⃣: {clue}
+Point clicked: 30, 258
+✅ Outer edge of medial corner of right eye recorded.
+Draw interocular line between both medial eye corners
+3️⃣: {clue}
+✅ Outer edge of lateral corner of left eye recorded.
+4️⃣: Click outer edge of lateral corner of right eye!
+Point clicked: 482, 259
+✅ Outer edge of medial corner of right eye recorded.
+Draw interocular line between both medial eye corners
+3️⃣: {clue}
+✅ Outer edge of lateral corner of left eye recorded.
+✅ Outer edge of lateral corner of right eye recorded.
+Draw line between both lateral eye corners
 🧭 Auto-perspective : Front, 👁️ Please compare with your own visual judgment!
-📏 L1: 59.00, L2: 175.10, Ratio: 0.34
-✅ Saved to /home/dragonicbull/image_paranoid/tools/../images/output_images/interocular_width/31_to_36/1762591407217.jpg
-🖼️ Processing: head and shoulder shot photo_0.jpeg, 2-th of 58 files 
-🖼️ Processing: head and shoulder shot photo_0.jpeg, 2-th of 58 files 
-🖼️ Processing: head and shoulder shot photo_0.jpeg, 3-th of 59 files 
-Point clicked: 237, 190
-✅ The most medial contour of left eye recorded.
-2️⃣: Click the most medial contour of right eye!
-Point clicked: 280, 190
-✅ The most medial contour of right eye recorded.
-draw line from p1 to p2
-3️⃣: Click the most lateral side of left eye angle!
-Point clicked: 210, 186
-✅ The most medial contour of right eye recorded.
-draw line from p1 to p2
-3️⃣: Click the most lateral side of left eye angle!
-✅ The most lateral side of right eye angle recorded.
-4️⃣: Click the most lateral side of right eye angle!
-Point clicked: 313, 194
-✅ The most medial contour of right eye recorded.
-draw line from p1 to p2
-3️⃣: Click the most lateral side of left eye angle!
-✅ The most lateral side of right eye angle recorded.
-4️⃣: Click the most lateral side of right eye angle!
-✅ The most lateral side of right eye angle recorded.
-draw line from p3 to p4
+📏 L1: 157.00, L2: 452.00, Ratio: 0.35
+✅ Saved to c:\Users\nagab\OneDrive\Documents\image_paranoid\tools\../images/output_images/interocular_width/31_to_36\0_mata-saja.jpg
+🗑️ Removed wrong result: c:\Users\nagab\OneDrive\Documents\image_paranoid\tools\../images/output_images/interocular_width/31_to_36\0_mata-saja.jpg
+🖼️ Processing: 0_mata-saja.jpg, 1-th of 114 files 
+Click outer edge of medial corner of left eye!
+↩️ Reset current image. Please click again.
+Point clicked: 177, 271
+✅ Outer edge of medial corner of left eye recorded.
+2️⃣: Click outer edge of medial corner of right eye
+Point clicked: 340, 270
+✅ Outer edge of medial corner of right eye recorded.
+Draw interocular line between both medial eye corners
+3️⃣: {clue}
+Point clicked: 26, 260
+✅ Outer edge of medial corner of right eye recorded.
+Draw interocular line between both medial eye corners
+3️⃣: {clue}
+✅ Outer edge of lateral corner of left eye recorded.
+4️⃣: Click outer edge of lateral corner of right eye!
+Point clicked: 490, 258
+✅ Outer edge of medial corner of right eye recorded.
+Draw interocular line between both medial eye corners
+3️⃣: {clue}
+✅ Outer edge of lateral corner of left eye recorded.
+✅ Outer edge of lateral corner of right eye recorded.
+Draw line between both lateral eye corners
 🧭 Auto-perspective : Front, 👁️ Please compare with your own visual judgment!
-📏 L1: 43.00, L2: 103.31, Ratio: 0.42
-✅ Saved to /home/dragonicbull/image_paranoid/tools/../images/output_images/interocular_width/37_or_more/head and shoulder shot photo_0.jpeg
-🖼️ Processing: head and shoulder shot photo_1.jpeg, 9-th of 192 files 
-🖼️ Processing: head and shoulder shot photo_10.jpeg, 10-th of 192 files 
-Point clicked: 239, 200
-✅ The most medial contour of left eye recorded.
-2️⃣: Click the most medial contour of right eye!
-Point clicked: 272, 200
-✅ The most medial contour of right eye recorded.
-draw line from p1 to p2
-3️⃣: Click the most lateral side of left eye angle!
-Point clicked: 202, 203
-✅ The most medial contour of right eye recorded.
-draw line from p1 to p2
-3️⃣: Click the most lateral side of left eye angle!
-✅ The most lateral side of right eye angle recorded.
-4️⃣: Click the most lateral side of right eye angle!
-Point clicked: 301, 204
-✅ The most medial contour of right eye recorded.
-draw line from p1 to p2
-3️⃣: Click the most lateral side of left eye angle!
-✅ The most lateral side of right eye angle recorded.
-4️⃣: Click the most lateral side of right eye angle!
-✅ The most lateral side of right eye angle recorded.
-draw line from p3 to p4
+📏 L1: 163.00, L2: 464.00, Ratio: 0.35
+✅ Saved to c:\Users\nagab\OneDrive\Documents\image_paranoid\tools\../images/output_images/interocular_width/31_to_36\0_mata-saja.jpg
+🗑️ Removed wrong result: c:\Users\nagab\OneDrive\Documents\image_paranoid\tools\../images/output_images/interocular_width/31_to_36\0_mata-saja.jpg
+🖼️ Processing: 0_mata-saja.jpg, 1-th of 114 files 
+Click outer edge of medial corner of left eye!
+↩️ Reset current image. Please click again.
+Point clicked: 179, 270
+✅ Outer edge of medial corner of left eye recorded.
+2️⃣: Click outer edge of medial corner of right eye
+Point clicked: 342, 269
+✅ Outer edge of medial corner of right eye recorded.
+Draw interocular line between both medial eye corners
+3️⃣: {clue}
+Point clicked: 32, 258
+✅ Outer edge of medial corner of right eye recorded.
+Draw interocular line between both medial eye corners
+3️⃣: {clue}
+✅ Outer edge of lateral corner of left eye recorded.
+4️⃣: Click outer edge of lateral corner of right eye!
+Point clicked: 488, 258
+✅ Outer edge of medial corner of right eye recorded.
+Draw interocular line between both medial eye corners
+3️⃣: {clue}
+✅ Outer edge of lateral corner of left eye recorded.
+✅ Outer edge of lateral corner of right eye recorded.
+Draw line between both lateral eye corners
 🧭 Auto-perspective : Front, 👁️ Please compare with your own visual judgment!
-📏 L1: 33.00, L2: 99.01, Ratio: 0.33
+📏 L1: 163.00, L2: 456.00, Ratio: 0.36
+✅ Saved to c:\Users\nagab\OneDrive\Documents\image_paranoid\tools\../images/output_images/interocular_width/31_to_36\0_mata-saja.jpg
+🗑️ Removed wrong result: c:\Users\nagab\OneDrive\Documents\image_paranoid\tools\../images/output_images/interocular_width/31_to_36\0_mata-saja.jpg
+🖼️ Processing: 0_mata-saja.jpg, 1-th of 114 files 
+Click outer edge of medial corner of left eye!
+↩️ Reset current image. Please click again.
+Point clicked: 180, 273
+✅ Outer edge of medial corner of left eye recorded.
+2️⃣: Click outer edge of medial corner of right eye
+Point clicked: 337, 270
+✅ Outer edge of medial corner of right eye recorded.
+Draw interocular line between both medial eye corners
+3️⃣: {clue}
+Point clicked: 50, 262
+✅ Outer edge of medial corner of right eye recorded.
+Draw interocular line between both medial eye corners
+3️⃣: {clue}
+✅ Outer edge of lateral corner of left eye recorded.
+4️⃣: Click outer edge of lateral corner of right eye!
+Point clicked: 465, 256
+✅ Outer edge of medial corner of right eye recorded.
+Draw interocular line between both medial eye corners
+3️⃣: {clue}
+✅ Outer edge of lateral corner of left eye recorded.
+✅ Outer edge of lateral corner of right eye recorded.
+Draw line between both lateral eye corners
+🧭 Auto-perspective : Front, 👁️ Please compare with your own visual judgment!
+📏 L1: 157.03, L2: 415.04, Ratio: 0.38
+✅ Saved to c:\Users\nagab\OneDrive\Documents\image_paranoid\tools\../images/output_images/interocular_width/37_or_more\0_mata-saja.jpg
+🗑️ Removed wrong result: c:\Users\nagab\OneDrive\Documents\image_paranoid\tools\../images/output_images/interocular_width/37_or_more\0_mata-saja.jpg
+🖼️ Processing: 0_mata-saja.jpg, 1-th of 114 files 
+Click outer edge of medial corner of left eye!
+↩️ Reset current image. Please click again.
+Point clicked: 177, 271
+✅ Outer edge of medial corner of left eye recorded.
+2️⃣: Click outer edge of medial corner of right eye
+Point clicked: 338, 270
+✅ Outer edge of medial corner of right eye recorded.
+Draw interocular line between both medial eye corners
+3️⃣: {clue}
+Point clicked: 28, 258
+✅ Outer edge of medial corner of right eye recorded.
+Draw interocular line between both medial eye corners
+3️⃣: {clue}
+✅ Outer edge of lateral corner of left eye recorded.
+4️⃣: Click outer edge of lateral corner of right eye!
+Point clicked: 491, 263
+✅ Outer edge of medial corner of right eye recorded.
+Draw interocular line between both medial eye corners
+3️⃣: {clue}
+✅ Outer edge of lateral corner of left eye recorded.
+✅ Outer edge of lateral corner of right eye recorded.
+Draw line between both lateral eye corners
+🧭 Auto-perspective : Front, 👁️ Please compare with your own visual judgment!
+📏 L1: 161.00, L2: 463.03, Ratio: 0.35
+✅ Saved to c:\Users\nagab\OneDrive\Documents\image_paranoid\tools\../images/output_images/interocular_width/31_to_36\0_mata-saja.jpg
+🖼️ Processing: 0_slanted-eyes-oval-eyebrow-skin-260nw-2418211719.jpg, 2-th of 114 files 
+Click outer edge of medial corner of left eye!
+Point clicked: 164, 275
+✅ Outer edge of medial corner of left eye recorded.
+2️⃣: Click outer edge of medial corner of right eye
+Point clicked: 319, 276
+✅ Outer edge of medial corner of right eye recorded.
+Draw interocular line between both medial eye corners
+3️⃣: {clue}
+Point clicked: 28, 250
+✅ Outer edge of medial corner of right eye recorded.
+Draw interocular line between both medial eye corners
+3️⃣: {clue}
+✅ Outer edge of lateral corner of left eye recorded.
+4️⃣: Click outer edge of lateral corner of right eye!
+Point clicked: 475, 258
+✅ Outer edge of medial corner of right eye recorded.
+Draw interocular line between both medial eye corners
+3️⃣: {clue}
+✅ Outer edge of lateral corner of left eye recorded.
+✅ Outer edge of lateral corner of right eye recorded.
+Draw line between both lateral eye corners
+🧭 Auto-perspective : Front, 👁️ Please compare with your own visual judgment!
+📏 L1: 155.00, L2: 447.07, Ratio: 0.35
+✅ Saved to c:\Users\nagab\OneDrive\Documents\image_paranoid\tools\../images/output_images/interocular_width/31_to_36\0_slanted-eyes-oval-eyebrow-skin-260nw-2418211719.jpg
+🖼️ Processing: 1762591407217.png, 3-th of 114 files 
+Click outer edge of medial corner of left eye!
+Point clicked: 174, 266
+✅ Outer edge of medial corner of left eye recorded.
+2️⃣: Click outer edge of medial corner of right eye
+Point clicked: 337, 264
+✅ Outer edge of medial corner of right eye recorded.
+Draw interocular line between both medial eye corners
+3️⃣: {clue}
+Point clicked: 23, 256
+✅ Outer edge of medial corner of right eye recorded.
+Draw interocular line between both medial eye corners
+3️⃣: {clue}
+✅ Outer edge of lateral corner of left eye recorded.
+4️⃣: Click outer edge of lateral corner of right eye!
+Point clicked: 490, 252
+✅ Outer edge of medial corner of right eye recorded.
+Draw interocular line between both medial eye corners
+3️⃣: {clue}
+✅ Outer edge of lateral corner of left eye recorded.
+✅ Outer edge of lateral corner of right eye recorded.
+Draw line between both lateral eye corners
+🧭 Auto-perspective : Front, 👁️ Please compare with your own visual judgment!
+📏 L1: 163.01, L2: 467.02, Ratio: 0.35
+✅ Saved to c:\Users\nagab\OneDrive\Documents\image_paranoid\tools\../images/output_images/interocular_width/31_to_36\1762591407217.png
+🖼️ Processing: Untitled1.png, 4-th of 114 files 
+Click outer edge of medial corner of left eye!
+Point clicked: 192, 250
+✅ Outer edge of medial corner of left eye recorded.
+2️⃣: Click outer edge of medial corner of right eye
+Point clicked: 336, 276
+✅ Outer edge of medial corner of right eye recorded.
+Draw interocular line between both medial eye corners
+3️⃣: {clue}
+Point clicked: 32, 257
+✅ Outer edge of medial corner of right eye recorded.
+Draw interocular line between both medial eye corners
+3️⃣: {clue}
+✅ Outer edge of lateral corner of left eye recorded.
+4️⃣: Click outer edge of lateral corner of right eye!
+Point clicked: 487, 262
+✅ Outer edge of medial corner of right eye recorded.
+Draw interocular line between both medial eye corners
+3️⃣: {clue}
+✅ Outer edge of lateral corner of left eye recorded.
+✅ Outer edge of lateral corner of right eye recorded.
+Draw line between both lateral eye corners
+🧭 Auto-perspective : Front, 👁️ Please compare with your own visual judgment!
+📏 L1: 146.33, L2: 455.03, Ratio: 0.32
+✅ Saved to c:\Users\nagab\OneDrive\Documents\image_paranoid\tools\../images/output_images/interocular_width/31_to_36\Untitled1.png
+🖼️ Processing: Untitled5.png, 5-th of 114 files 
+Click outer edge of medial corner of left eye!
+Point clicked: 166, 260
+✅ Outer edge of medial corner of left eye recorded.
+2️⃣: Click outer edge of medial corner of right eye
+Point clicked: 343, 271
+✅ Outer edge of medial corner of right eye recorded.
+Draw interocular line between both medial eye corners
+3️⃣: {clue}
+Point clicked: 32, 250
+✅ Outer edge of medial corner of right eye recorded.
+Draw interocular line between both medial eye corners
+3️⃣: {clue}
+✅ Outer edge of lateral corner of left eye recorded.
+4️⃣: Click outer edge of lateral corner of right eye!
+Point clicked: 473, 269
+✅ Outer edge of medial corner of right eye recorded.
+Draw interocular line between both medial eye corners
+3️⃣: {clue}
+✅ Outer edge of lateral corner of left eye recorded.
+✅ Outer edge of lateral corner of right eye recorded.
+Draw line between both lateral eye corners
+🧭 Auto-perspective : Front, 👁️ Please compare with your own visual judgment!
+📏 L1: 177.34, L2: 441.41, Ratio: 0.40
+✅ Saved to c:\Users\nagab\OneDrive\Documents\image_paranoid\tools\../images/output_images/interocular_width/37_or_more\Untitled5.png
+🖼️ Processing: Untitled6.png, 6-th of 114 files 
+Click outer edge of medial corner of left eye!
+🖼️ Processing: Untitled6.png, 6-th of 114 files 
+Click outer edge of medial corner of left eye!
+🖼️ Processing: Untitled6.png, 4-th of 112 files 
+Click outer edge of medial corner of left eye!
+🖼️ Processing: head and shoulder shot photo_10.jpeg, 5-th of 112 files 
+Click outer edge of medial corner of left eye!
+Point clicked: 174, 258
+✅ Outer edge of medial corner of left eye recorded.
+2️⃣: Click outer edge of medial corner of right eye
+Point clicked: 340, 258
+✅ Outer edge of medial corner of right eye recorded.
+Draw interocular line between both medial eye corners
+3️⃣: {clue}
+Point clicked: 28, 254
+✅ Outer edge of medial corner of right eye recorded.
+Draw interocular line between both medial eye corners
+3️⃣: {clue}
+✅ Outer edge of lateral corner of left eye recorded.
+4️⃣: Click outer edge of lateral corner of right eye!
+Point clicked: 495, 268
+✅ Outer edge of medial corner of right eye recorded.
+Draw interocular line between both medial eye corners
+3️⃣: {clue}
+✅ Outer edge of lateral corner of left eye recorded.
+✅ Outer edge of lateral corner of right eye recorded.
+Draw line between both lateral eye corners
+🧭 Auto-perspective : Front, 👁️ Please compare with your own visual judgment!
+📏 L1: 166.00, L2: 467.21, Ratio: 0.36
 ✅ Saved to c:\Users\nagab\OneDrive\Documents\image_paranoid\tools\../images/output_images/interocular_width/31_to_36\head and shoulder shot photo_10.jpeg
-🖼️ Processing: head and shoulder shot photo_11.jpeg, 11-th of 192 files 
-🖼️ Processing: head and shoulder shot photo_12.jpeg, 12-th of 192 files 
-Point clicked: 236, 197
-✅ The most medial contour of left eye recorded.
-2️⃣: Click the most medial contour of right eye!
-Point clicked: 275, 197
-✅ The most medial contour of right eye recorded.
-draw line from p1 to p2
-3️⃣: Click the most lateral side of left eye angle!
-Point clicked: 200, 202
-✅ The most medial contour of right eye recorded.
-draw line from p1 to p2
-3️⃣: Click the most lateral side of left eye angle!
-✅ The most lateral side of right eye angle recorded.
-4️⃣: Click the most lateral side of right eye angle!
-Point clicked: 309, 198
-✅ The most medial contour of right eye recorded.
-draw line from p1 to p2
-3️⃣: Click the most lateral side of left eye angle!
-✅ The most lateral side of right eye angle recorded.
-4️⃣: Click the most lateral side of right eye angle!
-✅ The most lateral side of right eye angle recorded.
-draw line from p3 to p4
+🖼️ Processing: head and shoulder shot photo_12.jpeg, 6-th of 112 files 
+Click outer edge of medial corner of left eye!
+Point clicked: 158, 256
+✅ Outer edge of medial corner of left eye recorded.
+2️⃣: Click outer edge of medial corner of right eye
+Point clicked: 278, 255
+✅ Outer edge of medial corner of right eye recorded.
+Draw interocular line between both medial eye corners
+3️⃣: {clue}
+Point clicked: 31, 254
+✅ Outer edge of medial corner of right eye recorded.
+Draw interocular line between both medial eye corners
+3️⃣: {clue}
+✅ Outer edge of lateral corner of left eye recorded.
+4️⃣: Click outer edge of lateral corner of right eye!
+Point clicked: 400, 250
+✅ Outer edge of medial corner of right eye recorded.
+Draw interocular line between both medial eye corners
+3️⃣: {clue}
+✅ Outer edge of lateral corner of left eye recorded.
+✅ Outer edge of lateral corner of right eye recorded.
+Draw line between both lateral eye corners
 🧭 Auto-perspective : Front, 👁️ Please compare with your own visual judgment!
-📏 L1: 39.00, L2: 109.07, Ratio: 0.36
+📏 L1: 120.00, L2: 369.02, Ratio: 0.33
 ✅ Saved to c:\Users\nagab\OneDrive\Documents\image_paranoid\tools\../images/output_images/interocular_width/31_to_36\head and shoulder shot photo_12.jpeg
