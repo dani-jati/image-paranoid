@@ -2,7 +2,7 @@
 <NotepadPlus>
     <Session activeView="0">
         <mainView activeIndex="0">
-            <File firstVisibleLine="302" xOffset="0" scrollWidth="1932" startPos="12047" endPos="12047" selMode="0" offset="0" wrapCount="1" lang="Python" encoding="-1" userReadOnly="no" filename="C:\Users\nagab\OneDrive\Documents\image_paranoid\tools\forehead_height.py" backupFilePath="C:\Users\nagab\OneDrive\Documents\image_paranoid\editor\backup\forehead_height.py@2025-12-08_204855" originalFileLastModifTimestamp="360146903" originalFileLastModifTimestampHigh="31221833" tabColourId="-1" RTL="no" tabPinned="no" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="512" mapWrapIndentMode="-1" mapIsWrap="no" />
+            <File firstVisibleLine="176" xOffset="0" scrollWidth="1993" startPos="7029" endPos="7029" selMode="0" offset="0" wrapCount="1" lang="Python" encoding="-1" userReadOnly="no" filename="C:\Users\nagab\OneDrive\Documents\image_paranoid\tools\face_width.py" backupFilePath="C:\Users\nagab\OneDrive\Documents\image_paranoid\editor\backup\face_width.py@2025-12-10_210326" originalFileLastModifTimestamp="-1329138358" originalFileLastModifTimestampHigh="31222237" tabColourId="-1" RTL="no" tabPinned="no" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="512" mapWrapIndentMode="-1" mapIsWrap="no" />
         </mainView>
         <subView activeIndex="0" />
     </Session>

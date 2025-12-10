@@ -12,3 +12,218 @@ Point clicked: 255, 337
 🧭 Auto-perspective : Side, 👁️ Please compare with your own visual judgment!
 📏 L1: 86.01, L2: 89.01, Ratio: 0.97
 ✅ Saved to c:\Users\nagab\OneDrive\Documents\image_paranoid\tools\../images/output_images/midface_height/1_to_1.2\Untitled1.png
+🖼️ Processing: Untitled2.png, 3-th of 190 files 
+1️⃣: Click glabella!
+Point clicked: 104, 141
+✅ Glabella recorded.
+2️⃣: Click mid-line of nasal base!
+Point clicked: 97, 260
+draw line from glabella to nasal base
+Click menton!
+Point clicked: 111, 380
+draw line from glabella to nasal base
+🖼️ Processing: Untitled2.png, 3-th of 190 files 
+1️⃣: Click glabella!
+Point clicked: 106, 140
+✅ Glabella recorded.
+2️⃣: Click mid-line of nasal base!
+Point clicked: 98, 260
+draw line from glabella to nasal base
+Click menton!
+Point clicked: 112, 379
+draw line from glabella to nasal base
+Chin's menton recorded.
+🖼️ Processing: Untitled2.png, 3-th of 190 files 
+1️⃣: Click glabella!
+Point clicked: 102, 141
+✅ Glabella recorded.
+2️⃣: Click mid-line of nasal base!
+Point clicked: 98, 264
+draw line from glabella to nasal base
+Click menton!
+Point clicked: 109, 381
+draw line from glabella to nasal base
+Chin's menton recorded.
+draw line from mid hair borderline to chin
+🖼️ Processing: Untitled2.png, 3-th of 190 files 
+1️⃣: Click glabella!
+Point clicked: 107, 136
+✅ Glabella recorded.
+2️⃣: Click mid-line of nasal base!
+Point clicked: 97, 259
+draw line from glabella to nasal base
+Click menton!
+Point clicked: 113, 378
+draw line from glabella to nasal base
+Chin's menton recorded.
+draw line from mid hair borderline to chin
+🖼️ Processing: Untitled2.png, 3-th of 190 files 
+1️⃣: Click glabella!
+Point clicked: 106, 146
+✅ Glabella recorded.
+2️⃣: Click mid-line of nasal base!
+Point clicked: 96, 258
+draw line from glabella to nasal base
+Click menton!
+🖼️ Processing: Untitled2.png, 3-th of 190 files 
+1️⃣: Click glabella!
+Point clicked: 105, 141
+✅ Glabella recorded.
+2️⃣: Click mid-line of nasal base!
+Point clicked: 99, 260
+draw line from glabella to nasal base
+Point clicked: 99, 260
+draw line from glabella to nasal base
+🖼️ Processing: Untitled2.png, 3-th of 190 files 
+1️⃣: Click glabella!
+Point clicked: 104, 142
+✅ Glabella recorded.
+2️⃣: Click mid-line of nasal base!
+Point clicked: 99, 261
+draw line from glabella to nasal base
+Click menton!
+🖼️ Processing: Untitled2.png, 3-th of 190 files 
+1️⃣: Click glabella!
+Point clicked: 106, 138
+✅ Glabella recorded.
+2️⃣: Click mid-line of nasal base!
+Point clicked: 100, 264
+draw line from glabella to nasal base
+Click menton!
+🖼️ Processing: Untitled2.png, 3-th of 190 files 
+1️⃣: Click glabella!
+Point clicked: 105, 139
+✅ Glabella recorded.
+2️⃣: Click mid-line of nasal base!
+Point clicked: 98, 262
+draw line from glabella to nasal base
+Click menton!
+Point clicked: 111, 382
+draw line from glabella to nasal base
+Chin's menton recorded.
+draw line from mid hair borderline to chin
+🖼️ Processing: Untitled2.png, 3-th of 190 files 
+1️⃣: Click glabella!
+Point clicked: 103, 139
+✅ Glabella recorded.
+2️⃣: Click mid-line of nasal base!
+Point clicked: 98, 263
+draw line from glabella to nasal base
+Click menton!
+Point clicked: 113, 382
+draw line from glabella to nasal base
+Chin's menton recorded.
+draw line from mid hair borderline to chin
+🖼️ Processing: Untitled2.png, 3-th of 190 files 
+1️⃣: Click glabella!
+Point clicked: 106, 142
+✅ Glabella recorded.
+2️⃣: Click mid-line of nasal base!
+Point clicked: 99, 263
+draw line from glabella to nasal base
+Click menton!
+Point clicked: 110, 381
+draw line from glabella to nasal base
+Chin's menton recorded.
+draw line from mid hair borderline to chin
+🖼️ Processing: Untitled2.png, 3-th of 190 files 
+1️⃣: Click glabella!
+Point clicked: 105, 136
+✅ Glabella recorded.
+2️⃣: Click mid-line of nasal base!
+Point clicked: 100, 260
+draw line from glabella to nasal base
+Click menton!
+Point clicked: 110, 377
+draw line from glabella to nasal base
+Chin's menton recorded.
+draw line from mid hair borderline to chin
+🖼️ Processing: Untitled2.png, 3-th of 190 files 
+1️⃣: Click glabella!
+Point clicked: 106, 148
+✅ Glabella recorded.
+2️⃣: Click mid-line of nasal base!
+Point clicked: 99, 262
+draw line from glabella to nasal base
+Click menton!
+Point clicked: 108, 372
+draw line from glabella to nasal base
+Chin's menton recorded.
+draw line from mid hair borderline to chin
+🖼️ Processing: Untitled2.png, 3-th of 190 files 
+1️⃣: Click glabella!
+Point clicked: 105, 139
+✅ Glabella recorded.
+2️⃣: Click mid-line of nasal base!
+Point clicked: 101, 260
+draw line from glabella to nasal base
+Click menton!
+Point clicked: 108, 378
+draw line from glabella to nasal base
+Chin's menton recorded.
+draw line from mid hair borderline to chin
+🖼️ Processing: Untitled2.png, 3-th of 190 files 
+1️⃣: Click glabella!
+Point clicked: 106, 139
+✅ Glabella recorded.
+2️⃣: Click mid-line of nasal base!
+Point clicked: 100, 262
+draw line from glabella to nasal base
+Click menton!
+Point clicked: 109, 376
+draw line from glabella to nasal base
+Chin's menton recorded.
+draw line from mid hair borderline to chin
+🖼️ Processing: Untitled2.png, 3-th of 190 files 
+1️⃣: Click glabella!
+Point clicked: 106, 135
+✅ Glabella recorded.
+2️⃣: Click mid-line of nasal base!
+Point clicked: 100, 260
+draw line from glabella to nasal base
+Click menton!
+Point clicked: 112, 378
+draw line from glabella to nasal base
+Chin's menton recorded.
+draw line from mid hair borderline to chin
+🧭 Auto-perspective : Side, 👁️ Please compare with your own visual judgment!
+📏 L1: 125.14, L2: 118.61, Ratio: 1.06
+✅ Saved to c:\Users\nagab\OneDrive\Documents\image_paranoid\tools\../images/output_images/midface_height/1_to_1.2\Untitled2.png
+🖼️ Processing: Untitled5.png, 4-th of 190 files 
+1️⃣: Click glabella!
+Point clicked: 250, 192
+✅ Glabella recorded.
+2️⃣: Click mid-line of nasal base!
+Point clicked: 250, 294
+draw line from glabella to nasal base
+Click menton!
+Point clicked: 246, 383
+draw line from glabella to nasal base
+Chin's menton recorded.
+draw line from mid hair borderline to chin
+🧭 Auto-perspective : Side, 👁️ Please compare with your own visual judgment!
+📏 L1: 102.00, L2: 89.09, Ratio: 1.14
+✅ Saved to c:\Users\nagab\OneDrive\Documents\image_paranoid\tools\../images/output_images/midface_height/1_to_1.2\Untitled5.png
+🖼️ Processing: Untitled6.png, 5-th of 190 files 
+1️⃣: Click glabella!
+🖼️ Processing: Untitled6.png, 5-th of 190 files 
+1️⃣: Click glabella!
+Point clicked: 230, 121
+✅ Glabella recorded.
+2️⃣: Click mid-line of nasal base!
+🖼️ Processing: Untitled6.png, 5-th of 190 files 
+1️⃣: Click glabella!
+↩️ Reset current image. Please click again.
+Point clicked: 254, 177
+✅ Glabella recorded.
+2️⃣: Click mid-line of nasal base!
+Point clicked: 285, 256
+draw line from glabella to nasal base
+Click menton!
+Point clicked: 316, 340
+draw line from glabella to nasal base
+Chin's menton recorded.
+draw line from mid hair borderline to chin
+🧭 Auto-perspective : Diagonal, 👁️ Please compare with your own visual judgment!
+📏 L1: 84.86, L2: 89.54, Ratio: 0.95
+✅ Saved to c:\Users\nagab\OneDrive\Documents\image_paranoid\tools\../images/output_images/midface_height/0_to_1\Untitled6.png

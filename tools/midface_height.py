@@ -1,5 +1,9 @@
-# This script is to measure midface height
-# relative to lower-face height. 
+# Purpose: to measure midface vs lower-face height.
+# Midface: glabella to nasal base.
+# Lower-face: nasal base to chin.
+# Glabella: a small space in the brink of forehead edge,
+# just above nasion and 
+# midline area between supraorbital ridges (eyebrow bones).
 
 import sys, os, cv2, datetime
 from PySide6.QtWidgets import (
@@ -51,8 +55,6 @@ else:
         print(f"🔗 Symlink created: {midface_height_input} → {cropper_output}")
 
 print("Symlink points to:", os.readlink(midface_height_input))
-
-
 
 progress_file = os.path.join(script_dir, "../progress/midface_height.txt")
 os.makedirs(os.path.dirname(progress_file), exist_ok=True)
@@ -183,24 +185,26 @@ class Dashboard(QMainWindow):
             self.add_log(f"⚠️ Could not load {filename}")
             return
 
-        self.proc_label.setPixmap(
-            cvimg_to_qpix(self.raw_img).scaled(
-                self.proc_label.width(), self.proc_label.height(),
-                Qt.KeepAspectRatio, Qt.SmoothTransformation
-            )
-        )
-
         self.add_log(
             f"🖼️ Processing: {os.path.basename(filename)}, {self.index+1}-th of {len(self.files)} files "
         )
 
-        preview = draw_grid(img.copy())
+        # instruction
+        legend_x, legend_y = 0,0
+        preview = img.copy()
+        clue = "Click glabella!"
+        cv2.putText(preview, clue, (legend_x+10, legend_y+30),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 3)
+        cv2.putText(preview, clue, (legend_x+10, legend_y+30),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,255,0), 2)
+      
+        self.add_log( "1️⃣: " + clue )
+
         self.proc_label.setPixmap(cvimg_to_qpix(preview).scaled(self.proc_label.width(), self.proc_label.height(), Qt.KeepAspectRatio))
 
         self.view_selector.setCurrentIndex(0)
         self.view_selector.hide()
         self.clicks = []
-
 
     def on_click(self, event):
         pos = event.position().toPoint()
@@ -209,93 +213,99 @@ class Dashboard(QMainWindow):
         self.clicks.append((pos.x(), pos.y()))
         self.add_log(f"Point clicked: {pos.x()}, {pos.y()}")
 
+        step = len(self.clicks)
+
+        if self.raw_img is None:
+            return  # No image loaded   
+
         # copy image and draw grid
-        img_copy = draw_black_grid(self.raw_img.copy(), spacing_px=40)
+        # img_copy = draw_black_grid(self.raw_img.copy(), spacing_px=40)
+        img_copy = self.raw_img.copy()
 
         # scale factors
         h, w = self.raw_img.shape[:2]
         disp_w, disp_h = self.proc_label.width(), self.proc_label.height()
         scale_x, scale_y = w / disp_w, h / disp_h
 
-        def numbering_click(cx, cy, i):
-            cv2.putText(img_copy, f"{i+1}", (cx+3, cy-10),
-                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 3)
-            cv2.putText(img_copy, f"{i+1}", (cx+3, cy-10),
-                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (90,255,255), 2)
-
-
         # draw all points so far
+        coords = []
         for i, (x, y) in enumerate(self.clicks):
             cx, cy = int(x * scale_x), int(y * scale_y)
+            coords.append( (cx, cy) )
+            
             if i == 0:
-                cx1, cy1 = cx, cy
-                cv2.line(img_copy, (cx, cy-500), (cx, cy+500), (190,190,190), 1)
-                numbering_click(cx, cy, i)
+                cv2.circle(img_copy, (cx, cy), 5, (0, 255, 0), -1)
+            if i == 1:
+                cv2.circle(img_copy, (cx, cy), 5, (0, 255, 0), -1)
+            if i == 2:
+                cv2.circle(img_copy, (cx, cy), 5, (0, 255, 0), -1)
+            if i == 3:
+                cv2.circle(img_copy, (cx, cy), 5, (0, 255, 0), -1)
 
-                # dot on clicked point
-                color = (0,0,255) # red
-                cv2.circle(img_copy, (cx, cy), 5, color, -1)
-
-                # click order
-                cv2.putText(img_copy, f"{i+1}", (cx, cy+13),
+            cv2.putText(img_copy, f"{i+1}", (cx + 10 , cy + 13),
                     cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 3)
-                cv2.putText(img_copy, f"{i+1}", (cx, cy+13),
-                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (90,255,255), 2)
+            cv2.putText(img_copy, f"{i+1}", (cx + 10, cy + 13),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (90,255,255), 2)          
+            
+        if step == 1:
 
-                # labelling second line
-                cv2.putText(img_copy, "Glabella line", (cx, cy-10),
+            self.add_log("✅ Glabella recorded.")
+
+            # guide line
+            cv2.line(img_copy,(cx-400, cy), (cx+400, cy), (150,150,150), 1)
+
+            # instruction
+            legend_x, legend_y = 0,0
+            preview = img_copy
+            clue = "Click mid-line of nasal base!"
+            cv2.putText(preview, clue, (legend_x+10, legend_y+30),
                     cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 3)
-                cv2.putText(img_copy, "Glabella line", (cx, cy-10),
+            cv2.putText(preview, clue, (legend_x+10, legend_y+30),
                     cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,255,255), 2)
 
-            elif i == 1:
-                cx2, cy2 = cx, cy
-                cv2.line(img_copy, (cx1, cy1), (cx, cy), (0,255,0), 2)
-                cv2.circle(img_copy, (cx1, cy1), 4, (0,255,0), -1)
-                cv2.circle(img_copy, (cx, cy), 4, (0,255,0), -1)
-                numbering_click(cx, cy, i)
+            self.add_log(f"2️⃣: {clue}")        
 
-                # dot on clicked point
-                color = (0,255,0) # green
-                cv2.circle(img_copy, (cx, cy), 5, color, -1)
+        if step >= 2:
+            self.add_log("draw line from glabella to nasal base")
 
-                # click order
-                cv2.putText(img_copy, f"{i+1}", (cx, cy+13),
+            p1,p2 = coords[0], coords[1]
+ 
+            cv2.line(img_copy, p1, p2, (0,255,0), 2)
+
+            lbl = "Mid-face height"
+            cv2.putText(img_copy, lbl, (p1[0] + 10, p1[1] + int(( p2[1] - p1[1] )/2) ),
                     cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 3)
-                cv2.putText(img_copy, f"{i+1}", (cx, cy+13),
-                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (90,255,255), 2)
+            cv2.putText(img_copy, lbl, (p1[0] + 10, p1[1] + int(( p2[1] - p1[1] )/2) ),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,255,0), 2)
 
-                # labelling second line
-                cv2.putText(img_copy, "Nasal-base line", (cx, cy-10),
+            if step == 2:
+                # instruction
+                legend_x, legend_y = 0,0
+                preview = img_copy
+                clue = "Click menton!"
+                cv2.putText(preview, clue, (legend_x+10, legend_y+30),
+                        cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 3)
+                cv2.putText(preview, clue, (legend_x+10, legend_y+30),
+                        cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,255,255), 2)               
+
+                self.add_log(clue)      
+
+        if step >= 3:
+            self.add_log( "Chin's menton recorded." )
+            
+            # insert second click coordinate to third
+            self.clicks.insert(2, self.clicks[1])
+            coords.insert(2, self.clicks[1])
+
+            self.add_log("draw line from mid hair borderline to chin")
+            p3,p4 = coords[2], coords[3]
+            cv2.line(img_copy, p3, p4, (0,255,0), 2)
+            lbl = "Lower-face height"
+            cv2.putText(img_copy, lbl, (p3[0] + 10, p3[1] + int(( p4[1] - p3[1] )/2)),
                     cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 3)
-                cv2.putText(img_copy, "Nasal-base line", (cx, cy-10),
-                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,255,255), 2)
-
-            elif i == 2:
-
-                cv2.circle(img_copy,(cx2,cy2),4,(255,0,0), -1)                
-                cv2.line(img_copy, (cx2, cy2), (cx, cy), (255,0,0), 2)
-                numbering_click(cx, cy, i)
-                color = (255,0,0)
-                cv2.circle(img_copy, (cx, cy), 5, color, -1)
-
-                # click order
-                cv2.putText(img_copy, f"{i+1}", (cx, cy+13),
-                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 3)
-                cv2.putText(img_copy, f"{i+1}", (cx, cy+13),
-                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (90,255,255), 2)
-
-                # labelling third line
-                cv2.putText(img_copy, "Chin line", (cx, cy-10),
-                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 3)
-                cv2.putText(img_copy, "Chin line", (cx, cy-10),
-                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,255,255), 2)
-            else:
-                color = (255, 255, 255)  # White or fallback
-
-            # cv2.circle(img_copy, (cx, cy), 5, color, -1)
-            cv2.line(img_copy, (cx-400, cy), (cx+400, cy), (color), 2)
-
+            cv2.putText(img_copy, lbl, (p3[0] + 10, p3[1] + int( ( p4[1] - p3[1] ) /2)),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,255,0), 2)
+      
         # update preview
         self.proc_label.setPixmap(
             cvimg_to_qpix(img_copy).scaled(
@@ -304,9 +314,9 @@ class Dashboard(QMainWindow):
             )
          )
 
-        if len(self.clicks) == 3:
+        if len(self.clicks) == 4:
             # Automatically duplicate point 2 as point 3
-            self.clicks.insert(2, self.clicks[1])
+            # self.clicks.insert(2, self.clicks[1])
             self.process_clicks()
 
     def process_clicks(self):

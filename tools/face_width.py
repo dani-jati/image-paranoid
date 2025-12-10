@@ -190,12 +190,13 @@ class Dashboard(QMainWindow):
         # instruction
         legend_x, legend_y = 0,0
         preview = img.copy()
-        cv2.putText(preview, "Click leftmost point of midface contour!", (legend_x+10, legend_y+30),
+        clue = "Click leftmost point of midface contour!"
+        cv2.putText(preview, clue, (legend_x+10, legend_y+30),
                     cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 3)
-        cv2.putText(preview, "Click leftmost point of midface contour!", (legend_x+10, legend_y+30),
+        cv2.putText(preview, clue, (legend_x+10, legend_y+30),
                     cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,255,0), 2)
       
-        self.add_log("Click lateral angle of left eye!")
+        self.add_log( "1️⃣: " + clue )
 
         self.proc_label.setPixmap(cvimg_to_qpix(preview).scaled(self.proc_label.width(), self.proc_label.height(), Qt.KeepAspectRatio))
 
