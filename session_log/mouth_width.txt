@@ -88,3 +88,385 @@ Step 1️⃣: Click center of LEFT pupil.
 Step 1️⃣: Click center of LEFT pupil.
 🖼️ Processing: Untitled1.png, 4-th of 192 files
 Step 1️⃣: Click center of LEFT pupil.
+ 1️⃣: Click LEFT pupil center!
+ 1️⃣: Click LEFT pupil center!
+Point clicked: 220, 196
+✅ Left pupil center recorded.
+2️⃣: Click RIGHT pupil center!
+Point clicked: 293, 198
+✅ RIGHT pupil recorded.
+draw line from left to right pupils
+Click midline nasal base!
+ 1️⃣: Click LEFT pupil center!
+Point clicked: 220, 196
+✅ Left pupil center recorded.
+2️⃣: Click RIGHT pupil center
+ 1️⃣: Click LEFT pupil center!
+↩️ Reset current image. Please click again.
+Point clicked: 216, 196
+✅ Left pupil center recorded.
+2️⃣: Click RIGHT pupil center
+ 1️⃣: Click LEFT pupil center!
+↩️ Reset current image. Please click again.
+Point clicked: 216, 196
+✅ Left pupil center recorded.
+2️⃣: Click RIGHT pupil center
+ 1️⃣: Click LEFT pupil center!
+↩️ Reset current image. Please click again.
+ 1️⃣: Click LEFT pupil cener!
+ 1️⃣: Click LEFT pupil center!
+ 1️⃣: Click LEFT pupil center!
+ 1️⃣: Click LEFT pupil center!
+ 1️⃣: Click LEFT pupil center!
+ 1️⃣: Click LEFT pupil center!
+ 1️⃣: Click LEFT pupil center!
+ 1️⃣: Click LEFT pupil center!
+Point clicked: 216, 196
+✅ Left pupil center recorded.
+2️⃣: Click RIGHT pupil center
+ 1️⃣: Click LEFT pupil center!
+Point clicked: 220, 195
+✅ Left pupil center recorded.
+2️⃣: Click RIGHT pupil center!
+Point clicked: 295, 196
+✅ RIGHT pupil recorded.
+draw line from left to right pupils
+Click midline nasal base
+Point clicked: 250, 250
+✅ RIGHT pupil recorded.
+draw line from left to right pupils
+ 1️⃣: Click LEFT pupil center!
+Point clicked: 220, 196
+✅ Left pupil center recorded.
+2️⃣: Click RIGHT pupil center!
+Point clicked: 295, 195
+✅ RIGHT pupil recorded.
+draw line from left to right pupils
+Click midline nasal base
+Point clicked: 251, 251
+✅ RIGHT pupil recorded.
+draw line from left to right pupils
+ 1️⃣: Click LEFT pupil center!
+ 1️⃣: Click LEFT pupil center!
+Point clicked: 217, 196
+✅ Left pupil center recorded.
+2️⃣: Click RIGHT pupil center!
+ 1️⃣: Click LEFT pupil center!
+Point clicked: 220, 195
+✅ Left pupil center recorded.
+2️⃣: Click RIGHT pupil center!
+Point clicked: 294, 197
+✅ RIGHT pupil recorded.
+draw line from left to right pupils
+Click midline nasal base
+Point clicked: 248, 245
+✅ RIGHT pupil recorded.
+draw line from left to right pupils
+✅ Nasolabial angle recorded. Step 4️⃣: Click LEFT mouth corner.
+ 1️⃣: Click LEFT pupil center!
+↩️ Reset current image. Please click again.
+Point clicked: 217, 194
+✅ Left pupil center recorded.
+2️⃣: Click RIGHT pupil center!
+Point clicked: 290, 196
+✅ RIGHT pupil recorded.
+draw line from left to right pupils
+Click midline nasal base
+ 1️⃣: Click LEFT pupil center!
+↩️ Reset current image. Please click again.
+ 1️⃣: Click LEFT pupil center!
+Point clicked: 220, 194
+✅ Left pupil center recorded.
+2️⃣: Click RIGHT pupil center!
+ 1️⃣: Click LEFT pupil center!
+Point clicked: 219, 193
+✅ Left pupil center recorded.
+2️⃣: Click RIGHT pupil center!
+Point clicked: 288, 198
+✅ RIGHT pupil recorded.
+draw line from left to right pupils
+Click midline nasal base
+ 1️⃣: Click LEFT pupil center!
+Point clicked: 222, 196
+✅ Left pupil center recorded.
+2️⃣: Click RIGHT pupil center!
+Point clicked: 298, 197
+✅ RIGHT pupil recorded.
+draw line from left to right pupils
+Click midline nasal base
+ 1️⃣: Click LEFT pupil center!
+Point clicked: 220, 195
+ 1️⃣: Click LEFT pupil center!
+Point clicked: 218, 198
+✅ Left pupil center recorded.
+2️⃣: Click RIGHT pupil center!
+Point clicked: 296, 198
+✅ RIGHT pupil recorded.
+draw line from left to right pupils
+Click midline nasal base
+ 1️⃣: Click LEFT pupil center!
+Point clicked: 218, 194
+✅ Left pupil center recorded.
+2️⃣: Click RIGHT pupil center!
+ 1️⃣: Click LEFT pupil center!
+Point clicked: 220, 196
+✅ Left pupil center recorded.
+2️⃣: Click RIGHT pupil center!
+Point clicked: 293, 196
+✅ RIGHT pupil recorded.
+draw line from left to right pupils
+Click midline nasal base
+ 1️⃣: Click LEFT pupil center!
+↩️ Reset current image. Please click again.
+Point clicked: 220, 196
+✅ Left pupil center recorded.
+2️⃣: Click RIGHT pupil center!
+ 1️⃣: Click LEFT pupil center!
+Point clicked: 218, 193
+✅ Left pupil center recorded.
+2️⃣: Click RIGHT pupil center!
+ 1️⃣: Click LEFT pupil center!
+Point clicked: 219, 193
+✅ Left pupil center recorded.
+2️⃣: Click RIGHT pupil center!
+ 1️⃣: Click LEFT pupil center!
+Point clicked: 221, 194
+✅ Left pupil center recorded.
+2️⃣: Click RIGHT pupil center!
+ 1️⃣: Click LEFT pupil center!
+Point clicked: 221, 195
+✅ Left pupil center recorded.
+2️⃣: Click RIGHT pupil center!
+Point clicked: 294, 198
+✅ RIGHT pupil recorded.
+draw line from left to right pupils
+Click midline nasal base
+ 1️⃣: Click LEFT pupil center!
+Point clicked: 212, 195
+✅ Left pupil center recorded.
+2️⃣: Click RIGHT pupil center!
+Point clicked: 296, 198
+✅ RIGHT pupil recorded.
+draw line from left to right pupils
+Click midline nasal base
+Point clicked: 254, 248
+✅ RIGHT pupil recorded.
+draw line from left to right pupils
+✅ Nasolabial angle recorded. Step 4️⃣: Click LEFT mouth corner.
+Point clicked: 222, 273
+✅ RIGHT pupil recorded.
+draw line from left to right pupils
+✅ Left mouth corner recorded. Step 5️⃣: Click RIGHT mouth corner.
+ 1️⃣: Click LEFT pupil center!
+Point clicked: 221, 196
+✅ Left pupil center recorded.
+2️⃣: Click RIGHT pupil center!
+Point clicked: 296, 198
+✅ RIGHT pupil recorded.
+draw line from left to right pupils
+Click midline nasal base
+Point clicked: 252, 246
+✅ RIGHT pupil recorded.
+draw line from left to right pupils
+✅ Nasolabial angle recorded. Step 4️⃣: Click LEFT mouth corner.
+ 1️⃣: Click LEFT pupil center!
+Point clicked: 219, 196
+✅ Left pupil center recorded.
+2️⃣: Click RIGHT pupil center!
+Point clicked: 294, 197
+✅ RIGHT pupil recorded.
+draw line from left to right pupils
+Click midline nasal base
+Point clicked: 253, 248
+✅ RIGHT pupil recorded.
+draw line from left to right pupils
+✅ Nasolabial angle recorded. Step 4️⃣: Click LEFT mouth corner.
+ 1️⃣: Click LEFT pupil center!
+Point clicked: 218, 194
+✅ Left pupil center recorded.
+2️⃣: Click RIGHT pupil center!
+Point clicked: 296, 196
+✅ RIGHT pupil recorded.
+draw line from left to right pupils
+Click midline nasal base
+Point clicked: 253, 247
+✅ RIGHT pupil recorded.
+draw line from left to right pupils
+✅ Nasolabial angle recorded. Step 4️⃣: Click LEFT mouth corner.
+ 1️⃣: Click LEFT pupil center!
+Point clicked: 220, 194
+✅ Left pupil center recorded.
+2️⃣: Click RIGHT pupil center!
+Point clicked: 293, 198
+✅ RIGHT pupil recorded.
+draw line from left to right pupils
+Click midline nasal base
+Point clicked: 250, 248
+✅ RIGHT pupil recorded.
+draw line from left to right pupils
+✅ Nasolabial angle recorded. Step 4️⃣: Click LEFT mouth corner.
+Point clicked: 219, 272
+✅ RIGHT pupil recorded.
+draw line from left to right pupils
+✅ Left mouth corner recorded. Step 5️⃣: Click RIGHT mouth corner.
+Point clicked: 288, 274
+✅ RIGHT pupil recorded.
+draw line from left to right pupils
+✅ Left mouth corner recorded. Step 5️⃣: Click RIGHT mouth corner.
+✅ Right mouth corner recorded. Step 6️⃣: Confirming all points…
+ 1️⃣: Click LEFT pupil center!
+Point clicked: 218, 196
+✅ Left pupil center recorded.
+2️⃣: Click RIGHT pupil center!
+Point clicked: 292, 197
+✅ RIGHT pupil recorded.
+draw line from left to right pupils
+Click midline nasal base
+Point clicked: 252, 249
+✅ RIGHT pupil recorded.
+draw line from left to right pupils
+✅ Nasolabial angle recorded. Step 4️⃣: Click LEFT mouth corner.
+Point clicked: 217, 270
+✅ RIGHT pupil recorded.
+draw line from left to right pupils
+✅ Left mouth corner recorded. Step 5️⃣: Click RIGHT mouth corner.
+Point clicked: 290, 272
+✅ RIGHT pupil recorded.
+draw line from left to right pupils
+✅ Left mouth corner recorded. Step 5️⃣: Click RIGHT mouth corner.
+✅ Right mouth corner recorded. Step 6️⃣: Confirming all points…
+ 1️⃣: Click LEFT pupil center!
+Point clicked: 219, 196
+✅ Left pupil center recorded.
+2️⃣: Click RIGHT pupil center!
+Point clicked: 294, 197
+✅ RIGHT pupil recorded.
+draw line from left to right pupils
+Click midline nasal base
+Point clicked: 250, 246
+✅ RIGHT pupil recorded.
+draw line from left to right pupils
+✅ Nasolabial angle recorded. Step 4️⃣: Click LEFT mouth corner.
+Point clicked: 215, 270
+✅ RIGHT pupil recorded.
+draw line from left to right pupils
+✅ Left mouth corner recorded. Step 5️⃣: Click RIGHT mouth corner.
+Point clicked: 292, 273
+✅ RIGHT pupil recorded.
+draw line from left to right pupils
+✅ Left mouth corner recorded. Step 5️⃣: Click RIGHT mouth corner.
+✅ Right mouth corner recorded. Step 6️⃣: Confirming all points…
+ 1️⃣: Click LEFT pupil center!
+Point clicked: 218, 195
+✅ Left pupil center recorded.
+2️⃣: Click RIGHT pupil center!
+Point clicked: 294, 197
+✅ RIGHT pupil recorded.
+draw line from left to right pupils
+Click midline nasal base
+Point clicked: 250, 248
+✅ RIGHT pupil recorded.
+draw line from left to right pupils
+✅ Nasolabial angle recorded. Step 4️⃣: Click LEFT mouth corner.
+Point clicked: 219, 272
+✅ RIGHT pupil recorded.
+draw line from left to right pupils
+✅ Left mouth corner recorded. Step 5️⃣: Click RIGHT mouth corner.
+Point clicked: 291, 273
+✅ RIGHT pupil recorded.
+draw line from left to right pupils
+✅ Left mouth corner recorded. Step 5️⃣: Click RIGHT mouth corner.
+✅ Right mouth corner recorded. Step 6️⃣: Confirming all points…
+ 1️⃣: Click LEFT pupil center!
+ 1️⃣: Click LEFT pupil center!
+Point clicked: 221, 195
+✅ Left pupil center recorded.
+2️⃣: Click RIGHT pupil center!
+Point clicked: 292, 195
+✅ RIGHT pupil recorded.
+draw line from left to right pupils
+Click midline nasal base
+Point clicked: 248, 248
+✅ RIGHT pupil recorded.
+draw line from left to right pupils
+✅ Midline nasal base recorded.
+4️⃣: Click LEFT mouth corner 
+Point clicked: 218, 270
+✅ RIGHT pupil recorded.
+draw line from left to right pupils
+✅ Midline nasal base recorded.
+✅ Left mouth corner recorded.
+5️⃣: Click RIGHT mouth corner
+Point clicked: 289, 272
+✅ RIGHT pupil recorded.
+draw line from left to right pupils
+✅ Midline nasal base recorded.
+✅ Left mouth corner recorded.
+✅ Right mouth corner recorded. Step 6️⃣: Confirming all points…
+ 1️⃣: Click LEFT pupil center!
+Point clicked: 296, 197
+✅ Left pupil center recorded.
+2️⃣: Click RIGHT pupil center!
+ 1️⃣: Click LEFT pupil center!
+↩️ Reset current image. Please click again.
+Point clicked: 221, 196
+✅ Left pupil center recorded.
+2️⃣: Click RIGHT pupil center!
+Point clicked: 294, 196
+✅ RIGHT pupil recorded.
+draw line from left to right pupils
+Click midline nasal base
+ 1️⃣: Click LEFT pupil center!
+Point clicked: 220, 196
+✅ Left pupil center recorded.
+2️⃣: Click RIGHT pupil center!
+Point clicked: 296, 198
+✅ RIGHT pupil recorded.
+draw line from left to right pupils
+Click midline nasal base
+ 1️⃣: Click LEFT pupil center!
+↩️ Reset current image. Please click again.
+ 1️⃣: Click LEFT pupil center!
+Point clicked: 336, 216
+✅ Left pupil center recorded.
+Point clicked: 220, 195
+✅ RIGHT pupil recorded.
+draw line from left to right pupils
+Click midline nasal base
+ 1️⃣: Click LEFT pupil center!
+↩️ Reset current image. Please click again.
+Point clicked: 218, 196
+✅ Left pupil center recorded.
+ 1️⃣: Click LEFT pupil center!
+Point clicked: 219, 194
+✅ Left pupil center recorded.
+ 1️⃣: Click LEFT pupil center!
+ 1️⃣: Click LEFT pupil center!
+Point clicked: 218, 196
+✅ Left pupil center recorded.
+2️⃣: Click RIGHT pupil center!
+Point clicked: 296, 197
+✅ RIGHT pupil recorded.
+draw line from left to right pupils
+Click midline nasal base
+Point clicked: 253, 248
+✅ RIGHT pupil recorded.
+draw line from left to right pupils
+✅ Midline nasal base recorded.
+4️⃣: Click LEFT mouth corner 
+Point clicked: 218, 273
+✅ RIGHT pupil recorded.
+draw line from left to right pupils
+✅ Midline nasal base recorded.
+✅ Left mouth corner recorded.
+5️⃣: Click RIGHT mouth corner
+Point clicked: 289, 274
+✅ RIGHT pupil recorded.
+draw line from left to right pupils
+✅ Midline nasal base recorded.
+✅ Left mouth corner recorded.
+✅ Right mouth corner recorded. Step 6️⃣: Confirming all points…
+✅ All points recorded. Calculating ratio and saving result...
+📏 Nose length: 52.15, Mouth width: 71.01, Ratio: 1.36
+✅ Saved to c:\Users\nagab\OneDrive\Documents\image_paranoid\tools\../images/output_images/mouth_width/1.1_or_more\Untitled1.png
+ 1️⃣: Click LEFT pupil center!

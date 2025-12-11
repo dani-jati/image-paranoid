@@ -1,5 +1,5 @@
-# This script is to measure mouth width relative to vertical nose length,
-# which is measured from nasion-radix border to nasal base
+# This script calculates the ratio of mouth width to vertical nose length.
+# Nose length is defined as the distance from the nasal base to the nasion–radix border.
 
 import sys, os, cv2, datetime
 from PySide6.QtWidgets import (
@@ -54,7 +54,6 @@ else:
 print("Symlink points to:", os.readlink(mouth_width_input))
 
 mouth_width_input = os.path.join(script_dir, "../images/input_images/mouth_width")
-
 
 progress_file = os.path.join(script_dir, "../progress/mouth_width.txt")
 os.makedirs(os.path.dirname(progress_file), exist_ok=True)
@@ -162,16 +161,22 @@ class Dashboard(QMainWindow):
             self.add_log(f"⚠️ Could not load {filename}")
             return
 
-        self.proc_label.setPixmap(
-            cvimg_to_qpix(self.raw_img).scaled(
-                self.proc_label.width(), self.proc_label.height(),
-                Qt.KeepAspectRatio, Qt.SmoothTransformation
-            )
-        )
+        # instruction
+        legend_x, legend_y = 0,0
+        preview = img.copy()
+        clue = "Click LEFT pupil center!"
+        cv2.putText(preview, clue, (legend_x+10, legend_y+30),
+                    cv2.FONT_HERSHEY_PLAIN, 1.2, (0,0,0), 3)
+        cv2.putText(preview, clue, (legend_x+10, legend_y+30),
+                    cv2.FONT_HERSHEY_PLAIN, 1.2, (0,255,0), 2)
 
-        self.add_log(f"🖼️ Processing: {os.path.basename(filename)}, {self.index+1}-th of {len(self.files)} files")
+        self.add_log(" 1️⃣: " + clue)
+
+        self.proc_label.setPixmap(cvimg_to_qpix(preview).scaled(self.proc_label.width(), self.proc_label.height(), Qt.KeepAspectRatio))
+
+        self.view_selector.setCurrentIndex(0)
+        self.view_selector.hide()
         self.clicks = []
-        self.add_log("Step 1️⃣: Click center of LEFT pupil.")
 
     def on_click(self, event):
         pos = event.position().toPoint()
@@ -182,37 +187,13 @@ class Dashboard(QMainWindow):
 
         step = len(self.clicks)
 
-        if step == 1:
-            self.add_log("✅ Left pupil center recorded. Step 2️⃣: Click center of RIGHT pupil.")
-        elif step == 2:
-            self.add_log("✅ Right pupil recorded. Step 3️⃣: Click NASOLABIAL angle.")
+        if self.raw_img is None:
+            return # No image loaded
 
-            # --- Draw eye line immediately ---
-            img_copy = self.raw_img.copy()
-            h, w = self.raw_img.shape[:2]
-            disp_w, disp_h = self.proc_label.width(), self.proc_label.height()
-            scale_x, scale_y = w / disp_w, h / disp_h
+        # copy image and draw grid
+        # img_copy = draw_black_grid(self.raw_img.copy(), spacing_px=40)
+        img_copy = self.raw_img.copy()
 
-            p1 = (int(self.clicks[0][0] * scale_x), int(self.clicks[0][1] * scale_y))
-            p2 = (int(self.clicks[1][0] * scale_x), int(self.clicks[1][1] * scale_y))
-
-            cv2.line(img_copy, p1, p2, (0, 255, 0), 2)
-            cv2.circle(img_copy, p1, 4, (0, 255, 0), -1)
-            cv2.circle(img_copy, p2, 4, (0, 255, 0), -1)
-            cv2.putText(img_copy, "Eye line", (p1[0], p1[1]-10),
-                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,255,0), 1)
-
-            self.proc_label.setPixmap(
-                cvimg_to_qpix(img_copy).scaled(
-                    self.proc_label.width(), self.proc_label.height(),
-                    Qt.KeepAspectRatio, Qt.SmoothTransformation
-                )
-            )            
-
-        # Draw preview with numbered points
-        img_copy = draw_black_grid(self.raw_img.copy(), spacing_px=40)
-
-        # scale factors
         h, w = self.raw_img.shape[:2]
         disp_w, disp_h = self.proc_label.width(), self.proc_label.height()
         scale_x, scale_y = w / disp_w, h / disp_h
@@ -221,46 +202,121 @@ class Dashboard(QMainWindow):
         coords = []
         for i, (x, y) in enumerate(self.clicks):
             cx, cy = int(x * scale_x), int(y * scale_y)
-            print(f"Click {i}: ({cx}, {cy})")
             coords.append((cx, cy))
+
             if i == 0:
                 cv2.circle(img_copy, (cx, cy), 5, (0, 255, 0), -1)
+                addr = (cx-15, cy-5)
             if i == 1:
                 cv2.circle(img_copy, (cx, cy), 5, (0, 255, 0), -1)
+                addr = (cx+5, cy-5)
             if i == 2:
-                cv2.circle(img_copy, (cx, cy), 5, (255, 0, 0), -1)
+                cv2.circle(img_copy, (cx, cy), 5, (0, 255, 0), -1)
+                addr = (cx-15, cy-5)
             if i == 3:
                 cv2.circle(img_copy, (cx, cy), 5, (0, 0, 255), -1)
+                addr = (cx-15, cy-5)
             if i == 4:
                 cv2.circle(img_copy, (cx, cy), 5, (0, 0, 255), -1)
-            cv2.putText(img_copy, f"{i+1}", (cx+5, cy-5),
-                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255,255,255), 1)
+                addr = (cx+5, cy-5)
 
-            color = (0, 255, 0) if i == 0 else (255, 0, 0)
+            cv2.putText(img_copy, f"{i+1}", addr,
+                    cv2.FONT_HERSHEY_PLAIN, 1.2, (0,0,0), 3)
+            cv2.putText(img_copy, f"{i+1}", addr,
+                    cv2.FONT_HERSHEY_PLAIN, 1.2, (0,255,255), 2)
+
+            color = (0, 255, 0)
             cv2.circle(img_copy, (cx, cy), 5, color, -1)  # small dot
 
-        if step >= 2:
-            self.add_log("draw line from p1 to p2")
+        if step == 1:
+            self.add_log("✅ Left pupil center recorded.")
+ 
+             # guide line
+            cv2.line(img_copy,(cx-400, cy), (cx+400, cy), (150,150,150), 1)
+
+            # instruction
+            legend_x, legend_y = 0,0
+            preview = img_copy
+            clue = "Click RIGHT pupil center!"
+            cv2.putText(preview, clue, (legend_x+10, legend_y+30),
+                    cv2.FONT_HERSHEY_PLAIN, 1.2, (0,0,0), 3)
+            cv2.putText(preview, clue, (legend_x+10, legend_y+30),
+                    cv2.FONT_HERSHEY_PLAIN, 1.2, (0,255,0), 2)
+
+            self.add_log(f"2️⃣: {clue}")
+ 
+        if step >= 2 :
+            self.add_log("✅ RIGHT pupil recorded.")
+
+            self.add_log("draw line from left to right pupils")
+
             p1,p2 = coords[0], coords[1]
-            cv2.line(img_copy, p1, p2, (0,255,0), 1)
-            cv2.putText(img_copy, "Eye line", (p1[0], p1[1]-10),
+            cv2.line(img_copy, p1, p2, (0,255,0), 2)
+            cv2.circle(img_copy, p1, 4, (0, 255, 0), -1)
+            cv2.circle(img_copy, p2, 4, (0, 255, 0), -1)
+
+            lbl = "Eye line"
+            cv2.putText(img_copy, lbl, (p1[0], p1[1]-10),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 3)
+            cv2.putText(img_copy, lbl, (p1[0], p1[1]-10),
                     cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,255,0), 2)
 
-            p3 = ((p1[0] + p2[0]) // 2, (p1[1] + p2[1]) // 2)
+            self.p3 = p3 = ((p1[0] + p2[0]) // 2, (p1[1] + p2[1]) // 2)
 
             # Midpoint
             cv2.circle(img_copy, p3, 4, (255, 0, 0), -1)
 
+            if step == 2:
+                # instruction
+                legend_x, legend_y = 0,0
+                preview = img_copy
+                clue = "Click midline nasal base"
+                cv2.putText(preview, clue, (legend_x+10, legend_y+30),
+                        cv2.FONT_HERSHEY_PLAIN, 1.2, (0,0,0), 3)
+                cv2.putText(preview, clue, (legend_x+10, legend_y+30),
+                        cv2.FONT_HERSHEY_PLAIN, 1.2, (0,255,255), 2)               
+
+                self.add_log(clue)
+
         if step >=3:
+            self.add_log("✅ Midline nasal base recorded.")
+
+            p3 = self.p3
             p4 = coords[2]
             cv2.line(img_copy, p3, p4, (255, 0, 0), 2)
-            cv2.putText(img_copy, "Nose line", (p4[0], p4[1]-10),
-                    cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0,255,0), 2)
-        if step == 3:
-            self.add_log("✅ Nasolabial angle recorded. Step 4️⃣: Click LEFT mouth corner.")
+            cv2.circle(img_copy, p4, 3, (255, 0, 0), -1)
 
-        if step == 4:
-            self.add_log("✅ Left mouth corner recorded. Step 5️⃣: Click RIGHT mouth corner.")
+            cv2.putText(img_copy, "Nose line", (p4[0] + 10, p3[1] + int((p4[1]-p3[1])/2) ),
+                    cv2.FONT_HERSHEY_PLAIN, 1, (0,0,0), 3)
+            cv2.putText(img_copy, "Nose line", (p4[0] + 10, p3[1] + int((p4[1]-p3[1])/2) ),
+                    cv2.FONT_HERSHEY_PLAIN, 1, (0,255,0), 2)
+
+            if step == 3:
+                # instruction
+                legend_x, legend_y = 0,0
+                preview = img_copy
+                clue = "Click LEFT mouth corner "
+                cv2.putText(preview, clue, (legend_x+10, legend_y+30),
+                        cv2.FONT_HERSHEY_PLAIN, 1.2, (0,0,0), 3)
+                cv2.putText(preview, clue, (legend_x+10, legend_y+30),
+                        cv2.FONT_HERSHEY_PLAIN, 1.2, (0,255,0), 2)
+
+                self.add_log(f"4️⃣: {clue}")
+
+        if step >= 4:
+            self.add_log("✅ Left mouth corner recorded.")
+
+            if step ==4:
+                # instruction
+                legend_x, legend_y = 0,0
+                preview = img_copy
+                clue = "Click RIGHT mouth corner"
+                cv2.putText(preview, clue, (legend_x+10, legend_y+30),
+                        cv2.FONT_HERSHEY_PLAIN, 1.2, (0,0,0), 3)
+                cv2.putText(preview, clue, (legend_x+10, legend_y+30),
+                        cv2.FONT_HERSHEY_PLAIN, 1.2, (0,255,0), 2)
+
+                self.add_log(f"5️⃣: {clue}")
 
         if step >=5:
             p5 = coords[3]
@@ -276,17 +332,12 @@ class Dashboard(QMainWindow):
             cv2.circle(img_copy, p6, 5, (0, 0, 255), -1)
 
             # labelling mouth line
-            cv2.putText(img_copy, "Mouth line", (p5[0], p5[1]-10),
-                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255,255,255), 2)
+            cv2.putText(img_copy, "Mouth line", (p5[0], p5[1]+20),
+                    cv2.FONT_HERSHEY_PLAIN, 1, (0,0,0), 3)
+            cv2.putText(img_copy, "Mouth line", (p5[0], p5[1]+20),
+                    cv2.FONT_HERSHEY_PLAIN, 1, (0,255,0), 2)
 
             self.add_log("✅ Right mouth corner recorded. Step 6️⃣: Confirming all points…")
-
-        for i, (x, y) in enumerate(self.clicks):
-            cx, cy = int(x * scale_x), int(y * scale_y)
-            # cv2.circle(img_copy, (cx, cy), 5, (0, 255, 0), -1)
-            cv2.putText(img_copy, f"{i+1}", (cx, cy-5),
-                        cv2.FONT_HERSHEY_SIMPLEX, 0.5, (90,255,255), 1)
-
 
         self.proc_label.setPixmap(
             cvimg_to_qpix(img_copy).scaled(
@@ -295,8 +346,9 @@ class Dashboard(QMainWindow):
             )
         )
 
-        self.process_clicks()
-
+        if len(self.clicks) >= 5:
+            self.add_log("✅ All points recorded. Calculating ratio and saving result...")
+            self.process_clicks()
 
     def process_clicks(self):
         img = self.raw_img.copy()

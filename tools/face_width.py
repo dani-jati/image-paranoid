@@ -215,7 +215,7 @@ class Dashboard(QMainWindow):
         step = len(self.clicks)
 
         if self.raw_img is None:
-            return
+            return # No image loaded
 
         # copy image and draw grid
         # img_copy = draw_black_grid(self.raw_img.copy(), spacing_px=40)
@@ -265,6 +265,9 @@ class Dashboard(QMainWindow):
             self.add_log(f"2️⃣: {clue}")
 
         if step >= 2:
+
+            self.add_log( "Rightmost point recorded." )
+
             self.add_log("draw line from leftmost to rightmost mid-face contour")
 
             p1,p2 = coords[0], coords[1]
