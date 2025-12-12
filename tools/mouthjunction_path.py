@@ -80,6 +80,12 @@ def classify_perspective(p1, p2):
     else:
         return "Front"
 
+def label_guide_lines(img, coord):
+    cv2.putText(img, f"v", coord,
+            cv2.FONT_HERSHEY_PLAIN, 1, (0,255,0), 3)
+    cv2.putText(img, f"v", coord,
+            cv2.FONT_HERSHEY_PLAIN, 1, (0,255,0), 2)
+
 
 # === Dashboard ===
 class Dashboard(QMainWindow):
@@ -166,26 +172,28 @@ class Dashboard(QMainWindow):
             self.add_log(f"⚠️ Could not load {filename}")
             return
 
-        self.proc_label.setPixmap(
-            cvimg_to_qpix(self.raw_img).scaled(
-                self.proc_label.width(), self.proc_label.height(),
-                Qt.KeepAspectRatio, Qt.SmoothTransformation
-            )
-        )
-
         self.add_log(
             f"🖼️ Processing: {os.path.basename(filename)}, {self.index+1}-th of {len(self.files)} files "
         )
 
-        # preview = draw_grid(img.copy())
-        preview = img.copy()
-
         # instruction
         legend_x, legend_y = 0,0
-        cv2.putText(preview, "Click the leftmost point of mouth junction!", (legend_x+10, legend_y+30),
-                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255,255,255), 2)
+        preview = img.copy()
+        clue = "Click the leftmost point of mouth junction!"
+        cv2.putText(preview, clue, (legend_x+10, legend_y+30),
+                    cv2.FONT_HERSHEY_PLAIN, 1.2, (0,0,0), 3)
+        cv2.putText(preview, clue, (legend_x+10, legend_y+30),
+                    cv2.FONT_HERSHEY_PLAIN, 1.2, (0,255,0), 2)
 
-        self.proc_label.setPixmap(cvimg_to_qpix(preview).scaled(self.proc_label.width(), self.proc_label.height(), Qt.KeepAspectRatio))
+        self.add_log(" 1️⃣: " + clue)
+        
+        self.proc_label.setPixmap(
+            cvimg_to_qpix(preview).scaled(
+                self.proc_label.width(), 
+                self.proc_label.height(), 
+                Qt.KeepAspectRatio
+            )
+        )
 
         self.view_selector.setCurrentIndex(0)
         self.view_selector.hide()
@@ -199,29 +207,14 @@ class Dashboard(QMainWindow):
         self.clicks.append((pos.x(), pos.y()))
         self.add_log(f"Point clicked: {pos.x()}, {pos.y()}")
 
+        step = len(self.clicks)
+
         if self.raw_img is None:
             return
 
         # copy image and draw grid
         # img_copy = draw_black_grid(self.raw_img.copy(), spacing_px=40)
         img_copy = self.raw_img.copy()
-
-        step = len(self.clicks)
-
-        if step == 1:
-            self.add_log("✅ The leftist point of face contour recorded.")
-            self.add_log("2️⃣: Click the rightest point of mouth junction!")
-
-            # instruction
-            legend_x, legend_y = 0,0
-            cv2.putText(img_copy, "Click the rightmost point of mouth junction!", (legend_x+10, legend_y+30),
-                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255,255,255), 2)
-
-        elif step >= 2 :
-            # instruction
-            legend_x, legend_y = 0,0
-            cv2.putText(img_copy, "Click a junction point under v", (legend_x+10, legend_y+30),
-                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255,255,255), 2)
 
         # scale factors
         h, w = self.raw_img.shape[:2]
@@ -237,92 +230,84 @@ class Dashboard(QMainWindow):
             cv2.circle(img_copy, (cx, cy), 5, (0, 255, 0), -1)
 
             cv2.putText(img_copy, f"{i+1}", (cx-5, cy+20),
-                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 3)
+                    cv2.FONT_HERSHEY_PLAIN, 1, (0,0,0), 3)
             cv2.putText(img_copy, f"{i+1}", (cx-5, cy+20),
-                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (90,255,255), 2)
+                    cv2.FONT_HERSHEY_PLAIN, 1, (90,255,255), 2)
 
-        if step >= 2:
+        if step == 1:
+            self.add_log("✅ The leftmost point of mouth junction recorded.")
+
+            # instruction
+            legend_x, legend_y = 0,0
+            clue = "Click the rightmost point of mouth junction!"
+            cv2.putText(img_copy, clue, (legend_x+10, legend_y+30),
+                    cv2.FONT_HERSHEY_PLAIN, 1, (0,0,0), 3)
+            cv2.putText(img_copy, clue, (legend_x+10, legend_y+30),
+                    cv2.FONT_HERSHEY_PLAIN, 1, (0,255,0), 2)
+            
+            self.add_log("2️⃣: {clue}")
+
+        elif step >= 2 :
+            self.add_log("the rightmost point of mouth junction recorded")
+
             self.add_log("draw line from p1 to p2")
             p1,p2 = coords[0], coords[1]
 
-            # cv2.line(img_copy, p1, p2, (0,255,0), 2)
-
+            # guide line
             cv2.line(img_copy, (p1[0], p1[1]+40), (p2[0],p1[1]+40), (255,0,0), 3)
 
             cv2.circle(img_copy, (p1[0], p1[1]+40), 5, (255, 0, 0), -1)
             cv2.circle(img_copy, (p2[0], p1[1]+40), 5, (255, 0, 0), -1)
 
-            # Divide second line into 7 parts
-            dx = ( p2[0] - p1[0] ) / 7.0
-            dy = ( p2[1] - p1[1] ) / 7.0
+            # split guide line to 2 equal parts
+            dtx = ( p2[0] - p1[0] ) / 2.0
+            dty = ( p2[1] - p1[1] ) / 2.0
 
             p1_shifted = (p1[0], p1[1]+40)
             line_length = 70
 
+            dit = (int(p1_shifted[0] + 1 * dtx), int(p1_shifted[1] + 1 * dty))
+            cv2.line(img_copy, (dit[0], dit[1] - line_length), (dit[0], dit[1] + 0), (100, 100, 100, 50), 2)
+
+            # instruction
+            legend_x, legend_y = 0,0
+            clue = "Click a junction point with upper lip path under arrow v"
+            cv2.putText(img_copy, clue, (legend_x+10, legend_y+30),
+                    cv2.FONT_HERSHEY_PLAIN, 1, (0,0,0), 3)
+            cv2.putText(img_copy, clue, (legend_x+10, legend_y+30),
+                    cv2.FONT_HERSHEY_PLAIN, 1, (0,255,0), 2)
+
+            cv2.line(img_copy, (dit[0], 100 ), (dit[0], dit[1] ), (150, 150, 150), 1)
+
+            if step == 2 :
+                cv2.putText(img_copy, f"v", (dit[0]-4, 90 ),
+                        cv2.FONT_HERSHEY_PLAIN, 1, (0,255,0), 2)
+
+        if step >= 3 :
+
+            # Divide second line into 7 parts
+            dx = ( p2[0] - p1[0] ) / 7.0
+            dy = ( p2[1] - p1[1] ) / 7.0
+
             for i in range(0, 8):  # division points at 1/7 ... 2/7
+
+                # determine x coordinate
                 div = (int(p1_shifted[0] + i * dx), int(p1_shifted[1] + i * dy))
 
-                # Draw vertical separator lines
-                cv2.line(img_copy, (div[0], div[1] - line_length), (div[0], div[1]+20), (0, 255, 255), 2)
+                # draw point
+                # cv2.circle(img_copy, (div[0], div[1] + 0), 5, (200, 150, 100), -1) # small dot
 
-                cv2.circle(img_copy, (div[0], div[1]+20), 5, (200, 150, 100), -1) # small dot
+                # grey line from top to division point
+                overlay = img_copy.copy()
+                alpha = 0.5
+                cv2.line(overlay, (div[0], 100 ), (div[0], div[1] ), (200, 200, 200), 1)
+                img_copy = cv2.addWeighted(overlay, alpha, img_copy, 1 - alpha,  0)
 
-                if step == 3 and i == 1:
-                    cv2.putText(img_copy, f"v", (div[0]-4, 90 ),
-                            cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,255,255), 1)
-
-                    cv2.line(img_copy, (div[0], 100 ), (div[0], div[1] ), (150, 150, 150), 1)
-
-                if step == 4 and i == 2:
-                    cv2.putText(img_copy, f"v", (div[0]-4, 90 ),
-                            cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,255,255), 1)
-
-                    cv2.line(img_copy, (div[0], 100 ), (div[0], div[1] ), (150, 150, 150), 1)
-
-                if step == 5 and i == 3:
-                    cv2.putText(img_copy, f"v", (div[0]-4, 90 ),
-                            cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,255,255), 1)
-
-                    cv2.line(img_copy, (div[0], 100 ), (div[0], div[1] ), (150, 150, 150), 1)
-
-                if step == 6 and i == 4:
-                    cv2.putText(img_copy, f"v", (div[0]-4, 90 ),
-                            cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,255,255), 1)
-
-                    cv2.line(img_copy, (div[0], 100 ), (div[0], div[1] ), (150, 150, 150), 1)
-
-                if step == 7 and i == 5:
-                    cv2.putText(img_copy, f"v", (div[0]-4, 90 ),
-                            cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,255,255), 1)
-
-                    cv2.line(img_copy, (div[0], 100 ), (div[0], div[1] ), (150, 150, 150), 1)
-
-                if step == 8 and i == 6:
-                    cv2.putText(img_copy, f"v", (div[0]-4, 90 ),
-                            cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,255,255), 1)
-
-                    cv2.line(img_copy, (div[0], 100 ), (div[0], div[1] ), (150, 150, 150), 1)
-
-
-
-
-            # Divide second line into 2 parts
-            dtx = ( p2[0] - p1[0] ) / 2.0
-            dty = ( p2[1] - p1[1] ) / 2.0
-
-            dit = (int(p1_shifted[0] + 1 * dtx), int(p1_shifted[1] + 1 * dty))
-            cv2.line(img_copy, (dit[0], dit[1] - line_length), (dit[0], dit[1]+20), (0, 255, 255), 2)
-
-            if step == 2:
-                cv2.putText(img_copy, f"v", (dit[0]-4, 90 ),
-                        cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,255,255), 1)
-
-                cv2.line(img_copy, (dit[0], 100 ), (dit[0], dit[1] ), (150, 150, 150), 1)
-
-
-
+                # if step is always i + 2
+                if step == i + 2:
+                    label_guide_lines(img_copy, (div[0] - 4, 90))
+                    
         coords.sort()
-        print(coords)
         self.coords = coords
 
         if len(coords) == 9 :
@@ -347,9 +332,6 @@ class Dashboard(QMainWindow):
 
             x = np.array([coord[0] for coord in coords])
             y = np.array([coord[1] for coord in coords])
-
-            print(x)
-            print(y)
 
             # Reshape data for sklearn
             x_reshaped = x.reshape(-1, 1)
@@ -492,97 +474,10 @@ class Dashboard(QMainWindow):
         cv2.imwrite(out_path, img)
         self.last_saved_path = out_path
         self.add_log(f"✅ Saved to {out_path}")
+
+        # Logging progress
         open(progress_file, "w").write(os.path.basename(self.filename))
         self.view_selector.show()
-
-        """
-
-        p1, p2, p3, p4 = [to_coords(p) for p in self.clicks]
-
-        for i, (x, y) in enumerate(self.clicks):
-            cx, cy = int(x * scale_x), int(y * scale_y)
-
-            cv2.putText(img, f"{i+1}", (cx-5, cy+20),   
-                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 3)
-            cv2.putText(img, f"{i+1}", (cx-5, cy+20),
-                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (90,255,255), 2)
-
-        # First line
-        cv2.line(img, p1, p2, (0, 255, 0), 2)
-        cv2.circle(img, p1, 5, (0, 255, 0), -1)
-        cv2.circle(img, p2, 5, (0, 255, 0), -1)
-
-        # Third line
-        cv2.line(img, p2, p3, (0, 255, 0), 2)
-        cv2.circle(img, p2, 5, (0, 255, 0), -1)
-        cv2.circle(img, p3, 5, (0, 255, 0), -1)
-
-        # Third line
-        cv2.line(img, p3, p4, (0, 255, 0), 2)
-        cv2.circle(img, p3, 5, (0, 255, 0), -1)
-        cv2.circle(img, p4, 5, (0, 255, 0), -1)
-
-        A = p1
-        B = p2
-        C = p3
-        D = p4
-
-        angle_tolerance_deg=2.0
-        max_y_deviation=20
-
-        line = Line()
-
-        result = line.is_straight( A, B, C, D )
-
-        print(result)
-
-        inclination = result['inclination']
-        angle_1 = float( result['angle 1'] )
-        angle_2 = float( result['angle 2'] )
-        avg_deg = float( result['avg_deg'] )
-        std_dev = float( result['y_deviation'] )
-
-        timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-
-        # Legend box
-        legend_x, legend_y = 0, 0
-        cv2.rectangle(img, (legend_x-10, legend_y-20),
-                      (legend_x+240, legend_y+150), (0,0,0), -1)
-        cv2.rectangle(img, (legend_x-10, legend_y-20),
-                      (legend_x+240, legend_y+150), (255,255,255), 1)
-
-        cv2.putText(img, "Legend:", (legend_x, legend_y-5),
-                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255,255,255), 2)
-        cv2.putText(img, "Green = Eye chord", (legend_x, legend_y+15),
-                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,255,0), 2)
-
-        # Classification + ratio + timestamp
-        cv2.putText(img, f"Result: {inclination}", (legend_x, legend_y+35),
-                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255,255,255), 2)
-        cv2.putText(img, f"Angle 1: {angle_1:.2f}", (legend_x, legend_y+55),
-                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255,255,255), 2)
-        cv2.putText(img, f"Angle 2: {angle_2:.2f}", (legend_x, legend_y+75),
-                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255,255,255), 2)
-        cv2.putText(img, f"Avg Angle: {avg_deg:.2f}", (legend_x, legend_y+95),
-                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255,255,255), 2)
-
-        cv2.putText(img, f"Std dev: {std_dev:.2f}", (legend_x, legend_y+115),
-                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255,255,255), 2)
-        cv2.putText(img, f"Time: {timestamp}", (legend_x, legend_y+135),
-                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (200,200,200), 2)
-
-
-        self.result_label.setPixmap(cvimg_to_qpix(img).scaled(self.result_label.width(), self.result_label.height(), Qt.KeepAspectRatio))
-
-        # save result
-        folder = inclination
-        out_path = os.path.join(folder, os.path.basename(self.filename))
-        cv2.imwrite(out_path, img)
-        self.last_saved_path = out_path
-        self.add_log(f"✅ Saved to {out_path}")
-        open(progress_file, "w").write(os.path.basename(self.filename))
-        self.view_selector.show()
-        """
 
     def add_log(self, text):
         cursor = self.log.textCursor()
