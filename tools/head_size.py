@@ -25,7 +25,6 @@
 
 # BISHOULDER_WIDTH = distance(LEFT_END, RIGHT_END)
 
-
 import sys, os, cv2, datetime
 from PySide6.QtWidgets import (
     QApplication, QMainWindow, QWidget, QVBoxLayout, QHBoxLayout,
@@ -64,6 +63,7 @@ elif os.path.islink(head_size_input):
 elif os.path.isdir(head_size_input):
     print(f"⚠️ Destination exists as a real folder: {head_size_input} — not creating symlink.")
 else:
+
     if not os.path.islink(path):
         print(f"{path} is not a symbolic link.")
         os.remove(path)
@@ -206,15 +206,6 @@ class Dashboard(QMainWindow):
             self.add_log(f"⚠️ Could not load {filename}")
             return
 
-        """
-        self.proc_label.setPixmap(
-            cvimg_to_qpix(self.raw_img).scaled(
-                self.proc_label.width(), self.proc_label.height(),
-                Qt.KeepAspectRatio, Qt.SmoothTransformation
-            )
-        )
-        """
-
         self.add_log(
             f"🖼️ Processing: {os.path.basename(filename)}, {self.index+1}-th of {len(self.files)} files "
         )
@@ -222,12 +213,13 @@ class Dashboard(QMainWindow):
         # instruction
         legend_x, legend_y = 0,0
         preview = img.copy()
-        cv2.putText(preview, "Click leftmost point of midface contour!", (legend_x+10, legend_y+30),
+        clue = "Click leftmost point of midface contour!"
+        cv2.putText(preview, clue, (legend_x+10, legend_y+30),
                     cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 3)
-        cv2.putText(preview, "Click leftmost point of midface contour!", (legend_x+10, legend_y+30),
+        cv2.putText(preview, clue, (legend_x+10, legend_y+30),
                     cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,255,0), 2)
       
-        self.add_log("Click lateral angle of left eye!")
+        self.add_log(clue)
 
         self.proc_label.setPixmap(cvimg_to_qpix(preview).scaled(self.proc_label.width(), self.proc_label.height(), Qt.KeepAspectRatio))
 
@@ -247,9 +239,6 @@ class Dashboard(QMainWindow):
 
         if self.raw_img is None:
             return
-
-
-
 
         # copy image and draw grid
         # img_copy = draw_black_grid(self.raw_img.copy(), spacing_px=40)
@@ -276,9 +265,9 @@ class Dashboard(QMainWindow):
                 cv2.circle(img_copy, (cx, cy), 5, (255, 0, 0), -1)
 
             cv2.putText(img_copy, f"{i+1}", (cx-5, cy+20),
-                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 3)
+                    cv2.FONT_HERSHEY_PLAIN, 1, (0,0,0), 3)
             cv2.putText(img_copy, f"{i+1}", (cx-5, cy+20),
-                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (90,255,255), 2)
+                    cv2.FONT_HERSHEY_PLAIN, 1, (90,255,255), 2)
 
         if step == 1:
             self.add_log("✅ Leftmost point of midface contour recorded.")
@@ -304,9 +293,9 @@ class Dashboard(QMainWindow):
             cv2.line(img_copy, p1, p2, (0,255,0), 1)
 
             cv2.putText(img_copy, "Head width", (p1[0], p1[1]-10),
-                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 3)
+                    cv2.FONT_HERSHEY_PLAIN, 1, (0,0,0), 3)
             cv2.putText(img_copy, "Head width", (p1[0], p1[1]-10),
-                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,255,0), 2)
+                    cv2.FONT_HERSHEY_PLAIN, 1, (0,255,0), 2)
 
             if step == 2:
                 # instruction
@@ -317,7 +306,7 @@ class Dashboard(QMainWindow):
                 cv2.putText(preview, "Click left acromiohumeral notch (left shoulder end)!", (legend_x+10, legend_y+30),
                         cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,255,255), 2)               
 
-            self.add_log("Click left acromiohumeral notch (left shoulder end)!")
+                self.add_log("Click left acromiohumeral notch (left shoulder end)!")
 
         if step >= 3:
 
@@ -337,7 +326,9 @@ class Dashboard(QMainWindow):
                 self.add_log("Click right acromiohumeral notch (right shoulder end)!")
 
         if step >= 4:
-            self.add_log("draw bishoulder line")
+            self.add_log("Right acromiohumeral notch (right shoulder end) recorded.")
+
+            self.add_log("Drawing bishoulder line")
             p3,p4 = coords[2], coords[3]
             cv2.line(img_copy, p3, p4, (255,0,0), 1)
             cv2.putText(img_copy, "Bishoulder line", (p3[0], p4[1]+20),

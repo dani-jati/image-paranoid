@@ -29,3 +29,766 @@ draw line from p3 to p4
 📏 L1: 121.50, L2: 432.33, Ratio: 0.84
 ✅ Saved to /home/dragonicbull/image_paranoid/tools/../images/output_images/neck_width/0_to_0.9/head and shoulder shot photo_10.jpeg
 🖼️ Processing: head and shoulder shot photo_11.jpeg, 11-th of 192 files 
+🖼️ Processing: head and shoulder shot photo_11.jpeg, 9-th of 190 files 
+Click Left line of neck contour (mid height)!
+🖼️ Processing: head and shoulder shot photo_11.jpeg, 9-th of 190 files 
+Click Left line of neck contour (mid height)!
+🖼️ Processing: head and shoulder shot photo_11.jpeg, 9-th of 190 files 
+Click Left line of neck contour (mid height)!
+🖼️ Processing: head and shoulder shot photo_11.jpeg, 9-th of 190 files 
+Click Left line of neck contour (mid height)!
+🖼️ Processing: head and shoulder shot photo_11.jpeg, 9-th of 190 files 
+Click Left line of neck contour (mid height)!
+🖼️ Processing: head and shoulder shot photo_11.jpeg, 9-th of 190 files 
+Click Left line of neck contour (mid height)!
+Point clicked: 307, 377
+🖼️ Processing: head and shoulder shot photo_11.jpeg, 9-th of 190 files 
+Click Left line of neck contour (mid height)!
+Point clicked: 310, 378
+Point clicked: 421, 336
+🖼️ Processing: head and shoulder shot photo_11.jpeg, 9-th of 190 files 
+Click Left line of neck contour (mid height)!
+Point clicked: 310, 378
+✅ LEFT line of neck contour recorded.
+2️⃣: {clue}
+🖼️ Processing: head and shoulder shot photo_11.jpeg, 9-th of 190 files 
+Click Left line of neck contour (mid height)!
+Point clicked: 310, 380
+✅ LEFT line of neck contour recorded.
+2️⃣: Click RIGHT line of neck contour!
+Point clicked: 423, 336
+🖼️ Processing: head and shoulder shot photo_11.jpeg, 9-th of 190 files 
+Click Left line of neck contour (mid height)!
+↩️ Reset current image. Please click again.
+Point clicked: 310, 380
+✅ LEFT line of neck contour recorded.
+2️⃣: Click RIGHT line of neck contour!
+Point clicked: 420, 330
+🖼️ Processing: head and shoulder shot photo_11.jpeg, 9-th of 190 files 
+Click Left line of neck contour (mid height)!
+↩️ Reset current image. Please click again.
+🖼️ Processing: head and shoulder shot photo_11.jpeg, 9-th of 190 files 
+Click Left line of neck contour (mid height)!
+1️⃣: Click Left line of neck contour (mid height)!
+Point clicked: 307, 371
+✅ LEFT line of neck contour recorded.
+2️⃣: Click RIGHT line of neck contour!
+Point clicked: 416, 330
+🖼️ Processing: head and shoulder shot photo_11.jpeg, 9-th of 190 files 
+Click midpoint of LEFT neck contour!
+1️⃣: Click midpoint of LEFT neck contour!
+Point clicked: 309, 374
+✅ Midpoint of LEFT neck contour recorded.
+2️⃣: Click midpoint of RIGHT neck contour!
+Point clicked: 419, 336
+✅ Midpoint of RIGHT neck contour recorded.
+Drawing line from left to right neck contour
+🖼️ Processing: head and shoulder shot photo_12.jpeg, 10-th of 190 files 
+Click midpoint of LEFT neck contour!
+1️⃣: Click midpoint of LEFT neck contour!
+Point clicked: 190, 322
+✅ Midpoint of LEFT neck contour recorded.
+2️⃣: Click midpoint of RIGHT neck contour!
+Point clicked: 325, 322
+✅ Midpoint of RIGHT neck contour recorded.
+Drawing line from left to right neck contour
+🖼️ Processing: head and shoulder shot photo_11.jpeg, 9-th of 190 files 
+Click midpoint of LEFT neck contour!
+1️⃣: Click midpoint of LEFT neck contour!
+🖼️ Processing: head and shoulder shot photo_11.jpeg, 9-th of 190 files 
+Click midpoint of LEFT neck contour!
+1️⃣: Click midpoint of LEFT neck contour!
+Point clicked: 309, 379
+✅ Midpoint of LEFT neck contour recorded.
+2️⃣: Click midpoint of RIGHT neck contour!
+Point clicked: 425, 338
+✅ Midpoint of RIGHT neck contour recorded.
+Drawing line from left to right neck contour
+🖼️ Processing: head and shoulder shot photo_11.jpeg, 9-th of 190 files 
+Click midpoint of LEFT neck contour!
+1️⃣: Click midpoint of LEFT neck contour!
+Point clicked: 308, 378
+✅ Midpoint of LEFT neck contour recorded.
+2️⃣: Click midpoint of RIGHT neck contour!
+Point clicked: 420, 333
+✅ Midpoint of RIGHT neck contour recorded.
+Drawing line from left to right neck contour
+🖼️ Processing: head and shoulder shot photo_11.jpeg, 9-th of 190 files 
+Click midpoint of LEFT neck contour!
+1️⃣: Click midpoint of LEFT neck contour!
+🖼️ Processing: head and shoulder shot photo_12.jpeg, 10-th of 190 files 
+Click midpoint of LEFT neck contour!
+1️⃣: Click midpoint of LEFT neck contour!
+Point clicked: 190, 318
+✅ Midpoint of LEFT neck contour recorded.
+2️⃣: Click midpoint of RIGHT neck contour!
+Point clicked: 324, 318
+✅ Midpoint of RIGHT neck contour recorded.
+Drawing line from left to right neck contour
+🖼️ Processing: head and shoulder shot photo_11.jpeg, 9-th of 190 files 
+Click midpoint of LEFT neck contour!
+1️⃣: Click midpoint of LEFT neck contour!
+🖼️ Processing: head and shoulder shot photo_12.jpeg, 10-th of 190 files 
+Click midpoint of LEFT neck contour!
+1️⃣: Click midpoint of LEFT neck contour!
+Point clicked: 191, 322
+✅ Midpoint of LEFT neck contour recorded.
+2️⃣: Click midpoint of RIGHT neck contour!
+Point clicked: 324, 320
+✅ Midpoint of RIGHT neck contour recorded.
+Drawing line from left to right neck contour
+Click left acromiohumeral notch (left shoulder end)!
+🖼️ Processing: head and shoulder shot photo_12.jpeg, 10-th of 190 files 
+Click midpoint of LEFT neck contour!
+1️⃣: Click midpoint of LEFT neck contour!
+↩️ Reset current image. Please click again.
+Point clicked: 189, 320
+✅ Midpoint of LEFT neck contour recorded.
+2️⃣: Click midpoint of RIGHT neck contour!
+Point clicked: 323, 318
+✅ Midpoint of RIGHT neck contour recorded.
+Drawing line from left to right neck contour
+Click left acromiohumeral notch (left shoulder end)!
+Point clicked: 27, 439
+✅ Midpoint of RIGHT neck contour recorded.
+Drawing line from left to right neck contour
+🖼️ Processing: head and shoulder shot photo_11.jpeg, 9-th of 190 files 
+Click midpoint of LEFT neck contour!
+1️⃣: Click midpoint of LEFT neck contour!
+🖼️ Processing: head and shoulder shot photo_12.jpeg, 10-th of 190 files 
+Click midpoint of LEFT neck contour!
+1️⃣: Click midpoint of LEFT neck contour!
+Point clicked: 189, 320
+✅ Midpoint of LEFT neck contour recorded.
+2️⃣: Click midpoint of RIGHT neck contour!
+Point clicked: 324, 320
+✅ Midpoint of RIGHT neck contour recorded.
+Drawing line from left to right neck contour
+Click left acromiohumeral notch (left shoulder end)!
+Point clicked: 28, 434
+✅ Midpoint of RIGHT neck contour recorded.
+Drawing line from left to right neck contour
+Left acromiohumeral notch (left shoulder end) recorded.
+🖼️ Processing: head and shoulder shot photo_11.jpeg, 9-th of 190 files 
+Click midpoint of LEFT neck contour!
+1️⃣: Click midpoint of LEFT neck contour!
+Point clicked: 394, 199
+✅ Midpoint of LEFT neck contour recorded.
+2️⃣: Click midpoint of RIGHT neck contour!
+🖼️ Processing: head and shoulder shot photo_12.jpeg, 10-th of 190 files 
+Click midpoint of LEFT neck contour!
+1️⃣: Click midpoint of LEFT neck contour!
+Point clicked: 191, 322
+✅ Midpoint of LEFT neck contour recorded.
+2️⃣: Click midpoint of RIGHT neck contour!
+Point clicked: 324, 322
+✅ Midpoint of RIGHT neck contour recorded.
+Drawing line from left to right neck contour
+Click left acromiohumeral notch (left shoulder end)!
+Point clicked: 20, 438
+✅ Midpoint of RIGHT neck contour recorded.
+Drawing line from left to right neck contour
+Left acromiohumeral notch (left shoulder end) recorded.
+Click right acromiohumeral notch (right shoulder end)!
+Point clicked: 502, 424
+✅ Midpoint of RIGHT neck contour recorded.
+Drawing line from left to right neck contour
+Left acromiohumeral notch (left shoulder end) recorded.
+🖼️ Processing: head and shoulder shot photo_11.jpeg, 9-th of 190 files 
+Click midpoint of LEFT neck contour!
+1️⃣: Click midpoint of LEFT neck contour!
+🖼️ Processing: head and shoulder shot photo_11.jpeg, 9-th of 190 files 
+Click midpoint of LEFT neck contour!
+1️⃣: Click midpoint of LEFT neck contour!
+🖼️ Processing: head and shoulder shot photo_12.jpeg, 10-th of 190 files 
+Click midpoint of LEFT neck contour!
+1️⃣: Click midpoint of LEFT neck contour!
+Point clicked: 190, 321
+✅ Midpoint of LEFT neck contour recorded.
+2️⃣: Click midpoint of RIGHT neck contour!
+Point clicked: 324, 321
+✅ Midpoint of RIGHT neck contour recorded.
+Drawing line from left to right neck contour
+Click left acromiohumeral notch (left shoulder end)!
+Point clicked: 27, 437
+✅ Midpoint of RIGHT neck contour recorded.
+Drawing line from left to right neck contour
+Left acromiohumeral notch (left shoulder end) recorded.
+Click right acromiohumeral notch (right shoulder end)!
+Point clicked: 496, 420
+✅ Midpoint of RIGHT neck contour recorded.
+Drawing line from left to right neck contour
+Left acromiohumeral notch (left shoulder end) recorded.
+Right acromiohumeral notch (right shoulder end) recorded.
+Drawing bishoulder line
+🖼️ Processing: head and shoulder shot photo_11.jpeg, 9-th of 190 files 
+Click midpoint of LEFT neck contour!
+1️⃣: Click midpoint of LEFT neck contour!
+Point clicked: 343, 204
+✅ Midpoint of LEFT neck contour recorded.
+2️⃣: Click midpoint of RIGHT neck contour!
+🖼️ Processing: head and shoulder shot photo_12.jpeg, 10-th of 190 files 
+Click midpoint of LEFT neck contour!
+1️⃣: Click midpoint of LEFT neck contour!
+Point clicked: 190, 324
+✅ Midpoint of LEFT neck contour recorded.
+2️⃣: Click midpoint of RIGHT neck contour!
+Point clicked: 323, 323
+✅ Midpoint of RIGHT neck contour recorded.
+Drawing line from left to right neck contour
+Click left acromiohumeral notch (left shoulder end)!
+Point clicked: 28, 436
+✅ Midpoint of RIGHT neck contour recorded.
+Drawing line from left to right neck contour
+Left acromiohumeral notch (left shoulder end) recorded.
+Click right acromiohumeral notch (right shoulder end)!
+Point clicked: 495, 423
+✅ Midpoint of RIGHT neck contour recorded.
+Drawing line from left to right neck contour
+Left acromiohumeral notch (left shoulder end) recorded.
+Right acromiohumeral notch (right shoulder end) recorded.
+Drawing bishoulder line
+🖼️ Processing: head and shoulder shot photo_11.jpeg, 9-th of 190 files 
+Click midpoint of LEFT neck contour!
+1️⃣: Click midpoint of LEFT neck contour!
+🖼️ Processing: head and shoulder shot photo_11.jpeg, 9-th of 190 files 
+Click midpoint of LEFT neck contour!
+1️⃣: Click midpoint of LEFT neck contour!
+Point clicked: 381, 203
+✅ Midpoint of LEFT neck contour recorded.
+2️⃣: Click midpoint of RIGHT neck contour!
+🖼️ Processing: head and shoulder shot photo_12.jpeg, 10-th of 190 files 
+Click midpoint of LEFT neck contour!
+1️⃣: Click midpoint of LEFT neck contour!
+Point clicked: 192, 319
+✅ Midpoint of LEFT neck contour recorded.
+2️⃣: Click midpoint of RIGHT neck contour!
+Point clicked: 325, 318
+✅ Midpoint of RIGHT neck contour recorded.
+Drawing line from left to right neck contour
+Click left acromiohumeral notch (left shoulder end)!
+Point clicked: 28, 438
+✅ Midpoint of RIGHT neck contour recorded.
+Drawing line from left to right neck contour
+Left acromiohumeral notch (left shoulder end) recorded.
+Click right acromiohumeral notch (right shoulder end)!
+Point clicked: 495, 422
+✅ Midpoint of RIGHT neck contour recorded.
+Drawing line from left to right neck contour
+Left acromiohumeral notch (left shoulder end) recorded.
+Right acromiohumeral notch (right shoulder end) recorded.
+Drawing bishoulder line
+🖼️ Processing: head and shoulder shot photo_11.jpeg, 9-th of 190 files 
+Click midpoint of LEFT neck contour!
+1️⃣: Click midpoint of LEFT neck contour!
+🖼️ Processing: head and shoulder shot photo_12.jpeg, 10-th of 190 files 
+Click midpoint of LEFT neck contour!
+1️⃣: Click midpoint of LEFT neck contour!
+Point clicked: 190, 322
+✅ Midpoint of LEFT neck contour recorded.
+2️⃣: Click midpoint of RIGHT neck contour!
+Point clicked: 323, 321
+✅ Midpoint of RIGHT neck contour recorded.
+Drawing line from left to right neck contour
+Click left acromiohumeral notch (left shoulder end)!
+Point clicked: 28, 435
+✅ Midpoint of RIGHT neck contour recorded.
+Drawing line from left to right neck contour
+Left acromiohumeral notch (left shoulder end) recorded.
+Click right acromiohumeral notch (right shoulder end)!
+Point clicked: 496, 422
+✅ Midpoint of RIGHT neck contour recorded.
+Drawing line from left to right neck contour
+Left acromiohumeral notch (left shoulder end) recorded.
+Right acromiohumeral notch (right shoulder end) recorded.
+Drawing bishoulder line
+🖼️ Processing: head and shoulder shot photo_11.jpeg, 9-th of 190 files 
+Click midpoint of LEFT neck contour!
+1️⃣: Click midpoint of LEFT neck contour!
+🖼️ Processing: head and shoulder shot photo_12.jpeg, 10-th of 190 files 
+Click midpoint of LEFT neck contour!
+1️⃣: Click midpoint of LEFT neck contour!
+Point clicked: 188, 323
+✅ Midpoint of LEFT neck contour recorded.
+2️⃣: Click midpoint of RIGHT neck contour!
+Point clicked: 324, 321
+✅ Midpoint of RIGHT neck contour recorded.
+Drawing line from left to right neck contour
+Click left acromiohumeral notch (left shoulder end)!
+Point clicked: 28, 435
+✅ Midpoint of RIGHT neck contour recorded.
+Drawing line from left to right neck contour
+Left acromiohumeral notch (left shoulder end) recorded.
+Click right acromiohumeral notch (right shoulder end)!
+Point clicked: 504, 422
+✅ Midpoint of RIGHT neck contour recorded.
+Drawing line from left to right neck contour
+Left acromiohumeral notch (left shoulder end) recorded.
+Right acromiohumeral notch (right shoulder end) recorded.
+Drawing bishoulder line
+🖼️ Processing: head and shoulder shot photo_12.jpeg, 10-th of 190 files 
+Click midpoint of LEFT neck contour!
+1️⃣: Click midpoint of LEFT neck contour!
+↩️ Reset current image. Please click again.
+Point clicked: 189, 324
+✅ Midpoint of LEFT neck contour recorded.
+2️⃣: Click midpoint of RIGHT neck contour!
+🖼️ Processing: head and shoulder shot photo_11.jpeg, 9-th of 190 files 
+Click midpoint of LEFT neck contour!
+1️⃣: Click midpoint of LEFT neck contour!
+🖼️ Processing: head and shoulder shot photo_12.jpeg, 10-th of 190 files 
+Click midpoint of LEFT neck contour!
+1️⃣: Click midpoint of LEFT neck contour!
+Point clicked: 189, 324
+✅ Midpoint of LEFT neck contour recorded.
+Point clicked: 189, 324
+✅ Midpoint of RIGHT neck contour recorded.
+Drawing line from left to right neck contour
+Click left acromiohumeral notch (left shoulder end)!
+🖼️ Processing: head and shoulder shot photo_12.jpeg, 10-th of 190 files 
+Click midpoint of LEFT neck contour!
+1️⃣: Click midpoint of LEFT neck contour!
+↩️ Reset current image. Please click again.
+Point clicked: 190, 322
+✅ Midpoint of LEFT neck contour recorded.
+🖼️ Processing: head and shoulder shot photo_11.jpeg, 9-th of 190 files 
+Click midpoint of LEFT neck contour!
+1️⃣: Click midpoint of LEFT neck contour!
+🖼️ Processing: head and shoulder shot photo_12.jpeg, 10-th of 190 files 
+Click midpoint of LEFT neck contour!
+1️⃣: Click midpoint of LEFT neck contour!
+Point clicked: 190, 325
+✅ Midpoint of LEFT neck contour recorded.
+2️⃣: Click midpoint of RIGHT neck contour!
+Point clicked: 324, 324
+✅ Midpoint of RIGHT neck contour recorded.
+Drawing line from left to right neck contour
+Click left acromiohumeral notch (left shoulder end)!
+🖼️ Processing: head and shoulder shot photo_11.jpeg, 9-th of 190 files 
+Click midpoint of LEFT neck contour!
+1️⃣: Click midpoint of LEFT neck contour!
+🖼️ Processing: head and shoulder shot photo_12.jpeg, 10-th of 190 files 
+Click midpoint of LEFT neck contour!
+1️⃣: Click midpoint of LEFT neck contour!
+Point clicked: 190, 323
+✅ Midpoint of LEFT neck contour recorded.
+2️⃣: Click midpoint of RIGHT neck contour!
+Point clicked: 324, 323
+✅ Midpoint of RIGHT neck contour recorded.
+Drawing line from left to right neck contour
+Click left acromiohumeral notch (left shoulder end)!
+🖼️ Processing: head and shoulder shot photo_12.jpeg, 10-th of 190 files 
+Click midpoint of LEFT neck contour!
+1️⃣: Click midpoint of LEFT neck contour!
+↩️ Reset current image. Please click again.
+Point clicked: 190, 320
+✅ Midpoint of LEFT neck contour recorded.
+2️⃣: Click midpoint of RIGHT neck contour!
+🖼️ Processing: head and shoulder shot photo_11.jpeg, 9-th of 190 files 
+Click midpoint of LEFT neck contour!
+1️⃣: Click midpoint of LEFT neck contour!
+🖼️ Processing: head and shoulder shot photo_12.jpeg, 10-th of 190 files 
+Click midpoint of LEFT neck contour!
+1️⃣: Click midpoint of LEFT neck contour!
+Point clicked: 190, 324
+✅ Midpoint of LEFT neck contour recorded.
+2️⃣: Click midpoint of RIGHT neck contour!
+🖼️ Processing: head and shoulder shot photo_11.jpeg, 9-th of 190 files 
+Click midpoint of LEFT neck contour!
+1️⃣: Click midpoint of LEFT neck contour!
+🖼️ Processing: head and shoulder shot photo_12.jpeg, 10-th of 190 files 
+Click midpoint of LEFT neck contour!
+1️⃣: Click midpoint of LEFT neck contour!
+Point clicked: 189, 317
+✅ Midpoint of LEFT neck contour recorded.
+2️⃣: Click midpoint of RIGHT neck contour!
+🖼️ Processing: head and shoulder shot photo_11.jpeg, 9-th of 190 files 
+Click midpoint of LEFT neck contour!
+1️⃣: Click midpoint of LEFT neck contour!
+🖼️ Processing: head and shoulder shot photo_12.jpeg, 10-th of 190 files 
+Click midpoint of LEFT neck contour!
+1️⃣: Click midpoint of LEFT neck contour!
+Point clicked: 191, 322
+✅ Midpoint of LEFT neck contour recorded.
+2️⃣: Click midpoint of RIGHT neck contour!
+Point clicked: 322, 320
+✅ Midpoint of RIGHT neck contour recorded.
+Drawing line from left to right neck contour
+Click left acromiohumeral notch (left shoulder end)!
+🖼️ Processing: head and shoulder shot photo_12.jpeg, 10-th of 190 files 
+Click midpoint of LEFT neck contour!
+1️⃣: Click midpoint of LEFT neck contour!
+↩️ Reset current image. Please click again.
+Point clicked: 190, 324
+✅ Midpoint of LEFT neck contour recorded.
+2️⃣: Click midpoint of RIGHT neck contour!
+Point clicked: 324, 326
+✅ Midpoint of RIGHT neck contour recorded.
+Drawing line from left to right neck contour
+Click left acromiohumeral notch (left shoulder end)!
+🖼️ Processing: head and shoulder shot photo_12.jpeg, 10-th of 190 files 
+Click midpoint of LEFT neck contour!
+1️⃣: Click midpoint of LEFT neck contour!
+↩️ Reset current image. Please click again.
+Point clicked: 191, 320
+✅ Midpoint of LEFT neck contour recorded.
+2️⃣: Click midpoint of RIGHT neck contour!
+Point clicked: 323, 319
+✅ Midpoint of RIGHT neck contour recorded.
+Drawing line from left to right neck contour
+Click left acromiohumeral notch (left shoulder end)!
+🖼️ Processing: head and shoulder shot photo_11.jpeg, 9-th of 190 files 
+Click midpoint of LEFT neck contour!
+1️⃣: Click midpoint of LEFT neck contour!
+🖼️ Processing: head and shoulder shot photo_12.jpeg, 10-th of 190 files 
+Click midpoint of LEFT neck contour!
+1️⃣: Click midpoint of LEFT neck contour!
+Point clicked: 190, 326
+✅ Midpoint of LEFT neck contour recorded.
+2️⃣: Click midpoint of RIGHT neck contour!
+Point clicked: 323, 325
+✅ Midpoint of RIGHT neck contour recorded.
+Drawing line from left to right neck contour
+Click left acromiohumeral notch (left shoulder end)!
+Point clicked: 28, 434
+✅ Midpoint of RIGHT neck contour recorded.
+Drawing line from left to right neck contour
+Left acromiohumeral notch (left shoulder end) recorded.
+Click right acromiohumeral notch (right shoulder end)!
+Point clicked: 496, 420
+✅ Midpoint of RIGHT neck contour recorded.
+Drawing line from left to right neck contour
+Left acromiohumeral notch (left shoulder end) recorded.
+Right acromiohumeral notch (right shoulder end) recorded.
+Drawing bishoulder line
+🖼️ Processing: head and shoulder shot photo_13.jpeg, 11-th of 190 files 
+Click midpoint of LEFT neck contour!
+1️⃣: Click midpoint of LEFT neck contour!
+🖼️ Processing: head and shoulder shot photo_14.jpeg, 12-th of 190 files 
+Click midpoint of LEFT neck contour!
+1️⃣: Click midpoint of LEFT neck contour!
+Point clicked: 188, 334
+✅ Midpoint of LEFT neck contour recorded.
+2️⃣: Click midpoint of RIGHT neck contour!
+Point clicked: 316, 334
+✅ Midpoint of RIGHT neck contour recorded.
+Drawing line from left to right neck contour
+Click left acromiohumeral notch (left shoulder end)!
+Point clicked: 58, 403
+✅ Midpoint of RIGHT neck contour recorded.
+Drawing line from left to right neck contour
+Left acromiohumeral notch (left shoulder end) recorded.
+Click right acromiohumeral notch (right shoulder end)!
+Point clicked: 456, 418
+✅ Midpoint of RIGHT neck contour recorded.
+Drawing line from left to right neck contour
+Left acromiohumeral notch (left shoulder end) recorded.
+Right acromiohumeral notch (right shoulder end) recorded.
+Drawing bishoulder line
+🖼️ Processing: head and shoulder shot photo_11.jpeg, 9-th of 190 files 
+Click midpoint of LEFT neck contour!
+1️⃣: Click midpoint of LEFT neck contour!
+🖼️ Processing: head and shoulder shot photo_12.jpeg, 10-th of 190 files 
+Click midpoint of LEFT neck contour!
+1️⃣: Click midpoint of LEFT neck contour!
+Point clicked: 191, 322
+✅ Midpoint of LEFT neck contour recorded.
+2️⃣: Click midpoint of RIGHT neck contour!
+Point clicked: 324, 320
+✅ Midpoint of RIGHT neck contour recorded.
+Drawing line from left to right neck contour
+Click left acromiohumeral notch (left shoulder end)!
+Point clicked: 27, 435
+✅ Midpoint of RIGHT neck contour recorded.
+Drawing line from left to right neck contour
+Left acromiohumeral notch (left shoulder end) recorded.
+Click right acromiohumeral notch (right shoulder end)!
+Point clicked: 498, 421
+✅ Midpoint of RIGHT neck contour recorded.
+Drawing line from left to right neck contour
+Left acromiohumeral notch (left shoulder end) recorded.
+Right acromiohumeral notch (right shoulder end) recorded.
+Drawing bishoulder line
+🖼️ Processing: head and shoulder shot photo_11.jpeg, 9-th of 190 files 
+Click midpoint of LEFT neck contour!
+1️⃣: Click midpoint of LEFT neck contour!
+🖼️ Processing: head and shoulder shot photo_12.jpeg, 10-th of 190 files 
+Click midpoint of LEFT neck contour!
+1️⃣: Click midpoint of LEFT neck contour!
+Point clicked: 190, 321
+✅ Midpoint of LEFT neck contour recorded.
+2️⃣: Click midpoint of RIGHT neck contour!
+Point clicked: 324, 321
+✅ Midpoint of RIGHT neck contour recorded.
+Drawing line from left to right neck contour
+Click left acromiohumeral notch (left shoulder end)!
+Point clicked: 28, 434
+✅ Midpoint of RIGHT neck contour recorded.
+Drawing line from left to right neck contour
+Left acromiohumeral notch (left shoulder end) recorded.
+Click right acromiohumeral notch (right shoulder end)!
+Point clicked: 496, 423
+✅ Midpoint of RIGHT neck contour recorded.
+Drawing line from left to right neck contour
+Left acromiohumeral notch (left shoulder end) recorded.
+Right acromiohumeral notch (right shoulder end) recorded.
+Drawing bishoulder line
+🖼️ Processing: head and shoulder shot photo_11.jpeg, 9-th of 190 files 
+Click midpoint of LEFT neck contour!
+1️⃣: Click midpoint of LEFT neck contour!
+🖼️ Processing: head and shoulder shot photo_12.jpeg, 10-th of 190 files 
+Click midpoint of LEFT neck contour!
+1️⃣: Click midpoint of LEFT neck contour!
+Point clicked: 189, 319
+✅ Midpoint of LEFT neck contour recorded.
+2️⃣: Click midpoint of RIGHT neck contour!
+Point clicked: 323, 317
+✅ Midpoint of RIGHT neck contour recorded.
+Drawing line from left to right neck contour
+Click left acromiohumeral notch (left shoulder end)!
+Point clicked: 29, 434
+✅ Midpoint of RIGHT neck contour recorded.
+Drawing line from left to right neck contour
+Left acromiohumeral notch (left shoulder end) recorded.
+Click right acromiohumeral notch (right shoulder end)!
+Point clicked: 494, 420
+✅ Midpoint of RIGHT neck contour recorded.
+Drawing line from left to right neck contour
+Left acromiohumeral notch (left shoulder end) recorded.
+Right acromiohumeral notch (right shoulder end) recorded.
+Drawing bishoulder line
+🖼️ Processing: head and shoulder shot photo_11.jpeg, 9-th of 190 files 
+Click midpoint of LEFT neck contour!
+1️⃣: Click midpoint of LEFT neck contour!
+🖼️ Processing: head and shoulder shot photo_12.jpeg, 10-th of 190 files 
+Click midpoint of LEFT neck contour!
+1️⃣: Click midpoint of LEFT neck contour!
+Point clicked: 191, 320
+✅ Midpoint of LEFT neck contour recorded.
+2️⃣: Click midpoint of RIGHT neck contour!
+Point clicked: 323, 318
+✅ Midpoint of RIGHT neck contour recorded.
+Drawing line from left to right neck contour
+Click left acromiohumeral notch (left shoulder end)!
+Point clicked: 29, 434
+✅ Midpoint of RIGHT neck contour recorded.
+Drawing line from left to right neck contour
+Left acromiohumeral notch (left shoulder end) recorded.
+Click right acromiohumeral notch (right shoulder end)!
+Point clicked: 493, 420
+✅ Midpoint of RIGHT neck contour recorded.
+Drawing line from left to right neck contour
+Left acromiohumeral notch (left shoulder end) recorded.
+Right acromiohumeral notch (right shoulder end) recorded.
+Drawing bishoulder line
+🖼️ Processing: head and shoulder shot photo_11.jpeg, 9-th of 190 files 
+Click midpoint of LEFT neck contour!
+1️⃣: Click midpoint of LEFT neck contour!
+🖼️ Processing: head and shoulder shot photo_12.jpeg, 10-th of 190 files 
+Click midpoint of LEFT neck contour!
+1️⃣: Click midpoint of LEFT neck contour!
+Point clicked: 189, 318
+✅ Midpoint of LEFT neck contour recorded.
+2️⃣: Click midpoint of RIGHT neck contour!
+Point clicked: 323, 318
+✅ Midpoint of RIGHT neck contour recorded.
+Drawing line from left to right neck contour
+Click left acromiohumeral notch (left shoulder end)!
+Point clicked: 30, 436
+✅ Midpoint of RIGHT neck contour recorded.
+Drawing line from left to right neck contour
+Left acromiohumeral notch (left shoulder end) recorded.
+Click right acromiohumeral notch (right shoulder end)!
+Point clicked: 497, 421
+✅ Midpoint of RIGHT neck contour recorded.
+Drawing line from left to right neck contour
+Left acromiohumeral notch (left shoulder end) recorded.
+Right acromiohumeral notch (right shoulder end) recorded.
+Drawing bishoulder line
+🖼️ Processing: head and shoulder shot photo_11.jpeg, 9-th of 190 files 
+Click midpoint of LEFT neck contour!
+1️⃣: Click midpoint of LEFT neck contour!
+🖼️ Processing: head and shoulder shot photo_12.jpeg, 10-th of 190 files 
+Click midpoint of LEFT neck contour!
+1️⃣: Click midpoint of LEFT neck contour!
+Point clicked: 189, 314
+✅ Midpoint of LEFT neck contour recorded.
+2️⃣: Click midpoint of RIGHT neck contour!
+Point clicked: 324, 314
+✅ Midpoint of RIGHT neck contour recorded.
+Drawing line from left to right neck contour
+Click left acromiohumeral notch (left shoulder end)!
+Point clicked: 28, 434
+✅ Midpoint of RIGHT neck contour recorded.
+Drawing line from left to right neck contour
+Left acromiohumeral notch (left shoulder end) recorded.
+Click right acromiohumeral notch (right shoulder end)!
+Point clicked: 496, 422
+✅ Midpoint of RIGHT neck contour recorded.
+Drawing line from left to right neck contour
+Left acromiohumeral notch (left shoulder end) recorded.
+Right acromiohumeral notch (right shoulder end) recorded.
+Drawing bishoulder line
+🖼️ Processing: head and shoulder shot photo_11.jpeg, 9-th of 190 files 
+Click midpoint of LEFT neck contour!
+1️⃣: Click midpoint of LEFT neck contour!
+🖼️ Processing: head and shoulder shot photo_12.jpeg, 10-th of 190 files 
+Click midpoint of LEFT neck contour!
+1️⃣: Click midpoint of LEFT neck contour!
+Point clicked: 192, 322
+✅ Midpoint of LEFT neck contour recorded.
+2️⃣: Click midpoint of RIGHT neck contour!
+Point clicked: 324, 321
+✅ Midpoint of RIGHT neck contour recorded.
+Drawing line from left to right neck contour
+Click left acromiohumeral notch (left shoulder end)!
+Point clicked: 29, 434
+✅ Midpoint of RIGHT neck contour recorded.
+Drawing line from left to right neck contour
+Left acromiohumeral notch (left shoulder end) recorded.
+Click right acromiohumeral notch (right shoulder end)!
+Point clicked: 496, 419
+✅ Midpoint of RIGHT neck contour recorded.
+Drawing line from left to right neck contour
+Left acromiohumeral notch (left shoulder end) recorded.
+Right acromiohumeral notch (right shoulder end) recorded.
+Drawing bishoulder line
+🖼️ Processing: head and shoulder shot photo_11.jpeg, 9-th of 190 files 
+Click midpoint of LEFT neck contour!
+1️⃣: Click midpoint of LEFT neck contour!
+🖼️ Processing: head and shoulder shot photo_12.jpeg, 10-th of 190 files 
+Click midpoint of LEFT neck contour!
+1️⃣: Click midpoint of LEFT neck contour!
+Point clicked: 190, 317
+✅ Midpoint of LEFT neck contour recorded.
+2️⃣: Click midpoint of RIGHT neck contour!
+Point clicked: 324, 318
+✅ Midpoint of RIGHT neck contour recorded.
+Drawing line from left to right neck contour
+Click left acromiohumeral notch (left shoulder end)!
+Point clicked: 30, 434
+✅ Midpoint of RIGHT neck contour recorded.
+Drawing line from left to right neck contour
+Left acromiohumeral notch (left shoulder end) recorded.
+Click right acromiohumeral notch (right shoulder end)!
+Point clicked: 494, 420
+✅ Midpoint of RIGHT neck contour recorded.
+Drawing line from left to right neck contour
+Left acromiohumeral notch (left shoulder end) recorded.
+Right acromiohumeral notch (right shoulder end) recorded.
+Drawing bishoulder line
+🖼️ Processing: head and shoulder shot photo_11.jpeg, 9-th of 190 files 
+Click midpoint of LEFT neck contour!
+1️⃣: Click midpoint of LEFT neck contour!
+🖼️ Processing: head and shoulder shot photo_12.jpeg, 10-th of 190 files 
+Click midpoint of LEFT neck contour!
+1️⃣: Click midpoint of LEFT neck contour!
+Point clicked: 191, 322
+✅ Midpoint of LEFT neck contour recorded.
+2️⃣: Click midpoint of RIGHT neck contour!
+Point clicked: 323, 320
+✅ Midpoint of RIGHT neck contour recorded.
+Drawing line from left to right neck contour
+Click left acromiohumeral notch (left shoulder end)!
+Point clicked: 29, 435
+✅ Midpoint of RIGHT neck contour recorded.
+Drawing line from left to right neck contour
+Left acromiohumeral notch (left shoulder end) recorded.
+Click right acromiohumeral notch (right shoulder end)!
+Point clicked: 494, 420
+✅ Midpoint of RIGHT neck contour recorded.
+Drawing line from left to right neck contour
+Left acromiohumeral notch (left shoulder end) recorded.
+Right acromiohumeral notch (right shoulder end) recorded.
+Drawing bishoulder line
+🖼️ Processing: head and shoulder shot photo_11.jpeg, 9-th of 190 files 
+Click midpoint of LEFT neck contour!
+1️⃣: Click midpoint of LEFT neck contour!
+🖼️ Processing: head and shoulder shot photo_12.jpeg, 10-th of 190 files 
+Click midpoint of LEFT neck contour!
+1️⃣: Click midpoint of LEFT neck contour!
+Point clicked: 190, 318
+✅ Midpoint of LEFT neck contour recorded.
+2️⃣: Click midpoint of RIGHT neck contour!
+Point clicked: 324, 318
+✅ Midpoint of RIGHT neck contour recorded.
+Drawing line from left to right neck contour
+Click left acromiohumeral notch (left shoulder end)!
+Point clicked: 30, 434
+✅ Midpoint of RIGHT neck contour recorded.
+Drawing line from left to right neck contour
+Left acromiohumeral notch (left shoulder end) recorded.
+Click right acromiohumeral notch (right shoulder end)!
+Point clicked: 495, 421
+✅ Midpoint of RIGHT neck contour recorded.
+Drawing line from left to right neck contour
+Left acromiohumeral notch (left shoulder end) recorded.
+Right acromiohumeral notch (right shoulder end) recorded.
+Drawing bishoulder line
+🖼️ Processing: head and shoulder shot photo_11.jpeg, 9-th of 190 files 
+Click midpoint of LEFT neck contour!
+1️⃣: Click midpoint of LEFT neck contour!
+🖼️ Processing: head and shoulder shot photo_12.jpeg, 10-th of 190 files 
+Click midpoint of LEFT neck contour!
+1️⃣: Click midpoint of LEFT neck contour!
+Point clicked: 189, 320
+✅ Midpoint of LEFT neck contour recorded.
+2️⃣: Click midpoint of RIGHT neck contour!
+Point clicked: 324, 320
+✅ Midpoint of RIGHT neck contour recorded.
+Drawing line from left to right neck contour
+Click left acromiohumeral notch (left shoulder end)!
+Point clicked: 30, 435
+✅ Midpoint of RIGHT neck contour recorded.
+Drawing line from left to right neck contour
+Left acromiohumeral notch (left shoulder end) recorded.
+Click right acromiohumeral notch (right shoulder end)!
+Point clicked: 492, 420
+✅ Midpoint of RIGHT neck contour recorded.
+Drawing line from left to right neck contour
+Left acromiohumeral notch (left shoulder end) recorded.
+Right acromiohumeral notch (right shoulder end) recorded.
+Drawing bishoulder line
+Point clicked: 498, 409
+✅ Midpoint of RIGHT neck contour recorded.
+Drawing line from left to right neck contour
+Left acromiohumeral notch (left shoulder end) recorded.
+Right acromiohumeral notch (right shoulder end) recorded.
+Drawing bishoulder line
+🖼️ Processing: head and shoulder shot photo_12.jpeg, 10-th of 190 files 
+Click midpoint of LEFT neck contour!
+1️⃣: Click midpoint of LEFT neck contour!
+↩️ Reset current image. Please click again.
+🖼️ Processing: head and shoulder shot photo_11.jpeg, 9-th of 190 files 
+Click midpoint of LEFT neck contour!
+1️⃣: Click midpoint of LEFT neck contour!
+🖼️ Processing: head and shoulder shot photo_12.jpeg, 10-th of 190 files 
+Click midpoint of LEFT neck contour!
+1️⃣: Click midpoint of LEFT neck contour!
+Point clicked: 190, 322
+✅ Midpoint of LEFT neck contour recorded.
+2️⃣: Click midpoint of RIGHT neck contour!
+Point clicked: 324, 322
+✅ Midpoint of RIGHT neck contour recorded.
+Drawing line from left to right neck contour
+Click left acromiohumeral notch (left shoulder end)!
+Point clicked: 27, 435
+✅ Midpoint of RIGHT neck contour recorded.
+Drawing line from left to right neck contour
+Left acromiohumeral notch (left shoulder end) recorded.
+Click right acromiohumeral notch (right shoulder end)!
+Point clicked: 498, 421
+✅ Midpoint of RIGHT neck contour recorded.
+Drawing line from left to right neck contour
+Left acromiohumeral notch (left shoulder end) recorded.
+Right acromiohumeral notch (right shoulder end) recorded.
+Drawing bishoulder line
+🧭 Auto-perspective : Front, 👁️ Please compare with your own visual judgment!
+📏 L1: 134.00, L2: 471.21, Ratio: 0.85
+✅ Saved to c:\Users\nagab\OneDrive\Documents\image_paranoid\tools\../images/output_images/neck_width/0_to_0.9\head and shoulder shot photo_12.jpeg
+🖼️ Processing: head and shoulder shot photo_13.jpeg, 11-th of 190 files 
+Click midpoint of LEFT neck contour!
+1️⃣: Click midpoint of LEFT neck contour!
+🖼️ Processing: head and shoulder shot photo_13.jpeg, 11-th of 190 files 
+Click midpoint of LEFT neck contour!
+1️⃣: Click midpoint of LEFT neck contour!

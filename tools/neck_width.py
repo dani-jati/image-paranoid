@@ -1,3 +1,33 @@
+# Script purpose:
+# Measure neck width relative to bishoulder width.
+
+# Definition of neckwidth: 
+# Neck width is measured from left to right neck coutour at its half height.
+
+# Definition of Bishoulder Width:
+# Bishoulder width is measured between the outermost lateral points of the left and right shoulders.
+# In this system, the reference landmark is the acromiohumeral notch (shoulder joint depression / "ujung pundak").
+
+# Instructions to Identify Shoulder Ends:
+# • Extend both arms straight out to the sides (left arm to the left, right arm to the right).
+# • At the top of each shoulder, palpate for a small depression where the upper arm bone (humerus) meets the shoulder bone (scapula/clavicle).
+# • This depression (acromiohumeral notch) marks the most lateral point of each shoulder.
+# • Use these points as the reference ends for measuring bishoulder width.
+
+# Clothing Adjustment Rule:
+# If the subject is wearing clothing and the notch is not visible,
+# estimate the shoulder end position by tracing the contour line of the shoulder.
+# The lateral end is located where the contour begins to turn downward toward the arm.
+
+# IF palpation_allowed:
+#    LEFT_END = left_acromiohumeral_notch
+#    RIGHT_END = right_acromiohumeral_notch
+# ELSE:
+#     LEFT_END = left_contour_turn_down
+#     RIGHT_END = right_contour_turn_down
+
+# BISHOULDER_WIDTH = distance(LEFT_END, RIGHT_END)
+
 import sys, os, cv2, datetime, platform
 from PySide6.QtWidgets import (
     QApplication, QMainWindow, QWidget, QVBoxLayout, QHBoxLayout,
@@ -9,6 +39,16 @@ from PySide6.QtCore import Qt
 # === Folders ===
 script_dir = os.path.dirname(os.path.abspath(__file__))
 
+output_folders = {
+    "wide": os.path.join(script_dir, "../images/output_images/neck_width/1.10_or_more"),
+    "mid": os.path.join(script_dir, "../images/output_images/neck_width/0.9_to_1.10"),
+    "narrow": os.path.join(script_dir, "../images/output_images/neck_width/0_to_0.9"),
+}
+
+for folder in output_folders.values():
+    os.makedirs(folder, exist_ok=True)
+
+# Ensure symlink from cropper output to shoulder-tilt input
 cropper_output = os.path.normpath(os.path.join(script_dir, "..", "images", "output_images", "cropper"))
 neck_width_input = os.path.normpath(os.path.join(script_dir, "..", "images", "input_images", "neck_width"))
 path = neck_width_input
@@ -39,14 +79,6 @@ else:
         print(f"🔗 Symlink created: {neck_width_input} → {cropper_output}")
 
 print("Symlink points to:", os.readlink(neck_width_input))
-
-output_folders = {
-    "wide": os.path.join(script_dir, "../images/output_images/neck_width/1.10_or_more"),
-    "mid": os.path.join(script_dir, "../images/output_images/neck_width/0.9_to_1.10"),
-    "narrow": os.path.join(script_dir, "../images/output_images/neck_width/0_to_0.9"),
-}
-for folder in output_folders.values():
-    os.makedirs(folder, exist_ok=True)
 
 progress_file = os.path.join(script_dir, "../progress/neck_width.txt")
 os.makedirs(os.path.dirname(progress_file), exist_ok=True)
@@ -177,24 +209,27 @@ class Dashboard(QMainWindow):
             self.add_log(f"⚠️ Could not load {filename}")
             return
 
-        self.proc_label.setPixmap(
-            cvimg_to_qpix(self.raw_img).scaled(
-                self.proc_label.width(), self.proc_label.height(),
-                Qt.KeepAspectRatio, Qt.SmoothTransformation
-            )
-        )
-
         self.add_log(
             f"🖼️ Processing: {os.path.basename(filename)}, {self.index+1}-th of {len(self.files)} files "
         )
 
-        preview = draw_grid(img.copy())
+        # instruction
+        legend_x, legend_y = 0,0
+        preview = img.copy()
+        clue = "Click midpoint of LEFT neck contour!"
+        cv2.putText(preview, clue, (legend_x+10, legend_y+30),
+                    cv2.FONT_HERSHEY_PLAIN, 1.2, (0,255,0), 3)
+        cv2.putText(preview, clue, (legend_x+10, legend_y+30),
+                    cv2.FONT_HERSHEY_PLAIN, 1.2, (0,0,0), 2)
+      
+        self.add_log(clue)
+        self.add_log(f"1️⃣: {clue}")
+
         self.proc_label.setPixmap(cvimg_to_qpix(preview).scaled(self.proc_label.width(), self.proc_label.height(), Qt.KeepAspectRatio))
 
         self.view_selector.setCurrentIndex(0)
         self.view_selector.hide()
         self.clicks = []
-
 
     def on_click(self, event):
         pos = event.position().toPoint()
@@ -205,15 +240,12 @@ class Dashboard(QMainWindow):
 
         step = len(self.clicks)
 
-        if step == 1:
-            self.add_log("✅ Left line of neck contour recorded.")
-            self.add_log("2️⃣: Click right line of neck contour!")
-
         if self.raw_img is None:
             return
 
         # copy image and draw grid
-        img_copy = draw_black_grid(self.raw_img.copy(), spacing_px=40)
+        # img_copy = draw_black_grid(self.raw_img.copy(), spacing_px=40)
+        img_copy = self.raw_img.copy()
 
         # scale factors
         h, w = self.raw_img.shape[:2]
@@ -236,45 +268,120 @@ class Dashboard(QMainWindow):
                 cv2.circle(img_copy, (cx, cy), 5, (255, 0, 0), -1)
 
             cv2.putText(img_copy, f"{i+1}", (cx, cy+13),
-                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (90,255,255), 2)
+                    cv2.FONT_HERSHEY_PLAIN, 1.2, (0,255,0), 3)
+            cv2.putText(img_copy, f"{i+1}", (cx, cy+13),
+                    cv2.FONT_HERSHEY_PLAIN, 1.2, (0,0,0), 2)
+
+        if step == 1:
+            self.add_log("✅ Midpoint of LEFT neck contour recorded.")
+
+            # guide line
+            cv2.line(img_copy,(cx-400, cy), (cx+400, cy), (150,150,150), 1)
+
+            # instruction
+            legend_x, legend_y = 0,0
+            preview = img_copy
+            clue = "Click midpoint of RIGHT neck contour!"
+            cv2.putText(preview, clue, (legend_x+10, legend_y+30),
+                    cv2.FONT_HERSHEY_PLAIN, 1.2, (0,255,0), 3)
+            cv2.putText(preview, clue, (legend_x+10, legend_y+30),
+                    cv2.FONT_HERSHEY_PLAIN, 1.2, (0,0,0), 2)
+
+            self.add_log(f"2️⃣: {clue}")
 
         if step >= 2:
-            self.add_log("draw line from p1 to p2")
+            self.add_log("✅ Midpoint of RIGHT neck contour recorded.")
+
             p1,p2 = coords[0], coords[1]
-            cv2.line(img_copy, p1, p2, (0,255,0), 1)
-            cv2.putText(img_copy, "Neck line", (p1[0], p1[1]-10),
-                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 3)
-            cv2.putText(img_copy, "Neck line", (p1[0], p1[1]-10),
-                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,255,0), 2)
+
+            cv2.line(img_copy, p1, p2, (0,255,0), 2)
+
+            # labelling first line
+            lbl = "Neck line"
+            cv2.putText(img_copy, lbl, (p1[0] + 25, p1[1]-10),
+                    cv2.FONT_HERSHEY_PLAIN, 1.2, (0,255,0), 3)
+            cv2.putText(img_copy, lbl, (p1[0] + 25, p1[1]-10),
+                    cv2.FONT_HERSHEY_PLAIN, 1.2, (0,0,0), 2)
+
+            self.add_log("Drawing line from left to right neck contour")
+
+            if step == 2:
+                # instruction
+                legend_x, legend_y = 0,0
+                preview = img_copy
+                clue = "Click left acromiohumeral notch (left shoulder end)!" 
+                cv2.putText(preview, clue, (legend_x+10, legend_y+30),
+                        cv2.FONT_HERSHEY_PLAIN, 1.2, (0,255,0), 3)
+                cv2.putText(preview, clue, (legend_x+10, legend_y+30),
+                        cv2.FONT_HERSHEY_PLAIN, 1.2, (0,0,0), 2)               
+
+                self.add_log(clue)
+
+        if step >= 3:
+
+            self.add_log("Left acromiohumeral notch (left shoulder end) recorded.")
+            
+            if step == 3:
+                cv2.line(img_copy,(cx - 400, cy), (cx - 400, cy), (150,150,150), 1)
+
+                # instruction
+                legend_x, legend_y = 0,0
+                preview = img_copy
+                clue = "Click right acromiohumeral notch (right shoulder end)!" 
+                cv2.putText(preview, clue, (legend_x+10, legend_y+30),
+                        cv2.FONT_HERSHEY_PLAIN, 1.2, (0,255,0), 3)
+                cv2.putText(preview, clue, (legend_x+10, legend_y+30),
+                        cv2.FONT_HERSHEY_PLAIN, 1.2, (0,0,0), 2)               
+
+                self.add_log( clue )
 
         if step >= 4:
-            self.add_log("draw line from p3 to p4")
+            self.add_log("Right acromiohumeral notch (right shoulder end) recorded.")
+
+            self.add_log("Drawing bishoulder line")
             p3,p4 = coords[2], coords[3]
             cv2.line(img_copy, p3, p4, (255,0,0), 1)
-            cv2.putText(img_copy, "Shoulder line", (p3[0], p4[1]-15),
-                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,255,0), 2)
+            clue = "Bishoulder line"
+            cv2.putText(img_copy, clue, (p3[0] + 10, p4[1]-0),
+                    cv2.FONT_HERSHEY_PLAIN, 1.2, (0,255,0), 3)
+            cv2.putText(img_copy, clue, (p3[0] + 10, p4[1]-0),
+                    cv2.FONT_HERSHEY_PLAIN, 1.2, (0,0,0), 2)
 
-            # Divide second line into 3 parts
-            dx = ( p4[0] - p3[0] ) / 3.0
-            dy = ( p4[1] - p3[1] ) / 3.0
+            if step == 4:
 
-            div1 = (int(p3[0] + dx), int(p3[1] + dy))
-            div2 = (int(p3[0] + 2*dx), int(p3[1] + 2*dy))
+                # Divide second line into 3 parts
+                dx = ( p4[0] - p3[0] ) / 3.0
+                dy = ( p4[1] - p3[1] ) / 3.0
 
-            # Draw vertical separator lines
-            line_length = 100
-            cv2.line(img_copy, (div1[0], div1[1] - line_length), (div1[0], div1[1]), (0, 255, 255), 2)
-            cv2.line(img_copy, (div2[0], div2[1] - line_length), (div2[0], div2[1]), (0, 255, 255), 2)
+                div1 = (int(p3[0] + dx), int(p3[1] + dy))
+                div2 = (int(p3[0] + 2*dx), int(p3[1] + 2*dy))
 
-            # Draw small circles at division points
-            cv2.circle(img_copy, div1, 5, (0, 255, 255), -1)
-            cv2.circle(img_copy, div2, 5, (0, 255, 255), -1)
+                # add layer
+                overlay = img_copy.copy()
+                alpha = 0.5  # Transparency factor.
+                line_length = 200
 
-            # Add labels below the division points
-            cv2.putText(img_copy, "1/3", (div1[0] - 40, div1[1] + 20),
-                cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0, 255, 255), 2)
-            cv2.putText(img_copy, "2/3", (div2[0] - 40, div2[1] + 20),
-                cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0, 255, 255), 2)
+                cv2.circle(overlay, (div1[0], div1[1]), 5, (0, 255, 0), -1)                
+                cv2.line(overlay, (div1[0], div1[1] - line_length),
+                        (div1[0], div1[1]), (0, 255, 255), 2)
+
+                cv2.circle(overlay, (div2[0], div2[1]), 5, (0, 255, 0), -1)                
+                cv2.line(overlay, (div2[0], div2[1] - line_length),
+                        (div2[0], div2[1]), (0, 255, 255), 2)
+
+                # Add labels below the division points
+                cv2.putText(overlay, "1/3", (div1[0] - 40, div1[1] + 20),
+                        cv2.FONT_HERSHEY_PLAIN, 1, (0, 255, 0), 3)
+                cv2.putText(overlay, "1/3", (div1[0] - 40, div1[1] + 20),
+                        cv2.FONT_HERSHEY_PLAIN, 1, (0, 0, 0), 2)
+
+
+                cv2.putText(overlay, "2/3", (div2[0], div2[1] + 20),
+                        cv2.FONT_HERSHEY_PLAIN, 1, (0, 255, 0), 3)
+                cv2.putText(overlay, "2/3", (div2[0], div2[1] + 20),
+                        cv2.FONT_HERSHEY_PLAIN, 1, (0, 0, 0), 2)
+
+                img_copy = cv2.addWeighted(overlay, alpha, img_copy, 1 - alpha, 0)
 
 
         # update preview

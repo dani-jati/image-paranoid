@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <NotepadPlus>
     <Session activeView="0">
-        <mainView activeIndex="0">
-            <File firstVisibleLine="176" xOffset="0" scrollWidth="1993" startPos="7029" endPos="7029" selMode="0" offset="0" wrapCount="1" lang="Python" encoding="-1" userReadOnly="no" filename="C:\Users\nagab\OneDrive\Documents\image_paranoid\tools\face_width.py" backupFilePath="C:\Users\nagab\OneDrive\Documents\image_paranoid\editor\backup\face_width.py@2025-12-10_210326" originalFileLastModifTimestamp="-1329138358" originalFileLastModifTimestampHigh="31222237" tabColourId="-1" RTL="no" tabPinned="no" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="512" mapWrapIndentMode="-1" mapIsWrap="no" />
+        <mainView activeIndex="1">
+            <File firstVisibleLine="302" xOffset="50" scrollWidth="1993" startPos="11150" endPos="11578" selMode="0" offset="0" wrapCount="1" lang="Python" encoding="-1" userReadOnly="no" filename="C:\Users\nagab\OneDrive\Documents\image_paranoid\tools\face_width.py" backupFilePath="" originalFileLastModifTimestamp="561806552" originalFileLastModifTimestampHigh="31222386" tabColourId="-1" RTL="no" tabPinned="no" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="512" mapWrapIndentMode="-1" mapIsWrap="no" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="13" startPos="1" endPos="1" selMode="0" offset="0" wrapCount="1" lang="None (Normal Text)" encoding="-1" userReadOnly="no" filename="new 1" backupFilePath="C:\Users\nagab\OneDrive\Documents\image_paranoid\editor\backup\new 1@2025-12-13_193302" originalFileLastModifTimestamp="0" originalFileLastModifTimestampHigh="0" tabColourId="-1" RTL="no" tabPinned="no" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="512" mapWrapIndentMode="-1" mapIsWrap="no" />
         </mainView>
         <subView activeIndex="0" />
     </Session>
