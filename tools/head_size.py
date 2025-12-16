@@ -278,15 +278,16 @@ class Dashboard(QMainWindow):
             # instruction
             legend_x, legend_y = 0,0
             preview = img_copy
-            cv2.putText(preview, "Click rightmost point of midface contour!", (legend_x+10, legend_y+30),
+            clue = "Click rightmost point of midface contour!"
+            cv2.putText(preview, clue, (legend_x+10, legend_y+30),
                     cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 3)
-            cv2.putText(preview, "Click rightmost point of midface contour!", (legend_x+10, legend_y+30),
+            cv2.putText(preview, clue, (legend_x+10, legend_y+30),
                     cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,255,255), 2)
 
-            self.add_log("2️⃣: Click rightmost point of midface contour!")
+            self.add_log("2️⃣: {clue}")
 
         if step >= 2:
-            self.add_log("draw line from leftmost to rightmost mid-face contour")
+            self.add_log("drawing line from leftmost to rightmost mid-face contour")
 
             p1,p2 = coords[0], coords[1]
 
@@ -301,16 +302,17 @@ class Dashboard(QMainWindow):
                 # instruction
                 legend_x, legend_y = 0,0
                 preview = img_copy
-                cv2.putText(preview, "Click left acromiohumeral notch (left shoulder end)!", (legend_x+10, legend_y+30),
+                clue = "Click left acromiohumeral notch (left shoulder end)!"
+                cv2.putText(preview, clue, (legend_x+10, legend_y+30),
                         cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 3)
-                cv2.putText(preview, "Click left acromiohumeral notch (left shoulder end)!", (legend_x+10, legend_y+30),
+                cv2.putText(preview, clue, (legend_x+10, legend_y+30),
                         cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,255,255), 2)               
 
-                self.add_log("Click left acromiohumeral notch (left shoulder end)!")
+                self.add_log(clue)
 
         if step >= 3:
 
-            self.add_log("Left acromiohumeral notch (left shoulder end) recorded.")
+            self.add_log("✅ Left acromiohumeral notch (left shoulder end) recorded.")
             
             if step == 3:
                 cv2.line(img_copy,(cx, cy-400), (cx, cy+400), (150,150,150), 1)
@@ -318,12 +320,13 @@ class Dashboard(QMainWindow):
                 # instruction
                 legend_x, legend_y = 0,0
                 preview = img_copy
-                cv2.putText(preview, "Click right acromiohumeral notch (right shoulder end)!", (legend_x+10, legend_y+30),
-                        cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 3)
-                cv2.putText(preview, "Click right acromiohumeral notch (right shoulder end)!", (legend_x+10, legend_y+30),
-                        cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,255,255), 2)               
+                clue = "Click right acromiohumeral notch (right shoulder end)!"
+                cv2.putText(preview, , (legend_x+10, legend_y+30),
+                        cv2.FONT_HERSHEY_PLAIN, 1.2, (0,255,0), 3)
+                cv2.putText(preview, clue, (legend_x+10, legend_y+30),
+                        cv2.FONT_HERSHEY_PLAIN, 1.2, (0,0,0), 2)
 
-                self.add_log("Click right acromiohumeral notch (right shoulder end)!")
+                self.add_log( f"4️⃣: {clue}" )
 
         if step >= 4:
             self.add_log("Right acromiohumeral notch (right shoulder end) recorded.")

@@ -1,8 +1,5 @@
 # This script is to measure eye altitude relative to face height.
-# Forenose altitude: distance from chin to nasion-radix border. 
-# I coined term "forenose" because I did not find accurate term for "pangkal irung,
-# ie, a visible borderline where nasion and radix mmeet in Kawi Bull ethnic's face".
-# Probably, englishmen do not have that visible line, so they do not have term for it.
+# Eyes altitude: distance from chin to upper lid peak when eyes open normally and naturally in healthy condition. 
 
 import sys, os, cv2, datetime
 from PySide6.QtWidgets import (
@@ -168,27 +165,30 @@ class Dashboard(QMainWindow):
             self.add_log(f"⚠️ Could not load {filename}")
             return
 
+        self.add_log(f"🖼️ Processing: {os.path.basename(filename)}, {self.index+1}-th of {len(self.files)} files")
+
         # instruction
         legend_x, legend_y = 0,0
         preview = img.copy()
-        cv2.putText(preview, "Click the leftmost point of radix-nasion border!", (legend_x+10, legend_y+30),
-                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 3)
-        cv2.putText(preview, "Click the leftmost point of radix-nasion border!", (legend_x+10, legend_y+30),
-                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,255,255), 2)        
+        clue = "Click LEFT upper lid peak!"
+        cv2.putText(preview, clue, (legend_x+10, legend_y+30),
+                    cv2.FONT_HERSHEY_PLAIN, 1.2, (0,255,0), 3)
+        cv2.putText(preview, clue, (legend_x+10, legend_y+30),
+                    cv2.FONT_HERSHEY_PLAIN, 1.2, (0,0,0), 2)
 
-        self.proc_label.setPixmap(cvimg_to_qpix(preview).scaled(self.proc_label.width(), self.proc_label.height(), Qt.KeepAspectRatio))
-        """
+        self.add_log(f"1️⃣: {clue}")
+
         self.proc_label.setPixmap(
-            cvimg_to_qpix(self.raw_img).scaled(
-                self.proc_label.width(), self.proc_label.height(),
-                Qt.KeepAspectRatio, Qt.SmoothTransformation
-            )
+            cvimg_to_qpix(preview).scaled(
+                    self.proc_label.width(), 
+                    self.proc_label.height(), 
+                    Qt.KeepAspectRatio
+                )
         )
-        """
-        self.add_log(f"🖼️ Processing: {os.path.basename(filename)}, {self.index+1}-th of {len(self.files)} files")
-        self.clicks = []
-        self.add_log("Step 1️⃣: Click left end of nasion-radix border line.")
 
+        self.view_selector.setCurrentIndex(0)
+        self.view_selector.hide()
+        self.clicks = []
 
     def on_click(self, event):
         pos = event.position().toPoint()
@@ -199,36 +199,12 @@ class Dashboard(QMainWindow):
 
         step = len(self.clicks)
 
-        if step == 1:
-            self.add_log("✅ Left nasion-radix border line recorded.")
-            self.add_log("Step 2️⃣: Click right end of nasion-radix border line.")
-        elif step == 2:
-            self.add_log("✅ Right pupil recorded. Step 3️⃣: Click NASOLABIAL angle.")
-
-            # --- Draw eye line immediately ---
-            img_copy = self.raw_img.copy()
-            h, w = self.raw_img.shape[:2]
-            disp_w, disp_h = self.proc_label.width(), self.proc_label.height()
-            scale_x, scale_y = w / disp_w, h / disp_h
-
-            p1 = (int(self.clicks[0][0] * scale_x), int(self.clicks[0][1] * scale_y))
-            p2 = (int(self.clicks[1][0] * scale_x), int(self.clicks[1][1] * scale_y))
-
-            cv2.line(img_copy, p1, p2, (0, 255, 0), 2)
-            cv2.circle(img_copy, p1, 4, (0, 255, 0), -1)
-            cv2.circle(img_copy, p2, 4, (0, 255, 0), -1)
-            cv2.putText(img_copy, "Eye line", (p1[0], p1[1]-10),
-                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,255,0), 1)
-
-            self.proc_label.setPixmap(
-                cvimg_to_qpix(img_copy).scaled(
-                    self.proc_label.width(), self.proc_label.height(),
-                    Qt.KeepAspectRatio, Qt.SmoothTransformation
-                )
-            )            
+        if self.raw_img is None:
+            return
 
         # Draw preview with numbered points
-        img_copy = draw_black_grid(self.raw_img.copy(), spacing_px=40)
+        # img_copy = draw_black_grid(self.raw_img.copy(), spacing_px=40)
+        img_copy = self.raw_img.copy()
 
         # scale factors
         h, w = self.raw_img.shape[:2]
@@ -259,51 +235,152 @@ class Dashboard(QMainWindow):
                 cv2.circle(img_copy, (cx, cy), 5, color, -1)
 
             cv2.putText(img_copy, f"{i+1}", (cx+5, cy+15),
-                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 3)
+                    cv2.FONT_HERSHEY_PLAIN, 1.2, (0,0,0), 3)
             cv2.putText(img_copy, f"{i+1}", (cx+5, cy+15),
-                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (90,255,255), 2)
+                    cv2.FONT_HERSHEY_PLAIN, 1.2, (90,255,255), 2)
             # cv2.circle(img_copy, (cx, cy), 5, color, -1)  # small dot
 
+        if step >= 1:
+            self.add_log("✅ LEFT upper lid peak recorded.")
+
+            # guide line
+            cv2.line(img_copy,(cx-400, cy), (cx+400, cy), (150,150,150), 1)
+
+            if step == 1:
+
+                # instruction
+                legend_x, legend_y = 0,0
+                preview = img_copy
+                clue = "Click RIGHT upper lid peak!"
+                cv2.putText(preview, clue, (legend_x+10, legend_y+30),
+                        cv2.FONT_HERSHEY_PLAIN, 1.2, (0,0,0), 3)
+                cv2.putText(preview, clue, (legend_x+10, legend_y+30),
+                        cv2.FONT_HERSHEY_PLAIN, 1.2, (0,255,255), 2)
+
+                self.add_log(f"2️⃣: {clue}")
+
+        """
+        if step == 2:
+
+            # --- Draw eye line immediately ---
+            img_copy = self.raw_img.copy()
+            h, w = self.raw_img.shape[:2]
+            disp_w, disp_h = self.proc_label.width(), self.proc_label.height()
+            scale_x, scale_y = w / disp_w, h / disp_h
+
+            p1 = (int(self.clicks[0][0] * scale_x), int(self.clicks[0][1] * scale_y))
+            p2 = (int(self.clicks[1][0] * scale_x), int(self.clicks[1][1] * scale_y))
+
+            cv2.line(img_copy, p1, p2, (0, 255, 0), 2)
+            cv2.circle(img_copy, p1, 4, (0, 255, 0), -1)
+            cv2.circle(img_copy, p2, 4, (0, 255, 0), -1)
+            cv2.putText(img_copy, "Eye line", (p1[0], p1[1]-10),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,255,0), 1)
+
+            self.proc_label.setPixmap(
+                cvimg_to_qpix(img_copy).scaled(
+                    self.proc_label.width(), self.proc_label.height(),
+                    Qt.KeepAspectRatio, Qt.SmoothTransformation
+                )
+            )            
+
+        """
         if step >= 2:
-            self.add_log("draw line from p1 to p2")
+            self.add_log("✅ RIGHT upper lid peak recorded.")
+
+            self.add_log("Drawing line from left to right upper lid peak")
+
             p1,p2 = coords[0], coords[1]
-            p2 = list(p2) # convert tuple to list
-            p1 = list(p1) # convert tuple to list
-            p2[1] = p1[1] # strighten line to get shortest line
-            p2 = tuple(p2) # convert list to tuple
+            # p2 = list(p2) # convert tuple to list
+            # p1 = list(p1) # convert tuple to list
+            # p2[1] = p1[1] # strighten line to get shortest line
+            # p2 = tuple(p2) # convert list to tuple
             cv2.line(img_copy, p1, p2, (0,255,0), 2)
             cv2.circle(img_copy, p2, 5, (0,255,0), -1)
-            cv2.putText(img_copy, "Interocular line", (p1[0], p1[1]-20),
-                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 3)
-            cv2.putText(img_copy, "Interocular line", (p1[0], p1[1]-20),
-                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,255,0), 2)
-
-            p3 = ((p1[0] + p2[0]) // 2, (p1[1] + p2[1]) // 2)
+            lbl = "Interocular line"
+            cv2.putText(img_copy, lbl, (p1[0] - 120, p1[1] - 30),
+                    cv2.FONT_HERSHEY_PLAIN, 1.2, (0,255,0), 3)
+            cv2.putText(img_copy, lbl, (p1[0] - 120, p1[1] - 30),
+                    cv2.FONT_HERSHEY_PLAIN, 1.2, (0,0,0), 2)
 
             # Midpoint
+            p3 = ((p1[0] + p2[0]) // 2, (p1[1] + p2[1]) // 2)
             cv2.circle(img_copy, p3, 4, (255, 0, 0), -1)
+    
+            # guide line
             cv2.line(img_copy, (p3[0],p3[1]+400), (p3[0],p3[1]-400), (150,150,150),2)
 
+            # arrow
+            cv2.line(img_copy, (p3[0]-25, p3[1]-25), (p3[0]-5,p3[1]-5 ), (255,0,0),2)
+            cv2.line(img_copy, (p3[0]-8, p3[1]-15), (p3[0]-5,p3[1]-5 ), (255,0,0),2)
+            cv2.line(img_copy, (p3[0]-15, p3[1]-6), (p3[0]-5,p3[1]-5 ), (255,0,0),2)
+
+
+            if step == 2:
+                # instruction
+                legend_x, legend_y = 0,0
+                preview = img_copy
+                clue = "Click chin's lowest contour!"
+                cv2.putText(preview, clue, (legend_x+10, legend_y+30),
+                        cv2.FONT_HERSHEY_PLAIN, 1.2, (0,255,0), 3)
+                cv2.putText(preview, clue, (legend_x+10, legend_y+30),
+                        cv2.FONT_HERSHEY_PLAIN, 1.2, (0,0,0), 2)               
+
+                self.add_log( "3️⃣: {clue}" )
+
         if step >=3:
+
+            self.add_log("✅ Chin's lowest contour recorded.")
+
             p4 = coords[2]
             L1 = euclidean(p3, p4)
             p4 = list(p4)
             p3 = list(p3)
-            p4[0] = p3[0]
+            # p4[0] = p3[0]
             p6 = p4
             p3 = tuple(p3)
             p4 = tuple(p4)
             p6 = tuple(p6)
             cv2.line(img_copy, p3, p4, (255, 0, 0), 5)
-            cv2.putText(img_copy, "Eye altitude", (p3[0]+10 , int(p3[1]+L1/2)),
-                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 3)
-            cv2.putText(img_copy, "Eye altitude", (p3[0]+10 , int(p3[1]+L1/2)),
-                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,255,0), 2)
-        if step == 3:
-            self.add_log("✅ Chin recorded. Step 4️⃣: Click the most medial mid hair border.")
+            cv2.circle(img_copy, p4, 4, (255, 255, 0), -1)
 
-        if step == 4:
-            self.add_log("✅ Mid hair border recorded. Step 5️⃣: Click RIGHT eye corner.")
+            # labelling protonose altitude
+            lbl = "Eyes altitude"
+            cv2.putText(img_copy, lbl, (p3[0] + 30 , int(p3[1] + 60)),
+                        cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 3)
+            cv2.putText(img_copy, lbl, (p3[0] + 30 , int(p3[1] + 60)),
+                        cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,255,0), 2)
+
+            # arrow
+            cv2.line(img_copy, 
+                     (p3[0] + 7 , int(p3[1] + 60)), 
+                     (p3[0] + 25 , int(p3[1] + 60)), 
+                     (255,0,0), 2)
+            cv2.line(img_copy, 
+                     (p3[0] + 7 , int(p3[1] + 60)), 
+                     (p3[0] + 15 , int(p3[1] + 55)), 
+                     (255,0,0), 2)
+            cv2.line(img_copy, 
+                     (p3[0] + 7 , int(p3[1] + 60)), 
+                     (p3[0] + 15 , int(p3[1] + 65)), 
+                     (255,0,0), 2)            
+
+            if step == 3:
+                # instruction
+                legend_x, legend_y = 0,0
+                preview = img_copy
+                clue = "Click midline hair border!"
+                cv2.putText(preview, clue, (legend_x+10, legend_y+30),
+                        cv2.FONT_HERSHEY_PLAIN, 1.2, (0,255,0), 3)
+                cv2.putText(preview, clue, (legend_x+10, legend_y+30),
+                        cv2.FONT_HERSHEY_PLAIN, 1.2, (0,0,0), 2)
+
+                self.add_log( f"4️⃣: {clue}" )
+                self.add_log("# Note: For baldy persons, click midline of estimated crown-forehead junction") 
+                # for bald persons, click midline of estimated crown-forehead junction. 
+
+        if step >= 4:
+            self.add_log("✅ Midline hair border recorded.")
 
             p5 = coords[3]
 
@@ -312,12 +389,26 @@ class Dashboard(QMainWindow):
             cv2.circle(img_copy, p6, 3, (0, 0, 255), -1)
 
             # labelling face height
-            cv2.putText(img_copy, "Face height", (p5[0]+10, p5[1]+50),
-                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 3)
+            lbl = "Face height"
+            cv2.putText(img_copy, lbl, (p5[0]+30, p5[1]+70),
+                    cv2.FONT_HERSHEY_PLAIN, 1.2, (0,255,0), 3)
    
-            cv2.putText(img_copy, "Face height", (p5[0]+10, p5[1]+50),
-                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,255,0), 2)
+            cv2.putText(img_copy, lbl, (p5[0]+30, p5[1]+70),
+                    cv2.FONT_HERSHEY_PLAIN, 1.2, (0,0,0), 2)
 
+            # arrow
+            cv2.line(img_copy, 
+                     (p5[0] + 7 , int(p5[1] + 60)), 
+                     (p5[0] + 25 , int(p5[1] + 60)), 
+                     (0,0,255), 2)
+            cv2.line(img_copy, 
+                     (p5[0] + 7 , int(p5[1] + 60)), 
+                     (p5[0] + 15 , int(p5[1] + 55)), 
+                     (0,0,255), 2)
+            cv2.line(img_copy, 
+                     (p5[0] + 7 , int(p5[1] + 60)), 
+                     (p5[0] + 15 , int(p5[1] + 65)), 
+                     (0,0,255), 2)            
 
 
         """
@@ -354,11 +445,12 @@ class Dashboard(QMainWindow):
             )
         )
 
-        print( f"click amount: {len(self.clicks)}" )
+        # print( f"click amount: {len(self.clicks)}" )
 
+        
         if len(self.clicks) == 4:
             self.process_clicks()
-
+        
 
     def process_clicks(self):
         print("Process_clicks starts")
@@ -398,9 +490,9 @@ class Dashboard(QMainWindow):
 
         # labelling eye line
         cv2.putText(img, "Interocular line", (p1[0], p1[1]-20),
-                cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 3)
+                cv2.FONT_HERSHEY_PLAIN, 1.2, (0,255,0), 3)
         cv2.putText(img, "Interocular line", (p1[0], p1[1]-20),
-                cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,255,0), 2)
+                cv2.FONT_HERSHEY_PLAIN, 1.2, (0,0,0), 2)
 
 
         # Midpoint
