@@ -828,7 +828,7 @@ class Dashboard(QMainWindow):
         with open(os.path.join(script_dir, "../progress/shoulder_tilt.txt"), "w", encoding="utf-8") as f:
             f.write(os.path.basename(self.filename))
 
-        self.last_tilt = tilt
+        # self.last_tilt = tilt
         self.processed = True
 
 
