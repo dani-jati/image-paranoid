@@ -3748,3 +3748,187 @@ Point clicked: 63, 427
 ✅ End of RIGHT neck contour recorded.
 ✅ Midline of RIGHT shoulder recorded.
 ✅ End of RIGHT shoulder contour recorded.
+✅ Found 190 images in c:\Users\nagab\OneDrive\Documents\image_paranoid\images\input_images\shoulder_tilt
+🖼️ Processing: 1762591407217.jpg, 1-th of 190 files 
+1️⃣: Click midpoint of LEFT shoulder contour!
+📂 Using default folder: c:\Users\nagab\OneDrive\Documents\image_paranoid\images\input_images\shoulder_tilt
+Resuming after Untitled5.png → starting at image 5 of 190
+🖼️ Processing: Untitled6.png, 5-th of 190 files 
+1️⃣: Click midpoint of LEFT shoulder contour!
+🖼️ Processing: head and shoulder shot photo_0.jpeg, 6-th of 190 files 
+1️⃣: Click midpoint of LEFT shoulder contour!
+🖼️ Processing: head and shoulder shot photo_1.jpeg, 7-th of 190 files 
+1️⃣: Click midpoint of LEFT shoulder contour!
+🖼️ Processing: head and shoulder shot photo_10.jpeg, 8-th of 190 files 
+1️⃣: Click midpoint of LEFT shoulder contour!
+Point clicked: 426, 383
+✅ Midline of LEFT shoulder recorded.
+2️⃣: Click end of LEFT shoulder contour!
+Point clicked: 481, 407
+✅ Midline of LEFT shoulder recorded.
+✅ End of RIGHT neck contour recorded.
+2️⃣: Click midline of RIGHT shoulder contour!
+Point clicked: 108, 407
+✅ Midline of LEFT shoulder recorded.
+✅ End of RIGHT neck contour recorded.
+✅ Midline of RIGHT shoulder recorded.
+3️⃣: Click end of RIGHT shoulder contour!
+Point clicked: 62, 433
+✅ Midline of LEFT shoulder recorded.
+✅ End of RIGHT neck contour recorded.
+✅ Midline of RIGHT shoulder recorded.
+✅ End of RIGHT shoulder contour recorded.
+✅ Found 190 images in c:\Users\nagab\OneDrive\Documents\image_paranoid\images\input_images\shoulder_tilt
+🖼️ Processing: 1762591407217.jpg, 1-th of 190 files 
+1️⃣: Click midpoint of LEFT shoulder contour!
+📂 Using default folder: c:\Users\nagab\OneDrive\Documents\image_paranoid\images\input_images\shoulder_tilt
+Resuming after Untitled5.png → starting at image 5 of 190
+🖼️ Processing: Untitled6.png, 5-th of 190 files 
+1️⃣: Click midpoint of LEFT shoulder contour!
+🖼️ Processing: head and shoulder shot photo_0.jpeg, 6-th of 190 files 
+1️⃣: Click midpoint of LEFT shoulder contour!
+🖼️ Processing: head and shoulder shot photo_1.jpeg, 7-th of 190 files 
+1️⃣: Click midpoint of LEFT shoulder contour!
+🖼️ Processing: head and shoulder shot photo_10.jpeg, 8-th of 190 files 
+1️⃣: Click midpoint of LEFT shoulder contour!
+Point clicked: 426, 382
+✅ Midline of LEFT shoulder recorded.
+2️⃣: Click end of LEFT shoulder contour!
+Point clicked: 491, 407
+✅ Midline of LEFT shoulder recorded.
+✅ End of RIGHT neck contour recorded.
+2️⃣: Click midline of RIGHT shoulder contour!
+Point clicked: 122, 397
+✅ Midline of LEFT shoulder recorded.
+✅ End of RIGHT neck contour recorded.
+✅ Midline of RIGHT shoulder recorded.
+3️⃣: Click end of RIGHT shoulder contour!
+Point clicked: 72, 424
+✅ Midline of LEFT shoulder recorded.
+✅ End of RIGHT neck contour recorded.
+✅ Midline of RIGHT shoulder recorded.
+✅ End of RIGHT shoulder contour recorded.
+✅ Found 190 images in c:\Users\nagab\OneDrive\Documents\image_paranoid\images\input_images\shoulder_tilt
+🖼️ Processing: 1762591407217.jpg, 1-th of 190 files 
+1️⃣: Click midpoint of LEFT shoulder contour!
+📂 Using default folder: c:\Users\nagab\OneDrive\Documents\image_paranoid\images\input_images\shoulder_tilt
+Resuming after Untitled5.png → starting at image 5 of 190
+🖼️ Processing: Untitled6.png, 5-th of 190 files 
+1️⃣: Click midpoint of LEFT shoulder contour!
+🖼️ Processing: head and shoulder shot photo_0.jpeg, 6-th of 190 files 
+1️⃣: Click midpoint of LEFT shoulder contour!
+🖼️ Processing: head and shoulder shot photo_1.jpeg, 7-th of 190 files 
+1️⃣: Click midpoint of LEFT shoulder contour!
+🖼️ Processing: head and shoulder shot photo_10.jpeg, 8-th of 190 files 
+1️⃣: Click midpoint of LEFT shoulder contour!
+Point clicked: 435, 387
+✅ Midline of LEFT shoulder recorded.
+2️⃣: Click end of LEFT shoulder contour!
+Point clicked: 485, 407
+✅ Midline of LEFT shoulder recorded.
+✅ End of RIGHT neck contour recorded.
+2️⃣: Click midline of RIGHT shoulder contour!
+Point clicked: 117, 401
+✅ Midline of LEFT shoulder recorded.
+✅ End of RIGHT neck contour recorded.
+✅ Midline of RIGHT shoulder recorded.
+3️⃣: Click end of RIGHT shoulder contour!
+Point clicked: 64, 429
+✅ Midline of LEFT shoulder recorded.
+✅ End of RIGHT neck contour recorded.
+✅ Midline of RIGHT shoulder recorded.
+✅ End of RIGHT shoulder contour recorded.
+✅ Found 190 images in c:\Users\nagab\OneDrive\Documents\image_paranoid\images\input_images\shoulder_tilt
+🖼️ Processing: 1762591407217.jpg, 1-th of 190 files 
+1️⃣: Click midpoint of LEFT shoulder contour!
+📂 Using default folder: c:\Users\nagab\OneDrive\Documents\image_paranoid\images\input_images\shoulder_tilt
+Resuming after Untitled5.png → starting at image 5 of 190
+🖼️ Processing: Untitled6.png, 5-th of 190 files 
+1️⃣: Click midpoint of LEFT shoulder contour!
+🖼️ Processing: head and shoulder shot photo_0.jpeg, 6-th of 190 files 
+1️⃣: Click midpoint of LEFT shoulder contour!
+🖼️ Processing: head and shoulder shot photo_1.jpeg, 7-th of 190 files 
+1️⃣: Click midpoint of LEFT shoulder contour!
+🖼️ Processing: head and shoulder shot photo_10.jpeg, 8-th of 190 files 
+1️⃣: Click midpoint of LEFT shoulder contour!
+Point clicked: 373, 359
+✅ Midline of LEFT shoulder recorded.
+2️⃣: Click end of LEFT shoulder contour!
+Point clicked: 480, 405
+✅ Midline of LEFT shoulder recorded.
+✅ End of RIGHT neck contour recorded.
+2️⃣: Click midline of RIGHT shoulder contour!
+Point clicked: 144, 388
+✅ Midline of LEFT shoulder recorded.
+✅ End of RIGHT neck contour recorded.
+✅ Midline of RIGHT shoulder recorded.
+3️⃣: Click end of RIGHT shoulder contour!
+Point clicked: 81, 421
+✅ Midline of LEFT shoulder recorded.
+✅ End of RIGHT neck contour recorded.
+✅ Midline of RIGHT shoulder recorded.
+✅ End of RIGHT shoulder contour recorded.
+✅ Found 190 images in c:\Users\nagab\OneDrive\Documents\image_paranoid\images\input_images\shoulder_tilt
+🖼️ Processing: 1762591407217.jpg, 1-th of 190 files 
+1️⃣: Click midpoint of LEFT shoulder contour!
+📂 Using default folder: c:\Users\nagab\OneDrive\Documents\image_paranoid\images\input_images\shoulder_tilt
+Resuming after Untitled5.png → starting at image 5 of 190
+🖼️ Processing: Untitled6.png, 5-th of 190 files 
+1️⃣: Click midpoint of LEFT shoulder contour!
+🖼️ Processing: head and shoulder shot photo_0.jpeg, 6-th of 190 files 
+1️⃣: Click midpoint of LEFT shoulder contour!
+🖼️ Processing: head and shoulder shot photo_1.jpeg, 7-th of 190 files 
+1️⃣: Click midpoint of LEFT shoulder contour!
+🖼️ Processing: head and shoulder shot photo_10.jpeg, 8-th of 190 files 
+1️⃣: Click midpoint of LEFT shoulder contour!
+Point clicked: 425, 383
+✅ Midline of LEFT shoulder recorded.
+2️⃣: Click end of LEFT shoulder contour!
+Point clicked: 491, 409
+✅ Midline of LEFT shoulder recorded.
+✅ End of RIGHT neck contour recorded.
+2️⃣: Click midline of RIGHT shoulder contour!
+Point clicked: 120, 399
+✅ Midline of LEFT shoulder recorded.
+✅ End of RIGHT neck contour recorded.
+✅ Midline of RIGHT shoulder recorded.
+3️⃣: Click end of RIGHT shoulder contour!
+Point clicked: 66, 425
+✅ Midline of LEFT shoulder recorded.
+✅ End of RIGHT neck contour recorded.
+✅ Midline of RIGHT shoulder recorded.
+✅ End of RIGHT shoulder contour recorded.
+✅ Found 190 images in c:\Users\nagab\OneDrive\Documents\image_paranoid\images\input_images\shoulder_tilt
+🖼️ Processing: 1762591407217.jpg, 1-th of 190 files 
+1️⃣: Click midpoint of LEFT shoulder contour!
+📂 Using default folder: c:\Users\nagab\OneDrive\Documents\image_paranoid\images\input_images\shoulder_tilt
+Resuming after Untitled5.png → starting at image 5 of 190
+🖼️ Processing: Untitled6.png, 5-th of 190 files 
+1️⃣: Click midpoint of LEFT shoulder contour!
+🖼️ Processing: head and shoulder shot photo_0.jpeg, 6-th of 190 files 
+1️⃣: Click midpoint of LEFT shoulder contour!
+🖼️ Processing: head and shoulder shot photo_1.jpeg, 7-th of 190 files 
+1️⃣: Click midpoint of LEFT shoulder contour!
+🖼️ Processing: head and shoulder shot photo_10.jpeg, 8-th of 190 files 
+1️⃣: Click midpoint of LEFT shoulder contour!
+Point clicked: 424, 384
+✅ Midline of LEFT shoulder recorded.
+2️⃣: Click end of LEFT shoulder contour!
+Point clicked: 483, 404
+✅ Midline of LEFT shoulder recorded.
+✅ End of RIGHT neck contour recorded.
+2️⃣: Click midline of RIGHT shoulder contour!
+Point clicked: 123, 399
+✅ Midline of LEFT shoulder recorded.
+✅ End of RIGHT neck contour recorded.
+✅ Midline of RIGHT shoulder recorded.
+3️⃣: Click end of RIGHT shoulder contour!
+Point clicked: 67, 430
+✅ Midline of LEFT shoulder recorded.
+✅ End of RIGHT neck contour recorded.
+✅ Midline of RIGHT shoulder recorded.
+✅ End of RIGHT shoulder contour recorded.
+📄 Path: head and shoulder shot photo_10.jpeg
+↙️ Left Tilt: 17.22°
+↘️ Right Tilt: 30.48°
+📁 Saved to c:\Users\nagab\OneDrive\Documents\image_paranoid\tools\../images/output_images/shoulder_tilt/16_or_more_asymmetric/Front_view\head and shoulder shot photo_10.jpeg

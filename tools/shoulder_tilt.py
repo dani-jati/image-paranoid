@@ -18,9 +18,12 @@ script_dir = os.path.dirname(os.path.abspath(__file__))
 
 output_folders = {
     "high": os.path.join(script_dir, "../images/output_images/shoulder_tilt/16_or_more"),
+    "high_asymmetric": os.path.join(script_dir, "../images/output_images/shoulder_tilt/16_or_more_asymmetric"),
     "mid": os.path.join(script_dir, "../images/output_images/shoulder_tilt/12_to_16"),
+    "mid_asymmetric": os.path.join(script_dir, "../images/output_images/shoulder_tilt/12_to_16_asymmetric"),
     "low": os.path.join(script_dir, "../images/output_images/shoulder_tilt/12_or_less"),
-    "asymmetric": os.path.join(script_dir, "../images/output_images/shoulder_tilt/asymmetric"),
+    "low_asymmetric": os.path.join(script_dir, "../images/output_images/shoulder_tilt/12_or_less_asymmetric"),  
+    "asymmetric_x": os.path.join(script_dir, "../images/output_images/shoulder_tilt/asymmetric_x"),
 }
 
 for folder in output_folders.values():
@@ -111,6 +114,9 @@ class Dashboard(QMainWindow):
         super().__init__()
         self.setWindowTitle("Shoulder Tilt Dashboard")
         self.resize(1200, 800)
+
+        # shoulder tilt tolerance
+        self.tilt_tolerance = 6.0  # degrees
 
         # Log file
         os.makedirs(os.path.join(script_dir, "../session_log"), exist_ok=True)
@@ -735,19 +741,30 @@ class Dashboard(QMainWindow):
         # Draw the extended line
         cv2.line(img, extended_p3, extended_p4, (0, 255, 255), 2)
 
-
         # Classification
         if self.left_shoulder_angle >= 16 and self.right_shoulder_angle >=16:
-            folder = output_folders["high"]
-            classification = "High ( >= 16 )"
+            if abs(self.left_shoulder_angle - self.right_shoulder_angle) <= self.tilt_tolerance:
+                folder = output_folders["high"]
+                classification = "High ( >= 16 )-Sym"
+            else:
+                folder = output_folders["high_asymmetric"]
+                classification = "High ( >= 16 )-Asym"
         elif 12 < self.left_shoulder_angle < 16 and 12 < self.right_shoulder_angle <16:
-            folder = output_folders["mid"]
-            classification = "Mid (12 < ratio < 16 )"
+            if abs(self.left_shoulder_angle - self.right_shoulder_angle) <= self.tilt_tolerance:
+                folder = output_folders["mid"]
+                classification = "Mid (12 < ratio < 16 )-Sym"
+            else:
+                folder = output_folders["mid_asymmetric"]
+                classification = "Mid (12 < ratio < 16 )-Asym"
         elif self.left_shoulder_angle <= 12 and self.right_shoulder_angle <=12:
-            folder = output_folders["low"]
-            classification = "Narrow ( < 12 )"
+            if abs(self.left_shoulder_angle - self.right_shoulder_angle) <= self.tilt_tolerance:
+                folder = output_folders["low"]
+                classification = "Low ( < 12 )-Sym"
+            else:
+                folder = output_folders["low_asymmetric"]
+                classification = "Low ( < 12 )-Asym"
         else:
-            folder = output_folders["asymmetric"]
+            folder = output_folders["asymmetric_x"]
             classification = "X-asymmetric" # cross-asymmetry = asymmetrical shoulders that cross over categories
 
         # Legend box
@@ -789,6 +806,31 @@ class Dashboard(QMainWindow):
                 Qt.KeepAspectRatio, Qt.SmoothTransformation
             )
         )
+
+        # Estimate perspective
+        perspective = classify_perspective(p1, p2)
+
+        # Save output image
+        out_path = os.path.join(folder + "/" + perspective + "_view", os.path.basename(self.filename))
+
+        os.makedirs( os.path.join(folder + "/" + perspective + "_view") , exist_ok=True)
+        print("Saving to:", out_path)
+        cv2.imwrite(out_path, img_copy)
+        self.last_saved_path = out_path
+        self.add_log(f"📄 Path: {os.path.basename(self.filename)}")
+        self.add_log(f"↙️ Left Tilt: {self.left_shoulder_angle:.2f}°")
+        self.add_log(f"↘️ Right Tilt: {self.right_shoulder_angle:.2f}°")
+        self.add_log(f"📁 Saved to {out_path}")
+
+        # make progress folder if not exist
+        os.makedirs(os.path.join(script_dir, "progress"), exist_ok=True)
+
+        with open(os.path.join(script_dir, "../progress/shoulder_tilt.txt"), "w", encoding="utf-8") as f:
+            f.write(os.path.basename(self.filename))
+
+        self.last_tilt = tilt
+        self.processed = True
+
 
         """
         cv2.putText(img_copy, "1", (p1[0]-5, p1[1]+20), 
