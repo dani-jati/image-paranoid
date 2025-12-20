@@ -222,7 +222,6 @@ class Dashboard(QMainWindow):
         cv2.putText(preview, clue, (legend_x+10, legend_y+30),
                     cv2.FONT_HERSHEY_PLAIN, 1.2, (0,0,0), 2)
       
-        self.add_log(clue)
         self.add_log(f"1️⃣: {clue}")
 
         self.proc_label.setPixmap(cvimg_to_qpix(preview).scaled(self.proc_label.width(), self.proc_label.height(), Qt.KeepAspectRatio))

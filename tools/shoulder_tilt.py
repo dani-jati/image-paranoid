@@ -1,7 +1,10 @@
 # This script is to measure shoulder tilt,
 # which is measured by comparing the tilt to a line parallel to nose as an anchor.
 
-import sys, os, cv2, datetime
+import sys, os, cv2, datetime, math
+import numpy as np
+import mediapipe as mp
+
 from PySide6.QtWidgets import (
     QApplication, QMainWindow, QWidget, QVBoxLayout, QHBoxLayout,
     QLabel, QTextEdit, QSizePolicy, QComboBox, QFileDialog
@@ -17,6 +20,7 @@ output_folders = {
     "high": os.path.join(script_dir, "../images/output_images/shoulder_tilt/16_or_more"),
     "mid": os.path.join(script_dir, "../images/output_images/shoulder_tilt/12_to_16"),
     "low": os.path.join(script_dir, "../images/output_images/shoulder_tilt/12_or_less"),
+    "asymmetric": os.path.join(script_dir, "../images/output_images/shoulder_tilt/asymmetric"),
 }
 
 for folder in output_folders.values():
@@ -308,153 +312,485 @@ class Dashboard(QMainWindow):
 
     def load_image(self, filename):
         self.filename = filename
-        self.raw_img = cv2.imread(filename)
-
-        if self.raw_img is None:
+        img = cv2.imread(filename)
+        # self.img = img
+        self.raw_img = img.copy()
+        
+        if img is None:
             self.add_log(f"⚠️ Could not load {filename}")
             return
-
-        self.proc_label.setPixmap(
-            cvimg_to_qpix(self.raw_img).scaled(
-                self.proc_label.width(), self.proc_label.height(),
-                Qt.KeepAspectRatio, Qt.SmoothTransformation
-            )
-        )
 
         self.add_log(
             f"🖼️ Processing: {os.path.basename(filename)}, {self.index+1}-th of {len(self.files)} files "
         )
 
-        self.clicks = []
-        self.processed = False
+        # Initialize MediaPipe Face Mesh
+        mp_face_mesh = mp.solutions.face_mesh
+        face_mesh = mp_face_mesh.FaceMesh(
+            static_image_mode=False, max_num_faces=1)
+        
+        image = self.raw_img.copy()
+        image_rgb = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
+
+        # Initialize MediaPipe FaceMesh
+        with mp_face_mesh.FaceMesh(static_image_mode=True) as face_mesh:
+
+            # Process the image and get the landmarks
+            results = face_mesh.process(image_rgb)
+
+            if results.multi_face_landmarks:
+                for face_landmarks in results.multi_face_landmarks:
+                    # Key points for the nose
+                    # (typically nose tip, left nostril, right nostril)
+
+                    # Index 1 is the tip of the nose
+                    nose_tip = face_landmarks.landmark[1]
+
+                    # Index 2 is the left nostril
+                    nose_left = face_landmarks.landmark[2]
+
+                    # Index 4 is the right nostril
+                    nose_right = face_landmarks.landmark[4]
+
+                    # Index 4 is the nose root
+                    nose_root = face_landmarks.landmark[6]
+
+                    # Index 133 is the left eye
+                    left_eye = face_landmarks.landmark[133]
+
+                    # Index 362 is the right eye
+                    right_eye = face_landmarks.landmark[362]
+
+                    # convert normalized coordinates to pixel coordinates
+                    image_height, image_width, _ = image.shape
+                    self.nose_tip_x = nose_tip_x = int(nose_tip.x * image_width)
+                    self.nose_tip_y = nose_tip_y = int(nose_tip.y * image_height)
+                    nose_left_x = int(nose_left.x * image_width)
+                    nose_left_y = int(nose_left.y * image_height)
+                    nose_right_x = int(nose_right.x * image_width)
+                    nose_right_y = int(nose_right.y * image_height)
+                    left_eye_x = int(left_eye.x * image_width)
+                    left_eye_y = int(left_eye.y * image_height)
+                    right_eye_x = int(right_eye.x * image_width)
+                    right_eye_y = int(right_eye.y * image_height)
+
+                    # nose root
+                    self.nose_root_x = nose_root_x = int(nose_root.x * image_width)
+                    self.nose_root_y =nose_root_y = int(nose_root.y * image_height)
+
+                    # ---- FACE ORIENTATION VECTOR (RADIX → NOSE TIP) ----
+                    dx = nose_tip_x - nose_root_x
+                    dy = nose_tip_y - nose_root_y
+
+                    # Angle of face orientation
+                    face_angle = math.atan2(dy, dx)
+
+                    # ---- DRAW NOSE LINE ALONG FACE ORIENTATION ----
+                    line_length = 150
+
+                    line_p1 = (
+                        nose_tip_x + line_length * math.cos(face_angle),
+                        nose_tip_y + line_length * math.sin(face_angle)
+                    )
+
+                    line_p2 = (
+                        nose_tip_x - line_length * math.cos(face_angle),
+                        nose_tip_y - line_length * math.sin(face_angle)
+                    )
+
+                    cv2.line(
+                        image,
+                        (int(line_p1[0]), int(line_p1[1])),
+                        (int(line_p2[0]), int(line_p2[1])),
+                        (0, 255, 0),
+                        2
+                    )
+
+        # Label nose line
+        x = int((line_p1[0] + line_p2[0]) * 0.55) + 20
+        y = int((line_p1[1] + line_p2[1]) * 0.5)
+        clue = "Nose line"
+        cv2.putText(image, clue, (x, y),
+                cv2.FONT_HERSHEY_PLAIN, 1.2, (0,255,0), 3)
+        cv2.putText(image, clue, (x, y),
+                cv2.FONT_HERSHEY_PLAIN, 1.2, (0,0,0), 2)
+
+        x1 = int((line_p1[0] + line_p2[0]) * 0.5) + 10
+        y1 = int((line_p1[1] + line_p2[1]) * 0.5)
+
+        cv2.line(
+            image,
+            (x - 5, y - 5),
+            (x1, y1),
+            (0, 0, 255),
+            2
+        )
+
+        cv2.line(
+            image,
+            (x1, y1),
+            (x - 25, y + 3),
+            (0, 0, 255),
+            2
+        )
+
+        cv2.line(
+            image,
+            (x1, y1),
+            (x - 27, y - 8),
+            (0, 0, 255),
+            2
+        )
+
+
+        self.img = image
+        preview = image.copy()
+        # instruction
+        legend_x, legend_y = 0,0
+        clue = "Click midpoint of LEFT shoulder contour!"
+        cv2.putText(preview, clue, (legend_x+10, legend_y+30),
+                    cv2.FONT_HERSHEY_PLAIN, 1.2, (0,255,0), 3)
+        cv2.putText(preview, clue, (legend_x+10, legend_y+30),
+                    cv2.FONT_HERSHEY_PLAIN, 1.2, (0,0,0), 2)
+      
+        self.add_log(f"1️⃣: {clue}")
+
+        self.proc_label.setPixmap(
+            cvimg_to_qpix(preview).scaled(
+                self.proc_label.width(), self.proc_label.height(),
+                Qt.KeepAspectRatio, Qt.SmoothTransformation
+            )
+        )
+
         self.view_selector.setCurrentIndex(0)
         self.view_selector.hide()
+        self.clicks = []
+        self.processed = False
+
 
     def on_click(self, event):
         pos = event.position().toPoint()
 
         # store plain coordinates
-        self.clicks.append(pos)
+        self.clicks.append((pos.x(), pos.y()))
         self.add_log(f"Point clicked: {pos.x()}, {pos.y()}")
 
         step = len(self.clicks)
 
-        if step == 1:
-            self.add_log("✅ first point of shoulder contour recorded.")
-            self.add_log("2️⃣: Click last point of shoulder contour!")
-
-        if self.raw_img is None:
+        if self.img is None:
             return
 
-        # Get display pixmap and widget size
-        pixmap = self.proc_label.pixmap()
-        if pixmap is None:
-            return
+        # copy image and draw grid
+        # img_copy = draw_black_grid(self.raw_img.copy(), spacing_px=40)
+        img_copy = self.img.copy()
 
-        disp_w, disp_h = pixmap.width(), pixmap.height()
-        lbl_w, lbl_h = self.proc_label.width(), self.proc_label.height()
-
-        # Compute offsets (letterboxing margins)
-        offset_x = (lbl_w - disp_w) / 2
-        offset_y = (lbl_h - disp_h) / 2
-
-        # Translate click into pixmap coordinates
-        px = pos.x() - offset_x
-        py = pos.y() - offset_y
-
-        if px < 0 or py < 0 or px > disp_w or py > disp_h:
-            self.add_log("⚠️ Click outside image area")
-            return
-
-        # copy image
-        img_copy = self.raw_img.copy()
-
-        # Scale to original image coordinates
+        # scale factors
         h, w = self.raw_img.shape[:2]
+        disp_w, disp_h = self.proc_label.width(), self.proc_label.height()
         scale_x, scale_y = w / disp_w, h / disp_h
-        cx, cy = int(px * scale_x), int(py * scale_y)
 
-        # Draw all clicked points so far
+        # draw all clicked points so far
         coords = []
-        for i, p in enumerate(self.clicks):
-            # Recalculate each click with offset correction
-            px = p.x() - offset_x
-            py = p.y() - offset_y
-            cx, cy = int(px * scale_x), int(py * scale_y)
+        for i, (x, y) in enumerate(self.clicks):
+            cx, cy = int(x * scale_x), int(y * scale_y)
             coords.append((cx, cy))
-            cv2.circle(img_copy, (cx, cy), 5, (0, 255, 0), -2)
 
-            cv2.putText(img_copy, f"{i+1}", (cx-5, cy+20), 
-                cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 0), 3)
-            cv2.putText(img_copy, f"{i+1}", (cx-5, cy+20), 
-                cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 255), 2)
+            if i == 0:
+                cv2.circle(img_copy, (cx, cy), 5, (0, 255, 0), -1)
+            if i == 1:
+                cv2.circle(img_copy, (cx, cy), 5, (0, 255, 0), -1)
+            if i == 2:
+                cv2.circle(img_copy, (cx, cy), 5, (255, 0, 0), -1)
+            if i == 3:
+                cv2.circle(img_copy, (cx, cy), 5, (255, 0, 0), -1)
 
-        if step >=2:
-            self.add_log("draw line from p1 to p2")
-            p1,p2 = coords[0], coords[1]
-            cv2.line(img_copy, p1, p2, (0,255,0), 2)
-            cv2.putText(img_copy, "Shoulder line", (p1[0]-30, p1[1]+35),
-                    cv2. FONT_HERSHEY_SIMPLEX, 0.5, (90,255,255), 2)
+            cv2.putText(img_copy, f"{i+1}", (cx, cy+13),
+                    cv2.FONT_HERSHEY_PLAIN, 1.2, (0,255,0), 3)
+            cv2.putText(img_copy, f"{i+1}", (cx, cy+13),
+                    cv2.FONT_HERSHEY_PLAIN, 1.2, (0,0,0), 2)
 
-            # Infer nose anchor (midpoint above shoulders)
-            nose_x = (p1[0] + p2[0]) // 2
-            nose_y = min(p1[1], p2[1]) - 60
-            neck_p1 = (nose_x, nose_y)
-            neck_p2 = (nose_x, max(p1[1], p2[1]))
+        if step >= 1:
+            self.add_log ("✅ Midline of LEFT shoulder recorded.")
 
-            # Draw upright line (blue)
-            cv2.line(img_copy, neck_p1, neck_p2, (255, 0, 0), 2)
+            if step == 1:
+                # instruction
+                legend_x, legend_y = 0,0
+                preview = img_copy
+                clue = "Click end of LEFT shoulder contour!"
+                cv2.putText(preview, clue, (legend_x+10, legend_y+30),
+                        cv2.FONT_HERSHEY_PLAIN, 1.2, (0,255,0), 3)
+                cv2.putText(preview, clue, (legend_x+10, legend_y+30),
+                        cv2.FONT_HERSHEY_PLAIN, 1.2, (0,0,0), 2)
+
+                self.add_log(f"2️⃣: {clue}")
+
+        if step >= 2:
+            self.add_log("✅ End of RIGHT neck contour recorded.")
+
+            self.p1, self.p2 = p1,p2 = coords[0], coords[1]
+
+            cv2.line(img_copy, p1,p2,(0,255,0), 1)
+
+            # Compute the direction vector from p1 to p2
+            direction = np.array([p2[0] - p1[0], p2[1] - p1[1]])
+
+            # Normalize the direction vector (unit vector)
+            length = np.linalg.norm(direction)
+            direction = direction / length
+
+            # Extend the line by a certain factor (e.g., 100 pixels)
+            extend_length = 500
+
+            # Calculate the new extended points
+            extended_p1 = (int(p1[0] - direction[0] * extend_length), int(p1[1] - direction[1] * extend_length))
+            extended_p2 = (int(p2[0] + direction[0] * extend_length), int(p2[1] + direction[1] * extend_length))
+
+            # Draw the extended line
+            cv2.line(img_copy, extended_p1, extended_p2, (0, 255, 0), 2)
 
 
-        # Update preview
+            if step == 2:
+                # instruction
+                legend_x, legend_y = 0,0
+                preview = img_copy
+                clue = "Click midline of RIGHT shoulder contour!"
+                cv2.putText(preview, clue, (legend_x+10, legend_y+30),
+                        cv2.FONT_HERSHEY_PLAIN, 1.2, (0,255,0), 3)
+                cv2.putText(preview, clue, (legend_x+10, legend_y+30),
+                        cv2.FONT_HERSHEY_PLAIN, 1.2, (0,0,0), 2)
+
+                self.add_log(f"2️⃣: {clue}")
+
+        if step >= 3:
+            self.add_log ("✅ Midline of RIGHT shoulder recorded.")
+
+            if step == 3:
+                # instruction
+                legend_x, legend_y = 0,0
+                preview = img_copy
+                clue = "Click end of RIGHT shoulder contour!"
+                cv2.putText(preview, clue, (legend_x+10, legend_y+30),
+                        cv2.FONT_HERSHEY_PLAIN, 1.2, (0,255,0), 3)
+                cv2.putText(preview, clue, (legend_x+10, legend_y+30),
+                        cv2.FONT_HERSHEY_PLAIN, 1.2, (0,0,0), 2)
+
+                self.add_log(f"3️⃣: {clue}")
+
+        if step >= 4:
+            self.add_log("✅ End of RIGHT shoulder contour recorded.")
+
+            self.p3, self.p4 = p3,p4 = coords[2], coords[3]
+
+            cv2.line(img_copy, p3, p4, (0,255,0), 1)
+
+            # Compute the direction vector from p1 to p2
+            direction = np.array([p4[0] - p3[0], p4[1] - p3[1]])
+
+            # Normalize the direction vector (unit vector)
+            length = np.linalg.norm(direction)
+            direction = direction / length
+
+            # Extend the line by a certain factor (e.g., 100 pixels)
+            extend_length = 500
+
+            # Calculate the new extended points
+            extended_p3 = (int(p3[0] - direction[0] * extend_length), int(p3[1] - direction[1] * extend_length))
+            extended_p4 = (int(p4[0] + direction[0] * extend_length), int(p4[1] + direction[1] * extend_length))
+
+            # Draw the extended line
+            cv2.line(img_copy, extended_p3, extended_p4, (0, 255, 0), 2)
+
+            # labelling first line
+            lbl = "Shoulder line"
+            cv2.putText(img_copy, lbl, (int((self.clicks[0][0] + self.clicks[2][0]) * 0.48), self.clicks[0][1] - 10),
+                    cv2.FONT_HERSHEY_PLAIN, 1.2, (0,255,0), 3)
+            cv2.putText(img_copy, lbl, (int((self.clicks[0][0] + self.clicks[2][0]) * 0.48), self.clicks[0][1] - 10),
+                    cv2.FONT_HERSHEY_PLAIN, 1.2, (0,0,0), 2)
+            
+            if step == 4:
+                # 1. Define the Nose Vector (Reference)
+                # Using the coordinates calculated in load_image
+
+                n_dx = self.nose_tip_x - self.nose_root_x
+                n_dy = self.nose_tip_y - self.nose_root_y
+                nose_angle = math.atan2(n_dy, n_dx)
+
+                # 2. Left Shoulder Angle (Points 1 and 2)
+                l_dx = coords[1][0] - coords[0][0]
+                l_dy = coords[1][1] - coords[0][1]
+                left_sh_angle = math.atan2(l_dy, l_dx)
+
+                # 3. Right Shoulder Angle (Points 3 and 4)
+                r_dx = coords[3][0] - coords[2][0]
+                r_dy = coords[3][1] - coords[2][1]
+                right_sh_angle = math.atan2(r_dy, r_dx)
+
+                # 4. Calculate relative angles to the nose
+                # We add/subtract 90 degrees (pi/2) because shoulders are 
+                # ideally perpendicular to the nose line
+                left_rel_angle = abs(math.degrees(left_sh_angle - nose_angle))
+                right_rel_angle = abs(180 - abs(math.degrees(right_sh_angle - nose_angle))) 
+
+                # Normalize to focus on the deviation from "flat" (90 degrees)
+                left_final = abs(left_rel_angle - 90)
+                right_final = abs(90-right_rel_angle)
+
+                self.left_shoulder_angle = left_final
+                self.right_shoulder_angle = right_final
+
+                # Overlay on the image
+                # cv2.putText(img_copy, f"Left Sh. Angle: {left_final:.1f} deg", (50, 150), 
+                #             cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 255, 0), 2)
+                # cv2.putText(img_copy, f"Right Sh. Angle: {right_final:.1f} deg", (50, 180), 
+                #             cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 255, 0), 2)
+
+
+        # update preview
         self.proc_label.setPixmap(
             cvimg_to_qpix(img_copy).scaled(
-                lbl_w, lbl_h,
+                self.proc_label.width(), self.proc_label.height(),
+                Qt.KeepAspectRatio, Qt.SmoothTransformation
+            )
+         )
+
+        
+        # If two clicks, process them
+        if len(self.clicks) == 4:
+            self.process_points()
+            self.view_selector.show()
+            # self.clicks = []
+
+    def process_points(self):
+
+        print("run process_points")
+
+        # img = self.raw_img.copy()
+        img = self.img
+        h, w = img.shape[:2]
+        disp_w, disp_h = self.proc_label.width(), self.proc_label.height()
+        scale_x, scale_y = w / disp_w, h / disp_h
+
+        def to_coords(p):  # p is a tuple (x, y)
+            return int(p[0] * scale_x), int(p[1] * scale_y)
+
+        for i, (x, y) in enumerate(self.clicks):
+            cx, cy = int(x * scale_x), int(y * scale_y)
+            cv2.putText(img, f"{i+1}", (cx, cy+13),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (90,255,255), 1)
+
+        p1, p2, p3, p4 = [to_coords(p) for p in self.clicks]
+
+        # Draw circles at shoulder line
+        cv2.circle(img, p1, 6, (0, 0, 255), -1)
+        cv2.circle(img, p2, 6, (0, 0, 255), -1)
+        cv2.circle(img, p3, 6, (0, 0, 255), -1)
+        cv2.circle(img, p4, 6, (0, 0, 255), -1)
+
+        # Draw shoulder line (red)
+        # cv2.line(img, p1, p2, (0, 0, 255), 2)
+        # cv2.line(img, p3, p4, (0, 0, 255), 2)
+
+
+        # Compute the direction vector from p1 to p2
+        direction = np.array([p2[0] - p1[0], p2[1] - p1[1]])
+
+        # Normalize the direction vector (unit vector)
+        length = np.linalg.norm(direction)
+        direction = direction / length
+
+        # Extend the line by a certain factor (e.g., 100 pixels)
+        extend_length = 500
+
+        # Calculate the new extended points
+        extended_p1 = (int(p1[0] - direction[0] * extend_length), int(p1[1] - direction[1] * extend_length))
+        extended_p2 = (int(p2[0] + direction[0] * extend_length), int(p2[1] + direction[1] * extend_length))
+
+        # Draw the extended line
+        cv2.line(img, extended_p1, extended_p2, (255, 0, 0), 2)
+
+        # labelling first line
+        lbl = "Shoulder line"
+        cv2.putText(img, lbl, (p1[0] - 150, p1[1]), cv2.FONT_HERSHEY_PLAIN, 1.2, (0,255,0), 3)
+        cv2.putText(img, lbl, (p1[0] - 150, p1[1]), cv2.FONT_HERSHEY_PLAIN, 1.2, (0,0,0), 2)
+
+        # labelling second line
+        lbl = "Shoulder line"
+        cv2.putText(img, lbl, (p3[0], p3[1]), cv2.FONT_HERSHEY_PLAIN, 1.2, (0,255,0), 3)
+        cv2.putText(img, lbl, (p3[0], p3[1]), cv2.FONT_HERSHEY_PLAIN, 1.2, (0,0,0), 2)
+
+        # Compute the direction vector from p1 to p2
+        direction = np.array([p4[0] - p3[0], p4[1] - p3[1]])
+
+        # Normalize the direction vector (unit vector)
+        length = np.linalg.norm(direction)
+        direction = direction / length
+
+        # Extend the line by a certain factor (e.g., 100 pixels)
+        extend_length = 500
+
+        # Calculate the new extended points
+        extended_p3 = (int(p3[0] - direction[0] * extend_length), int(p3[1] - direction[1] * extend_length))
+        extended_p4 = (int(p4[0] + direction[0] * extend_length), int(p4[1] + direction[1] * extend_length))
+
+        # Draw the extended line
+        cv2.line(img, extended_p3, extended_p4, (0, 255, 255), 2)
+
+
+        # Classification
+        if self.left_shoulder_angle >= 16 and self.right_shoulder_angle >=16:
+            folder = output_folders["high"]
+            classification = "High ( >= 16 )"
+        elif 12 < self.left_shoulder_angle < 16 and 12 < self.right_shoulder_angle <16:
+            folder = output_folders["mid"]
+            classification = "Mid (12 < ratio < 16 )"
+        elif self.left_shoulder_angle <= 12 and self.right_shoulder_angle <=12:
+            folder = output_folders["low"]
+            classification = "Narrow ( < 12 )"
+        else:
+            folder = output_folders["asymmetric"]
+            classification = "X-asymmetric" # cross-asymmetry = asymmetrical shoulders that cross over categories
+
+        # Legend box
+        img_copy = img
+        legend_x, legend_y = 0,0
+        cv2.rectangle(img_copy, (legend_x-10, legend_y-0),
+                      (legend_x + 250, legend_y + 175), (0,0,0), -1)
+        cv2.rectangle(img_copy, (legend_x-10, legend_y-0),
+                      (legend_x + 250, legend_y + 175), (255,255,255), 1)
+
+        cv2.putText(img_copy, "Legend:", (legend_x, legend_y + 15),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255,255,255), 1)
+        cv2.putText(img_copy, " Green = Nose line", (legend_x, legend_y + 35),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,255,0), 1)
+        cv2.putText(img_copy, " Blue = Left shoulder line", (legend_x, legend_y + 55),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255,0,0), 1)
+        cv2.putText(img_copy, " Yellow = Right shoulder line", (legend_x, legend_y + 75),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,255,255), 1)
+
+        # Classification
+        cv2.putText(img_copy, f" Left Degree: {self.left_shoulder_angle:.2f}", (legend_x, legend_y + 95),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255,255,255), 1)
+
+        cv2.putText(img_copy, f" Right Degree: {self.right_shoulder_angle:.2f}", (legend_x, legend_y + 115),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255,255,255), 1)
+        
+        cv2.putText(img_copy, f" Result: {classification}", (legend_x, legend_y + 135),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255,255,255), 1)
+
+        # Timestamp
+        timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+
+        cv2.putText(img_copy, f" Time: {timestamp}", (legend_x, legend_y + 155),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (200,200,200), 1)
+
+        self.result_label.setPixmap(
+            cvimg_to_qpix(img).scaled(
+                self.result_label.width(), self.result_label.height(),
                 Qt.KeepAspectRatio, Qt.SmoothTransformation
             )
         )
 
-        # If two clicks, process them
-        if len(self.clicks) == 2:
-            self.process_points(self.clicks)
-            self.view_selector.show()
-            self.clicks = []
-
-
-    def process_points(self, points):
-        if len(points) != 2 or self.raw_img is None:
-            return
-        img_copy = self.raw_img.copy()
-        h, w = img_copy.shape[:2]
-
-        pixmap = self.proc_label.pixmap()
-        if pixmap is None:
-            return
-        disp_w, disp_h = pixmap.width(), pixmap.height()
-        label_w, label_h = self.proc_label.width(), self.proc_label.height()
-        x_offset = (label_w - disp_w) // 2
-        y_offset = (label_h - disp_h) // 2
-
-        adj_x1 = points[0].x() - x_offset
-        adj_y1 = points[0].y() - y_offset
-        adj_x2 = points[1].x() - x_offset
-        adj_y2 = points[1].y() - y_offset
-
-        scale_x, scale_y = w / disp_w, h / disp_h
-        p1 = (int(adj_x1 * scale_x), int(adj_y1 * scale_y))
-        p2 = (int(adj_x2 * scale_x), int(adj_y2 * scale_y))
-
-        # Draw shoulder line (red)
-        cv2.line(img_copy, p1, p2, (0, 0, 255), 2)
-        cv2.putText(img_copy, "Shoulder line", (p1[0]-30, p1[1]+35),
-                    cv2. FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 3)
-        cv2.putText(img_copy, "Shoulder line", (p1[0]-30, p1[1]+35),
-                    cv2. FONT_HERSHEY_SIMPLEX, 0.5, (90,225,225), 2)
-
-        # Draw circles at shoulder line
-        cv2.circle(img_copy, p1, 6, (0, 0, 255), -1)
-        cv2.circle(img_copy, p2, 6, (0, 0, 255), -1)
-
+        """
         cv2.putText(img_copy, "1", (p1[0]-5, p1[1]+20), 
                 cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 0), 3)
         cv2.putText(img_copy, "1", (p1[0]-5, p1[1]+20), 
@@ -485,11 +821,6 @@ class Dashboard(QMainWindow):
         index_map = {"Unlabeled": 0, "Front": 1, "Diagonal": 2, "Side": 3}
         self.view_selector.setCurrentIndex(index_map[perspective])
         self.add_log(f"🧭 Auto-perspective : {perspective}, 👁️ Please compare with your own visual judgment!")
-        """
-        # Annotate image
-        cv2.putText(img_copy, f"Tilt: {tilt:.2f} deg", (30, 30),
-                cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 50), 2)
-        """
 
         # Classification
         if ratio >= 16:
@@ -525,8 +856,12 @@ class Dashboard(QMainWindow):
         cv2.putText(img_copy, f"Result: {classification}", (legend_x, legend_y+55),
                     cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255,255,255), 1)
 
-        cv2.putText(img_copy, f"Degree: {ratio:.2f}", (legend_x, legend_y+75),
+        cv2.putText(img_copy, f"Left Degree: {self.left_shoulder_angle}", (legend_x, legend_y+75),
                     cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255,255,255), 1)
+
+        cv2.putText(img_copy, f"Right Degree: {self.right_shoulder_angle}", (legend_x, legend_y+95),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255,255,255), 1)
+
 
         # Timestamp
         timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
@@ -534,14 +869,7 @@ class Dashboard(QMainWindow):
         cv2.putText(img_copy, f"Time: {timestamp}", (legend_x, legend_y+95),
                     cv2.FONT_HERSHEY_SIMPLEX, 0.5, (200,200,200), 1)
 
-
-        self.result_label.setPixmap(
-            cvimg_to_qpix(img_copy).scaled(
-                self.result_label.width(), self.result_label.height(),
-                Qt.KeepAspectRatio, Qt.SmoothTransformation
-            )
-        )
-
+        """
         # save image result
         """
         if tilt >= 16:
@@ -559,22 +887,22 @@ class Dashboard(QMainWindow):
             return
         """
 
-        out_path = os.path.join(folder + "/" + perspective + "_view", os.path.basename(self.filename))
+        # out_path = os.path.join(folder + "/" + perspective + "_view", os.path.basename(self.filename))
 
-        os.makedirs( os.path.join(folder + "/" + perspective + "_view") , exist_ok=True)
+        # os.makedirs( os.path.join(folder + "/" + perspective + "_view") , exist_ok=True)
 
-        cv2.imwrite(out_path, img_copy)
-        self.last_saved_path = out_path
-        self.add_log(f"✅ {os.path.basename(self.filename)} → Tilt: {tilt:.2f}° → Saved to {out_path}")
+        # cv2.imwrite(out_path, img_copy)
+        # self.last_saved_path = out_path
+        # self.add_log(f"✅ {os.path.basename(self.filename)} → Tilt: {tilt:.2f}° → Saved to {out_path}")
 
         # make progress folder if not exist
-        os.makedirs(os.path.join(script_dir, "progress"), exist_ok=True)
+        # os.makedirs(os.path.join(script_dir, "progress"), exist_ok=True)
 
-        with open(os.path.join(script_dir, "../progress/shoulder_tilt.txt"), "w", encoding="utf-8") as f:
-            f.write(os.path.basename(self.filename))
+        # with open(os.path.join(script_dir, "../progress/shoulder_tilt.txt"), "w", encoding="utf-8") as f:
+        #     f.write(os.path.basename(self.filename))
 
-        self.last_tilt = tilt
-        self.processed = True
+        # self.last_tilt = tilt
+        # self.processed = True
 
     def on_view_selected(self, index):
         if index == 0 or not self.processed:
