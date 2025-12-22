@@ -7,7 +7,7 @@ from PySide6.QtGui import QIcon
 from PySide6.QtCore import QSize, Qt
 
 # Import your tools
-from tools.cropper import Dashboard as CropperToo
+from tools.cropper import Dashboard as CropperTool
 from tools.eye_altitude import Dashboard as EyeAltitudeTool
 from tools.eye_inclination import Dashboard as EyeInclinationTool
 from tools.eye_zoom import Dashboard as EyeZoomTool
@@ -19,6 +19,7 @@ from tools.interocular_width import Dashboard as interocularWidthTool
 from tools.midface_height import Dashboard as MidFaceHeightTool
 from tools.mouth_width import Dashboard as MouthWidthTool
 from tools.neck_width import Dashboard as NeckWidthTool
+from tools.neck_zoom import Dashboard as NeckZoomTool
 from tools.shoulder_tilt import Dashboard as ShoulderTiltTool
 
 class HomePage(QMainWindow):
@@ -54,6 +55,7 @@ class HomePage(QMainWindow):
             ("icons/midface-height.png", "Mid-Face Height", self.open_midface_height),
             ("icons/mouth-width.png", "Mouth Width", self.open_mouth_width),
             ("icons/neck-width.png", "Neck Width", self.open_neck_width),
+            ("icons/neck-zoom.png", "Neck Zoom", self.run_neck_zoom),
             ("icons/shoulder-tilt.png", "Shoulder Tilt", self.open_shoulder_tilt),
         ]
 
@@ -133,6 +135,10 @@ class HomePage(QMainWindow):
 
     def run_eye_zoom(self):
         self.tool = EyeZoomTool()
+        self.tool.process()
+
+    def run_neck_zoom(self):
+        self.tool = NeckZoomTool()
         self.tool.process()
 
     def run_cropper_script(self):

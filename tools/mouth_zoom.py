@@ -4,7 +4,7 @@ import mediapipe as mp
 from tqdm import tqdm
 
 script_dir = os.path.dirname(os.path.abspath(__file__))
-# Sesuaikan folder agar script bisa berjalan meskipun folder belum ada
+
 input_folder = os.path.normpath(os.path.join(script_dir, "../images/raw_images"))
 output_folder = os.path.normpath(os.path.join(script_dir, "../images/input_images/mouth_zoom"))
 session_log = os.path.normpath(os.path.join(script_dir, "../session_log/mouth_zoom.txt"))
@@ -24,10 +24,10 @@ class Dashboard:
         self.target_size = target_size
         self.padding_color = padding_color
         
-        # Inisialisasi MediaPipe
+        # Initialize MediaPipe
         self.mp_face_mesh = mp.solutions.face_mesh
         self.face_mesh = self.mp_face_mesh.FaceMesh(
-            static_image_mode=True, # Optimal untuk pemrosesan gambar (bukan video)
+            static_image_mode=True, # Optimalize for image processing (not video)
             max_num_faces=1,
             min_detection_confidence=0.6
         )
@@ -67,14 +67,14 @@ class Dashboard:
     def resize_with_padding(self, image, target_size=512):
         h, w = image.shape[:2]
         
-        # Mencari rasio untuk resize agar gambar pas di dalam kotak 512x512
+        # Determine ratio to resize so that image fits within a 512x512 panel
         scaling_factor = min(target_size / w, target_size / h)
         new_w = int(w * scaling_factor)
         new_h = int(h * scaling_factor)
         
         resized_image = cv2.resize(image, (new_w, new_h), interpolation=cv2.INTER_AREA)
         
-        # Hitung padding untuk membuat gambar menjadi square (512x512)
+        # Calculate padding to make image square (512x512)
         top_padding = (target_size - new_h) // 2
         bottom_padding = target_size - new_h - top_padding
         left_padding = (target_size - new_w) // 2
