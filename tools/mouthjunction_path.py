@@ -1,8 +1,8 @@
-# this script is to measure eye inclination.
-# eye inclination is the angle at which the eyes are tilted or slanted relative to the horizontal or vertical axis of the face, including upward slants, downward slants, or horizontal alignment.
+# this script is to measure mouth junction shape.
+# mouth junction shape is the geometric configuration of the upper and lower lip junction, including concave, linear, and convex forms.
 
 
-import sys, os, cv2, datetime
+import sys, os, cv2, datetime, subprocess
 from PySide6.QtWidgets import (
     QApplication, QMainWindow, QWidget, QVBoxLayout, QHBoxLayout,
     QLabel, QTextEdit, QComboBox
@@ -24,8 +24,16 @@ else:
 script_dir = os.path.dirname(os.path.abspath(__file__))
 
 cropper_output = os.path.join(script_dir, "../images/output_images/cropper")
-mouthjunction_path_input = os.path.join(script_dir, "../images/input_images/mouth_zoom")
-path = mouthjunction_path_input
+mouth_zoom = os.path.normpath(os.path.join(script_dir, "..", "images", "input_images", "mouth_zoom"))
+
+# Check for folder input
+if not os.path.exists(mouth_zoom):
+
+    # run mouth_zoom.py first to create the input folder "mouth_zoom".
+    subprocess.run(["python", os.path.join(script_dir, "mouth_zoom.py")])
+
+
+path = mouthjunction_path_input = mouth_zoom
 
 # print("Symlink points to:", os.readlink(mouthjunction_path_input))
 
@@ -91,7 +99,7 @@ def label_guide_lines(img, coord):
 class Dashboard(QMainWindow):
     def __init__(self):
         super().__init__()
-        self.setWindowTitle("Eye Inclination Dashboard")
+        self.setWindowTitle("Mouth Junction Path Dashboard")
         self.resize(1200, 800)
 
         # Log

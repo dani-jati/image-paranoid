@@ -69,3 +69,5 @@ Left acromiohumeral notch (left shoulder end) recorded.
 draw bishoulder line
 🧭 Auto-perspective : Front, 👁️ Please compare with your own visual judgment!
 ✅ Saved to c:\Users\nagab\OneDrive\Documents\image_paranoid\tools\../images/output_images/head_size/0_to_1.35\Untitled6.png
+🖼️ Processing: head and shoulder shot photo_0.jpeg, 6-th of 190 files 
+Click leftmost point of midface contour!

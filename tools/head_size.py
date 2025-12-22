@@ -321,7 +321,7 @@ class Dashboard(QMainWindow):
                 legend_x, legend_y = 0,0
                 preview = img_copy
                 clue = "Click right acromiohumeral notch (right shoulder end)!"
-                cv2.putText(preview, , (legend_x+10, legend_y+30),
+                cv2.putText(preview, clue, (legend_x+10, legend_y+30),
                         cv2.FONT_HERSHEY_PLAIN, 1.2, (0,255,0), 3)
                 cv2.putText(preview, clue, (legend_x+10, legend_y+30),
                         cv2.FONT_HERSHEY_PLAIN, 1.2, (0,0,0), 2)

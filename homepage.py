@@ -7,9 +7,8 @@ from PySide6.QtGui import QIcon
 from PySide6.QtCore import QSize, Qt
 
 # Import your tools
-from tools.cropper import Dashboard as CropperTool
-
-from tools.protonose_altitude import Dashboard as ProtonoseAltitudeTool
+from tools.cropper import Dashboard as CropperToo
+from tools.eye_altitude import Dashboard as EyeAltitudeTool
 from tools.eye_inclination import Dashboard as EyeInclinationTool
 from tools.eye_zoom import Dashboard as EyeZoomTool
 from tools.face_width import Dashboard as FaceWidthTool
@@ -44,7 +43,7 @@ class HomePage(QMainWindow):
         # Define apps: (icon_path, label, callback)
         apps = [
             ("icons/cropper.png", "Cropper", self.run_cropper_script),
-            ("icons/protonose-altitude.png", "Proto-nose Altitude", self.open_eye_altitude),
+            ("icons/eye-altitude.png", "Eye Altitude", self.open_eye_altitude),
             ("icons/eye-inclination.png", "Eye Inclination", self.open_eye_inclination),
             ("icons/eye-zoom.png", "Eye Zoom", self.run_eye_zoom),
             ("icons/face-width.png", "Face Width", self.open_face_width),
@@ -125,7 +124,7 @@ class HomePage(QMainWindow):
         self.tool.show()
 
     def open_eye_altitude(self):
-        self.tool = ProtonoseAltitudeTool()
+        self.tool = EyeAltitudeTool()
         self.tool.show()
 
     def open_eye_inclination(self):

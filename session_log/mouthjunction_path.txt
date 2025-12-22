@@ -58,3 +58,37 @@ Point clicked: 406, 232
 the rightmost point of mouth junction recorded
 draw line from p1 to p2
 ✅ Saved to c:\Users\nagab\OneDrive\Documents\image_paranoid\tools\../images/output_images/mouthjunction_path/concave\Melior-oral-commissure.png
+🖼️ Processing: 1762591407217.png, 1-th of 170 files 
+ 1️⃣: Click the leftmost point of mouth junction!
+Point clicked: 392, 251
+✅ The leftmost point of mouth junction recorded.
+2️⃣: {clue}
+Point clicked: 104, 256
+the rightmost point of mouth junction recorded
+draw line from p1 to p2
+Point clicked: 248, 248
+the rightmost point of mouth junction recorded
+draw line from p1 to p2
+Point clicked: 350, 252
+the rightmost point of mouth junction recorded
+draw line from p1 to p2
+Point clicked: 308, 246
+the rightmost point of mouth junction recorded
+draw line from p1 to p2
+Point clicked: 269, 247
+the rightmost point of mouth junction recorded
+draw line from p1 to p2
+Point clicked: 227, 250
+the rightmost point of mouth junction recorded
+draw line from p1 to p2
+Point clicked: 185, 250
+the rightmost point of mouth junction recorded
+draw line from p1 to p2
+Point clicked: 145, 260
+the rightmost point of mouth junction recorded
+draw line from p1 to p2
+✅ Saved to c:\Users\nagab\OneDrive\Documents\image_paranoid\tools\../images/output_images/mouthjunction_path/linier\1762591407217.png
+🖼️ Processing: Untitled1.png, 2-th of 170 files 
+ 1️⃣: Click the leftmost point of mouth junction!
+🖼️ Processing: Untitled1.png, 2-th of 170 files 
+ 1️⃣: Click the leftmost point of mouth junction!
